@@ -25,8 +25,12 @@
 // These need to be macros, as version.cpp's and dogecoin-qt.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR       1
 #define CLIENT_VERSION_MINOR       7
+<<<<<<< HEAD
 #define CLIENT_VERSION_REVISION    0
 >>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
+=======
+#define CLIENT_VERSION_REVISION    1
+>>>>>>> e362de3e815c8d114e202190b222e6100f98a4e7
 #define CLIENT_VERSION_BUILD       0
 
 // Set to true for release, false for prerelease or test build
