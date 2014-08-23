@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -37,12 +38,56 @@ static const int64 COIN = 100000000;
 static const int64 CENT = 1000000;
 
 #define loop                for (;;)
+=======
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2011-2013 The Litecoin developers
+// Copyright (c)      2014 The Inutoshi developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_UTIL_H
+#define BITCOIN_UTIL_H
+
+#if defined(HAVE_CONFIG_H)
+#include "bitcoin-config.h"
+#endif
+
+#include "compat.h"
+#include "serialize.h"
+#include "tinyformat.h"
+
+#include <cstdio>
+#include <exception>
+#include <map>
+#include <stdarg.h>
+#include <stdint.h>
+#include <string>
+#include <utility>
+#include <vector>
+
+#ifndef WIN32
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#endif
+
+#include <boost/filesystem/path.hpp>
+#include <boost/thread.hpp>
+
+class CNetAddr;
+class uint256;
+
+static const int64_t COIN = 100000000;
+static const int64_t CENT = 1000000;
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #define BEGIN(a)            ((char*)&(a))
 #define END(a)              ((char*)&((&(a))[1]))
 #define UBEGIN(a)           ((unsigned char*)&(a))
 #define UEND(a)             ((unsigned char*)&((&(a))[1]))
 #define ARRAYLEN(array)     (sizeof(array)/sizeof((array)[0]))
 
+<<<<<<< HEAD
 #ifndef PRI64d
 #if defined(_MSC_VER) || defined(__MSVCRT__)
 #define PRI64d  "I64d"
@@ -74,6 +119,19 @@ static const int64 CENT = 1000000;
   #define PRIpdu    "tu"
   #define PRIpdd    "td"
 #endif
+=======
+/* Format characters for (s)size_t, ptrdiff_t.
+ *
+ * Define these as empty as the tinyformat-based formatting system is
+ * type-safe, no special format characters are needed to specify sizes.
+ */
+#define PRIszx    "x"
+#define PRIszu    "u"
+#define PRIszd    "d"
+#define PRIpdx    "x"
+#define PRIpdu    "u"
+#define PRIpdd    "d"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 // This is needed because the foreach macro can't get over the comma in pair<t1, t2>
 #define PAIRTYPE(t1, t2)    std::pair<t1, t2>
@@ -93,7 +151,10 @@ T* alignup(T* p)
 }
 
 #ifdef WIN32
+<<<<<<< HEAD
 #define MSG_NOSIGNAL        0
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #define MSG_DONTWAIT        0
 
 #ifndef S_IRUSR
@@ -103,12 +164,22 @@ T* alignup(T* p)
 #else
 #define MAX_PATH            1024
 #endif
+<<<<<<< HEAD
 
 inline void MilliSleep(int64 n)
+=======
+// As Solaris does not have the MSG_NOSIGNAL flag for send(2) syscall, it is defined as 0
+#if !defined(HAVE_MSG_NOSIGNAL) && !defined(MSG_NOSIGNAL)
+#define MSG_NOSIGNAL 0
+#endif
+
+inline void MilliSleep(int64_t n)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
 // Boost's sleep_for was uninterruptable when backed by nanosleep from 1.50
 // until fixed in 1.52. Use the deprecated sleep method for the broken case.
 // See: https://svn.boost.org/trac/boost/ticket/7238
+<<<<<<< HEAD
 
 #if BOOST_VERSION >= 105000 && (!defined(BOOST_HAS_NANOSLEEP) || BOOST_VERSION >= 105200)
     boost::this_thread::sleep_for(boost::chrono::milliseconds(n));
@@ -131,12 +202,24 @@ inline void MilliSleep(int64 n)
 
 
 
+=======
+#if defined(HAVE_WORKING_BOOST_SLEEP_FOR)
+    boost::this_thread::sleep_for(boost::chrono::milliseconds(n));
+#elif defined(HAVE_WORKING_BOOST_SLEEP)
+    boost::this_thread::sleep(boost::posix_time::milliseconds(n));
+#else
+//should never get here
+#error missing boost sleep implementation
+#endif
+}
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 
 
 extern std::map<std::string, std::string> mapArgs;
 extern std::map<std::string, std::vector<std::string> > mapMultiArgs;
 extern bool fDebug;
+<<<<<<< HEAD
 extern bool fDebugNet;
 extern bool fWriteDebugLog;
 extern bool fPrintToConsole;
@@ -146,6 +229,12 @@ extern bool fServer;
 extern bool fCommandLine;
 extern std::string strMiscWarning;
 extern bool fTestNet;
+=======
+extern bool fPrintToConsole;
+extern bool fPrintToDebugLog;
+extern bool fServer;
+extern std::string strMiscWarning;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 extern bool fBloomFilters;
 extern bool fNoListen;
 extern bool fLogTimestamps;
@@ -153,6 +242,7 @@ extern volatile bool fReopenDebugLog;
 
 void RandAddSeed();
 void RandAddSeedPerfmon();
+<<<<<<< HEAD
 int ATTR_WARN_PRINTF(1,2) OutputDebugStringF(const char* pszFormat, ...);
 
 /*
@@ -188,6 +278,59 @@ void ParseString(const std::string& str, char c, std::vector<std::string>& v);
 std::string FormatMoney(int64 n, bool fPlus=false);
 bool ParseMoney(const std::string& str, int64& nRet);
 bool ParseMoney(const char* pszIn, int64& nRet);
+=======
+
+/* Return true if log accepts specified category */
+bool LogAcceptCategory(const char* category);
+/* Send a string to the log output */
+int LogPrintStr(const std::string &str);
+
+#define strprintf tfm::format
+#define LogPrintf(...) LogPrint(NULL, __VA_ARGS__)
+
+/* When we switch to C++11, this can be switched to variadic templates instead
+ * of this macro-based construction (see tinyformat.h).
+ */
+#define MAKE_ERROR_AND_LOG_FUNC(n)                                        \
+    /*   Print to debug.log if -debug=category switch is given OR category is NULL. */ \
+    template<TINYFORMAT_ARGTYPES(n)>                                          \
+    static inline int LogPrint(const char* category, const char* format, TINYFORMAT_VARARGS(n))  \
+    {                                                                         \
+        if(!LogAcceptCategory(category)) return 0;                            \
+        return LogPrintStr(tfm::format(format, TINYFORMAT_PASSARGS(n))); \
+    }                                                                         \
+    /*   Log error and return false */                                        \
+    template<TINYFORMAT_ARGTYPES(n)>                                          \
+    static inline bool error(const char* format, TINYFORMAT_VARARGS(n))                     \
+    {                                                                         \
+        LogPrintStr("ERROR: " + tfm::format(format, TINYFORMAT_PASSARGS(n)) + "\n"); \
+        return false;                                                         \
+    }
+
+TINYFORMAT_FOREACH_ARGNUM(MAKE_ERROR_AND_LOG_FUNC)
+
+/* Zero-arg versions of logging and error, these are not covered by
+ * TINYFORMAT_FOREACH_ARGNUM
+ */
+static inline int LogPrint(const char* category, const char* format)
+{
+    if(!LogAcceptCategory(category)) return 0;
+    return LogPrintStr(format);
+}
+static inline bool error(const char* format)
+{
+    LogPrintStr(std::string("ERROR: ") + format + "\n");
+    return false;
+}
+
+
+void LogException(std::exception* pex, const char* pszThread);
+void PrintExceptionContinue(std::exception* pex, const char* pszThread);
+void ParseString(const std::string& str, char c, std::vector<std::string>& v);
+std::string FormatMoney(int64_t n, bool fPlus=false);
+bool ParseMoney(const std::string& str, int64_t& nRet);
+bool ParseMoney(const char* pszIn, int64_t& nRet);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 std::string SanitizeString(const std::string& str);
 std::vector<unsigned char> ParseHex(const char* psz);
 std::vector<unsigned char> ParseHex(const std::string& str);
@@ -223,6 +366,7 @@ boost::filesystem::path GetSpecialFolderPath(int nFolder, bool fCreate = true);
 boost::filesystem::path GetTempPath();
 void ShrinkDebugFile();
 int GetRandInt(int nMax);
+<<<<<<< HEAD
 uint64 GetRand(uint64 nMax);
 uint256 GetRandHash();
 int64 GetTime();
@@ -233,6 +377,18 @@ long hex2long(const char* hexString);
 std::string FormatFullVersion();
 std::string FormatSubVersion(const std::string& name, int nClientVersion, const std::vector<std::string>& comments);
 void AddTimeData(const CNetAddr& ip, int64 nTime);
+=======
+uint64_t GetRand(uint64_t nMax);
+uint256 GetRandHash();
+int64_t GetTime();
+void SetMockTime(int64_t nMockTimeIn);
+int64_t GetAdjustedTime();
+int64_t GetTimeOffset();
+long hex2long(const char* hexString);
+std::string FormatFullVersion();
+std::string FormatSubVersion(const std::string& name, int nClientVersion, const std::vector<std::string>& comments);
+void AddTimeData(const CNetAddr& ip, int64_t nTime);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 void runCommand(std::string strCommand);
 
 
@@ -243,9 +399,15 @@ void runCommand(std::string strCommand);
 
 
 
+<<<<<<< HEAD
 inline std::string i64tostr(int64 n)
 {
     return strprintf("%"PRI64d, n);
+=======
+inline std::string i64tostr(int64_t n)
+{
+    return strprintf("%d", n);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 inline std::string itostr(int n)
@@ -253,7 +415,11 @@ inline std::string itostr(int n)
     return strprintf("%d", n);
 }
 
+<<<<<<< HEAD
 inline int64 atoi64(const char* psz)
+=======
+inline int64_t atoi64(const char* psz)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
 #ifdef _MSC_VER
     return _atoi64(psz);
@@ -262,7 +428,11 @@ inline int64 atoi64(const char* psz)
 #endif
 }
 
+<<<<<<< HEAD
 inline int64 atoi64(const std::string& str)
+=======
+inline int64_t atoi64(const std::string& str)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
 #ifdef _MSC_VER
     return _atoi64(str.c_str());
@@ -281,12 +451,21 @@ inline int roundint(double d)
     return (int)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
+<<<<<<< HEAD
 inline int64 roundint64(double d)
 {
     return (int64)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
 inline int64 abs64(int64 n)
+=======
+inline int64_t roundint64(double d)
+{
+    return (int64_t)(d > 0 ? d + 0.5 : d - 0.5);
+}
+
+inline int64_t abs64(int64_t n)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     return (n >= 0 ? n : -n);
 }
@@ -319,40 +498,69 @@ inline std::string HexStr(const T& vch, bool fSpaces=false)
 template<typename T>
 void PrintHex(const T pbegin, const T pend, const char* pszFormat="%s", bool fSpaces=true)
 {
+<<<<<<< HEAD
     printf(pszFormat, HexStr(pbegin, pend, fSpaces).c_str());
+=======
+    LogPrintf(pszFormat, HexStr(pbegin, pend, fSpaces).c_str());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 inline void PrintHex(const std::vector<unsigned char>& vch, const char* pszFormat="%s", bool fSpaces=true)
 {
+<<<<<<< HEAD
     printf(pszFormat, HexStr(vch, fSpaces).c_str());
 }
 
 inline int64 GetPerformanceCounter()
 {
     int64 nCounter = 0;
+=======
+    LogPrintf(pszFormat, HexStr(vch, fSpaces).c_str());
+}
+
+inline int64_t GetPerformanceCounter()
+{
+    int64_t nCounter = 0;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #ifdef WIN32
     QueryPerformanceCounter((LARGE_INTEGER*)&nCounter);
 #else
     timeval t;
     gettimeofday(&t, NULL);
+<<<<<<< HEAD
     nCounter = (int64) t.tv_sec * 1000000 + t.tv_usec;
+=======
+    nCounter = (int64_t) t.tv_sec * 1000000 + t.tv_usec;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif
     return nCounter;
 }
 
+<<<<<<< HEAD
 inline int64 GetTimeMillis()
+=======
+inline int64_t GetTimeMillis()
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     return (boost::posix_time::ptime(boost::posix_time::microsec_clock::universal_time()) -
             boost::posix_time::ptime(boost::gregorian::date(1970,1,1))).total_milliseconds();
 }
 
+<<<<<<< HEAD
 inline int64 GetTimeMicros()
+=======
+inline int64_t GetTimeMicros()
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     return (boost::posix_time::ptime(boost::posix_time::microsec_clock::universal_time()) -
             boost::posix_time::ptime(boost::gregorian::date(1970,1,1))).total_microseconds();
 }
 
+<<<<<<< HEAD
 inline std::string DateTimeStrFormat(const char* pszFormat, int64 nTime)
+=======
+inline std::string DateTimeStrFormat(const char* pszFormat, int64_t nTime)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     time_t n = nTime;
     struct tm* ptmTime = gmtime(&n);
@@ -393,7 +601,11 @@ std::string GetArg(const std::string& strArg, const std::string& strDefault);
  * @param default (e.g. 1)
  * @return command-line argument (0 if invalid number) or default value
  */
+<<<<<<< HEAD
 int64 GetArg(const std::string& strArg, int64 nDefault);
+=======
+int64_t GetArg(const std::string& strArg, int64_t nDefault);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /**
  * Return boolean argument or default value
@@ -402,7 +614,11 @@ int64 GetArg(const std::string& strArg, int64 nDefault);
  * @param default (true or false)
  * @return command-line argument or default value
  */
+<<<<<<< HEAD
 bool GetBoolArg(const std::string& strArg, bool fDefault=false);
+=======
+bool GetBoolArg(const std::string& strArg, bool fDefault);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /**
  * Set an argument if it doesn't already have a value
@@ -515,8 +731,11 @@ public:
     }
 };
 
+<<<<<<< HEAD
 bool NewThread(void(*pfn)(void*), void* parg);
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #ifdef WIN32
 inline void SetThreadPriority(int nPriority)
 {
@@ -524,10 +743,21 @@ inline void SetThreadPriority(int nPriority)
 }
 #else
 
+<<<<<<< HEAD
 #define THREAD_PRIORITY_LOWEST          PRIO_MAX
 #define THREAD_PRIORITY_BELOW_NORMAL    2
 #define THREAD_PRIORITY_NORMAL          0
 #define THREAD_PRIORITY_ABOVE_NORMAL    0
+=======
+// PRIO_MAX is not defined on Solaris
+#ifndef PRIO_MAX
+#define PRIO_MAX 20
+#endif
+#define THREAD_PRIORITY_LOWEST          PRIO_MAX
+#define THREAD_PRIORITY_BELOW_NORMAL    2
+#define THREAD_PRIORITY_NORMAL          0
+#define THREAD_PRIORITY_ABOVE_NORMAL    (-2)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 inline void SetThreadPriority(int nPriority)
 {
@@ -539,11 +769,14 @@ inline void SetThreadPriority(int nPriority)
     setpriority(PRIO_PROCESS, 0, nPriority);
 #endif
 }
+<<<<<<< HEAD
 
 inline void ExitThread(size_t nExitCode)
 {
     pthread_exit((void*)nExitCode);
 }
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif
 
 void RenameThread(const char* name);
@@ -561,11 +794,19 @@ inline uint32_t ByteReverse(uint32_t value)
 // or maybe:
 //    boost::function<void()> f = boost::bind(&FunctionWithArg, argument);
 //    threadGroup.create_thread(boost::bind(&LoopForever<boost::function<void()> >, "nothing", f, milliseconds));
+<<<<<<< HEAD
 template <typename Callable> void LoopForever(const char* name,  Callable func, int64 msecs)
 {
     std::string s = strprintf("bitcoin-%s", name);
     RenameThread(s.c_str());
     printf("%s thread start\n", name);
+=======
+template <typename Callable> void LoopForever(const char* name,  Callable func, int64_t msecs)
+{
+    std::string s = strprintf("dogecoin-%s", name);
+    RenameThread(s.c_str());
+    LogPrintf("%s thread start\n", name);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     try
     {
         while (1)
@@ -576,6 +817,7 @@ template <typename Callable> void LoopForever(const char* name,  Callable func, 
     }
     catch (boost::thread_interrupted)
     {
+<<<<<<< HEAD
         printf("%s thread stop\n", name);
         throw;
     }
@@ -584,11 +826,24 @@ template <typename Callable> void LoopForever(const char* name,  Callable func, 
     }
     catch (...) {
         PrintException(NULL, name);
+=======
+        LogPrintf("%s thread stop\n", name);
+        throw;
+    }
+    catch (std::exception& e) {
+        PrintExceptionContinue(&e, name);
+        throw;
+    }
+    catch (...) {
+        PrintExceptionContinue(NULL, name);
+        throw;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 }
 // .. and a wrapper that just calls func once
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
+<<<<<<< HEAD
     std::string s = strprintf("bitcoin-%s", name);
     RenameThread(s.c_str());
     try
@@ -607,6 +862,28 @@ template <typename Callable> void TraceThread(const char* name,  Callable func)
     }
     catch (...) {
         PrintException(NULL, name);
+=======
+    std::string s = strprintf("dogecoin-%s", name);
+    RenameThread(s.c_str());
+    try
+    {
+        LogPrintf("%s thread start\n", name);
+        func();
+        LogPrintf("%s thread exit\n", name);
+    }
+    catch (boost::thread_interrupted)
+    {
+        LogPrintf("%s thread interrupt\n", name);
+        throw;
+    }
+    catch (std::exception& e) {
+        PrintExceptionContinue(&e, name);
+        throw;
+    }
+    catch (...) {
+        PrintExceptionContinue(NULL, name);
+        throw;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 }
 

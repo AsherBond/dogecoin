@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <boost/test/unit_test.hpp>
 #include "json/json_spirit_reader_template.h"
 #include "json/json_spirit_writer_template.h"
@@ -8,14 +9,39 @@
 
 using namespace json_spirit;
 extern Array read_json(const std::string& filename);
+=======
+#include "base58.h"
+
+#include "data/base58_encode_decode.json.h"
+#include "data/base58_keys_invalid.json.h"
+#include "data/base58_keys_valid.json.h"
+
+#include "key.h"
+#include "script.h"
+#include "uint256.h"
+#include "util.h"
+
+#include <boost/foreach.hpp>
+#include <boost/test/unit_test.hpp>
+#include "json/json_spirit_reader_template.h"
+#include "json/json_spirit_utils.h"
+#include "json/json_spirit_writer_template.h"
+
+using namespace json_spirit;
+extern Array read_json(const std::string& jsondata);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 BOOST_AUTO_TEST_SUITE(base58_tests)
 
 // Goal: test low-level base58 encoding functionality
 BOOST_AUTO_TEST_CASE(base58_EncodeBase58)
 {
+<<<<<<< HEAD
     Array tests = read_json("base58_encode_decode.json");
 
+=======
+    Array tests = read_json(std::string(json_tests::base58_encode_decode, json_tests::base58_encode_decode + sizeof(json_tests::base58_encode_decode)));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     BOOST_FOREACH(Value& tv, tests)
     {
         Array test = tv.get_array();
@@ -36,7 +62,11 @@ BOOST_AUTO_TEST_CASE(base58_EncodeBase58)
 // Goal: test low-level base58 decoding functionality
 BOOST_AUTO_TEST_CASE(base58_DecodeBase58)
 {
+<<<<<<< HEAD
     Array tests = read_json("base58_encode_decode.json");
+=======
+    Array tests = read_json(std::string(json_tests::base58_encode_decode, json_tests::base58_encode_decode + sizeof(json_tests::base58_encode_decode)));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     std::vector<unsigned char> result;
 
     BOOST_FOREACH(Value& tv, tests)
@@ -55,6 +85,15 @@ BOOST_AUTO_TEST_CASE(base58_DecodeBase58)
     }
 
     BOOST_CHECK(!DecodeBase58("invalid", result));
+<<<<<<< HEAD
+=======
+
+    // check that DecodeBase58 skips whitespace, but still fails with unexpected non-whitespace at the end.
+    BOOST_CHECK(!DecodeBase58(" \t\n\v\f\r skip \r\f\v\n\t a", result));
+    BOOST_CHECK( DecodeBase58(" \t\n\v\f\r skip \r\f\v\n\t ", result));
+    std::vector<unsigned char> expected = ParseHex("971a55");
+    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 // Visitor to check address type
@@ -104,12 +143,19 @@ public:
 // Goal: check that parsed keys match test payload
 BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
 {
+<<<<<<< HEAD
     Array tests = read_json("base58_keys_valid.json");
     std::vector<unsigned char> result;
     CBitcoinSecret secret;
     CBitcoinAddress addr;
     // Save global state
     bool fTestNet_stored = fTestNet;
+=======
+    Array tests = read_json(std::string(json_tests::base58_keys_valid, json_tests::base58_keys_valid + sizeof(json_tests::base58_keys_valid)));
+    std::vector<unsigned char> result;
+    CBitcoinSecret secret;
+    CBitcoinAddress addr;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     BOOST_FOREACH(Value& tv, tests)
     {
@@ -125,7 +171,14 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
         const Object &metadata = test[2].get_obj();
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
         bool isTestnet = find_value(metadata, "isTestnet").get_bool();
+<<<<<<< HEAD
         fTestNet = isTestnet; // Override testnet flag
+=======
+        if (isTestnet)
+            SelectParams(CChainParams::TESTNET);
+        else
+            SelectParams(CChainParams::MAIN);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         if(isPrivkey)
         {
             bool isCompressed = find_value(metadata, "isCompressed").get_bool();
@@ -156,18 +209,27 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
             BOOST_CHECK_MESSAGE(!secret.IsValid(), "IsValid pubkey as privkey:" + strTest);
         }
     }
+<<<<<<< HEAD
     // Restore global state
     fTestNet = fTestNet_stored;
+=======
+    SelectParams(CChainParams::MAIN);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 // Goal: check that generated keys match test vectors
 BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
 {
+<<<<<<< HEAD
     Array tests = read_json("base58_keys_valid.json");
     std::vector<unsigned char> result;
     // Save global state
     bool fTestNet_stored = fTestNet;
 
+=======
+    Array tests = read_json(std::string(json_tests::base58_keys_valid, json_tests::base58_keys_valid + sizeof(json_tests::base58_keys_valid)));
+    std::vector<unsigned char> result;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     BOOST_FOREACH(Value& tv, tests)
     {
         Array test = tv.get_array();
@@ -182,7 +244,14 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
         const Object &metadata = test[2].get_obj();
         bool isPrivkey = find_value(metadata, "isPrivkey").get_bool();
         bool isTestnet = find_value(metadata, "isTestnet").get_bool();
+<<<<<<< HEAD
         fTestNet = isTestnet; // Override testnet flag
+=======
+        if (isTestnet)
+            SelectParams(CChainParams::TESTNET);
+        else
+            SelectParams(CChainParams::MAIN);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         if(isPrivkey)
         {
             bool isCompressed = find_value(metadata, "isCompressed").get_bool();
@@ -225,14 +294,22 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
     CTxDestination nodest = CNoDestination();
     BOOST_CHECK(!boost::apply_visitor(CBitcoinAddressVisitor(&dummyAddr), nodest));
 
+<<<<<<< HEAD
     // Restore global state
     fTestNet = fTestNet_stored;
+=======
+    SelectParams(CChainParams::MAIN);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 // Goal: check that base58 parsing code is robust against a variety of corrupted data
 BOOST_AUTO_TEST_CASE(base58_keys_invalid)
 {
+<<<<<<< HEAD
     Array tests = read_json("base58_keys_invalid.json"); // Negative testcases
+=======
+    Array tests = read_json(std::string(json_tests::base58_keys_invalid, json_tests::base58_keys_invalid + sizeof(json_tests::base58_keys_invalid))); // Negative testcases
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     std::vector<unsigned char> result;
     CBitcoinSecret secret;
     CBitcoinAddress addr;

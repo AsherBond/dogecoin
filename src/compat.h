@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -38,6 +39,54 @@ typedef u_int SOCKET;
 #define MSG_DONTWAIT        0
 typedef int socklen_t;
 #else
+=======
+// Copyright (c) 2009-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef _BITCOIN_COMPAT_H
+#define _BITCOIN_COMPAT_H
+
+#ifdef WIN32
+#ifdef _WIN32_WINNT
+#undef _WIN32_WINNT
+#endif
+#define _WIN32_WINNT 0x0501
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN 1
+#endif
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
+#ifdef FD_SETSIZE
+#undef FD_SETSIZE // prevent redefinition compiler warning
+#endif
+#define FD_SETSIZE 1024 // max number of fds in fd_set
+
+#include <winsock2.h>     // Must be included before mswsock.h and windows.h
+
+#include <mswsock.h>
+#include <windows.h>
+#include <ws2tcpip.h>
+#else
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <ifaddrs.h>
+#include <limits.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <sys/fcntl.h>
+#include <sys/mman.h>
+#include <sys/socket.h>
+#include <unistd.h>
+#endif
+
+#ifdef WIN32
+#define MSG_DONTWAIT        0
+#else
+typedef u_int SOCKET;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include "errno.h"
 #define WSAGetLastError()   errno
 #define WSAEINVAL           EINVAL

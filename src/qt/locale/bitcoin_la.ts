@@ -1,9 +1,13 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="la" version="2.0">
+<<<<<<< HEAD
 <defaultcodec>UTF-8</defaultcodec>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
+<<<<<<< HEAD
         <source>About Dogecoin</source>
         <translation>Informatio de Dogecoin</translation>
     </message>
@@ -11,6 +15,15 @@
         <location line="+39"/>
         <source>&lt;b&gt;Dogecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Dogecoin&lt;/b&gt; versio</translation>
+=======
+        <source>About Dogecoin Core</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+57"/>
@@ -27,12 +40,17 @@ Distributum sub MIT/X11 licentia programmatum, vide comitantem plicam COPYING ve
 Hoc productum continet programmata composita ab OpenSSL Project pro utendo in OpenSSL Toolkit (http://www.openssl.org/) et programmata cifrarum scripta ab Eric Young (eay@cryptsoft.com) et UPnP programmata scripta ab Thomas Bernard.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../aboutdialog.cpp" line="+14"/>
+=======
+        <location filename="../utilitydialog.cpp" line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copyright</source>
         <translation>Copyright</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>The Bitcoin developers</source>
         <translation type="unfinished"/>
     </message>
@@ -46,16 +64,25 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <source>2013-%1 The Dogecoin developers</source>
         <translation>2013-%1 Dogecoin curatores</translation>
     </message>
+=======
+        <source>The Dogecoin Core developers</source>
+        <translation type="unfinished"/>
+    </message>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>Address Book</source>
         <translation>Liber Inscriptionum</translation>
     </message>
     <message>
         <location line="+19"/>
+=======
+        <location filename="../forms/addressbookpage.ui" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Double-click to edit address or label</source>
         <translation>Dupliciter-clicca ut inscriptionem vel titulum mutes</translation>
     </message>
@@ -65,11 +92,21 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Crea novam inscriptionem</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+3"/>
+        <source>&amp;New</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Copia inscriptionem iam selectam in latibulum systematis</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-11"/>
         <source>&amp;New Address</source>
         <translation>&amp;Nova Inscriptio</translation>
@@ -81,10 +118,24 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
+=======
+        <location line="+3"/>
+        <source>&amp;Copy</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>C&amp;lose</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="+74"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Copy Address</source>
         <translation>&amp;Copia Inscriptionem</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Show &amp;QR Code</source>
         <translation>Monstra codicem &amp;QR</translation>
@@ -101,6 +152,9 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+25"/>
+=======
+        <location filename="../forms/addressbookpage.ui" line="-41"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Delete the currently selected address from the list</source>
         <translation>Dele active selectam inscriptionem ex enumeratione</translation>
     </message>
@@ -115,6 +169,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Exporta</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Dogecoin address</source>
         <translation>Verifica nuntium ut cures signatum esse cum specificata inscriptione Dogecoin</translation>
@@ -131,11 +186,53 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
+=======
+        <location line="-27"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Dele</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="-30"/>
+        <source>Choose the address to send coins to</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose the address to receive coins with</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>C&amp;hoose</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Very sending addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Much receiving addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hae sunt inscriptiones mittendi pensitationes.  Semper inspice quantitatem et inscriptionem accipiendi antequam nummos mittis.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="+4"/>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy &amp;Label</source>
         <translation>Copia &amp;Titulum</translation>
     </message>
@@ -145,6 +242,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Muta</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send &amp;Coins</source>
         <translation>Mitte &amp;Nummos</translation>
@@ -153,6 +251,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <location line="+260"/>
         <source>Export Address Book Data</source>
         <translation>Exporta Data Libri Inscriptionum</translation>
+=======
+        <location line="+194"/>
+        <source>Export Address List</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -161,6 +264,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
         <source>Error exporting</source>
         <translation>Error exportandi</translation>
     </message>
@@ -168,12 +272,25 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <location line="+0"/>
         <source>Could not write to file %1.</source>
         <translation>Non potuisse scribere in plicam %1.</translation>
+=======
+        <source>Exporting Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>There was an error trying to save the address list to %1.</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+144"/>
+=======
+        <location filename="../addresstablemodel.cpp" line="+168"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Label</source>
         <translation>Titulus</translation>
     </message>
@@ -211,7 +328,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Itera novam tesseram</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../askpassphrasedialog.cpp" line="+33"/>
+=======
+        <location filename="../askpassphrasedialog.cpp" line="+40"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Insero novam tesseram cassidili.&lt;br/&gt;Sodes tessera &lt;b&gt;10 pluriumve fortuitarum litterarum&lt;/b&gt; utere aut &lt;b&gt;octo pluriumve verborum&lt;/b&gt;.</translation>
     </message>
@@ -284,7 +405,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-56"/>
+<<<<<<< HEAD
         <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
+=======
+        <source>Dogecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>Dogecoin iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
     </message>
     <message>
@@ -332,22 +457,43 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+233"/>
+=======
+        <location filename="../bitcoingui.cpp" line="+295"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Sign &amp;message...</source>
         <translation>Signa &amp;nuntium...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+280"/>
+=======
+        <location line="+335"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Synchronizing with network...</source>
         <translation>Synchronizans cum rete...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-349"/>
+=======
+        <location line="-407"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Overview</source>
         <translation>&amp;Summarium</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="-137"/>
+        <source>Node</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+138"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Show general overview of wallet</source>
         <translation>Monstra generale summarium cassidilis</translation>
     </message>
@@ -362,6 +508,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Inspicio historiam transactionum</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Edit the list of stored addresses and labels for sending</source>
         <translation>Muta indicem salvatarum inscriptionum titulorumque</translation>
@@ -373,6 +520,9 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+31"/>
+=======
+        <location line="+17"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>E&amp;xit</source>
         <translation>E&amp;xi</translation>
     </message>
@@ -382,17 +532,30 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Exi applicatione</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Show information about Dogecoin</source>
         <translation>Monstra informationem de Dogecoin</translation>
     </message>
     <message>
+=======
+        <location line="+7"/>
+        <source>Show information about Dogecoin Core</source>
+        <translation>Monstra informationem de Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>About &amp;Qt</source>
         <translation>Informatio de &amp;Qt</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Show information about Qt</source>
         <translation>Monstra informationem de Qt</translation>
     </message>
@@ -402,7 +565,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Optiones</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Cifra Cassidile...</translation>
     </message>
@@ -417,7 +584,26 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Muta tesseram...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+285"/>
+=======
+        <location line="+10"/>
+        <source>Very &amp;sending addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Much &amp;receiving addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open &amp;URI...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+325"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Importing blocks from disk...</source>
         <translation>Importans frusta ab disco...</translation>
     </message>
@@ -427,17 +613,29 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-347"/>
+=======
+        <location line="-405"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send coins to a Dogecoin address</source>
         <translation>Mitte nummos ad inscriptionem Dogecoin</translation>
     </message>
     <message>
         <location line="+49"/>
+<<<<<<< HEAD
         <source>Modify configuration options for Dogecoin</source>
         <translation>Muta configurationis optiones pro Dogecoin</translation>
     </message>
     <message>
         <location line="+9"/>
+=======
+        <source>Modify configuration options for Dogecoin Core</source>
+        <translation>Muta configurationis optiones pro Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup wallet to another location</source>
         <translation>Conserva cassidile in locum alium</translation>
     </message>
@@ -462,18 +660,30 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-165"/>
         <location line="+530"/>
+=======
+        <location line="+430"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin</source>
         <translation>Dogecoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-530"/>
+=======
+        <location line="-643"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet</source>
         <translation>Cassidile</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+101"/>
+=======
+        <location line="+146"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Send</source>
         <translation>&amp;Mitte</translation>
     </message>
@@ -483,6 +693,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Accipe</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
         <source>&amp;Addresses</source>
         <translation>&amp;Inscriptiones</translation>
@@ -494,6 +705,10 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+9"/>
+=======
+        <location line="+46"/>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Show / Hide</source>
         <translation>&amp;Monstra/Occulta</translation>
     </message>
@@ -518,38 +733,109 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Dogecoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;File</source>
         <translation>&amp;Plica</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+14"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Settings</source>
         <translation>&amp;Configuratio</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Help</source>
         <translation>&amp;Auxilium</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
+=======
+        <location line="+15"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Tabs toolbar</source>
         <translation>Tabella instrumentorum &quot;Tabs&quot;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
         <location line="+10"/>
+=======
+        <location line="-284"/>
+        <location line="+376"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+47"/>
+=======
+        <location line="-401"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Nucleus</translation>
+    </message>
+    <message>
+        <location line="+163"/>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+2"/>
+        <source>&amp;About Dogecoin Core</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open a dogecoin: URI or payment request</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the Dogecoin Core help message to get a list with possible Dogecoin Core command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+159"/>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin client</source>
         <translation>Dogecoin cliens</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+141"/>
+=======
+        <location line="+142"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%n active connection(s) to Dogecoin network</source>
         <translation><numerusform>%n activa conexio ad rete Dogecoin</numerusform><numerusform>%n activae conexiones ad rete Dogecoin</numerusform></translation>
     </message>
@@ -569,7 +855,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Processae %1 frusta historiae transactionum.</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+20"/>
+=======
+        <location line="+23"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%n hour(s)</source>
         <translation><numerusform>%n hora</numerusform><numerusform>%n horae</numerusform></translation>
     </message>
@@ -589,7 +879,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>%1 post</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+21"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Last received block was generated %1 ago.</source>
         <translation>Postremum acceptum frustum generatum est %1 abhinc.</translation>
     </message>
@@ -599,7 +893,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Transactiones post hoc nondum visibiles erunt.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
+=======
+        <location line="+27"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -614,27 +912,39 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Informatio</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation>Haec transactio maior est quam limen magnitudinis.  Adhuc potes id mittere mercede %1, quae it nodis qui procedunt tuam transactionem et adiuvat sustinere rete.  Visne mercedem solvere?</translation>
     </message>
     <message>
         <location line="-140"/>
+=======
+        <location line="-85"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Up to date</source>
         <translation>Recentissimo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+31"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Catching up...</source>
         <translation>Persequens...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+113"/>
         <source>Confirm transaction fee</source>
         <translation>Confirma mercedem transactionis</translation>
     </message>
     <message>
         <location line="+8"/>
+=======
+        <location line="+130"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Sent transaction</source>
         <translation>Transactio missa</translation>
     </message>
@@ -657,6 +967,7 @@ Inscriptio: %4
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+33"/>
         <location line="+23"/>
         <source>URI handling</source>
@@ -670,6 +981,9 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+17"/>
+=======
+        <location line="+69"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Cassidile &lt;b&gt;cifratum&lt;/b&gt; est et iam nunc &lt;b&gt;reseratum&lt;/b&gt;</translation>
     </message>
@@ -679,20 +993,30 @@ Inscriptio: %4
         <translation>Cassidile &lt;b&gt;cifratum&lt;/b&gt; est et iam nunc &lt;b&gt;seratum&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+111"/>
         <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+=======
+        <location filename="../bitcoin.cpp" line="+438"/>
+        <source>A fatal error occurred. Dogecoin Core can no longer continue safely and will quit.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>Error fatalis accidit.  Dogecoin nondum pergere tute potest, et exibit.</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+104"/>
+=======
+        <location filename="../clientmodel.cpp" line="+119"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Network Alert</source>
         <translation>Monitio Retis</translation>
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>EditAddressDialog</name>
     <message>
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
@@ -1303,6 +1627,1447 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+50"/>
+=======
+    <name>CoinControlDialog</name>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="+14"/>
+        <source>Coin Control Address Selection</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Quantity:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Bytes:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Amount:</source>
+        <translation>Quantitas:</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Priority:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Change:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>(un)select all</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Tree mode</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>List mode</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Amount</source>
+        <translation>Quantitas</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Address</source>
+        <translation>Inscriptio</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Date</source>
+        <translation>Dies</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Confirmations</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Confirmed</source>
+        <translation>Confirmatum</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Priority</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../coincontroldialog.cpp" line="+42"/>
+        <source>Copy address</source>
+        <translation>Copia inscriptionem</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy label</source>
+        <translation>Copia titulum</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+26"/>
+        <source>Copy amount</source>
+        <translation>Copia quantitatem</translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Copy transaction ID</source>
+        <translation>Copia transactionis ID</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock unspent</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unlock unspent</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+323"/>
+        <source>highest</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>higher</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>high</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium-high</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>low-medium</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>low</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lower</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lowest</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>(%1 locked)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>none</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Dust</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>yes</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>no</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+5"/>
+        <source>This means a fee of at least %1 per kB is required.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-4"/>
+        <source>Can vary +/- 1 byte per input.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions with higher priority are more likely to get included into a block.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+4"/>
+        <source>This means a fee of at least %1 is required.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-3"/>
+        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This label turns red, if the change is smaller than %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <location line="+66"/>
+        <source>(no label)</source>
+        <translation>(nullus titulus)</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>change from %1 (%2)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>(change)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>EditAddressDialog</name>
+    <message>
+        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <source>Edit Address</source>
+        <translation>Muta Inscriptionem</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Label</source>
+        <translation>&amp;Titulus</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The label associated with this address list entry</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>&amp;Address</source>
+        <translation>&amp;Inscriptio</translation>
+    </message>
+    <message>
+        <location filename="../editaddressdialog.cpp" line="+28"/>
+        <source>New receiving address</source>
+        <translation>Nova inscriptio accipiendi</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>New sending address</source>
+        <translation>Nova inscriptio mittendi</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Edit receiving address</source>
+        <translation>Muta inscriptionem accipiendi</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Edit sending address</source>
+        <translation>Muta inscriptionem mittendi</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>Inserta inscriptio &quot;%1&quot; iam in libro inscriptionum est.</translation>
+    </message>
+    <message>
+        <location line="-5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <translation>Inscriptio inserta &quot;%1&quot; non valida inscriptio Dogecoin est.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Could not unlock wallet.</source>
+        <translation>Non potuisse cassidile reserare</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>New key generation failed.</source>
+        <translation>Generare novam clavem abortum est.</translation>
+    </message>
+</context>
+<context>
+    <name>FreespaceChecker</name>
+    <message>
+        <location filename="../intro.cpp" line="+65"/>
+        <source>A new data directory will be created.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>name</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Path already exists, and is not a directory.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Cannot create data directory here.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>HelpMessageDialog</name>
+    <message>
+        <location filename="../forms/helpmessagedialog.ui" line="+19"/>
+        <source>Dogecoin Core - Command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+38"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Nucleus</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>version</source>
+        <translation>versio</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Usage:</source>
+        <translation>Usus:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>command-line options</source>
+        <translation>Optiones mandati intiantis</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>UI options</source>
+        <translation>UI optiones</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
+        <translation>Constitue linguam, exempli gratia &quot;de_DE&quot; (praedefinitum: lingua systematis)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Start minimized</source>
+        <translation>Incipe minifactum ut icon</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Monstra principem imaginem ad initium (praedefinitum: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Intro</name>
+    <message>
+        <location filename="../forms/intro.ui" line="+14"/>
+        <source>Welcome</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Welcome to Dogecoin Core.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Use the default data directory</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use a custom data directory:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../intro.cpp" line="+85"/>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Error</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>GB of free space available</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>(of %1GB needed)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>OpenURIDialog</name>
+    <message>
+        <location filename="../forms/openuridialog.ui" line="+14"/>
+        <source>Open URI</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Open payment request from URI or file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>URI:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select payment request file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../openuridialog.cpp" line="+47"/>
+        <source>Select payment request file to open</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Optiones</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Princeps</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
+        <translation>Optionalis merces transactionum singulis kB quae adiuvat curare tuas transactiones processas esse celeriter.  Plurimi transactiones 1kB sunt.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Solve &amp;mercedem transactionis</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Dogecoin Core after logging in to the system.</source>
+        <translation>Pelle Dogecoin per se postquam in systema inire.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Dogecoin Core on system login</source>
+        <translation>&amp;Pelle Dogecoin cum inire systema</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Size of &amp;database cache</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation>Constitue magnitudinem databasis cache in megabytes (praedefinitum: 25)</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>MB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Number of script &amp;verification threads</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation>Constitue numerum filorum verificationis scriptorum (Maximum 16, 0 = auto, &lt;0 = tot corda libera erunt, praedefinitum: 0)</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+224"/>
+        <source>Active command-line options that override above options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Reset all client options to default.</source>
+        <translation>Reconstitue omnes optiones clientis ad praedefinita.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Reconstitue Optiones</translation>
+    </message>
+    <message>
+        <location line="-323"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Rete</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Dogecoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Designa portam utendo &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>&amp;IP vicarii:</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>&amp;Port:</source>
+        <translation>&amp;Porta:</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Porta vicarii (e.g. 9050)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>SOCKS &amp;Versio:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>SOCKS versio vicarii (e.g. 5)</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>&amp;Fenestra</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>Monstra tantum iconem in tabella systematis postquam fenestram minifactam est.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minifac in tabellam systematis potius quam applicationum</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>Minifac potius quam exire applicatione quando fenestra clausa sit.  Si haec optio activa est, applicatio clausa erit tantum postquam selegeris Exi in menu.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>M&amp;inifac ad claudendum</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>&amp;UI</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>&amp;Lingua monstranda utenti:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin Core.</source>
+        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Dogecoin iterum initiatum erit.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Unita qua quantitates monstrare:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Selige praedefinitam unitam subdivisionis monstrare in interfacie et quando nummos mittere</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
+        <translation>Num monstrare inscriptiones Dogecoin in enumeratione transactionum.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>&amp;Monstra inscriptiones in enumeratione transactionum</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Whether to show coin control features or not.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display coin &amp;control features (experts only)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+136"/>
+        <source>&amp;OK</source>
+        <translation>&amp;OK</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Cancel</source>
+        <translation>&amp;Cancella</translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.cpp" line="+67"/>
+        <source>default</source>
+        <translation>praedefinitum</translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>none</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+75"/>
+        <source>Confirm options reset</source>
+        <translation>Confirma optionum reconstituere</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+29"/>
+        <source>Client restart required to activate changes.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>This change would require a client restart.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>The supplied proxy address is invalid.</source>
+        <translation>Inscriptio vicarii tradita non valida est.</translation>
+    </message>
+</context>
+<context>
+    <name>OverviewPage</name>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="+14"/>
+        <source>Form</source>
+        <translation>Schema</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location line="+231"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Dogecoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+    </message>
+    <message>
+        <location line="-155"/>
+        <source>Unconfirmed:</source>
+        <translation>Non confirmata:</translation>
+    </message>
+    <message>
+        <location line="-83"/>
+        <source>Wallet</source>
+        <translation>Cassidile</translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Confirmed:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current spendable balance</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Immature:</source>
+        <translation>Immatura:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Mined balance that has not yet matured</source>
+        <translation>Fossum pendendum quod nondum maturum est</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Total:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current total balance</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Recentes transactiones&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+120"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+        <translation>non synchronizato</translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+403"/>
+        <location line="+13"/>
+        <source>URI handling</source>
+        <translation>Tractatio URI</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <translation>URI intellegi non posse!  Huius causa possit inscriptionem Dogecoin non validam aut URI parametra maleformata.</translation>
+    </message>
+    <message>
+        <location line="+96"/>
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-221"/>
+        <location line="+212"/>
+        <location line="+13"/>
+        <location line="+95"/>
+        <location line="+18"/>
+        <location line="+16"/>
+        <source>Payment request error</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-353"/>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
+        <translation>Dogecoin incipere non potest: cliccare-ad-pensandum handler</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Net manager warning</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Payment request fetch URL is invalid: %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Payment request file handling</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Refund from %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Error communicating with %1: %2</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Payment request can not be parsed or processed!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Bad response from server %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Payment acknowledged</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Network request error</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../bitcoin.cpp" line="+71"/>
+        <location line="+11"/>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+36"/>
+        <source>&amp;Save Image...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Copy Image</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Save QR Code</source>
+        <translation>Salva codicem QR</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>PNG Image (*.png)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>RPCConsole</name>
+    <message>
+        <location filename="../forms/rpcconsole.ui" line="+46"/>
+        <source>Client name</source>
+        <translation>Nomen clientis</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+23"/>
+        <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+359"/>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <location line="-223"/>
+        <source>Client version</source>
+        <translation>Versio clientis</translation>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>&amp;Information</source>
+        <translation>&amp;Informatio</translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>Debug window</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>General</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Using OpenSSL version</source>
+        <translation>Utens OpenSSL versione</translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Startup time</source>
+        <translation>Tempus initiandi</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Network</source>
+        <translation>Rete</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Name</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Number of connections</source>
+        <translation>Numerus conexionum</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Block chain</source>
+        <translation>Catena frustorum</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Current number of blocks</source>
+        <translation>Numerus frustorum iam nunc</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Estimated total blocks</source>
+        <translation>Aestimatus totalis numerus frustorum</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Last block time</source>
+        <translation>Hora postremi frusti</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Open</source>
+        <translation>&amp;Aperi</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>&amp;Console</source>
+        <translation>&amp;Terminale</translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>&amp;Network Traffic</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Clear</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Totals</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>In:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Out:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-521"/>
+        <source>Build date</source>
+        <translation>Dies aedificandi</translation>
+    </message>
+    <message>
+        <location line="+206"/>
+        <source>Debug log file</source>
+        <translation>Debug catalogi plica</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open the Dogecoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Aperi plicam catalogi de Dogecoin debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Clear console</source>
+        <translation>Vacuefac terminale</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Dogecoin Core RPC console.</source>
+        <translation>Bene ventio in terminale RPC de Dogecoin.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Utere sagittis sursum deorsumque ut per historiam naviges, et &lt;b&gt;Ctrl+L&lt;/b&gt; ut scrinium vacuefacias.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Scribe &lt;b&gt;help&lt;/b&gt; pro summario possibilium mandatorum.</translation>
+    </message>
+    <message>
+        <location line="+122"/>
+        <source>%1 B</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 KB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 MB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 GB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1 m</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>%1 h</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 h %2 m</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    <message>
+        <location filename="../forms/receivecoinsdialog.ui" line="+83"/>
+        <source>&amp;Amount:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-13"/>
+        <source>&amp;Label:</source>
+        <translation>&amp;Titulus:</translation>
+    </message>
+    <message>
+        <location line="-34"/>
+        <source>&amp;Message:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-17"/>
+        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>R&amp;euse an existing receiving address (not recommended)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>An optional label to associate with the new receiving address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Clear all fields of the form.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Clear</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Request payment</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Requested payments</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Show the selected request (does the same as double clicking an entry)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Show</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Remove the selected entries from the list</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Remove</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <location filename="../forms/receiverequestdialog.ui" line="+29"/>
+        <source>QR Code</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Copy &amp;URI</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy &amp;Address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Save Image...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+56"/>
+        <source>Request payment to %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Payment information</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Address</source>
+        <translation>Inscriptio</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Amount</source>
+        <translation>Quantitas</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Label</source>
+        <translation>Titulus</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Message</source>
+        <translation>Nuntius</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>Resultato URI nimis longo, conare minuere verba pro titulo / nuntio.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Error codificandi URI in codicem QR.</translation>
+    </message>
+</context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <location filename="../recentrequeststablemodel.cpp" line="+24"/>
+        <source>Date</source>
+        <translation>Dies</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Label</source>
+        <translation>Titulus</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Message</source>
+        <translation>Nuntius</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Amount</source>
+        <translation>Quantitas</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>(no label)</source>
+        <translation>(nullus titulus)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>(no message)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>SendCoinsDialog</name>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+381"/>
+        <location line="+80"/>
+        <source>Send Coins</source>
+        <translation>Mitte Nummos</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Coin Control Features</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Inputs...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>automatically selected</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Insufficient funds!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Quantity:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Bytes:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Amount:</source>
+        <translation>Quantitas:</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Priority:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Change:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom change address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+115"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send to multiple recipients at once</source>
         <translation>Mitte pluribus accipientibus simul</translation>
     </message>
@@ -1313,8 +3078,13 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+20"/>
+<<<<<<< HEAD
         <source>Remove all transaction fields</source>
         <translation>Remove omnes campos transactionis</translation>
+=======
+        <source>Clear all fields of the form.</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -1327,12 +3097,16 @@ Inscriptio: %4
         <translation>Pendendum:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>123.456 DOGE</source>
         <translation>123.456 DOGE</translation>
     </message>
     <message>
         <location line="+31"/>
+=======
+        <location line="+41"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirm the send action</source>
         <translation>Confirma actionem mittendi</translation>
     </message>
@@ -1342,6 +3116,7 @@ Inscriptio: %4
         <translation>&amp;Mitte</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../sendcoinsdialog.cpp" line="-59"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; ad %2 (%3)</translation>
@@ -1363,30 +3138,118 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+23"/>
+=======
+        <location filename="../sendcoinsdialog.cpp" line="-228"/>
+        <source>Confirm send coins</source>
+        <translation>Confirma mittendum nummorum</translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+4"/>
+        <source>%1 to %2</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-136"/>
+        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Insere inscriptionem Dogecoin (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation>Copia quantitatem</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+170"/>
+        <source>Total Amount %1 (= %2)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>or</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+202"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Inscriptio accipientis non est valida, sodes reproba.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The amount to pay must be larger than 0.</source>
         <translation>Oportet quantitatem ad pensandum maiorem quam 0 esse.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The amount exceeds your balance.</source>
         <translation>Quantitas est ultra quod habes.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Quantitas est ultra quod habes cum merces transactionis %1 includitur.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Duplicate address found, can only send to each address once per send operation.</source>
         <translation>Geminata inscriptio inventa, tantum posse mittere ad quamque inscriptionem semel singulare operatione.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Error: Transaction creation failed!</source>
         <translation>Error: Creare transactionem abortum est!</translation>
@@ -1395,48 +3258,129 @@ Inscriptio: %4
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Error: transactio reiecta est.  Hoc fiat si alii nummorum in tuo cassidili iam soluti sunt, ut si usus es exemplar de wallet.dat et nummi soluti sunt in exemplari sed non hic notati ut soluti.</translation>
+=======
+        <location line="+3"/>
+        <source>Transaction creation failed!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+112"/>
+        <source>Warning: Invalid Dogecoin address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>(no label)</source>
+        <translation>(nullus titulus)</translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Warning: Unknown change address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-366"/>
+        <source>Are you sure you want to send?</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>added as transaction fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+170"/>
+        <source>Payment request expired</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Invalid payment address %1</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/sendcoinsentry.ui" line="+14"/>
         <source>Form</source>
         <translation>Schema</translation>
     </message>
     <message>
         <location line="+15"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+131"/>
+        <location line="+521"/>
+        <location line="+536"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>A&amp;mount:</source>
         <translation>&amp;Quantitas:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="-1152"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Pay &amp;To:</source>
         <translation>Pensa &amp;Ad:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+34"/>
+=======
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The address to send the payment to (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Inscriptio cui mittere pensitationem (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+60"/>
         <location filename="../sendcoinsentry.cpp" line="+26"/>
+=======
+        <location filename="../sendcoinsentry.cpp" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Insero titulum huic inscriptioni ut eam in tuum librum inscriptionum addas.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-78"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+57"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Label:</source>
         <translation>&amp;Titulus:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
         <source>Choose address from address book</source>
         <translation>Selige inscriptionem ex libro inscriptionum</translation>
     </message>
     <message>
         <location line="+10"/>
+=======
+        <location line="-50"/>
+        <source>Choose previously used address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-40"/>
+        <source>This is a normal payment.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+50"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1452,8 +3396,52 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Remove this recipient</source>
         <translation>Remove hunc accipientem</translation>
+=======
+        <location line="+524"/>
+        <location line="+536"/>
+        <source>Remove this entry</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-1008"/>
+        <source>Message:</source>
+        <translation>Nuntius:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>A message that was attached to the Dogecoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+958"/>
+        <source>This is a verified payment request.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-991"/>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+459"/>
+        <source>This is an unverified payment request.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+18"/>
+        <location line="+532"/>
+        <source>Pay To:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-498"/>
+        <location line="+536"/>
+        <source>Memo:</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
@@ -1462,6 +3450,22 @@ Inscriptio: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
+=======
+    <name>ShutdownWindow</name>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+48"/>
+        <source>Dogecoin Core is shutting down...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     <name>SignVerifyMessageDialog</name>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
@@ -1469,7 +3473,11 @@ Inscriptio: %4
         <translation>Signationes - Signa / Verifica nuntium</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="+10"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Sign Message</source>
         <translation>&amp;Signa Nuntium</translation>
     </message>
@@ -1486,8 +3494,13 @@ Inscriptio: %4
     <message>
         <location line="+10"/>
         <location line="+213"/>
+<<<<<<< HEAD
         <source>Choose an address from the address book</source>
         <translation>Selige inscriptionem ex librum inscriptionum</translation>
+=======
+        <source>Choose previously used address</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-203"/>
@@ -1572,7 +3585,11 @@ Inscriptio: %4
         <translation>Reconstitue omnes campos verificandi nuntii</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+3"/>
         <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Insere inscriptionem Dogecoin (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
@@ -1588,7 +3605,11 @@ Inscriptio: %4
         <translation>Insere signationem Dogecoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+81"/>
         <source>The entered address is invalid.</source>
         <translation>Inscriptio inserta non valida est.</translation>
@@ -1657,9 +3678,20 @@ Inscriptio: %4
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <location filename="../splashscreen.cpp" line="+22"/>
         <source>The Dogecoin developers</source>
         <translation>Dogecoin curatores</translation>
+=======
+        <location filename="../splashscreen.cpp" line="+28"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Nucleus</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The Dogecoin Core developers</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -1668,9 +3700,23 @@ Inscriptio: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>TransactionDesc</name>
     <message>
         <location filename="../transactiondesc.cpp" line="+20"/>
+=======
+    <name>TrafficGraphWidget</name>
+    <message>
+        <location filename="../trafficgraphwidget.cpp" line="+79"/>
+        <source>KB/s</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+28"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Open until %1</source>
         <translation>Apertum donec %1</translation>
     </message>
@@ -1743,12 +3789,20 @@ Inscriptio: %4
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Credit</source>
         <translation>Creditum</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="-102"/>
+=======
+        <location line="-125"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>matures in %n more block(s)</source>
         <translation><numerusform>maturum erit in %n plure frusto</numerusform><numerusform>maturum erit in %n pluribus frustis</numerusform></translation>
     </message>
@@ -1761,12 +3815,20 @@ Inscriptio: %4
         <location line="+44"/>
         <location line="+8"/>
         <location line="+15"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debit</source>
         <translation>Debitum</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-39"/>
+=======
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Transaction fee</source>
         <translation>Transactionis merces</translation>
     </message>
@@ -1777,11 +3839,19 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+6"/>
+<<<<<<< HEAD
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Message</source>
         <translation>Nuntius</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="-7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Comment</source>
         <translation>Annotatio</translation>
     </message>
@@ -1791,12 +3861,26 @@ Inscriptio: %4
         <translation>ID transactionis</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Generated coins must mature 50 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation>Nummis generatis necesse est maturitas 50 frustorum antequam illi transmitti possunt.  Cum hoc frustum generavisti, disseminatum est ad rete ut addatur ad catenam frustorum.  Si aboritur inire catenam, status eius mutabit in &quot;non acceptum&quot; et non transmittabile erit.  Hoc interdum accidat si alter nodus frustum generat paucis secundis ante vel post tuum.</translation>
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+18"/>
+        <source>Merchant</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debug information</source>
         <translation>Informatio de debug</translation>
     </message>
@@ -1826,7 +3910,11 @@ Inscriptio: %4
         <translation>falsum</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-209"/>
+=======
+        <location line="-232"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>, has not been successfully broadcast yet</source>
         <translation>, nondum prospere disseminatum est</translation>
     </message>
@@ -1857,7 +3945,11 @@ Inscriptio: %4
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+225"/>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+234"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Date</source>
         <translation>Dies</translation>
     </message>
@@ -1876,8 +3968,18 @@ Inscriptio: %4
         <source>Amount</source>
         <translation>Quantitas</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <location line="+57"/>
+=======
+    <message>
+        <location line="+59"/>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message numerus="yes">
+        <location line="+16"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Open for %n more block(s)</source>
         <translation><numerusform>Aperi pro %n plure frusto</numerusform><numerusform>Aperi pro %n pluribus frustis</numerusform></translation>
     </message>
@@ -1897,6 +3999,7 @@ Inscriptio: %4
         <translation>Non confirmatum (%1 de %2 confirmationibus)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Confirmed (%1 confirmations)</source>
         <translation>Confirmatum (%1 confirmationes)</translation>
@@ -1908,6 +4011,15 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+5"/>
+=======
+        <location line="-22"/>
+        <location line="+25"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Confirmatum (%1 confirmationes)</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>Hoc frustum non acceptum est ab ulla alia nodis et probabiliter non acceptum erit!</translation>
     </message>
@@ -1917,7 +4029,11 @@ Inscriptio: %4
         <translation>Generatum sed non acceptum</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+43"/>
+=======
+        <location line="+62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Received with</source>
         <translation>Acceptum cum</translation>
     </message>
@@ -1975,7 +4091,11 @@ Inscriptio: %4
 <context>
     <name>TransactionView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactionview.cpp" line="+52"/>
+=======
+        <location filename="../transactionview.cpp" line="+57"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+16"/>
         <source>All</source>
         <translation>Omne</translation>
@@ -2036,12 +4156,20 @@ Inscriptio: %4
         <translation>Alia</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter address or label to search</source>
         <translation>Insere inscriptionem vel titulum ut quaeras</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Min amount</source>
         <translation>Quantitas minima</translation>
     </message>
@@ -2076,17 +4204,50 @@ Inscriptio: %4
         <translation>Monstra particularia transactionis</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+139"/>
         <source>Export Transaction Data</source>
         <translation>Exporta Data Transactionum</translation>
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+142"/>
+        <source>Export Transaction History</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Exporting Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Exporting Successful</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Comma separated file (*.csv)</source>
         <translation>Comma Separata Plica (*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirmed</source>
         <translation>Confirmatum</translation>
     </message>
@@ -2121,6 +4282,7 @@ Inscriptio: %4
         <translation>ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error exporting</source>
         <translation>Error exportandi</translation>
@@ -2132,6 +4294,9 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+100"/>
+=======
+        <location line="+107"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Range:</source>
         <translation>Intervallum:</translation>
     </message>
@@ -2142,9 +4307,23 @@ Inscriptio: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>WalletModel</name>
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
+=======
+    <name>WalletFrame</name>
+    <message>
+        <location filename="../walletframe.cpp" line="+26"/>
+        <source>No wallet has been loaded.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>WalletModel</name>
+    <message>
+        <location filename="../walletmodel.cpp" line="+245"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send Coins</source>
         <translation>Mitte Nummos</translation>
     </message>
@@ -2152,7 +4331,11 @@ Inscriptio: %4
 <context>
     <name>WalletView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletview.cpp" line="+42"/>
+=======
+        <location filename="../walletview.cpp" line="+43"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Export</source>
         <translation>&amp;Exporta</translation>
     </message>
@@ -2162,22 +4345,35 @@ Inscriptio: %4
         <translation>Exporta data in hac tabella in plicam</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+193"/>
+=======
+        <location line="+181"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Wallet</source>
         <translation>Conserva cassidile</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+0"/>
+=======
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet Data (*.dat)</source>
         <translation>Data cassidilis (*.dat)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Failed</source>
         <translation>Conservare abortum est.</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>There was an error trying to save the wallet data to the new location.</source>
         <translation>Error erat conante salvare data cassidilis ad novum locum.</translation>
     </message>
@@ -2201,38 +4397,78 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+102"/>
+=======
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Backup Successful</source>
+        <translation>Successum in conservando</translation>
+    </message>
+</context>
+<context>
+    <name>dogecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+221"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Usage:</source>
         <translation>Usus:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
         <source>Send command to -server or dogecoind</source>
         <translation>Mitte mandatum ad -server vel dogecoind</translation>
     </message>
     <message>
         <location line="-23"/>
+=======
+        <location line="-54"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>List commands</source>
         <translation>Enumera mandata</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
+=======
+        <location line="-14"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Get help for a command</source>
         <translation>Accipe auxilium pro mandato</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+24"/>
+=======
+        <location line="+26"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Options:</source>
         <translation>Optiones:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+24"/>
+=======
+        <location line="+22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify configuration file (default: dogecoin.conf)</source>
         <translation>Specifica configurationis plicam (praedefinitum: dogecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Specify pid file (default: dogecoind.pid)</source>
+<<<<<<< HEAD
         <translation>Specifica pid plicam (praedefinitum: dogecoin.pid)</translation>
+=======
+        <translation>Specifica pid plicam (praedefinitum: dogecoind.pid)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-1"/>
@@ -2245,7 +4481,11 @@ Inscriptio: %4
         <translation>Constitue magnitudinem databasis cache in megabytes (praedefinitum: 25)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-28"/>
+=======
+        <location line="-26"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
         <translation>Ausculta pro conexionibus in &lt;porta&gt; (praedefinitum: 22556 vel testnet: 44556)</translation>
     </message>
@@ -2255,57 +4495,101 @@ Inscriptio: %4
         <translation>Manutene non plures quam &lt;n&gt; conexiones ad paria (praedefinitum: 125)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-48"/>
+=======
+        <location line="-51"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation>Conecta ad nodum acceptare inscriptiones parium, et disconecte</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify your own public address</source>
         <translation>Specifica tuam propriam publicam inscriptionem</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Limen pro disconectendo paria improba (praedefinitum: 100)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-134"/>
+=======
+        <location line="-148"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Numerum secundorum prohibere ne paria improba reconectant (praedefinitum: 86400)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
+=======
+        <location line="-36"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Error erat dum initians portam RPC %u pro auscultando in IPv4: %s</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
         <translation>Ausculta pro conexionibus JSON-RPC in &lt;porta&gt; (praedefinitum: 22555 vel testnet: 44555)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
+=======
+        <location line="+45"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Accipe terminalis et JSON-RPC mandata.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
+=======
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Operare infere sicut daemon et mandata accipe</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
+=======
+        <location line="+39"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use the test network</source>
         <translation>Utere rete experimentale</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-112"/>
+=======
+        <location line="-118"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Accipe conexiones externas (praedefinitum: 1 nisi -proxy neque -connect)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-80"/>
+=======
+        <location line="-95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
@@ -2330,7 +4614,16 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
+=======
+        <location line="+12"/>
+        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>Error erat dum initians portam RPC %u pro auscultando in IPv6, labens retrorsum ad IPv4: %s</translation>
     </message>
@@ -2341,11 +4634,28 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Dogecoin is probably already running.</source>
+=======
+        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>Non posse serare datorum indicem %s.  Dogecoin probabiliter iam operatur.</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
+=======
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Error: Transactio eiecta est! Hoc possit accidere si alii nummorum in cassidili tuo iam soluti sint, ut si usus es exemplar de wallet.dat et nummi soluti sunt in exemplari sed non hic notati ut soluti.</translation>
     </message>
@@ -2355,32 +4665,49 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Error: Huic transactioni necesse est merces saltem %s propter eius magnitudinem, complexitatem, vel usum recentum acceptorum nummorum!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
         <translation>Facere mandatum quotiescumque notificatio affinis accipitur (%s in mandato mutatur in nuntium) </translation>
     </message>
     <message>
         <location line="+3"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Facere mandatum quotiescumque cassidilis transactio mutet (%s in mandato sbstituitur ab TxID)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Constitue magnitudinem maximam transactionum magnae-prioritatis/parvae-mercedis in octetis/bytes (praedefinitum: 27000)</translation>
     </message>
     <message>
         <location line="+6"/>
+=======
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Hoc est prae-dimittum experimentala aedes - utere eo periculo tuo proprio - nolite utere fodendo vel applicationibus mercatoriis</translation>
     </message>
     <message>
         <location line="+5"/>
+<<<<<<< HEAD
+=======
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Monitio: -paytxfee constitutum valde magnum!  Hoc est merces transactionis solves si mittis transactionem.</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>Monitio: Monstratae transactiones fortasse non recta sint! Forte oportet tibi progredere, an aliis nodis progredere.</translation>
     </message>
@@ -2388,6 +4715,20 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
         <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Dogecoin non proprie fungetur.</translation>
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin Core will not work properly.</source>
+        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Dogecoin non proprie fungetur.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -2400,12 +4741,35 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Monitio: wallet.data corrupta, data salvata!  Originalis wallet.dat salvata ut wallet.{timestamp}.bak in %s; si pendendum tuum vel transactiones pravae sunt, oportet ab conservato restituere.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+9"/>
+        <source>&lt;category&gt; can be:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Conare recipere claves privatas de corrupto wallet.dat</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="+1"/>
+        <source>Dogecoin Core Daemon</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Dogecoin Core RPC client version</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Block creation options:</source>
         <translation>Optiones creandi frustorum:</translation>
     </message>
@@ -2415,7 +4779,21 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Conecte sole ad nodos specificatos (vel nodum specificatum)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+1"/>
+        <source>Connect through SOCKS proxy</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Corrupted block database detected</source>
         <translation>Corruptum databasum frustorum invenitur</translation>
     </message>
@@ -2426,6 +4804,14 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
+=======
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Do you want to rebuild the block database now?</source>
         <translation>Visne reficere databasum frustorum iam?</translation>
     </message>
@@ -2520,7 +4906,16 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Scribere data pro cancellando mutationes abortum est</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="+1"/>
+        <source>Fee per kB to add to transactions you send</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>Inveni paria utendo DNS quaerendo (praedefinitum: 1 nisi -connect)</translation>
     </message>
@@ -2540,22 +4935,98 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Quam perfecta frustorum verificatio est (0-4, praedefinitum: 3)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
+=======
+        <location line="+1"/>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Invalid -onion address: &apos;%s&apos;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+15"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Not enough file descriptors available.</source>
         <translation>Inopia descriptorum plicarum.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
+=======
+        <location line="+5"/>
+        <source>Prepend debug output with timestamp (default: 1)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>RPC client options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Restituere indicem catenae frustorum ex activis plicis blk000??.dat</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
+=======
+        <location line="+5"/>
+        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to Dogecoin Core server</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation>Constitue numerum filorum ad tractandum RPC postulationes (praedefinitum: 4)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+26"/>
+=======
+        <location line="+7"/>
+        <source>Specify wallet file (within data directory)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Dogecoin Core server</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Usage (deprecated, use dogecoin-cli):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Verifying blocks...</source>
         <translation>Verificante frusta...</translation>
     </message>
@@ -2565,27 +5036,83 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Verificante cassidilem...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-69"/>
+=======
+        <location line="+1"/>
+        <source>Wait for RPC server to start</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Wallet options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-79"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Importat frusta ab externa plica blk000??.dat</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-76"/>
+=======
+        <location line="-105"/>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation>Constitue numerum filorum verificationis scriptorum (Maximum 16, 0 = auto, &lt;0 = tot corda libera erunt, praedefinitum: 0)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+77"/>
+=======
+        <location line="+89"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Information</source>
         <translation>Informatio</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Inscriptio -tor non valida: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+4"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Quantitas non valida pro -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
@@ -2620,6 +5147,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Tantum conecte ad nodos in rete &lt;net&gt; (IPv4, IPv6 aut Tor)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Exscribe additiciam informationem pro debug.  Implicat omnes alias optiones -debug*</translation>
@@ -2646,10 +5174,19 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
     </message>
     <message>
         <location line="+3"/>
+=======
+        <location line="+9"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Optiones SSL: (vide vici de Bitcoin pro instructionibus SSL configurationis)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Mitte informationem vestigii/debug ad terminale potius quam plicam debug.log</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
         <translation>Mitte informationem vestigii/debug ad debugger</translation>
@@ -2661,6 +5198,9 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>Constitue minimam magnitudinem frusti in octetis/bytes (praedefinitum: 0)</translation>
     </message>
@@ -2680,12 +5220,20 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Specifica tempumfati conexionis in millisecundis (praedefinitum: 5000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>System error: </source>
         <translation>Systematis error:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Transaction amount too small</source>
         <translation>Magnitudo transactionis nimis parva</translation>
     </message>
@@ -2700,7 +5248,11 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Transactio nimis magna</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+8"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Utere UPnP designare portam auscultandi (praedefinitum: 0)</translation>
     </message>
@@ -2710,29 +5262,46 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Utere UPnP designare portam auscultandi (praedefinitum: 1 quando auscultans)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Utere vicarium ut extendas ad tor servitia occulta (praedefinitum: idem ut -proxy)</translation>
     </message>
     <message>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Nomen utentis pro conexionibus JSON-RPC</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning</source>
         <translation>Monitio</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Monitio: Haec versio obsoleta est, progressio postulata!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Oportet recreare databases utendo -reindex ut mutes -txindex</translation>
+=======
+        <location line="+2"/>
+        <source>version</source>
+        <translation>versio</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -2740,47 +5309,83 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>wallet.dat corrupta, salvare abortum est</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-50"/>
+=======
+        <location line="-58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Password for JSON-RPC connections</source>
         <translation>Tessera pro conexionibus JSON-RPC</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-67"/>
+=======
+        <location line="-70"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Permitte conexionibus JSON-RPC ex inscriptione specificata</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
+=======
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation>Mitte mandata nodo operanti in &lt;ip&gt; (praedefinitum: 127.0.0.1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-120"/>
+=======
+        <location line="-132"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Pelle mandatum quando optissimum frustum mutat (%s in mandato substituitur ab hash frusti)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+147"/>
+=======
+        <location line="+161"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Upgrade wallet to latest format</source>
         <translation>Progredere cassidile ad formam recentissimam</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-21"/>
+=======
+        <location line="-24"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>Constitue magnitudinem stagni clavium ad &lt;n&gt; (praedefinitum: 100)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
+=======
+        <location line="-11"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Iterum perlege catenam frustorum propter absentes cassidilis transactiones</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+35"/>
+=======
+        <location line="+38"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>Utere OpenSSL (https) pro conexionibus JSON-RPC</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-26"/>
+=======
+        <location line="-30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Server certificate file (default: server.cert)</source>
         <translation>Plica certificationis daemonis moderantis (praedefinitum: server.cert)</translation>
     </message>
@@ -2790,42 +5395,63 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Clavis privata daemonis moderans (praedefinitum: server.pem)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-151"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation>Acceptabiles cifrae (praedefinitum: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+165"/>
+=======
+        <location line="+16"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This help message</source>
         <translation>Hic nuntius auxilii</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Non posse conglutinare ad %s in hoc computatro (conglutinare redidit errorem %d, %s)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-91"/>
         <source>Connect through socks proxy</source>
         <translation>Conecte per socks vicarium</translation>
     </message>
     <message>
         <location line="-10"/>
+=======
+        <location line="-107"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Permitte quaerenda DNS pro -addnode, -seednode, et -connect</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+55"/>
+=======
+        <location line="+60"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading addresses...</source>
         <translation>Legens inscriptiones...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-35"/>
+=======
+        <location line="-37"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Error legendi wallet.dat: Cassidile corruptum</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin</source>
         <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Dogecoin</translation>
     </message>
@@ -2836,11 +5462,27 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
     </message>
     <message>
         <location line="-95"/>
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin Core</source>
+        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Wallet needed to be rewritten: restart Dogecoin Core to complete</source>
+        <translation>Cassidili necesse erat rescribi: Repelle Dogecoin ut compleas</translation>
+    </message>
+    <message>
+        <location line="-100"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error loading wallet.dat</source>
         <translation>Error legendi wallet.dat</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
+=======
+        <location line="+31"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Inscriptio -proxy non valida: &apos;%s&apos;</translation>
     </message>
@@ -2855,7 +5497,11 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Ignota -socks vicarii versio postulata: %i</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-96"/>
+=======
+        <location line="-101"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Non posse resolvere -bind inscriptonem: &apos;%s&apos;</translation>
     </message>
@@ -2865,7 +5511,11 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Non posse resolvere -externalip inscriptionem: &apos;%s&apos;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+44"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Quantitas non valida pro -paytxfee=&lt;quantitas&gt;: &apos;%s&apos;</translation>
     </message>
@@ -2885,11 +5535,16 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Legens indicem frustorum...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-57"/>
+=======
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Adice nodum cui conectere et conare sustinere conexionem apertam</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. Dogecoin is probably already running.</source>
         <translation>Non posse conglutinare ad %s in hoc cumputatro.  Dogecoin probabiliter iam operatur.</translation>
@@ -2901,11 +5556,23 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
     </message>
     <message>
         <location line="+19"/>
+=======
+        <location line="-32"/>
+        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
+        <translation>Non posse conglutinare ad %s in hoc cumputatro.  Dogecoin probabiliter iam operatur.</translation>
+    </message>
+    <message>
+        <location line="+95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading wallet...</source>
         <translation>Legens cassidile...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-52"/>
+=======
+        <location line="-56"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Cannot downgrade wallet</source>
         <translation>Non posse cassidile regredi</translation>
     </message>
@@ -2915,27 +5582,47 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Dogecoin Notificatio&quot; 
         <translation>Non posse scribere praedefinitam inscriptionem</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+64"/>
+=======
+        <location line="+67"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rescanning...</source>
         <translation>Iterum perlegens...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-57"/>
+=======
+        <location line="-58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Done loading</source>
         <translation>Completo lengendi</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+85"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>To use the %s option</source>
         <translation>Ut utaris optione %s</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-74"/>
+=======
+        <location line="-77"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-31"/>
+=======
+        <location line="-35"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
@@ -2944,4 +5631,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
 Si plica non existat, crea eam cum permissionibus ut solus eius dominus eam legere sinatur.</translation>
     </message>
 </context>
+<<<<<<< HEAD
 </TS>
+=======
+</TS>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

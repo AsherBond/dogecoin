@@ -1,11 +1,19 @@
 // Copyright (c) 2012 The Bitcoin developers
+<<<<<<< HEAD
 // Copyright (c) 2013-2014 Dogecoin Developers
+=======
+// Copyright (c) 2014 The Inutoshi developers
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_VERSION_H
 #define BITCOIN_VERSION_H
 
 #include "clientversion.h"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include <string>
 
 //
@@ -40,7 +48,11 @@ static const int CADDR_TIME_VERSION = 31402;
 
 // only request blocks from nodes outside this range of versions
 static const int NOBLKS_VERSION_START = 60000;
+<<<<<<< HEAD
 static const int NOBLKS_VERSION_END = 70001;
+=======
+static const int NOBLKS_VERSION_END = 60002;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 // BIP 0031, pong message, is enabled for all versions AFTER this one
 static const int BIP0031_VERSION = 60000;

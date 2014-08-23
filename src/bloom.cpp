@@ -1,4 +1,5 @@
 // Copyright (c) 2012 The Bitcoin developers
+<<<<<<< HEAD
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -9,6 +10,19 @@
 #include "main.h"
 #include "script.h"
 
+=======
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "bloom.h"
+
+#include "core.h"
+#include "script.h"
+
+#include <math.h>
+#include <stdlib.h>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #define LN2SQUARED 0.4804530139182014246671025263266649717305529515945455
 #define LN2 0.6931471805599453094172321214581765680755001343602552
 

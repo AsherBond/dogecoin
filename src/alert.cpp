@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 // Alert system
 //
@@ -15,15 +16,38 @@
 #include "net.h"
 #include "sync.h"
 #include "ui_interface.h"
+=======
+// Copyright (c) 2010 Satoshi Nakamoto
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "alert.h"
+
+#include "key.h"
+#include "net.h"
+#include "ui_interface.h"
+#include "util.h"
+
+#include <algorithm>
+#include <map>
+
+#include <boost/algorithm/string/classification.hpp>
+#include <boost/algorithm/string/replace.hpp>
+#include <boost/foreach.hpp>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 using namespace std;
 
 map<uint256, CAlert> mapAlerts;
 CCriticalSection cs_mapAlerts;
 
+<<<<<<< HEAD
 static const char* pszMainKey = "04d4da7a5dae4db797d9b0644d57a5cd50e05a70f36091cd62e2fc41c98ded06340be5a43a35e185690cd9cde5d72da8f6d065b499b06f51dcfba14aad859f443a";
 static const char* pszTestKey = "042756726da3c7ef515d89212ee1705023d14be389e25fe15611585661b9a20021908b2b80a3c7200a0139dd2b26946606aab0eef9aa7689a6dc2c7eee237fa834";
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 void CUnsignedAlert::SetNull()
 {
     nVersion = 1;
@@ -53,8 +77,13 @@ std::string CUnsignedAlert::ToString() const
     return strprintf(
         "CAlert(\n"
         "    nVersion     = %d\n"
+<<<<<<< HEAD
         "    nRelayUntil  = %"PRI64d"\n"
         "    nExpiration  = %"PRI64d"\n"
+=======
+        "    nRelayUntil  = %d\n"
+        "    nExpiration  = %d\n"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         "    nID          = %d\n"
         "    nCancel      = %d\n"
         "    setCancel    = %s\n"
@@ -70,6 +99,7 @@ std::string CUnsignedAlert::ToString() const
         nExpiration,
         nID,
         nCancel,
+<<<<<<< HEAD
         strSetCancel.c_str(),
         nMinVer,
         nMaxVer,
@@ -77,11 +107,24 @@ std::string CUnsignedAlert::ToString() const
         nPriority,
         strComment.c_str(),
         strStatusBar.c_str());
+=======
+        strSetCancel,
+        nMinVer,
+        nMaxVer,
+        strSetSubVer,
+        nPriority,
+        strComment,
+        strStatusBar);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 void CUnsignedAlert::print() const
 {
+<<<<<<< HEAD
     printf("%s", ToString().c_str());
+=======
+    LogPrintf("%s", ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 void CAlert::SetNull()
@@ -146,7 +189,11 @@ bool CAlert::RelayTo(CNode* pnode) const
 
 bool CAlert::CheckSignature() const
 {
+<<<<<<< HEAD
     CPubKey key(ParseHex(fTestNet ? pszTestKey : pszMainKey));
+=======
+    CPubKey key(Params().AlertKey());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     if (!key.Verify(Hash(vchMsg.begin(), vchMsg.end()), vchSig))
         return error("CAlert::CheckSignature() : verify signature failed");
 
@@ -205,13 +252,21 @@ bool CAlert::ProcessAlert(bool fThread)
             const CAlert& alert = (*mi).second;
             if (Cancels(alert))
             {
+<<<<<<< HEAD
                 printf("cancelling alert %d\n", alert.nID);
+=======
+                LogPrint("alert", "cancelling alert %d\n", alert.nID);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 uiInterface.NotifyAlertChanged((*mi).first, CT_DELETED);
                 mapAlerts.erase(mi++);
             }
             else if (!alert.IsInEffect())
             {
+<<<<<<< HEAD
                 printf("expiring alert %d\n", alert.nID);
+=======
+                LogPrint("alert", "expiring alert %d\n", alert.nID);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 uiInterface.NotifyAlertChanged((*mi).first, CT_DELETED);
                 mapAlerts.erase(mi++);
             }
@@ -225,7 +280,11 @@ bool CAlert::ProcessAlert(bool fThread)
             const CAlert& alert = item.second;
             if (alert.Cancels(*this))
             {
+<<<<<<< HEAD
                 printf("alert already cancelled by %d\n", alert.nID);
+=======
+                LogPrint("alert", "alert already cancelled by %d\n", alert.nID);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 return false;
             }
         }
@@ -255,6 +314,10 @@ bool CAlert::ProcessAlert(bool fThread)
         }
     }
 
+<<<<<<< HEAD
     printf("accepted alert %d, AppliesToMe()=%d\n", nID, AppliesToMe());
+=======
+    LogPrint("alert", "accepted alert %d, AppliesToMe()=%d\n", nID, AppliesToMe());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     return true;
 }

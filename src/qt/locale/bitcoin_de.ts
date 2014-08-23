@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.0" language="de">
 <defaultcodec>UTF-8</defaultcodec>
+=======
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
+<<<<<<< HEAD
         <source>About Dogecoin</source>
         <translation>Über Dogecoin</translation>
     </message>
@@ -18,24 +23,47 @@
         <location line="+59"/>
         <source>
 This is experimental software. Learn more at dogecoin.com
+=======
+        <source>About Dogecoin Core</source>
+        <translation>Über Dogecoin Core</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;&quot;Dogecoin Core&quot;&lt;/b&gt;-Version</translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>
+This is experimental software.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
         <translation>
+<<<<<<< HEAD
 Dies ist experimentelle Software. Erfahren Sie mehr auf dogecoin.com
+=======
+Dies ist experimentelle Software.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 Veröffentlicht unter der MIT/X11-Softwarelizenz, siehe beiligende Datei COPYING oder http://www.opensource.org/licenses/mit-license.php.
 
 Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im OpenSSL-Toolkit (http://www.openssl.org/) entwickelt wurde, sowie kryptographische Software geschrieben von Eric Young (eay@cryptsoft.com) und UPnP-Software geschrieben von Thomas Bernard.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../aboutdialog.cpp" line="+18"/>
+=======
+        <location filename="../utilitydialog.cpp" line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copyright</source>
         <translation>Copyright</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>The Bitcoin developers</source>
         <translation>Die &quot;Bitcoin Core&quot;-Entwickler</translation>
     </message>
@@ -48,17 +76,25 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <location line="+0"/>
         <source>2013-%1 The Dogecoin developers</source>
         <translation>2013-%1 Die Dogecoinentwickler</translation>
+=======
+        <source>The Dogecoin Core developers</source>
+        <translation>Die &quot;Dogecoin Core&quot;-Entwickler</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>Address Book</source>
         <translation>Adressbuch</translation>
     </message>
     <message>
         <location line="+19"/>
+=======
+        <location filename="../forms/addressbookpage.ui" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Double-click to edit address or label</source>
         <translation>Doppelklicken, um die Adresse oder die Bezeichnung zu bearbeiten</translation>
     </message>
@@ -68,11 +104,21 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Eine neue Adresse erstellen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+3"/>
+        <source>&amp;New</source>
+        <translation>&amp;Neu</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Ausgewählte Adresse in die Zwischenablage kopieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-11"/>
         <source>&amp;New Address</source>
         <translation>&amp;Neue Adresse</translation>
@@ -84,10 +130,24 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
+=======
+        <location line="+3"/>
+        <source>&amp;Copy</source>
+        <translation>&amp;Kopieren</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>C&amp;lose</source>
+        <translation>&amp;Schließen</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="+74"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Copy Address</source>
         <translation>Adresse &amp;kopieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Show &amp;QR Code</source>
         <translation>&amp;QR-Code anzeigen</translation>
@@ -106,6 +166,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <location line="+25"/>
         <source>Delete the currently selected address from the list</source>
         <translation>Die ausgewählte Adresse aus der Liste entfernen.</translation>
+=======
+        <location filename="../forms/addressbookpage.ui" line="-41"/>
+        <source>Delete the currently selected address from the list</source>
+        <translation>Ausgewählte Adresse aus der Liste entfernen</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+27"/>
@@ -118,6 +183,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>E&amp;xportieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Dogecoin address</source>
         <translation>Eine Nachricht verifizieren, um sicherzustellen, dass diese mit einer angegebenen Dogecoin-Adresse signiert wurde</translation>
@@ -139,6 +205,49 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+13"/>
+=======
+        <location line="-27"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Löschen</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="-30"/>
+        <source>Choose the address to send coins to</source>
+        <translation>Wählen Sie die Adresse aus, an die Sie Dogecoins überweisen möchten</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose the address to receive coins with</source>
+        <translation>Wählen Sie die Adresse aus, über die Sie Dogecoins empfangen wollen</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>C&amp;hoose</source>
+        <translation>&amp;Auswählen</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Very sending addresses</source>
+        <translation>Zahlungsadressen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Much receiving addresses</source>
+        <translation>Empfangsadressen</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre Dogecoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Dogecoins überweisen.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre Dogecoin-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy &amp;Label</source>
         <translation>&amp;Bezeichnung kopieren</translation>
     </message>
@@ -148,6 +257,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>&amp;Editieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send &amp;Coins</source>
         <translation>Dogecoins &amp;überweisen</translation>
@@ -156,6 +266,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <location line="+265"/>
         <source>Export Address Book Data</source>
         <translation>Adressbuch exportieren</translation>
+=======
+        <location line="+194"/>
+        <source>Export Address List</source>
+        <translation>Addressliste exportieren</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -164,6 +279,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
         <source>Error exporting</source>
         <translation>Fehler beim Exportieren</translation>
     </message>
@@ -171,12 +287,25 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <location line="+0"/>
         <source>Could not write to file %1.</source>
         <translation>Konnte nicht in Datei %1 schreiben.</translation>
+=======
+        <source>Exporting Failed</source>
+        <translation>Exportieren fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>There was an error trying to save the address list to %1.</source>
+        <translation>Beim Speichern der Adressliste nach %1 ist ein Fehler aufgetreten.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+144"/>
+=======
+        <location filename="../addresstablemodel.cpp" line="+168"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Label</source>
         <translation>Bezeichnung</translation>
     </message>
@@ -196,27 +325,48 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
+<<<<<<< HEAD
         <translation>Passphrasendialog</translation>
+=======
+        <translation>Passwortdialog</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+21"/>
         <source>Enter passphrase</source>
+<<<<<<< HEAD
         <translation>Passphrase eingeben</translation>
+=======
+        <translation>Passwort eingeben</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
+<<<<<<< HEAD
         <translation>Neue Passphrase</translation>
+=======
+        <translation>Neues Passwort</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
+<<<<<<< HEAD
         <translation>Neue Passphrase wiederholen</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="+33"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Geben Sie die neue Passphrase für die Brieftasche ein.&lt;br&gt;Bitte benutzen Sie eine Passphrase bestehend aus &lt;b&gt;10 oder mehr zufälligen Zeichen&lt;/b&gt; oder &lt;b&gt;8 oder mehr Wörtern&lt;/b&gt;.</translation>
+=======
+        <translation>Neues Passwort wiederholen</translation>
+    </message>
+    <message>
+        <location filename="../askpassphrasedialog.cpp" line="+40"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Geben Sie das neue Passwort für die Brieftasche ein.&lt;br&gt;Bitte benutzen Sie ein Passwort bestehend aus &lt;b&gt;10 oder mehr zufälligen Zeichen&lt;/b&gt; oder &lt;b&gt;8 oder mehr Wörtern&lt;/b&gt;.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -226,7 +376,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+<<<<<<< HEAD
         <translation>Dieser Vorgang benötigt Ihre Passphrase, um die Brieftasche zu entsperren.</translation>
+=======
+        <translation>Dieser Vorgang benötigt ihr Passwort um die Brieftasche zu entsperren.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+5"/>
@@ -236,7 +390,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+<<<<<<< HEAD
         <translation>Dieser Vorgang benötigt Ihre Passphrase, um die Brieftasche zu entschlüsseln.</translation>
+=======
+        <translation>Dieser Vorgang benötigt ihr Passwort um die Brieftasche zu entschlüsseln.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+5"/>
@@ -246,12 +404,20 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
+<<<<<<< HEAD
         <translation>Passphrase ändern</translation>
+=======
+        <translation>Passwort ändern</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
+<<<<<<< HEAD
         <translation>Geben Sie die alte und neue Passphrase der Brieftasche ein.</translation>
+=======
+        <translation>Geben Sie das alte und neue Brieftaschen-Passwort ein.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+46"/>
@@ -261,17 +427,29 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
+<<<<<<< HEAD
         <translation>Warnung: Wenn Sie Ihre Brieftasche verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;alle Ihre Dogecoins verlieren&lt;/b&gt;!</translation>
+=======
+        <translation>Warnung: Wenn Sie ihre Brieftasche verschlüsseln und ihr Passwort verlieren, werden Sie &lt;b&gt;alle ihre Dogecoins verlieren&lt;/b&gt;!</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+0"/>
         <source>Are you sure you wish to encrypt your wallet?</source>
+<<<<<<< HEAD
         <translation>Sind Sie sich sicher, dass Sie Ihre Brieftasche verschlüsseln möchten?</translation>
+=======
+        <translation>Sind Sie sich sicher, dass Sie ihre Brieftasche verschlüsseln möchten?</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+15"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+<<<<<<< HEAD
         <translation>WICHTIG: Alle vorherigen Sicherungen Ihrer Brieftasche sollten durch die neu erzeugte, verschlüsselte Brieftasche ersetzt werden. Aus Sicherheitsgründen werden vorherige Sicherungen der unverschlüsselten Brieftasche nutzlos, sobald Sie die neue, verschlüsselte Brieftasche verwenden.</translation>
+=======
+        <translation>WICHTIG: Alle vorherigen Brieftaschen-Sicherungen sollten durch die neu erzeugte, verschlüsselte Brieftasche ersetzt werden. Aus Sicherheitsgründen werden vorherige Sicherungen der unverschlüsselten Brieftasche nutzlos, sobald Sie die neue, verschlüsselte Brieftasche verwenden.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+100"/>
@@ -287,8 +465,13 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="-56"/>
+<<<<<<< HEAD
         <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
         <translation>Dogecoin wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Bitte beachten Sie, dass die Verschlüsselung Ihrer Brieftasche nicht vollständig vor Diebstahl Ihrer Dogecoins durch Schadsoftware schützt, die Ihren Computer befällt.</translation>
+=======
+        <source>Dogecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
+        <translation>Dogecoin-Client wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Bitte beachten Sie, dass die Verschlüsselung ihrer Brieftasche nicht vollständig vor Diebstahl ihrer Dogecoins durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+13"/>
@@ -307,7 +490,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <location line="+7"/>
         <location line="+48"/>
         <source>The supplied passphrases do not match.</source>
+<<<<<<< HEAD
         <translation>Die eingegebenen Passphrasen stimmen nicht überein.</translation>
+=======
+        <translation>Die eingegebenen Passwörter stimmen nicht überein.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-37"/>
@@ -319,7 +506,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <location line="+11"/>
         <location line="+19"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
+<<<<<<< HEAD
         <translation>Die eingegebene Passphrase zum Entschlüsseln der Brieftasche war nicht korrekt.</translation>
+=======
+        <translation>Das eingegebene Passwort zur Entschlüsselung war nicht korrekt.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-20"/>
@@ -329,40 +520,76 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+14"/>
         <source>Wallet passphrase was successfully changed.</source>
+<<<<<<< HEAD
         <translation>Die Passphrase der Brieftasche wurde erfolgreich geändert.</translation>
+=======
+        <translation>Das Passwort der Brieftasche wurde erfolgreich geändert.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+245"/>
+=======
+        <location filename="../bitcoingui.cpp" line="+295"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Sign &amp;message...</source>
         <translation>Nachricht s&amp;ignieren...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+296"/>
+=======
+        <location line="+335"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Synchronizing with network...</source>
         <translation>Synchronisiere mit Netzwerk...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Overview</source>
         <translation type="obsolete">&amp;Übersicht</translation>
     </message>
     <message>
         <location line="-364"/>
+=======
+        <location line="-407"/>
+        <source>&amp;Overview</source>
+        <translation>&amp;Übersicht</translation>
+    </message>
+    <message>
+        <location line="-137"/>
+        <source>Node</source>
+        <translation>Knoten</translation>
+    </message>
+    <message>
+        <location line="+138"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Show general overview of wallet</source>
         <translation>Allgemeine Übersicht der Brieftasche anzeigen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Transactions</source>
         <translation type="obsolete">&amp;Transaktionen</translation>
     </message>
     <message>
         <location line="+21"/>
+=======
+        <location line="+20"/>
+        <source>&amp;Transactions</source>
+        <translation>&amp;Transaktionen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Browse transaction history</source>
         <translation>Transaktionsverlauf durchsehen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Edit the list of stored addresses and labels for sending</source>
         <translation>Liste der gespeicherten Zahlungsadressen und Bezeichnungen bearbeiten</translation>
@@ -399,6 +626,9 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+18"/>
+=======
+        <location line="+17"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>E&amp;xit</source>
         <translation>&amp;Beenden</translation>
     </message>
@@ -408,17 +638,30 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Anwendung beenden</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Show information about Dogecoin</source>
         <translation>Informationen über Dogecoin anzeigen</translation>
     </message>
     <message>
+=======
+        <location line="+7"/>
+        <source>Show information about Dogecoin Core</source>
+        <translation>Informationen über Dogecoin anzeigen</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>About &amp;Qt</source>
         <translation>Über &amp;Qt</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Show information about Qt</source>
         <translation>Informationen über Qt anzeigen</translation>
     </message>
@@ -428,7 +671,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>&amp;Konfiguration...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Encrypt Wallet...</source>
         <translation>Brieftasche &amp;verschlüsseln...</translation>
     </message>
@@ -440,10 +687,32 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+2"/>
         <source>&amp;Change Passphrase...</source>
+<<<<<<< HEAD
         <translation>Passphrase &amp;ändern...</translation>
     </message>
     <message>
         <location line="+301"/>
+=======
+        <translation>Passwort &amp;ändern...</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Very &amp;sending addresses...</source>
+        <translation>&amp;Zahlungsadressen...</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Much &amp;receiving addresses...</source>
+        <translation>&amp;Empfangsadressen...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open &amp;URI...</source>
+        <translation>&amp;URI öffnen...</translation>
+    </message>
+    <message>
+        <location line="+325"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Importing blocks from disk...</source>
         <translation>Importiere Blöcke von Laufwerk...</translation>
     </message>
@@ -453,6 +722,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Reindiziere Blöcke auf Laufwerk...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-363"/>
         <source>Send coins to a Dogecoin address</source>
         <translation>Dogecoins an eine Dogecoin-Adresse überweisen</translation>
@@ -464,13 +734,30 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+9"/>
+=======
+        <location line="-405"/>
+        <source>Send coins to a Dogecoin address</source>
+        <translation>An eine Dogecoin-Adresse überweisen</translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Modify configuration options for Dogecoin Core</source>
+        <translation>Die Konfiguration des Clients bearbeiten</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup wallet to another location</source>
         <translation>Eine Sicherungskopie der Brieftasche erstellen und abspeichern</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Change the passphrase used for wallet encryption</source>
+<<<<<<< HEAD
         <translation>Ändert die Passphrase, die für die Verschlüsselung der Brieftasche benutzt wird</translation>
+=======
+        <translation>Ändert das Passwort, welches für die Verschlüsselung der Brieftasche benutzt wird</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+6"/>
@@ -488,17 +775,26 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Nachricht &amp;verifizieren...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-174"/>
         <location line="+555"/>
+=======
+        <location line="+430"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin</source>
         <translation>Dogecoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-555"/>
+=======
+        <location line="-643"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet</source>
         <translation>Brieftasche</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>&amp;Send</source>
         <translation type="obsolete">Überweisen</translation>
     </message>
@@ -517,6 +813,20 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+9"/>
+=======
+        <location line="+146"/>
+        <source>&amp;Send</source>
+        <translation>Überweisen</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Receive</source>
+        <translation>&amp;Empfangen</translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Show / Hide</source>
         <translation>&amp;Anzeigen / Verstecken</translation>
     </message>
@@ -528,12 +838,20 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+3"/>
         <source>Encrypt the private keys that belong to your wallet</source>
+<<<<<<< HEAD
         <translation>Verschlüsselt die zu Ihrer Brieftasche gehörenden privaten Schlüssel</translation>
+=======
+        <translation>Verschlüsselt die zu ihrer Brieftasche gehörenden privaten Schlüssel</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+7"/>
         <source>Sign messages with your Dogecoin addresses to prove you own them</source>
+<<<<<<< HEAD
         <translation>Nachrichten signieren, um den Besitz Ihrer Dogecoin-Adressen zu beweisen</translation>
+=======
+        <translation>Nachrichten signieren, um den Besitz ihrer Dogecoin-Adressen zu beweisen</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
@@ -541,43 +859,116 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen Dogecoin-Adressen signiert wurden</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;File</source>
         <translation>&amp;Datei</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+14"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Settings</source>
         <translation>&amp;Einstellungen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Help</source>
         <translation>&amp;Hilfe</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
+=======
+        <location line="+15"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Tabs toolbar</source>
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
         <location line="+10"/>
+=======
+        <location line="-284"/>
+        <location line="+376"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>[testnet]</source>
         <translation>[Testnetz]</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+63"/>
+=======
+        <location line="-401"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin-Kern</translation>
+    </message>
+    <message>
+        <location line="+163"/>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <translation>Zahlungen anfordern (erzeugt QR-Codes und dogecoin: URIs)</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+2"/>
+        <source>&amp;About Dogecoin Core</source>
+        <translation>&amp;Über Dogecoin Core</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Liste verwendeter Zahlungsadressen und Bezeichnungen anzeigen</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Liste verwendeter Empfangsadressen und Bezeichnungen anzeigen</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open a dogecoin: URI or payment request</source>
+        <translation>Eine &quot;dogecoin:&quot;-URI oder Zahlungsanforderung öffnen</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Kommandozeilenoptionen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the Dogecoin Core help message to get a list with possible Dogecoin Core command-line options</source>
+        <translation>Zeige die &quot;Dogecoin Core&quot;-Hilfsnachricht, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
+    </message>
+    <message>
+        <location line="+159"/>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin client</source>
         <translation>Dogecoin-Client</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+141"/>
         <source>%n active connection(s) to Dogecoin network</source>
         <translation>
             <numerusform>%n aktive Verbindung zum Dogecoin-Netzwerk</numerusform>
             <numerusform>%n aktive Verbindungen zum Dogecoin-Netzwerk</numerusform>
         </translation>
+=======
+        <location line="+142"/>
+        <source>%n active connection(s) to Dogecoin network</source>
+        <translation><numerusform>%n aktive Verbindung zum Dogecoin-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Dogecoin-Netzwerk</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+22"/>
@@ -595,28 +986,42 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>%1 Blöcke des Transaktionsverlaufs verarbeitet.</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+20"/>
         <source>%n hour(s)</source>
         <translation>
             <numerusform>%n Stunde</numerusform>
             <numerusform>%n Stunden</numerusform>
         </translation>
+=======
+        <location line="+23"/>
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n Stunde</numerusform><numerusform>%n Stunden</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
+<<<<<<< HEAD
         <translation>
             <numerusform>%n Tag</numerusform>
             <numerusform>%n Tage</numerusform>
         </translation>
+=======
+        <translation><numerusform>%n Tag</numerusform><numerusform>%n Tage</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
+<<<<<<< HEAD
         <translation>
             <numerusform>%n Woche</numerusform>
             <numerusform>%n Wochen</numerusform>
         </translation>
+=======
+        <translation><numerusform>%n Woche</numerusform><numerusform>%n Wochen</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+4"/>
@@ -624,7 +1029,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>%1 im Rückstand</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+21"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Last received block was generated %1 ago.</source>
         <translation>Der letzte empfangene Block ist %1 alt.</translation>
     </message>
@@ -634,7 +1043,11 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Transaktionen hiernach werden noch nicht angezeigt.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
+=======
+        <location line="+27"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -649,27 +1062,39 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <translation>Hinweis</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation>Die Transaktion übersteigt das Größenlimit. Sie können sie trotzdem senden, wenn Sie eine zusätzliche Transaktionsgebühr in Höhe von %1 zahlen. Diese wird an die Knoten verteilt, die Ihre Transaktion bearbeiten und unterstützt damit das Dogecoin-Netzwerk. Möchten Sie die Gebühr bezahlen?</translation>
     </message>
     <message>
         <location line="-140"/>
+=======
+        <location line="-85"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Up to date</source>
         <translation>Auf aktuellem Stand</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+31"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Catching up...</source>
         <translation>Hole auf...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+113"/>
         <source>Confirm transaction fee</source>
         <translation>Transaktionsgebühr bestätigen</translation>
     </message>
     <message>
         <location line="+8"/>
+=======
+        <location line="+130"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Sent transaction</source>
         <translation>Gesendete Transaktion</translation>
     </message>
@@ -691,6 +1116,7 @@ Typ: %3
 Adresse: %4</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+33"/>
         <location line="+23"/>
         <source>URI handling</source>
@@ -704,6 +1130,9 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+17"/>
+=======
+        <location line="+69"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Brieftasche ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;entsperrt&lt;/b&gt;</translation>
     </message>
@@ -713,15 +1142,25 @@ Adresse: %4</translation>
         <translation>Brieftasche ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;gesperrt&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+113"/>
         <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
         <translation>Ein schwerer Fehler ist aufgetreten. Dogecoin kann nicht stabil weiter ausgeführt werden und wird beendet.</translation>
+=======
+        <location filename="../bitcoin.cpp" line="+438"/>
+        <source>A fatal error occurred. Dogecoin Core can no longer continue safely and will quit.</source>
+        <translation>Ein schwerer Fehler ist aufgetreten. Dogecoin-Client kann nicht stabil weiter ausgeführt werden und wird beendet.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+104"/>
+=======
+        <location filename="../clientmodel.cpp" line="+119"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Network Alert</source>
         <translation>Netzwerkalarm</translation>
     </message>
@@ -730,40 +1169,69 @@ Adresse: %4</translation>
     <name>CoinControlDialog</name>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
+<<<<<<< HEAD
         <source>Coin Control</source>
         <translation>Coin Control</translation>
     </message>
     <message>
         <location line="+31"/>
+=======
+        <source>Coin Control Address Selection</source>
+        <translation>&quot;Coin Control&quot;-Adressauswahl</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Quantity:</source>
         <translation>Anzahl:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+32"/>
+=======
+        <location line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Bytes:</source>
         <translation>Byte:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+48"/>
+=======
+        <location line="+45"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Amount:</source>
         <translation>Betrag:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+32"/>
+=======
+        <location line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Priority:</source>
         <translation>Priorität:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+48"/>
+=======
+        <location line="+45"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Fee:</source>
         <translation>Gebühr:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+35"/>
+=======
+        <location line="+32"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Low Output:</source>
         <translation>Zu geringer Ausgabebetrag:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
         <location filename="../coincontroldialog.cpp" line="+592"/>
         <source>no</source>
@@ -771,16 +1239,27 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+29"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>After Fee:</source>
         <translation>Abzüglich Gebühr:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+35"/>
+=======
+        <location line="+32"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Change:</source>
         <translation>Wechselgeld:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+69"/>
+=======
+        <location line="+63"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>(un)select all</source>
         <translation>Alles (de)selektieren</translation>
     </message>
@@ -795,12 +1274,16 @@ Adresse: %4</translation>
         <translation>Listenansicht</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>(1 locked)</source>
         <translation>(1 gesperrt)</translation>
     </message>
     <message>
         <location line="+45"/>
+=======
+        <location line="+52"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Amount</source>
         <translation>Betrag</translation>
     </message>
@@ -830,7 +1313,11 @@ Adresse: %4</translation>
         <translation>Priorität</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../coincontroldialog.cpp" line="-555"/>
+=======
+        <location filename="../coincontroldialog.cpp" line="+42"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy address</source>
         <translation>Adresse kopieren</translation>
     </message>
@@ -902,6 +1389,14 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
+=======
+        <source>higher</source>
+        <translation>höher</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>high</source>
         <translation>hoch</translation>
     </message>
@@ -927,6 +1422,14 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
+=======
+        <source>lower</source>
+        <translation>niedriger</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>lowest</source>
         <translation>am niedrigsten</translation>
     </message>
@@ -936,8 +1439,18 @@ Adresse: %4</translation>
         <translation>(%1 gesperrt)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+178"/>
         <source>DUST</source>
+=======
+        <location line="+31"/>
+        <source>none</source>
+        <translation>keine</translation>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Dust</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>Dust</translation>
     </message>
     <message>
@@ -946,6 +1459,7 @@ Adresse: %4</translation>
         <translation>ja</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>This label turns red, if the transaction size is bigger than 5000 bytes.
 
@@ -1009,6 +1523,74 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location line="+1"/>
         <source>(change)</source>
         <translation>(Wechselgeld)</translation>
+=======
+        <location line="+0"/>
+        <source>no</source>
+        <translation>nein</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
+        <translation>Diese Bezeichnung wird rot, wenn die Transaktion größer als 1000 Byte ist.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+5"/>
+        <source>This means a fee of at least %1 per kB is required.</source>
+        <translation>Das bedeutet, dass eine Gebühr von mindestens %1 pro kB erforderlich ist.</translation>
+    </message>
+    <message>
+        <location line="-4"/>
+        <source>Can vary +/- 1 byte per input.</source>
+        <translation>Kann um +/- 1 Byte pro Eingabe variieren.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions with higher priority are more likely to get included into a block.</source>
+        <translation>Transaktionen mit höherer Priorität haben eine größere Chance in einen Block aufgenommen zu werden.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
+        <translation>Diese Bezeichnung wird rot, wenn die Priorität niedriger als &quot;mittel&quot; ist.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
+        <translation>Diese Bezeichnung wird rot, wenn irgendein Empfänger einen Betrag kleiner als %1 erhält.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+4"/>
+        <source>This means a fee of at least %1 is required.</source>
+        <translation>Das bedeutet, dass eine Gebühr von mindestens %1 erforderlich ist.</translation>
+    </message>
+    <message>
+        <location line="-3"/>
+        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
+        <translation>Beträge kleiner als das 0,546-fache der niedrigsten Vermittlungsgebühr werden als Dust angezeigt.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This label turns red, if the change is smaller than %1.</source>
+        <translation>Diese Bezeichnung wird rot, wenn das Wechselgeld weniger als %1 beträgt.</translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <location line="+66"/>
+        <source>(no label)</source>
+        <translation>(keine Bezeichnung)</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>change from %1 (%2)</source>
+        <translation>Wechselgeld von %1 (%2)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>(change)</source>
+        <translation>(Wechselgeld)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
@@ -1025,6 +1607,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+10"/>
+<<<<<<< HEAD
         <source>The label associated with this address book entry</source>
         <translation>Die Bezeichnung dieses Adressbuchseintrags</translation>
     </message>
@@ -1040,6 +1623,23 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+21"/>
+=======
+        <source>The label associated with this address list entry</source>
+        <translation>Bezeichnung, die dem Adresslisteneintrag zugeordnet ist.</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation>Adresse, die dem Adresslisteneintrag zugeordnet ist. Diese kann nur bei Zahlungsadressen verändert werden.</translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>&amp;Address</source>
+        <translation>&amp;Adresse</translation>
+    </message>
+    <message>
+        <location filename="../editaddressdialog.cpp" line="+28"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>New receiving address</source>
         <translation>Neue Empfangsadresse</translation>
     </message>
@@ -1071,7 +1671,11 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     <message>
         <location line="+10"/>
         <source>Could not unlock wallet.</source>
+<<<<<<< HEAD
         <translation>Die Brieftasche konnte nicht entsperrt werden.</translation>
+=======
+        <translation>Brieftasche konnte nicht entsperrt werden.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+5"/>
@@ -1080,6 +1684,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>GUIUtil::HelpMessageBox</name>
     <message>
         <location filename="../guiutil.cpp" line="+533"/>
@@ -1089,6 +1694,49 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="-12"/>
+=======
+    <name>FreespaceChecker</name>
+    <message>
+        <location filename="../intro.cpp" line="+65"/>
+        <source>A new data directory will be created.</source>
+        <translation>Es wird ein neues Datenverzeichnis angelegt.</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>name</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
+        <translation>Verzeichnis existiert bereits. Fügen Sie %1 an, wenn Sie beabsichtigen hier ein neues Verzeichnis anzulegen.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Path already exists, and is not a directory.</source>
+        <translation>Pfad existiert bereits und ist kein Verzeichnis.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Cannot create data directory here.</source>
+        <translation>Datenverzeichnis kann hier nicht angelegt werden.</translation>
+    </message>
+</context>
+<context>
+    <name>HelpMessageDialog</name>
+    <message>
+        <location filename="../forms/helpmessagedialog.ui" line="+19"/>
+        <source>Dogecoin Core - Command-line options</source>
+        <translation>Dogecoin Core - Kommandozeilenoptionen</translation>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+38"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin-Kern</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>version</source>
         <translation>Version</translation>
     </message>
@@ -1122,6 +1770,100 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <source>Show splash screen on startup (default: 1)</source>
         <translation>Startbildschirm beim Starten anzeigen (Standard: 1)</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <location line="+1"/>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Datenverzeichnis beim Starten auswählen (Standard: 0)</translation>
+    </message>
+</context>
+<context>
+    <name>Intro</name>
+    <message>
+        <location filename="../forms/intro.ui" line="+14"/>
+        <source>Welcome</source>
+        <translation>Willkommen</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Welcome to Dogecoin Core.</source>
+        <translation>Willkommen zu Dogecoin Core.</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
+        <translation>Da Sie das Programm gerade zum ersten Mal starten, können Sie nun auswählen wo Dogecoin Core seine Daten ablegen wird.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Dogecoin Core wird eine Kopie der Blockkette herunterladen und speichern. Mindestens %1GB Daten werden in diesem Verzeichnis abgelegt und die Datenmenge wächst über die Zeit an. Auch die Brieftasche wird in diesem Verzeichnis abgelegt.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Use the default data directory</source>
+        <translation>Standard-Datenverzeichnis verwenden</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use a custom data directory:</source>
+        <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
+    </message>
+    <message>
+        <location filename="../intro.cpp" line="+85"/>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
+        <translation>Fehler: Angegebenes Datenverzeichnis &quot;%1&quot; kann nicht angelegt werden.</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Error</source>
+        <translation>Fehler</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>GB of free space available</source>
+        <translation>GB freier Speicherplatz verfügbar</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>(of %1GB needed)</source>
+        <translation>(von benötigten %1GB)</translation>
+    </message>
+</context>
+<context>
+    <name>OpenURIDialog</name>
+    <message>
+        <location filename="../forms/openuridialog.ui" line="+14"/>
+        <source>Open URI</source>
+        <translation>URI öffnen</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Open payment request from URI or file</source>
+        <translation>Zahlungsanforderung über URI oder aus Datei öffnen</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>URI:</source>
+        <translation>URI:</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select payment request file</source>
+        <translation>Zahlungsanforderungsdatei auswählen</translation>
+    </message>
+    <message>
+        <location filename="../openuridialog.cpp" line="+47"/>
+        <source>Select payment request file to open</source>
+        <translation>Zu öffnende Zahlungsanforderungsdatei auswählen</translation>
+    </message>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 </context>
 <context>
     <name>OptionsDialog</name>
@@ -1131,14 +1873,22 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Erweiterte Einstellungen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
+=======
+        <location line="+13"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Main</source>
         <translation>&amp;Allgemein</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
+<<<<<<< HEAD
         <translation>Optionale Transaktionsgebühr pro KB, die sicherstellt, dass Ihre Transaktionen schnell bearbeitet werden. Die meisten Transaktionen sind 1 kB groß.</translation>
+=======
+        <translation>Optionale Transaktionsgebühr pro kB, die sicherstellt, dass ihre Transaktionen schnell bearbeitet werden. Die meisten Transaktionen sind 1 kB groß.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+15"/>
@@ -1147,6 +1897,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+31"/>
+<<<<<<< HEAD
         <source>Automatically start Dogecoin after logging in to the system.</source>
         <translation>Dogecoin nach der Anmeldung am System automatisch ausführen.</translation>
     </message>
@@ -1157,6 +1908,63 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+35"/>
+=======
+        <source>Automatically start Dogecoin Core after logging in to the system.</source>
+        <translation>Dogecoin-Client nach der Anmeldung am System automatisch ausführen.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Dogecoin Core on system login</source>
+        <translation>&amp;Starte Dogecoin-Client nach Systemanmeldung</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Size of &amp;database cache</source>
+        <translation>Größe des &amp;Datenbankcaches</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation>Größe des Datenbankcaches in MB festlegen (Standard: 25)</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Number of script &amp;verification threads</source>
+        <translation>Anzahl an Skript-&amp;Verifizierungs-Threads</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation>Maximale Anzahl an Skript-Verifizierungs-Threads festlegen (bis zu 16, 0 = automatisch, &lt;0 = so viele Kerne frei lassen, Standard: 0)</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
+        <translation>Über einen SOCKS-Proxy mit dem Dogecoin-Netzwerk verbinden.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
+        <translation>Über einen SOCKS-Proxy &amp;verbinden (Standardproxy):</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
+        <translation>IP-Adresse des Proxies (z.B. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+    </message>
+    <message>
+        <location line="+224"/>
+        <source>Active command-line options that override above options:</source>
+        <translation>Aktive Kommandozeilenoptionen, die obige Konfiguration überschreiben:</translation>
+    </message>
+    <message>
+        <location line="+43"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Reset all client options to default.</source>
         <translation>Setzt die Clientkonfiguration auf Standardwerte zurück.</translation>
     </message>
@@ -1166,14 +1974,22 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Konfiguration &amp;zurücksetzen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="-323"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Network</source>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+<<<<<<< HEAD
         <translation>Automatisch den Dogecoin-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
+=======
+        <translation>Automatisch den Dogecoin-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -1181,6 +1997,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Portweiterleitung via &amp;UPnP</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Connect to the Dogecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Über einen SOCKS-Proxy mit dem Dogecoin-Netzwerk verbinden (z.B. beim Verbinden über Tor).</translation>
@@ -1192,21 +2009,32 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+9"/>
+=======
+        <location line="+19"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Proxy &amp;IP:</source>
         <translation>Proxy-&amp;IP:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
         <source>IP address of the proxy (e.g. 127.0.0.1)</source>
         <translation>IP-Adresse des Proxies (z.B. 127.0.0.1)</translation>
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+32"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Port:</source>
         <translation>&amp;Port:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
+=======
+        <location line="+25"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Port des Proxies (z.B. 9050)</translation>
     </message>
@@ -1257,8 +2085,13 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
         <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin.</source>
         <translation>Legt die Sprache der Benutzeroberfläche fest. Diese Einstellung wird erst nach einem Neustart von Dogecoin aktiv.</translation>
+=======
+        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin Core.</source>
+        <translation>Legt die Sprache der Benutzeroberfläche fest. Diese Einstellung wird erst nach einem Neustart des Clients aktiv.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+11"/>
@@ -1287,11 +2120,19 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Display coin &amp;control features (experts only!)</source>
         <translation>&quot;&amp;Coin Control&quot;-Funktionen anzeigen (nur für Experten)</translation>
     </message>
     <message>
         <location line="+71"/>
+=======
+        <source>Display coin &amp;control features (experts only)</source>
+        <translation>&quot;&amp;Coin Control&quot;-Funktionen anzeigen (nur für Experten)</translation>
+    </message>
+    <message>
+        <location line="+136"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -1301,22 +2142,36 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>&amp;Abbrechen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>&amp;Apply</source>
         <translation>&amp;Übernehmen</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="+54"/>
+=======
+        <location filename="../optionsdialog.cpp" line="+67"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>default</source>
         <translation>Standard</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+131"/>
+=======
+        <location line="+57"/>
+        <source>none</source>
+        <translation>keine</translation>
+    </message>
+    <message>
+        <location line="+75"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirm options reset</source>
         <translation>Zurücksetzen der Konfiguration bestätigen</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Some settings may require a client restart to take effect.</source>
         <translation>Einige Einstellungen benötigen möglicherweise einen Clientneustart, um aktiv zu werden.</translation>
     </message>
@@ -1339,6 +2194,24 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+29"/>
+=======
+        <location line="+29"/>
+        <source>Client restart required to activate changes.</source>
+        <translation>Clientneustart nötig, um die Änderungen zu aktivieren.</translation>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>Client wird beendet, wollen Sie fortfahren?</translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>This change would require a client restart.</source>
+        <translation>Diese Änderung würde einen Clientneustart benötigen.</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The supplied proxy address is invalid.</source>
         <translation>Die eingegebene Proxyadresse ist ungültig.</translation>
     </message>
@@ -1352,27 +2225,58 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+50"/>
+<<<<<<< HEAD
         <location line="+192"/>
+=======
+        <location line="+231"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Brieftasche wird automatisch synchronisiert, nachdem eine Verbindung zum Dogecoin-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-150"/>
         <source>Balance:</source>
         <translation>Kontostand:</translation>
     </message>
     <message>
         <location line="+29"/>
+=======
+        <location line="-155"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Unconfirmed:</source>
         <translation>Unbestätigt:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-78"/>
+=======
+        <location line="-83"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet</source>
         <translation>Brieftasche</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+107"/>
+=======
+        <location line="+51"/>
+        <source>Confirmed:</source>
+        <translation>Bestätigt:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current spendable balance</source>
+        <translation>Ihr aktuell verfügbarer Kontostand</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation>Betrag aus unbestätigten Transaktionen, der noch nicht im aktuell verfügbaren Kontostand enthalten ist</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Immature:</source>
         <translation>Unreif:</translation>
     </message>
@@ -1382,6 +2286,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+72"/>
         <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
         <translation>&lt;b&gt;Letzte Transaktionen&lt;/b&gt;</translation>
@@ -1398,6 +2303,24 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="+116"/>
+=======
+        <location line="+16"/>
+        <source>Total:</source>
+        <translation>Gesamtbetrag:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current total balance</source>
+        <translation>Aktueller Gesamtbetrag aus obigen Kategorien</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Letzte Transaktionen&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+120"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+1"/>
         <source>out of sync</source>
         <translation>nicht synchron</translation>
@@ -1406,6 +2329,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
 <context>
     <name>PaymentServer</name>
     <message>
+<<<<<<< HEAD
         <location filename="../paymentserver.cpp" line="+110"/>
         <source>Cannot start dogecoin: click-to-pay handler</source>
         <translation>&quot;dogecoin: Klicken-zum-Bezahlen&quot;-Handler konnte nicht gestartet werden</translation>
@@ -1460,13 +2384,149 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+25"/>
+=======
+        <location filename="../paymentserver.cpp" line="+403"/>
+        <location line="+13"/>
+        <source>URI handling</source>
+        <translation>URI Verarbeitung</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Dogecoin-Adresse oder fehlerhafte URI-Parameter verursacht werden.</translation>
+    </message>
+    <message>
+        <location line="+96"/>
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation>Angeforderter Zahlungsbetrag in Höhe von %1 ist zu niedrig (als Dust eingestuft).</translation>
+    </message>
+    <message>
+        <location line="-221"/>
+        <location line="+212"/>
+        <location line="+13"/>
+        <location line="+95"/>
+        <location line="+18"/>
+        <location line="+16"/>
+        <source>Payment request error</source>
+        <translation>fehlerhafte Zahlungsanforderung</translation>
+    </message>
+    <message>
+        <location line="-353"/>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
+        <translation>&quot;dogecoin: Klicken-zum-Bezahlen&quot;-Handler konnte nicht gestartet werden</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Net manager warning</source>
+        <translation>Netzwerkmanager-Warnung</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
+        <translation>Ihr aktiver Proxy unterstützt kein SOCKS5, dies wird jedoch für Zahlungsanforderungen über einen Proxy benötigt.</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Payment request fetch URL is invalid: %1</source>
+        <translation>Abruf-URL der Zahlungsanforderung ist ungültig: %1</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Payment request file handling</source>
+        <translation>Zahlungsanforderungsdatei-Verarbeitung</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
+        <translation>Zahlungsanforderungsdatei kann nicht gelesen oder verarbeitet werden! Dies kann durch eine ungültige Zahlungsanforderungsdatei verursacht werden.</translation>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
+        <translation>Unverifizierte Zahlungsanforderungen an benutzerdefinierte Zahlungsskripte werden nicht unterstützt.</translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Refund from %1</source>
+        <translation>Rücküberweisung von %1</translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Error communicating with %1: %2</source>
+        <translation>Kommunikationsfehler mit %1: %2</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Payment request can not be parsed or processed!</source>
+        <translation>Zahlungsanforderung kann nicht analysiert oder verarbeitet werden!</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Bad response from server %1</source>
+        <translation>Fehlerhafte Antwort vom Server: %1</translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Payment acknowledged</source>
+        <translation>Zahlung bestätigt</translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Network request error</source>
+        <translation>fehlerhafte Netzwerkanfrage</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../bitcoin.cpp" line="+71"/>
+        <location line="+11"/>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
+        <translation>Fehler: Angegebenes Datenverzeichnis &quot;%1&quot; existiert nicht.</translation>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Fehler: Ungültige Kombination von -regtest und -testnet.</translation>
+    </message>
+    <message>
+        <location filename="../guiutil.cpp" line="+82"/>
+        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Dogecoin-Adresse eingeben (z.B. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+    </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+36"/>
+        <source>&amp;Save Image...</source>
+        <translation>Grafik &amp;speichern...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Copy Image</source>
+        <translation>Grafik &amp;kopieren</translation>
+    </message>
+    <message>
+        <location line="+28"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Save QR Code</source>
         <translation>QR-Code abspeichern</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>PNG Images (*.png)</source>
         <translation>PNG-Bild (*.png)</translation>
+=======
+        <source>PNG Image (*.png)</source>
+        <translation>PNG-Grafik (*.png)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
@@ -1483,6 +2543,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location line="+23"/>
         <location line="+23"/>
         <location line="+36"/>
+<<<<<<< HEAD
         <location line="+53"/>
         <location line="+23"/>
         <location line="+23"/>
@@ -1492,6 +2553,18 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="-217"/>
+=======
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+359"/>
+        <source>N/A</source>
+        <translation>k.A.</translation>
+    </message>
+    <message>
+        <location line="-223"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Client version</source>
         <translation>Clientversion</translation>
     </message>
@@ -1501,7 +2574,21 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>&amp;Information</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+68"/>
+=======
+        <location line="-10"/>
+        <source>Debug window</source>
+        <translation>Debugfenster</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>General</source>
+        <translation>Allgemein</translation>
+    </message>
+    <message>
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Using OpenSSL version</source>
         <translation>Verwendete OpenSSL-Version</translation>
     </message>
@@ -1517,6 +2604,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Number of connections</source>
         <translation>Anzahl Verbindungen</translation>
     </message>
@@ -1527,6 +2615,18 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+23"/>
+=======
+        <source>Name</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Number of connections</source>
+        <translation>Anzahl Verbindungen</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Block chain</source>
         <translation>Blockkette</translation>
     </message>
@@ -1551,6 +2651,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>&amp;Öffnen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
         <source>Command-line options</source>
         <translation>Kommandozeilenoptionen</translation>
@@ -1614,12 +2715,325 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location line="+1"/>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Bitte &lt;b&gt;help&lt;/b&gt; eingeben, um eine Übersicht verfügbarer Befehle zu erhalten.</translation>
+=======
+        <location line="+24"/>
+        <source>&amp;Console</source>
+        <translation>&amp;Konsole</translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>&amp;Network Traffic</source>
+        <translation>&amp;Netzwerkauslastung</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Clear</source>
+        <translation>&amp;Zurücksetzen</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Totals</source>
+        <translation>Summen</translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>In:</source>
+        <translation>eingehend:</translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Out:</source>
+        <translation>ausgehend:</translation>
+    </message>
+    <message>
+        <location line="-521"/>
+        <source>Build date</source>
+        <translation>Erstellungsdatum</translation>
+    </message>
+    <message>
+        <location line="+206"/>
+        <source>Debug log file</source>
+        <translation>Debugprotokolldatei</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open the Dogecoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffnet die Dogecoin-Debugprotokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Clear console</source>
+        <translation>Konsole zurücksetzen</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Dogecoin Core RPC console.</source>
+        <translation>Willkommen in der Dogecoin-RPC-Konsole.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Pfeiltaste hoch und runter, um den Verlauf durchzublättern und &lt;b&gt;Strg-L&lt;/b&gt;, um die Konsole zurückzusetzen.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Bitte &lt;b&gt;help&lt;/b&gt; eingeben, um eine Übersicht verfügbarer Befehle zu erhalten.</translation>
+    </message>
+    <message>
+        <location line="+122"/>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 h %2 m</source>
+        <translation>%1 h %2 m</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    <message>
+        <location filename="../forms/receivecoinsdialog.ui" line="+107"/>
+        <source>&amp;Amount:</source>
+        <translation>&amp;Betrag:</translation>
+    </message>
+    <message>
+        <location line="-16"/>
+        <source>&amp;Label:</source>
+        <translation>&amp;Bezeichnung:</translation>
+    </message>
+    <message>
+        <location line="-37"/>
+        <source>&amp;Message:</source>
+        <translation>&amp;Nachricht:</translation>
+    </message>
+    <message>
+        <location line="-20"/>
+        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
+        <translation>Eine der bereits verwendeten Empfangsadressen wiederverwenden. Addressen wiederzuverwenden birgt Sicherheits- und Datenschutzrisiken. Außer zum Neuerstellen einer bereits erzeugten Zahlungsanforderung sollten Sie dies nicht nutzen.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>R&amp;euse an existing receiving address (not recommended)</source>
+        <translation>Vorhandene Empfangsadresse &amp;wiederverwenden (nicht empfohlen)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location line="+23"/>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <translation>Eine optionale Nachricht, die an die Zahlungsanforderung angehängt wird. Sie wird angezeigt, wenn die Anforderung geöffnet wird. Hinweis: Diese Nachricht wird nicht mit der Zahlung über das Dogecoin-Netzwerk gesendet.</translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <location line="+21"/>
+        <source>An optional label to associate with the new receiving address.</source>
+        <translation>Eine optionale Bezeichnung, die der neuen Empfangsadresse zugeordnet wird.</translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
+        <translation>Verwenden Sie dieses Formular um Zahlungen anzufordern. Alle Felder sind &lt;b&gt;optional&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <location line="+22"/>
+        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
+        <translation>Ein optional angeforderte Betrag. Lassen Sie dieses Feld leer oder setzen Sie es auf 0, um keinen spezifischen Betrag anzufordern.</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Clear all fields of the form.</source>
+        <translation>Alle Formularfelder zurücksetzen.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Clear</source>
+        <translation>Zurücksetzen</translation>
+    </message>
+    <message>
+        <location line="+78"/>
+        <source>Requested payments history</source>
+        <translation>Verlauf der angeforderten Zahlungen</translation>
+    </message>
+    <message>
+        <location line="-98"/>
+        <source>&amp;Request payment</source>
+        <translation>&amp;Zahlung anfordern</translation>
+    </message>
+    <message>
+        <location line="+120"/>
+        <source>Show the selected request (does the same as double clicking an entry)</source>
+        <translation>Die ausgewählten Anforderungen anzeigen (entspricht einem Doppelklick auf einen Eintrag)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Show</source>
+        <translation>Anzeigen</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Remove the selected entries from the list</source>
+        <translation>Die ausgewählten Einträge aus der Liste entfernen</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Remove</source>
+        <translation>Entfernen</translation>
+    </message>
+    <message>
+        <location filename="../receivecoinsdialog.cpp" line="+38"/>
+        <source>Copy label</source>
+        <translation>Bezeichnung kopieren</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy message</source>
+        <translation>Nachricht kopieren</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation>Betrag kopieren</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <location filename="../forms/receiverequestdialog.ui" line="+29"/>
+        <source>QR Code</source>
+        <translation>QR-Code</translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Copy &amp;URI</source>
+        <translation>&amp;URI kopieren</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;Addresse kopieren</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Save Image...</source>
+        <translation>Grafik &amp;speichern...</translation>
+    </message>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+56"/>
+        <source>Request payment to %1</source>
+        <translation>Zahlung anfordern an %1</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Payment information</source>
+        <translation>Zahlungsinformationen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI</source>
+        <translation>URI</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Amount</source>
+        <translation>Betrag</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Label</source>
+        <translation>Bezeichnung</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Message</source>
+        <translation>Nachricht signieren</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>Resultierende URI zu lang, bitte den Text für Bezeichnung / Nachricht kürzen.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Fehler beim Kodieren der URI in den QR-Code.</translation>
+    </message>
+</context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <location filename="../recentrequeststablemodel.cpp" line="+24"/>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Label</source>
+        <translation>Bezeichnung</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Message</source>
+        <translation>Nachricht signieren</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Amount</source>
+        <translation>Betrag</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>(no label)</source>
+        <translation>(keine Bezeichnung)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>(no message)</source>
+        <translation>(keine Nachricht)</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>(no amount)</source>
+        <translation>(kein Betrag)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+<<<<<<< HEAD
         <location filename="../sendcoinsdialog.cpp" line="+179"/>
         <location line="+5"/>
         <location line="+5"/>
@@ -1627,6 +3041,10 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location line="+6"/>
         <location line="+5"/>
         <location line="+5"/>
+=======
+        <location filename="../sendcoinsdialog.cpp" line="+380"/>
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send Coins</source>
         <translation>Dogecoins überweisen</translation>
     </message>
@@ -1651,62 +3069,109 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Unzureichender Kontostand!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+77"/>
+=======
+        <location line="+89"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Quantity:</source>
         <translation>Anzahl:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+38"/>
         <source>Bytes:</source>
         <translation>Byte:</translation>
     </message>
     <message>
         <location line="+51"/>
+=======
+        <location line="+35"/>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Amount:</source>
         <translation>Betrag:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+35"/>
+=======
+        <location line="+32"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Priority:</source>
         <translation>Priorität:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
         <source>medium</source>
         <translation>Mittel</translation>
     </message>
     <message>
         <location line="+32"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Fee:</source>
         <translation>Gebühr:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+35"/>
+=======
+        <location line="+32"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Low Output:</source>
         <translation>Zu geringer Ausgabebetrag:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
         <source>no</source>
         <translation>Nein</translation>
     </message>
     <message>
         <location line="+32"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>After Fee:</source>
         <translation>Abzüglich Gebühr:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+35"/>
+=======
+        <location line="+32"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Change:</source>
         <translation>Wechselgeld:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+50"/>
         <source>custom change address</source>
         <translation>Benutzerdefinierte Wechselgeld-Adresse</translation>
     </message>
     <message>
         <location line="+106"/>
+=======
+        <location line="+44"/>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation>Wenn diese Option aktivert ist und die Wechselgeld-Adresse leer oder ungültig ist, wird das Wechselgeld an eine neu erzeugte Adresse überwiesen.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom change address</source>
+        <translation>Benutzerdefinierte Wechselgeld-Adresse</translation>
+    </message>
+    <message>
+        <location line="+164"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send to multiple recipients at once</source>
         <translation>In einer Transaktion an mehrere Empfänger auf einmal überweisen</translation>
     </message>
@@ -1716,9 +3181,15 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Empfänger &amp;hinzufügen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+20"/>
         <source>Remove all transaction fields</source>
         <translation>Alle Überweisungsfelder zurücksetzen</translation>
+=======
+        <location line="-23"/>
+        <source>Clear all fields of the form.</source>
+        <translation>Alle Formularfelder zurücksetzen.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -1726,17 +3197,25 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>&amp;Zurücksetzen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
+=======
+        <location line="+52"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Balance:</source>
         <translation>Kontostand:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>123.456 DOGE</source>
         <translation>123,456 DOGE</translation>
     </message>
     <message>
         <location line="+31"/>
+=======
+        <location line="-78"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirm the send action</source>
         <translation>Überweisung bestätigen</translation>
     </message>
@@ -1746,12 +3225,29 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>&amp;Überweisen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../sendcoinsdialog.cpp" line="-175"/>
         <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Dogecoin-Adresse eingeben (z.B. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="+15"/>
+=======
+        <location filename="../sendcoinsdialog.cpp" line="-229"/>
+        <source>Confirm send coins</source>
+        <translation>Überweisung bestätigen</translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+4"/>
+        <source>%1 to %2</source>
+        <translation>%1 an %2</translation>
+    </message>
+    <message>
+        <location line="-121"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy quantity</source>
         <translation>Anzahl kopieren</translation>
     </message>
@@ -1791,6 +3287,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Wechselgeld kopieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+87"/>
         <location line="+2"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
@@ -1813,15 +3310,33 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+27"/>
+=======
+        <location line="+170"/>
+        <source>Total Amount %1 (= %2)</source>
+        <translation>Gesamtbetrag %1 (= %2)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>or</source>
+        <translation>oder</translation>
+    </message>
+    <message>
+        <location line="+203"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Die Zahlungsadresse ist ungültig, bitte nochmals überprüfen.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The amount to pay must be larger than 0.</source>
         <translation>Der zu zahlende Betrag muss größer als 0 sein.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>The amount exceeds your balance.</source>
         <translation>Der angegebene Betrag übersteigt Ihren Kontostand.</translation>
@@ -1833,10 +3348,24 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+6"/>
+=======
+        <location line="+3"/>
+        <source>The amount exceeds your balance.</source>
+        <translation>Der angegebene Betrag übersteigt ihren Kontostand.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>Der angegebene Betrag übersteigt aufgrund der Transaktionsgebühr in Höhe von %1 ihren Kontostand.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Duplicate address found, can only send to each address once per send operation.</source>
         <translation>Doppelte Adresse gefunden, pro Überweisung kann an jede Adresse nur einmalig etwas überwiesen werden.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Error: Transaction creation failed!</source>
         <translation>Fehler: Transaktionserstellung fehlgeschlagen!</translation>
@@ -1853,55 +3382,136 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+13"/>
+=======
+        <location line="+3"/>
+        <source>Transaction creation failed!</source>
+        <translation>Transaktion konnte nicht erstellt werden!</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Die Transaktion wurde abgelehnt! Dies kann passieren, wenn einige Dogecoins aus ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie ihrer wallet.dat benutzt haben, die Dogecoins dort ausgegeben haben, und dies in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
+    </message>
+    <message>
+        <location line="+113"/>
+        <source>Warning: Invalid Dogecoin address</source>
+        <translation>Warnung: Ungültige Dogecoin-Adresse</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>(no label)</source>
         <translation>(keine Bezeichnung)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Warning: Unknown change address</source>
         <translation>Warnung: Unbekannte Wechselgeld-Adresse</translation>
     </message>
+=======
+        <location line="-11"/>
+        <source>Warning: Unknown change address</source>
+        <translation>Warnung: Unbekannte Wechselgeld-Adresse</translation>
+    </message>
+    <message>
+        <location line="-367"/>
+        <source>Are you sure you want to send?</source>
+        <translation>Wollen Sie die Überweisung ausführen?</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>added as transaction fee</source>
+        <translation>als Transaktionsgebühr hinzugefügt</translation>
+    </message>
+    <message>
+        <location line="+171"/>
+        <source>Payment request expired</source>
+        <translation>Zahlungsanforderung abgelaufen</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Invalid payment address %1</source>
+        <translation>Ungültige Zahlungsadresse %1</translation>
+    </message>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/sendcoinsentry.ui" line="+14"/>
         <source>Form</source>
         <translation>Formular</translation>
     </message>
     <message>
         <location line="+15"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+131"/>
+        <location line="+521"/>
+        <location line="+536"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>A&amp;mount:</source>
         <translation>&amp;Betrag:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="-1152"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Pay &amp;To:</source>
         <translation>&amp;Empfänger:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+34"/>
+=======
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The address to send the payment to (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Die Zahlungsadresse der Überweisung (z.B. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+60"/>
         <location filename="../sendcoinsentry.cpp" line="+26"/>
+=======
+        <location filename="../sendcoinsentry.cpp" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Adressbezeichnung eingeben (diese wird zusammen mit der Adresse dem Adressbuch hinzugefügt)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-78"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+57"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Label:</source>
         <translation>&amp;Bezeichnung:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
         <source>Choose address from address book</source>
         <translation>Adresse aus Adressbuch wählen</translation>
     </message>
     <message>
         <location line="+10"/>
+=======
+        <location line="-50"/>
+        <source>Choose previously used address</source>
+        <translation>Bereits verwendeten Adresse auswählen</translation>
+    </message>
+    <message>
+        <location line="-40"/>
+        <source>This is a normal payment.</source>
+        <translation>Dies ist eine normale Überweisung.</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1917,6 +3527,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Remove this recipient</source>
         <translation>Diesen Empfänger entfernen</translation>
     </message>
@@ -1924,6 +3535,62 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Dogecoin-Adresse eingeben (z.B. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+=======
+        <location line="+524"/>
+        <location line="+536"/>
+        <source>Remove this entry</source>
+        <translation>Diesen Eintrag entfernen</translation>
+    </message>
+    <message>
+        <location line="-1008"/>
+        <source>Message:</source>
+        <translation>Nachricht:</translation>
+    </message>
+    <message>
+        <location line="+968"/>
+        <source>This is a verified payment request.</source>
+        <translation>Dies is eine verifizierte Zahlungsanforderung.</translation>
+    </message>
+    <message>
+        <location line="-991"/>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Adressbezeichnung eingeben, die dann zusammen mit der Adresse der Liste bereits verwendeter Adressen hinzugefügt wird.</translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <translation>Eine an die &quot;dogecoin:&quot;-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Dogecoin-Netzwerk gesendet.</translation>
+    </message>
+    <message>
+        <location line="+426"/>
+        <source>This is an unverified payment request.</source>
+        <translation>Dies is eine unverifizierte Zahlungsanforderung.</translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <location line="+532"/>
+        <source>Pay To:</source>
+        <translation>Empfänger:</translation>
+    </message>
+    <message>
+        <location line="-498"/>
+        <location line="+536"/>
+        <source>Memo:</source>
+        <translation>Memo:</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+48"/>
+        <source>Dogecoin Core is shutting down...</source>
+        <translation>Dogecoin Core wird beendet...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Fahren Sie den Computer nicht herunter, bevor dieses Fenster verschwindet.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
@@ -1934,14 +3601,22 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Signaturen - eine Nachricht signieren / verifizieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="+10"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Sign Message</source>
         <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+<<<<<<< HEAD
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um den Besitz dieser Adressen zu beweisen. Bitte nutzen Sie diese Funktion mit Vorsicht und nehmen Sie sich vor Phishingangriffen in Acht. Signieren Sie nur Nachrichten, mit denen Sie vollständig einverstanden sind.</translation>
+=======
+        <translation>Sie können Nachrichten mit ihren Adressen signieren, um den Besitz dieser Adressen zu beweisen. Bitte nutzen Sie diese Funktion mit Vorsicht und nehmen Sie sich vor Phishingangriffen in Acht. Signieren Sie nur Nachrichten, mit denen Sie vollständig einverstanden sind.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+18"/>
@@ -1949,6 +3624,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Die Adresse mit der die Nachricht signiert wird (z.B. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <location line="+213"/>
         <source>Choose an address from the address book</source>
@@ -1957,11 +3633,25 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     <message>
         <location line="-203"/>
         <location line="+213"/>
+=======
+        <location line="+7"/>
+        <location line="+210"/>
+        <source>Choose previously used address</source>
+        <translation>Bereits verwendete Adresse auswählen</translation>
+    </message>
+    <message>
+        <location line="-200"/>
+        <location line="+210"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-203"/>
+=======
+        <location line="-200"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Paste address from clipboard</source>
         <translation>Adresse aus der Zwischenablage einfügen</translation>
     </message>
@@ -2002,19 +3692,31 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <location line="+146"/>
+=======
+        <location line="+143"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Clear &amp;All</source>
         <translation>&amp;Zurücksetzen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-87"/>
+=======
+        <location line="-84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Verify Message</source>
         <translation>Nachricht &amp;verifizieren</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+<<<<<<< HEAD
         <translation>Geben Sie die signierende Adresse, Nachricht (achten Sie darauf Zeilenumbrüche, Leerzeichen, Tabulatoren usw. exakt zu kopieren) und Signatur unten ein, um die Nachricht zu verifizieren. Vorsicht, interpretieren Sie nicht mehr in die Signatur, als in der signierten Nachricht selber enthalten ist, um nicht von einerm Man-in-the-middle-Angriff hinters Licht geführt zu werden.</translation>
+=======
+        <translation>Geben Sie die signierende Adresse, Nachricht (achten Sie darauf Zeilenumbrüche, Leerzeichen, Tabulatoren usw. exakt zu kopieren) und Signatur unten ein, um die Nachricht zu verifizieren. Vorsicht, interpretieren Sie nicht mehr in die Signatur, als in der signierten Nachricht selber enthalten ist, um nicht von einem Man-in-the-middle-Angriff hinters Licht geführt zu werden.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+21"/>
@@ -2022,7 +3724,11 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Die Adresse mit der die Nachricht signiert wurde (z.B. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+40"/>
+=======
+        <location line="+37"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
         <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen Dogecoin-Adresse signiert wurde</translation>
     </message>
@@ -2037,17 +3743,26 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Alle &quot;Nachricht verifizieren&quot;-Felder zurücksetzen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Dogecoin-Adresse eingeben (z.B. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-2"/>
+=======
+        <location line="-1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Click &quot;Sign Message&quot; to generate signature</source>
         <translation>Auf &quot;Nachricht signieren&quot; klicken, um die Signatur zu erzeugen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Enter Dogecoin signature</source>
         <translation>Dogecoin-Signatur eingeben</translation>
@@ -2055,25 +3770,44 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     <message>
         <location line="+82"/>
         <location line="+81"/>
+=======
+        <location line="+84"/>
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The entered address is invalid.</source>
         <translation>Die eingegebene Adresse ist ungültig.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-81"/>
         <location line="+8"/>
         <location line="+73"/>
+=======
+        <location line="-80"/>
+        <location line="+8"/>
+        <location line="+72"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+8"/>
         <source>Please check the address and try again.</source>
         <translation>Bitte überprüfen Sie die Adresse und versuchen Sie es erneut.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-81"/>
         <location line="+81"/>
+=======
+        <location line="-80"/>
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The entered address does not refer to a key.</source>
         <translation>Die eingegebene Adresse verweist nicht auf einen Schlüssel.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-73"/>
+=======
+        <location line="-72"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet unlock was cancelled.</source>
         <translation>Entsperrung der Brieftasche wurde abgebrochen.</translation>
     </message>
@@ -2093,7 +3827,11 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Nachricht signiert.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+59"/>
+=======
+        <location line="+58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The signature could not be decoded.</source>
         <translation>Die Signatur konnte nicht dekodiert werden.</translation>
     </message>
@@ -2122,6 +3860,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <source>The Dogecoin developers</source>
         <translation type="obsolete">Die Dogecoinentwickler</translation>
     </message>
@@ -2138,12 +3877,39 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location line="+1"/>
         <source>The Litecoin developers</source>
         <translation>Die Litecoinentwickler</translation>
+=======
+        <location filename="../splashscreen.cpp" line="+28"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin-Kern</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The Dogecoin Core developers</source>
+        <translation>Die &quot;Dogecoin Core&quot;-Entwickler</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>[testnet]</source>
+        <translation>[Testnetz]</translation>
+    </message>
+</context>
+<context>
+    <name>TrafficGraphWidget</name>
+    <message>
+        <location filename="../trafficgraphwidget.cpp" line="+79"/>
+        <source>KB/s</source>
+        <translation>KB/s</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>TransactionDesc</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactiondesc.cpp" line="+20"/>
+=======
+        <location filename="../transactiondesc.cpp" line="+28"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Open until %1</source>
         <translation>Offen bis %1</translation>
     </message>
@@ -2170,10 +3936,14 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
+<<<<<<< HEAD
         <translation>
             <numerusform>, über %n Knoten übertragen</numerusform>
             <numerusform>, über %n Knoten übertragen</numerusform>
         </translation>
+=======
+        <translation><numerusform>, über %n Knoten übertragen</numerusform><numerusform>, über %n Knoten übertragen</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+4"/>
@@ -2219,17 +3989,27 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Credit</source>
         <translation>Gutschrift</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
         <translation>
             <numerusform>reift noch %n weiteren Block</numerusform>
             <numerusform>reift noch %n weitere Blöcke</numerusform>
         </translation>
+=======
+        <location line="-125"/>
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>reift noch %n weiteren Block</numerusform><numerusform>reift noch %n weitere Blöcke</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
@@ -2240,12 +4020,20 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <location line="+44"/>
         <location line="+8"/>
         <location line="+15"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debit</source>
         <translation>Belastung</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-39"/>
+=======
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Transaction fee</source>
         <translation>Transaktionsgebühr</translation>
     </message>
@@ -2256,11 +4044,19 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+6"/>
+<<<<<<< HEAD
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Message</source>
         <translation>Nachricht signieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="-7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Comment</source>
         <translation>Kommentar</translation>
     </message>
@@ -2270,12 +4066,26 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Transaktions-ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Generated coins must mature 50 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation>Generierte Dogecoins müssen 50 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block generierten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in &quot;nicht angenommen&quot; geändert und der Betrag wird nicht verfügbar werden. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich generiert.</translation>
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+18"/>
+        <source>Merchant</source>
+        <translation>Händler</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Generierte Dogecoins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block generierten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in &quot;nicht angenommen&quot; geändert und der Betrag wird nicht verfügbar werden. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich generiert.</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debug information</source>
         <translation>Debuginformationen</translation>
     </message>
@@ -2305,17 +4115,25 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>falsch</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-209"/>
+=======
+        <location line="-232"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>, has not been successfully broadcast yet</source>
         <translation>, wurde noch nicht erfolgreich übertragen</translation>
     </message>
     <message numerus="yes">
         <location line="-35"/>
         <source>Open for %n more block(s)</source>
+<<<<<<< HEAD
         <translation>
             <numerusform>Offen für %n weiteren Block</numerusform>
             <numerusform>Offen für %n weitere Blöcke</numerusform>
         </translation>
+=======
+        <translation><numerusform>Offen für %n weiteren Block</numerusform><numerusform>Offen für %n weitere Blöcke</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+70"/>
@@ -2339,7 +4157,11 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+225"/>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+234"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Date</source>
         <translation>Datum</translation>
     </message>
@@ -2358,6 +4180,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <source>Amount</source>
         <translation>Betrag</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
@@ -2365,6 +4188,17 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
             <numerusform>Offen für %n weiteren Block</numerusform>
             <numerusform>Offen für %n weitere Blöcke</numerusform>
         </translation>
+=======
+    <message>
+        <location line="+59"/>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>Unreif (%1 Bestätigungen, wird verfügbar sein nach %2)</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+16"/>
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Offen für %n weiteren Block</numerusform><numerusform>Offen für %n weitere Blöcke</numerusform></translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -2382,6 +4216,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Unbestätigt (%1 von %2 Bestätigungen)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Confirmed (%1 confirmations)</source>
         <translation>Bestätigt (%1 Bestätigungen)</translation>
@@ -2396,6 +4231,15 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+5"/>
+=======
+        <location line="-22"/>
+        <location line="+25"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Bestätigt (%1 Bestätigungen)</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>Dieser Block wurde von keinem anderen Knoten empfangen und wird wahrscheinlich nicht angenommen werden!</translation>
     </message>
@@ -2405,7 +4249,11 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Generiert, jedoch nicht angenommen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+43"/>
+=======
+        <location line="+62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Received with</source>
         <translation>Empfangen über</translation>
     </message>
@@ -2524,17 +4372,29 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Andere</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter address or label to search</source>
         <translation>Zu suchende Adresse oder Bezeichnung eingeben</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Min amount</source>
         <translation>Minimaler Betrag</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+190"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy address</source>
         <translation>Adresse kopieren</translation>
     </message>
@@ -2554,6 +4414,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Transaktions-ID kopieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Edit label</source>
         <translation>Bezeichnung bearbeiten</translation>
@@ -2570,11 +4431,53 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+1"/>
+        <source>Edit label</source>
+        <translation>Bezeichnung bearbeiten</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show transaction details</source>
+        <translation>Transaktionsdetails anzeigen</translation>
+    </message>
+    <message>
+        <location line="+142"/>
+        <source>Export Transaction History</source>
+        <translation>Transaktionsverlauf exportieren</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Exporting Failed</source>
+        <translation>Exportieren fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation>Beim Speichern des Transaktionsverlaufs nach %1 ist ein Fehler aufgetreten.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Exporting Successful</source>
+        <translation>Exportieren erfolgreich</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation>Speichern des Transaktionsverlaufs nach %1 war erfolgreich.</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Comma separated file (*.csv)</source>
         <translation>Kommagetrennte-Datei (*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirmed</source>
         <translation>Bestätigt</translation>
     </message>
@@ -2609,6 +4512,7 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error exporting</source>
         <translation>Fehler beim Exportieren</translation>
@@ -2625,6 +4529,9 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+105"/>
+=======
+        <location line="+107"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Range:</source>
         <translation>Zeitraum:</translation>
     </message>
@@ -2637,15 +4544,25 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
 <context>
     <name>WalletFrame</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletframe.cpp" line="+29"/>
         <source>No wallet has been loaded.</source>
         <translation>Es wurde keine Brieftasche geladen</translation>
+=======
+        <location filename="../walletframe.cpp" line="+26"/>
+        <source>No wallet has been loaded.</source>
+        <translation>Es wurde keine Brieftasche geladen.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletmodel.cpp" line="+206"/>
+=======
+        <location filename="../walletmodel.cpp" line="+245"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send Coins</source>
         <translation>Dogecoins überweisen</translation>
     </message>
@@ -2653,7 +4570,11 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
 <context>
     <name>WalletView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletview.cpp" line="+46"/>
+=======
+        <location filename="../walletview.cpp" line="+43"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Export</source>
         <translation>E&amp;xportieren</translation>
     </message>
@@ -2663,22 +4584,36 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Daten der aktuellen Ansicht in eine Datei exportieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+198"/>
+=======
+        <location line="+181"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Wallet</source>
         <translation>Brieftasche sichern</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
         <translation>Brieftaschendaten (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
+=======
+        <location line="+1"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Brieftaschen-Daten (*.dat)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Failed</source>
         <translation>Sicherung fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>There was an error trying to save the wallet data to the new location.</source>
         <translation>Beim Speichern der Brieftaschendaten an die neue Position ist ein Fehler aufgetreten.</translation>
     </message>
@@ -2702,16 +4637,40 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+94"/>
+=======
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation>Beim Speichern der Brieftaschen-Daten nach %1 ist ein Fehler aufgetreten.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation>Speichern der Brieftaschen-Daten nach %1 war erfolgreich.</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Backup Successful</source>
+        <translation>Sicherung erfolgreich</translation>
+    </message>
+</context>
+<context>
+    <name>dogecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+221"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Usage:</source>
         <translation>Benutzung:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
         <source>Send command to -server or dogecoind</source>
         <translation>Befehl an -server oder dogecoind senden</translation>
     </message>
     <message>
         <location line="-23"/>
+=======
+        <location line="-54"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>List commands</source>
         <translation>Befehle auflisten</translation>
     </message>
@@ -2726,14 +4685,22 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Optionen:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+24"/>
+=======
+        <location line="+22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify configuration file (default: dogecoin.conf)</source>
         <translation>Konfigurationsdatei festlegen (Standard: dogecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Specify pid file (default: dogecoind.pid)</source>
+<<<<<<< HEAD
         <translation>PID-Datei festlegen (Standard: dogecoind.pid)</translation>
+=======
+        <translation>PID-Datei festlegen (Standard: dogecoin.pid)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-1"/>
@@ -2746,7 +4713,11 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Größe des Datenbankcaches in MB festlegen (Standard: 25)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-28"/>
+=======
+        <location line="-26"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
         <translation>&lt;port&gt; nach Verbindungen abhören (Standard: 22556 oder Testnetz: 44556)</translation>
     </message>
@@ -2756,37 +4727,65 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Maximal &lt;n&gt; Verbindungen zu Gegenstellen aufrechterhalten (Standard: 125)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-52"/>
+=======
+        <location line="-51"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation>Mit dem Knoten verbinden um Adressen von Gegenstellen abzufragen, danach trennen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+86"/>
+=======
+        <location line="+84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify your own public address</source>
         <translation>Die eigene öffentliche Adresse angeben</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Schwellenwert, um Verbindungen zu sich nicht konform verhaltenden Gegenstellen zu beenden (Standard: 100)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-141"/>
+=======
+        <location line="-148"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Anzahl Sekunden, während denen sich nicht konform verhaltenden Gegenstellen die Wiederverbindung verweigert wird (Standard: 86400)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
+=======
+        <location line="-36"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Beim Einrichten des abzuhörenden RPC-Ports %u für IPv4 ist ein Fehler aufgetreten: %s</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
         <translation>&lt;port&gt; nach JSON-RPC-Verbindungen abhören (Standard: 22555 oder Testnetz: 44555)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+40"/>
+=======
+        <location line="+45"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Kommandozeilenbefehle und JSON-RPC-Befehle annehmen</translation>
     </message>
@@ -2796,17 +4795,29 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
         <translation>Als Hintergrunddienst starten und Befehle annehmen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
+=======
+        <location line="+39"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use the test network</source>
         <translation>Das Testnetz verwenden</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-116"/>
+=======
+        <location line="-118"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Eingehende Verbindungen annehmen (Standard: 1, wenn nicht -proxy oder -connect)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-83"/>
+=======
+        <location line="-95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
@@ -2831,7 +4842,16 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
+=======
+        <location line="+12"/>
+        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
+        <translation>Akzeptierte Chiffren (Standard: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>Beim Einrichten des abzuhörenden RPC-Ports %u für IPv6 ist ein Fehler aufgetreten, es wird auf IPv4 zurückgegriffen: %s</translation>
     </message>
@@ -2842,6 +4862,7 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Dogecoin is probably already running.</source>
         <translation>Datenverzeichnis %s kann nicht gesperrt werden. Evtl. wurde Dogecoin bereits gestartet.</translation>
     </message>
@@ -2872,16 +4893,57 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+6"/>
+=======
+        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
+        <translation>Datenverzeichnis %s kann nicht gesperrt werden. Evtl. wurde der Dogecoin-Client bereits gestartet.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
+        <translation>Regressionstest-Modus aktivieren, welcher eine spezielle Kette nutzt, in der Blöcke sofort gelöst werden. Dies ist für Regressionstest-Tools und Anwendungsentwicklung gedacht.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>Regressionstest-Modus aktivieren, welcher eine spezielle Kette nutzt, in der Blöcke sofort gelöst werden.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fehler: Die Transaktion wurde abgelehnt! Dies kann passieren, wenn einige Dogecoins aus ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie ihrer wallet.dat genutzt, die Dogecoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Fehler: Diese Transaktion benötigt aufgrund ihres Betrags, ihrer Komplexität oder der Nutzung kürzlich erhaltener Zahlungen eine Transaktionsgebühr in Höhe von mindestens %s!</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Kommando ausführen wenn sich eine Brieftaschen-Transaktion verändert (%s im Kommando wird durch die TxID ersetzt)</translation>
+    </message>
+    <message>
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Dies ist eine Vorab-Testversion - Verwendung auf eigene Gefahr - nicht für Mining- oder Handelsanwendungen nutzen!</translation>
     </message>
     <message>
         <location line="+5"/>
+<<<<<<< HEAD
+=======
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
+        <translation>Separaten SOCKS5-Proxy verwenden, um Gegenstellen über versteckte Tor-Dienste zu erreichen (Standard: -proxy)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Warnung: -paytxfee ist auf einen sehr hohen Wert festgelegt! Dies ist die Gebühr die beim Senden einer Transaktion fällig wird.</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>Warnung: Angezeigte Transaktionen sind evtl. nicht korrekt! Sie oder die anderen Knoten müssen unter Umständen (den Client) aktualisieren.</translation>
     </message>
@@ -2889,6 +4951,20 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
         <translation>Warnung: Bitte korrigieren Sie die Datums- und Uhrzeiteinstellungen Ihres Computers, da Dogecoin ansonsten nicht ordnungsgemäß funktionieren wird!</translation>
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin Core will not work properly.</source>
+        <translation>Warnung: Bitte korrigieren Sie die Datums- und Uhrzeiteinstellungen ihres Computers, da Dogecoin-Client ansonsten nicht ordnungsgemäß funktionieren wird!</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Warnung: Das Netzwerk scheint nicht vollständig übereinzustimmen! Einige Miner scheinen Probleme zu haben.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>Warnung: Wir scheinen nicht vollständig mit unseren Gegenstellen übereinzustimmen! Sie oder die anderen Knoten müssen unter Umständen (den Client) aktualisieren.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -2898,6 +4974,7 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     <message>
         <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+<<<<<<< HEAD
         <translation>Warnung: wallet.dat beschädigt, Rettung erfolgreich! Original wallet.dat wurde als wallet.{Zeitstempel}.dat in %s gespeichert. Falls Ihr Kontostand oder Transaktionen nicht korrekt sind, sollten Sie von einer Datensicherung wiederherstellen.</translation>
     </message>
     <message>
@@ -2914,6 +4991,29 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <location line="+1"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Versucht private Schlüssel aus einer beschädigten wallet.dat wiederherzustellen</translation>
+=======
+        <translation>Warnung: wallet.dat beschädigt, Rettung erfolgreich! Original wallet.dat wurde als wallet.{Zeitstempel}.dat in %s gespeichert. Falls ihr Kontostand oder Transaktionen nicht korrekt sind, sollten Sie von einer Datensicherung wiederherstellen.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; kann sein:</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Versucht private Schlüssel aus einer beschädigten wallet.dat wiederherzustellen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Dogecoin Core Daemon</source>
+        <translation>&quot;Dogecoin Core&quot;-Daemon</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Dogecoin Core RPC client version</source>
+        <translation>Dogecoin-RPC-Clientversion</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -2926,7 +5026,21 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Nur mit dem/den angegebenen Knoten verbinden</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+1"/>
+        <source>Connect through SOCKS proxy</source>
+        <translation>Über einen SOCKS-Proxy verbinden</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <translation>Mit JSON-RPC über &lt;port&gt; verbinden (Standard: 22555 oder Testnetz: 44555)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Corrupted block database detected</source>
         <translation>Beschädigte Blockdatenbank erkannt</translation>
     </message>
@@ -2937,11 +5051,23 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
+=======
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation>Die Brieftasche nicht laden und Wallet-RPC-Aufrufe deaktivieren</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Do you want to rebuild the block database now?</source>
         <translation>Möchten Sie die Blockdatenbank nun neu aufbauen?</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error initializing block database</source>
         <translation>Fehler beim Initialisieren der Blockdatenbank</translation>
     </message>
@@ -3031,6 +5157,7 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Schreiben der Rücksetzdaten fehlgeschlagen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>Gegenstellen via DNS-Namensauflösung finden (Standard: 1, außer bei -connect)</translation>
@@ -3039,6 +5166,16 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <location line="+1"/>
         <source>Find peers using internet relay chat (default: 0)</source>
         <translation>Gegenstellen via Internet Relay Chat (IRC) finden</translation>
+=======
+        <location line="+1"/>
+        <source>Fee per kB to add to transactions you send</source>
+        <translation>Gebühr pro kB, die gesendeten Transaktionen hinzugefügt wird</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
+        <translation>Gegenstellen via DNS-Namensauflösung finden (Standard: 1, außer bei -connect)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -3056,32 +5193,106 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Wie gründlich soll die Blockprüfung sein (0-4, Standard: 3)</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <location line="+1"/>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation>Wenn &lt;category&gt; nicht angegeben wird, jegliche Debugginginformationen ausgeben.</translation>
+    </message>
+    <message>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Fehlerhafter oder kein Genesis-Block gefunden. Falsches Datenverzeichnis für das Netzwerk?</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Invalid amount for -mininput=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ungültige Eingabe für -mininput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+14"/>
+=======
+        <location line="+3"/>
+        <source>Invalid -onion address: &apos;%s&apos;</source>
+        <translation>Ungültige &quot;-onion&quot;-Adresse: &apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Not enough file descriptors available.</source>
         <translation>Nicht genügend File-Deskriptoren verfügbar.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
+=======
+        <location line="+5"/>
+        <source>Prepend debug output with timestamp (default: 1)</source>
+        <translation>Der Debugausgabe einen Zeitstempel voranstellen (Standard: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>RPC client options:</source>
+        <translation>RPC-Client-Optionen:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Blockkettenindex aus aktuellen Dateien blk000??.dat wiederaufbauen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
+=======
+        <location line="+5"/>
+        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
+        <translation>SOCKS-Version des Proxies wählen (4 oder 5, Standard: 5)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to Dogecoin Core server</source>
+        <translation>Befehl an Dogecoin-Server senden</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>Maximale Blockgröße in Byte festlegen (Standard: %d)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation>Maximale Anzahl an Threads zur Verarbeitung von RPC-Anfragen festlegen (Standard: 4)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+26"/>
+=======
+        <location line="+7"/>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>Brieftaschen-Datei festlegen (innerhalb des Datenverzeichnisses)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Dogecoin Core server</source>
+        <translation>Dogecoin-Server starten</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation>Dies ist für Regressionstest-Tools und Anwendungsentwicklung gedacht.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Usage (deprecated, use dogecoin-cli):</source>
+        <translation>Benutzung (veraltet, bitte dogecoin-cli verwenden):</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Verifying blocks...</source>
         <translation>Verifiziere Blöcke...</translation>
     </message>
@@ -3091,11 +5302,41 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Verifiziere Brieftasche...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-71"/>
+=======
+        <location line="+1"/>
+        <source>Wait for RPC server to start</source>
+        <translation>Warten, bis der RPC-Server gestartet ist</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>Brieftasche %s liegt außerhalb des Datenverzeichnisses %s</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Wallet options:</source>
+        <translation>Brieftaschen-Optionen:</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
+        <translation>Warnung: Veraltetes Argument -debugnet gefunden, bitte -debug=net verwenden</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Sie müssen die Datenbank mit Hilfe von -reindex neu aufbauen, um -txindex zu verändern</translation>
+    </message>
+    <message>
+        <location line="-79"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Blöcke aus externer Datei blk000??.dat importieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-81"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation>Maximale Anzahl an Skript-Verifizierungs-Threads festlegen (bis zu 16, 0 = automatisch, &lt;0 = soviele Kerne frei lassen, Standard: 0)</translation>
@@ -3112,6 +5353,34 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+2"/>
+=======
+        <location line="-105"/>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Kommando ausführen wenn ein relevanter Alarm empfangen wird oder wir einen wirklich langen Fork entdecken (%s im Kommando wird durch die Nachricht ersetzt)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
+        <translation>Debugginginformationen ausgeben (Standard: 0, &lt;category&gt; anzugeben ist optional)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation>Maximale Größe von &quot;high-priority/low-fee&quot;-Transaktionen in Byte festlegen (Standard: %d)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation>Maximale Anzahl an Skript-Verifizierungs-Threads festlegen (bis zu 16, 0 = automatisch, &lt;0 = so viele Kerne frei lassen, Standard: 0)</translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Information</source>
+        <translation>Hinweis</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ungültiger Betrag für -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
@@ -3146,6 +5415,7 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Verbinde nur zu Knoten des Netztyps &lt;net&gt; (IPv4, IPv6 oder Tor)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Ausgabe zusätzlicher Debugginginformationen. Beinhaltet alle anderen &quot;-debug*&quot;-Parameter</translation>
@@ -3172,10 +5442,19 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+3"/>
+=======
+        <location line="+9"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-Optionen: (siehe Dogecoin-Wiki für SSL-Installationsanweisungen)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Rückverfolgungs- und Debuginformationen an die Konsole senden anstatt sie in die Datei debug.log zu schreiben</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
         <translation>Rückverfolgungs- und Debuginformationen an den Debugger senden</translation>
@@ -3187,13 +5466,20 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>Minimale Blockgröße in Byte festlegen (Standard: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+<<<<<<< HEAD
         <translation>Verkleinere Datei debug.log beim Start des Clients (Standard: 1, wenn kein -debug)</translation>
+=======
+        <translation>Verkleinere Datei debug.log beim Starten des Clients (Standard: 1, wenn kein -debug)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -3206,14 +5492,24 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Verbindungstimeout in Millisekunden festlegen (Standard: 5000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>System error: </source>
         <translation>Systemfehler: </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Transaction amount too small</source>
         <translation>Transaktionsbetrag zu gering</translation>
+=======
+        <location line="+5"/>
+        <source>Transaction amount too small</source>
+        <translation>Transaktionsbetrag zu niedrig</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -3226,7 +5522,11 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Transaktion zu groß</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+8"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>UPnP verwenden, um die Portweiterleitung einzurichten (Standard: 0)</translation>
     </message>
@@ -3236,29 +5536,46 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>UPnP verwenden, um die Portweiterleitung einzurichten (Standard: 1, wenn abgehört wird)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Proxy verwenden, um versteckte Tor-Dienste zu erreichen (Standard: identisch mit -proxy)</translation>
     </message>
     <message>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning</source>
         <translation>Warnung</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Warnung: Diese Version is veraltet, Aktualisierung erforderlich!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Sie müssen die Datenbank mit Hilfe von -reindex neu aufbauen, um -txindex zu verändern.</translation>
+=======
+        <location line="+2"/>
+        <source>version</source>
+        <translation>Version</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -3266,12 +5583,20 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>wallet.dat beschädigt, Rettung fehlgeschlagen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-50"/>
+=======
+        <location line="-58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Password for JSON-RPC connections</source>
         <translation>Passwort für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-71"/>
+=======
+        <location line="-70"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>JSON-RPC-Verbindungen von der angegebenen IP-Adresse erlauben</translation>
     </message>
@@ -3281,32 +5606,57 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Sende Befehle an Knoten &lt;ip&gt; (Standard: 127.0.0.1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-127"/>
+=======
+        <location line="-132"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Kommando ausführen wenn der beste Block wechselt (%s im Kommando wird durch den Hash des Blocks ersetzt)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+154"/>
+=======
+        <location line="+161"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Upgrade wallet to latest format</source>
         <translation>Brieftasche auf das neueste Format aktualisieren</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-21"/>
+=======
+        <location line="-24"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>Größe des Schlüsselpools festlegen auf &lt;n&gt; (Standard: 100)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Blockkette erneut nach fehlenden Transaktionen der Brieftasche durchsuchen</translation>
     </message>
     <message>
         <location line="+35"/>
+=======
+        <location line="-11"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>Blockkette erneut nach fehlenden Brieftaschen-Transaktionen durchsuchen</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>OpenSSL (https) für JSON-RPC-Verbindungen verwenden</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-26"/>
+=======
+        <location line="-30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Server certificate file (default: server.cert)</source>
         <translation>Serverzertifikat (Standard: server.cert)</translation>
     </message>
@@ -3316,42 +5666,63 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Privater Serverschlüssel (Standard: server.pem)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-158"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation>Akzeptierte Chiffren (Standard: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+172"/>
+=======
+        <location line="+16"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This help message</source>
         <translation>Dieser Hilfetext</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Kann auf diesem Computer nicht an %s binden (von bind zurückgegebener Fehler %d, %s)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-95"/>
         <source>Connect through socks proxy</source>
         <translation>Verbindung über SOCKS-Proxy herstellen</translation>
     </message>
     <message>
         <location line="-10"/>
+=======
+        <location line="-107"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Erlaube DNS-Namensauflösung für -addnode, -seednode und -connect</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+59"/>
+=======
+        <location line="+60"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading addresses...</source>
         <translation>Lade Adressen...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-38"/>
+=======
+        <location line="-37"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Fehler beim Laden von wallet.dat: Brieftasche beschädigt</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin</source>
         <translation>Fehler beim Laden von wallet.dat: Brieftasche benötigt neuere Version von Dogecoin</translation>
     </message>
@@ -3367,11 +5738,32 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+30"/>
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin Core</source>
+        <translation>Fehler beim Laden von wallet.dat: Brieftasche benötigt neuere Version des Dogecoin-Client</translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Wallet needed to be rewritten: restart Dogecoin Core to complete</source>
+        <translation>Brieftasche musste neu geschrieben werden: starten Sie den Dogecoin-Client zur Fertigstellung neu</translation>
+    </message>
+    <message>
+        <location line="-100"/>
+        <source>Error loading wallet.dat</source>
+        <translation>Fehler beim Laden von wallet.dat</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Ungültige Adresse in -proxy: &apos;%s&apos;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+57"/>
+=======
+        <location line="+56"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation>Unbekannter Netztyp in -onlynet angegeben: &apos;%s&apos;</translation>
     </message>
@@ -3381,7 +5773,11 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Unbekannte Proxyversion in -socks angefordert: %i</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-100"/>
+=======
+        <location line="-101"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Kann Adresse in -bind nicht auflösen: &apos;%s&apos;</translation>
     </message>
@@ -3401,21 +5797,34 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Ungültiger Betrag</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-7"/>
+=======
+        <location line="-6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Insufficient funds</source>
         <translation>Unzureichender Kontostand</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
+=======
+        <location line="+10"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading block index...</source>
         <translation>Lade Blockindex...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-61"/>
+=======
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Mit dem Knoten verbinden und versuchen die Verbindung aufrecht zu halten</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-28"/>
         <source>Unable to bind to %s on this computer. Dogecoin is probably already running.</source>
         <translation>Kann auf diesem Computer nicht an %s binden. Evtl. wurde Dogecoin bereits gestartet.</translation>
@@ -3427,6 +5836,14 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
     </message>
     <message>
         <location line="+22"/>
+=======
+        <location line="-32"/>
+        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
+        <translation>Kann auf diesem Computer nicht an %s binden. Evtl. wurde der Dogecoin-Client bereits gestartet.</translation>
+    </message>
+    <message>
+        <location line="+95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading wallet...</source>
         <translation>Lade Brieftasche...</translation>
     </message>
@@ -3441,12 +5858,20 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Standardadresse kann nicht geschrieben werden</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+68"/>
+=======
+        <location line="+67"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rescanning...</source>
         <translation>Durchsuche erneut...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-60"/>
+=======
+        <location line="-58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Done loading</source>
         <translation>Laden abgeschlossen</translation>
     </message>
@@ -3461,7 +5886,11 @@ zum Beispiel: alertnotify=echo %%s | mail -s \&quot;Dogecoin Alert\&quot; admin@
         <translation>Fehler</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-32"/>
+=======
+        <location line="-35"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
@@ -3470,4 +5899,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
 Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Leserechten nur für den Dateibesitzer.</translation>
     </message>
 </context>
+<<<<<<< HEAD
 </TS>
+=======
+</TS>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

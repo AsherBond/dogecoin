@@ -1,4 +1,5 @@
 // Copyright (c) 2012 The Bitcoin developers
+<<<<<<< HEAD
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -8,6 +9,18 @@
 
 // Name of client reported in the 'version' message. Report the same name
 // for both bitcoind and bitcoin-qt, to make it harder for attackers to
+=======
+// Copyright (c) 2014 The Inutoshi developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "version.h"
+
+#include <string>
+
+// Name of client reported in the 'version' message. Report the same name
+// for both dogecoind and dogecoin-qt, to make it harder for attackers to
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 // target servers or GUI users specifically.
 const std::string CLIENT_NAME("Shibetoshi");
 
@@ -34,6 +47,7 @@ const std::string CLIENT_NAME("Shibetoshi");
 #    include "build.h"
 #endif
 
+<<<<<<< HEAD
 // git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
@@ -43,6 +57,16 @@ const std::string CLIENT_NAME("Shibetoshi");
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
     "v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "" commit
+=======
+// git will put "#define GIT_ARCHIVE 1" on the next line inside archives. $Format:%n#define GIT_ARCHIVE 1$
+#ifdef GIT_ARCHIVE
+#    define GIT_COMMIT_ID "$Format:%h$"
+#    define GIT_COMMIT_DATE "$Format:%cD$"
+#endif
+
+#define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
+    "v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-g" commit
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 #define BUILD_DESC_FROM_UNKNOWN(maj,min,rev,build) \
     "v" DO_STRINGIZE(maj) "." DO_STRINGIZE(min) "." DO_STRINGIZE(rev) "." DO_STRINGIZE(build) "-unk"

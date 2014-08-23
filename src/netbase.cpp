@@ -1,21 +1,43 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
+=======
+// Copyright (c) 2009-2014 The Bitcoin developers
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "netbase.h"
+<<<<<<< HEAD
 #include "util.h"
 #include "sync.h"
 #include "hash.h"
 
 #ifndef WIN32
 #include <sys/fcntl.h>
+=======
+
+#include "hash.h"
+#include "sync.h"
+#include "uint256.h"
+#include "util.h"
+
+#ifndef WIN32
+#include <fcntl.h>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif
 
 #include <boost/algorithm/string/case_conv.hpp> // for to_lower()
 #include <boost/algorithm/string/predicate.hpp> // for startswith() and endswith()
 
+<<<<<<< HEAD
+=======
+#if !defined(HAVE_MSG_NOSIGNAL) && !defined(MSG_NOSIGNAL)
+#define MSG_NOSIGNAL 0
+#endif
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 using namespace std;
 
 // Settings
@@ -166,7 +188,11 @@ bool LookupNumeric(const char *pszName, CService& addr, int portDefault)
 
 bool static Socks4(const CService &addrDest, SOCKET& hSocket)
 {
+<<<<<<< HEAD
     printf("SOCKS4 connecting %s\n", addrDest.ToString().c_str());
+=======
+    LogPrintf("SOCKS4 connecting %s\n", addrDest.ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     if (!addrDest.IsIPv4())
     {
         closesocket(hSocket);
@@ -201,16 +227,27 @@ bool static Socks4(const CService &addrDest, SOCKET& hSocket)
     {
         closesocket(hSocket);
         if (pchRet[1] != 0x5b)
+<<<<<<< HEAD
             printf("ERROR: Proxy returned error %d\n", pchRet[1]);
         return false;
     }
     printf("SOCKS4 connected %s\n", addrDest.ToString().c_str());
+=======
+            LogPrintf("ERROR: Proxy returned error %d\n", pchRet[1]);
+        return false;
+    }
+    LogPrintf("SOCKS4 connected %s\n", addrDest.ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     return true;
 }
 
 bool static Socks5(string strDest, int port, SOCKET& hSocket)
 {
+<<<<<<< HEAD
     printf("SOCKS5 connecting %s\n", strDest.c_str());
+=======
+    LogPrintf("SOCKS5 connecting %s\n", strDest);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     if (strDest.size() > 255)
     {
         closesocket(hSocket);
@@ -306,7 +343,11 @@ bool static Socks5(string strDest, int port, SOCKET& hSocket)
         closesocket(hSocket);
         return error("Error reading from proxy");
     }
+<<<<<<< HEAD
     printf("SOCKS5 connected %s\n", strDest.c_str());
+=======
+    LogPrintf("SOCKS5 connected %s\n", strDest);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     return true;
 }
 
@@ -321,7 +362,11 @@ bool static ConnectSocketDirectly(const CService &addrConnect, SOCKET& hSocketRe
 #endif
     socklen_t len = sizeof(sockaddr);
     if (!addrConnect.GetSockAddr((struct sockaddr*)&sockaddr, &len)) {
+<<<<<<< HEAD
         printf("Cannot connect to %s: unsupported network\n", addrConnect.ToString().c_str());
+=======
+        LogPrintf("Cannot connect to %s: unsupported network\n", addrConnect.ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         return false;
     }
 
@@ -360,13 +405,21 @@ bool static ConnectSocketDirectly(const CService &addrConnect, SOCKET& hSocketRe
             int nRet = select(hSocket + 1, NULL, &fdset, NULL, &timeout);
             if (nRet == 0)
             {
+<<<<<<< HEAD
                 printf("connection timeout\n");
+=======
+                LogPrint("net", "connection to %s timeout\n", addrConnect.ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 closesocket(hSocket);
                 return false;
             }
             if (nRet == SOCKET_ERROR)
             {
+<<<<<<< HEAD
                 printf("select() for connection failed: %i\n",WSAGetLastError());
+=======
+                LogPrintf("select() for %s failed: %i\n", addrConnect.ToString(), WSAGetLastError());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 closesocket(hSocket);
                 return false;
             }
@@ -377,13 +430,21 @@ bool static ConnectSocketDirectly(const CService &addrConnect, SOCKET& hSocketRe
             if (getsockopt(hSocket, SOL_SOCKET, SO_ERROR, &nRet, &nRetSize) == SOCKET_ERROR)
 #endif
             {
+<<<<<<< HEAD
                 printf("getsockopt() for connection failed: %i\n",WSAGetLastError());
+=======
+                LogPrintf("getsockopt() for %s failed: %i\n", addrConnect.ToString(), WSAGetLastError());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 closesocket(hSocket);
                 return false;
             }
             if (nRet != 0)
             {
+<<<<<<< HEAD
                 printf("connect() failed after select(): %s\n",strerror(nRet));
+=======
+                LogPrintf("connect() to %s failed after select(): %s\n", addrConnect.ToString(), strerror(nRet));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 closesocket(hSocket);
                 return false;
             }
@@ -394,7 +455,11 @@ bool static ConnectSocketDirectly(const CService &addrConnect, SOCKET& hSocketRe
         else
 #endif
         {
+<<<<<<< HEAD
             printf("connect() failed: %i\n",WSAGetLastError());
+=======
+            LogPrintf("connect() to %s failed: %i\n", addrConnect.ToString(), WSAGetLastError());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             closesocket(hSocket);
             return false;
         }
@@ -880,17 +945,28 @@ std::vector<unsigned char> CNetAddr::GetGroup() const
     return vchRet;
 }
 
+<<<<<<< HEAD
 uint64 CNetAddr::GetHash() const
 {
     uint256 hash = Hash(&ip[0], &ip[16]);
     uint64 nRet;
+=======
+uint64_t CNetAddr::GetHash() const
+{
+    uint256 hash = Hash(&ip[0], &ip[16]);
+    uint64_t nRet;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     memcpy(&nRet, &hash, sizeof(nRet));
     return nRet;
 }
 
 void CNetAddr::print() const
 {
+<<<<<<< HEAD
     printf("CNetAddr(%s)\n", ToString().c_str());
+=======
+    LogPrintf("CNetAddr(%s)\n", ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 // private extensions to enum Network, only returned by GetExtNetwork,
@@ -1131,7 +1207,11 @@ std::string CService::ToString() const
 
 void CService::print() const
 {
+<<<<<<< HEAD
     printf("CService(%s)\n", ToString().c_str());
+=======
+    LogPrintf("CService(%s)\n", ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 void CService::SetPort(unsigned short portIn)

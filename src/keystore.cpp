@@ -1,12 +1,26 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
+=======
+// Copyright (c) 2009-2013 The Bitcoin developers
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "keystore.h"
+<<<<<<< HEAD
 #include "script.h"
 
+=======
+
+#include "crypter.h"
+#include "key.h"
+#include "script.h"
+
+#include <boost/foreach.hpp>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 bool CKeyStore::GetPubKey(const CKeyID &address, CPubKey &vchPubKeyOut) const
 {
     CKey key;
@@ -52,6 +66,7 @@ bool CBasicKeyStore::GetCScript(const CScriptID &hash, CScript& redeemScriptOut)
     return false;
 }
 
+<<<<<<< HEAD
 bool CCryptoKeyStore::SetCrypted()
 {
     LOCK(cs_KeyStore);
@@ -204,3 +219,5 @@ bool CCryptoKeyStore::EncryptKeys(CKeyingMaterial& vMasterKeyIn)
     }
     return true;
 }
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

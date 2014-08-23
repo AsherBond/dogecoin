@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -32,6 +33,23 @@
 #include <unistd.h> // for sysconf
 #endif
 
+=======
+// Copyright (c) 2009-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_ALLOCATORS_H
+#define BITCOIN_ALLOCATORS_H
+
+#include <map>
+#include <string>
+#include <string.h>
+
+#include <boost/thread/mutex.hpp>
+#include <boost/thread/once.hpp>
+#include <openssl/crypto.h> // for OPENSSL_cleanse()
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /**
  * Thread-safe class to keep track of locked (ie, non-swappable) memory pages.
  *
@@ -54,6 +72,15 @@ public:
         page_mask = ~(page_size - 1);
     }
 
+<<<<<<< HEAD
+=======
+    ~LockedPageManagerBase()
+    {
+        assert(this->GetLockedPageCount() == 0);
+    }
+
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     // For all pages in affected range, increase lock count
     void LockRange(void *p, size_t size)
     {
@@ -116,6 +143,7 @@ private:
     Histogram histogram;
 };
 
+<<<<<<< HEAD
 /** Determine system page size in bytes */
 static inline size_t GetSystemPageSize()
 {
@@ -131,6 +159,8 @@ static inline size_t GetSystemPageSize()
 #endif
     return page_size;
 }
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /**
  * OS-dependent memory page locking/unlocking.
@@ -142,6 +172,7 @@ public:
     /** Lock memory pages.
      * addr and len must be a multiple of the system page size
      */
+<<<<<<< HEAD
     bool Lock(const void *addr, size_t len)
     {
 #ifdef WIN32
@@ -161,20 +192,62 @@ public:
         return munlock(addr, len) == 0;
 #endif
     }
+=======
+    bool Lock(const void *addr, size_t len);
+    /** Unlock memory pages.
+     * addr and len must be a multiple of the system page size
+     */
+    bool Unlock(const void *addr, size_t len);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 /**
  * Singleton class to keep track of locked (ie, non-swappable) memory pages, for use in
  * std::allocator templates.
+<<<<<<< HEAD
+=======
+ *
+ * Some implementations of the STL allocate memory in some constructors (i.e., see
+ * MSVC's vector<T> implementation where it allocates 1 byte of memory in the allocator.)
+ * Due to the unpredictable order of static initializers, we have to make sure the
+ * LockedPageManager instance exists before any other STL-based objects that use
+ * secure_allocator are created. So instead of having LockedPageManager also be
+ * static-intialized, it is created on demand.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
  */
 class LockedPageManager: public LockedPageManagerBase<MemoryPageLocker>
 {
 public:
+<<<<<<< HEAD
     static LockedPageManager instance; // instantiated in util.cpp
 private:
     LockedPageManager():
         LockedPageManagerBase<MemoryPageLocker>(GetSystemPageSize())
     {}
+=======
+    static LockedPageManager& Instance() 
+    {
+        boost::call_once(LockedPageManager::CreateInstance, LockedPageManager::init_flag);
+        return *LockedPageManager::_instance;
+    }
+
+private:
+    LockedPageManager();
+
+    static void CreateInstance()
+    {
+        // Using a local static instance guarantees that the object is initialized
+        // when it's first needed and also deinitialized after all objects that use
+        // it are done with it.  I can think of one unlikely scenario where we may
+        // have a static deinitialization order/problem, but the check in
+        // LockedPageManagerBase's destructor helps us detect if that ever happens.
+        static LockedPageManager instance;
+        LockedPageManager::_instance = &instance;
+    }
+
+    static LockedPageManager* _instance;
+    static boost::once_flag init_flag;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 //
@@ -182,12 +255,20 @@ private:
 // Intended for non-dynamically allocated structures.
 //
 template<typename T> void LockObject(const T &t) {
+<<<<<<< HEAD
     LockedPageManager::instance.LockRange((void*)(&t), sizeof(T));
+=======
+    LockedPageManager::Instance().LockRange((void*)(&t), sizeof(T));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 template<typename T> void UnlockObject(const T &t) {
     OPENSSL_cleanse((void*)(&t), sizeof(T));
+<<<<<<< HEAD
     LockedPageManager::instance.UnlockRange((void*)(&t), sizeof(T));
+=======
+    LockedPageManager::Instance().UnlockRange((void*)(&t), sizeof(T));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 //
@@ -219,7 +300,11 @@ struct secure_allocator : public std::allocator<T>
         T *p;
         p = std::allocator<T>::allocate(n, hint);
         if (p != NULL)
+<<<<<<< HEAD
             LockedPageManager::instance.LockRange(p, sizeof(T) * n);
+=======
+            LockedPageManager::Instance().LockRange(p, sizeof(T) * n);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         return p;
     }
 
@@ -228,7 +313,11 @@ struct secure_allocator : public std::allocator<T>
         if (p != NULL)
         {
             OPENSSL_cleanse(p, sizeof(T) * n);
+<<<<<<< HEAD
             LockedPageManager::instance.UnlockRange(p, sizeof(T) * n);
+=======
+            LockedPageManager::Instance().UnlockRange(p, sizeof(T) * n);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         }
         std::allocator<T>::deallocate(p, n);
     }

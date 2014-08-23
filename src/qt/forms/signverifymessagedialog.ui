@@ -19,9 +19,12 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
+<<<<<<< HEAD
      <property name="currentIndex">
       <number>0</number>
      </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
      <widget class="QWidget" name="tabSignMessage">
       <attribute name="title">
        <string>&amp;Sign Message</string>
@@ -50,15 +53,22 @@
            <property name="toolTip">
             <string>The address to sign the message with (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</string>
            </property>
+<<<<<<< HEAD
            <property name="maxLength">
             <number>34</number>
            </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
           </widget>
          </item>
          <item>
           <widget class="QPushButton" name="addressBookButton_SM">
            <property name="toolTip">
+<<<<<<< HEAD
             <string>Choose an address from the address book</string>
+=======
+            <string>Choose previously used address</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            </property>
            <property name="text">
             <string/>
@@ -263,15 +273,22 @@
            <property name="toolTip">
             <string>The address the message was signed with (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</string>
            </property>
+<<<<<<< HEAD
            <property name="maxLength">
             <number>34</number>
            </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
           </widget>
          </item>
          <item>
           <widget class="QPushButton" name="addressBookButton_VM">
            <property name="toolTip">
+<<<<<<< HEAD
             <string>Choose an address from the address book</string>
+=======
+            <string>Choose previously used address</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            </property>
            <property name="text">
             <string/>

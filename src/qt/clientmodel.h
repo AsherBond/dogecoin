@@ -1,11 +1,25 @@
+<<<<<<< HEAD
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #ifndef CLIENTMODEL_H
 #define CLIENTMODEL_H
 
 #include <QObject>
 
+<<<<<<< HEAD
 class OptionsModel;
 class AddressTableModel;
 class TransactionTableModel;
+=======
+class AddressTableModel;
+class OptionsModel;
+class TransactionTableModel;
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 class CWallet;
 
 QT_BEGIN_NAMESPACE
@@ -35,11 +49,22 @@ public:
     int getNumBlocks() const;
     int getNumBlocksAtStartup();
 
+<<<<<<< HEAD
     double getVerificationProgress() const;
     QDateTime getLastBlockDate() const;
 
     //! Return true if client connected to testnet
     bool isTestNet() const;
+=======
+    quint64 getTotalBytesRecv() const;
+    quint64 getTotalBytesSent() const;
+
+    double getVerificationProgress() const;
+    QDateTime getLastBlockDate() const;
+
+    //! Return network (main, testnet3, regtest)
+    QString getNetworkName() const;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     //! Return true if core is doing initial block download
     bool inInitialBlockDownload() const;
     //! Return true if core is importing blocks
@@ -60,8 +85,13 @@ private:
 
     int cachedNumBlocks;
     int cachedNumBlocksOfPeers;
+<<<<<<< HEAD
 	bool cachedReindexing;
 	bool cachedImporting;
+=======
+    bool cachedReindexing;
+    bool cachedImporting;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     int numBlocksAtStartup;
 
@@ -74,8 +104,14 @@ signals:
     void numConnectionsChanged(int count);
     void numBlocksChanged(int count, int countOfPeers);
     void alertsChanged(const QString &warnings);
+<<<<<<< HEAD
 
     //! Asynchronous message notification
+=======
+    void bytesChanged(quint64 totalBytesIn, quint64 totalBytesOut);
+
+    //! Fired when a message should be reported to the user
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     void message(const QString &title, const QString &message, unsigned int style);
 
 public slots:

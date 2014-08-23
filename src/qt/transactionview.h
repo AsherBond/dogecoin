@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #ifndef TRANSACTIONVIEW_H
 #define TRANSACTIONVIEW_H
 
 #include <QWidget>
 
+<<<<<<< HEAD
 class WalletModel;
 class TransactionFilterProxy;
 
@@ -14,6 +22,19 @@ class QModelIndex;
 class QMenu;
 class QFrame;
 class QDateTimeEdit;
+=======
+class TransactionFilterProxy;
+class WalletModel;
+
+QT_BEGIN_NAMESPACE
+class QComboBox;
+class QDateTimeEdit;
+class QFrame;
+class QLineEdit;
+class QMenu;
+class QModelIndex;
+class QTableView;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 QT_END_NAMESPACE
 
 /** Widget showing the transaction list for a wallet, including a filter row.
@@ -72,6 +93,12 @@ private slots:
 signals:
     void doubleClicked(const QModelIndex&);
 
+<<<<<<< HEAD
+=======
+    /**  Fired when a message should be reported to the user */
+    void message(const QString &title, const QString &message, unsigned int style);
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 public slots:
     void chooseDate(int idx);
     void chooseType(int idx);

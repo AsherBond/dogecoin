@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 #include <boost/test/unit_test.hpp>
 
 #include <string>
 #include <vector>
 
 #include "main.h"
+=======
+
+
+#include "main.h"
+#include "util.h"
+
+#include <stdint.h>
+
+#include <boost/test/unit_test.hpp>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 // amounts 0.00000001 .. 0.00100000
 #define NUM_MULTIPLES_UNIT 100000
@@ -17,6 +28,7 @@
 // amounts 50 .. 21000000
 #define NUM_MULTIPLES_50BTC 420000
 
+<<<<<<< HEAD
 using namespace std;
 
 BOOST_AUTO_TEST_SUITE(compress_tests)
@@ -30,6 +42,19 @@ bool static TestDecode(uint64 in) {
 }
 
 bool static TestPair(uint64 dec, uint64 enc) {
+=======
+BOOST_AUTO_TEST_SUITE(compress_tests)
+
+bool static TestEncode(uint64_t in) {
+    return in == CTxOutCompressor::DecompressAmount(CTxOutCompressor::CompressAmount(in));
+}
+
+bool static TestDecode(uint64_t in) {
+    return in == CTxOutCompressor::CompressAmount(CTxOutCompressor::DecompressAmount(in));
+}
+
+bool static TestPair(uint64_t dec, uint64_t enc) {
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     return CTxOutCompressor::CompressAmount(dec) == enc &&
            CTxOutCompressor::DecompressAmount(enc) == dec;
 }
@@ -43,6 +68,7 @@ BOOST_AUTO_TEST_CASE(compress_amounts)
     BOOST_CHECK(TestPair(      50*COIN,      0x32));
     BOOST_CHECK(TestPair(21000000*COIN, 0x1406f40));
 
+<<<<<<< HEAD
     for (uint64 i = 1; i <= NUM_MULTIPLES_UNIT; i++)
         BOOST_CHECK(TestEncode(i));
 
@@ -56,6 +82,21 @@ BOOST_AUTO_TEST_CASE(compress_amounts)
         BOOST_CHECK(TestEncode(i * 50 * COIN));
 
     for (uint64 i = 0; i < 100000; i++)
+=======
+    for (uint64_t i = 1; i <= NUM_MULTIPLES_UNIT; i++)
+        BOOST_CHECK(TestEncode(i));
+
+    for (uint64_t i = 1; i <= NUM_MULTIPLES_CENT; i++)
+        BOOST_CHECK(TestEncode(i * CENT));
+
+    for (uint64_t i = 1; i <= NUM_MULTIPLES_1BTC; i++)
+        BOOST_CHECK(TestEncode(i * COIN));
+
+    for (uint64_t i = 1; i <= NUM_MULTIPLES_50BTC; i++)
+        BOOST_CHECK(TestEncode(i * 50 * COIN));
+
+    for (uint64_t i = 0; i < 100000; i++)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         BOOST_CHECK(TestDecode(i));
 }
 

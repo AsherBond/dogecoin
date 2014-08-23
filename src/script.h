@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -6,12 +7,28 @@
 #ifndef H_BITCOIN_SCRIPT
 #define H_BITCOIN_SCRIPT
 
+=======
+// Copyright (c) 2009-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef H_BITCOIN_SCRIPT
+#define H_BITCOIN_SCRIPT
+
+#include "bignum.h"
+#include "key.h"
+#include "util.h"
+
+#include <stdexcept>
+#include <stdint.h>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include <string>
 #include <vector>
 
 #include <boost/foreach.hpp>
 #include <boost/variant.hpp>
 
+<<<<<<< HEAD
 #include "keystore.h"
 #include "bignum.h"
 
@@ -19,6 +36,14 @@ class CCoins;
 class CTransaction;
 
 static const unsigned int MAX_SCRIPT_ELEMENT_SIZE = 520; // bytes
+=======
+class CCoins;
+class CKeyStore;
+class CTransaction;
+
+static const unsigned int MAX_SCRIPT_ELEMENT_SIZE = 520; // bytes
+static const unsigned int MAX_OP_RETURN_RELAY = 40;      // bytes
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /** Signature hash types/flags */
 enum
@@ -33,9 +58,16 @@ enum
 enum
 {
     SCRIPT_VERIFY_NONE      = 0,
+<<<<<<< HEAD
     SCRIPT_VERIFY_P2SH      = (1U << 0),
     SCRIPT_VERIFY_STRICTENC = (1U << 1),
     SCRIPT_VERIFY_NOCACHE   = (1U << 2),
+=======
+    SCRIPT_VERIFY_P2SH      = (1U << 0), // evaluate P2SH (BIP16) subscripts
+    SCRIPT_VERIFY_STRICTENC = (1U << 1), // enforce strict conformance to DER and SEC2 for signatures and pubkeys
+    SCRIPT_VERIFY_EVEN_S    = (1U << 2), // enforce even S values in signatures (depends on STRICTENC)
+    SCRIPT_VERIFY_NOCACHE   = (1U << 3), // do not store results in signature cache (but do query it)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 enum txnouttype
@@ -46,6 +78,10 @@ enum txnouttype
     TX_PUBKEYHASH,
     TX_SCRIPTHASH,
     TX_MULTISIG,
+<<<<<<< HEAD
+=======
+    TX_NULL_DATA,
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 class CNoDestination {
@@ -202,6 +238,10 @@ enum opcodetype
 
 
     // template matching params
+<<<<<<< HEAD
+=======
+    OP_SMALLDATA = 0xf9,
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     OP_SMALLINTEGER = 0xfa,
     OP_PUBKEYS = 0xfb,
     OP_PUBKEYHASH = 0xfd,
@@ -245,7 +285,11 @@ inline std::string StackString(const std::vector<std::vector<unsigned char> >& v
 class CScript : public std::vector<unsigned char>
 {
 protected:
+<<<<<<< HEAD
     CScript& push_int64(int64 n)
+=======
+    CScript& push_int64(int64_t n)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     {
         if (n == -1 || (n >= 1 && n <= 16))
         {
@@ -259,7 +303,11 @@ protected:
         return *this;
     }
 
+<<<<<<< HEAD
     CScript& push_uint64(uint64 n)
+=======
+    CScript& push_uint64(uint64_t n)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     {
         if (n >= 1 && n <= 16)
         {
@@ -296,6 +344,7 @@ public:
 
 
     //explicit CScript(char b) is not portable.  Use 'signed char' or 'unsigned char'.
+<<<<<<< HEAD
     explicit CScript(signed char b)    { operator<<(b); }
     explicit CScript(short b)          { operator<<(b); }
     explicit CScript(int b)            { operator<<(b); }
@@ -306,6 +355,18 @@ public:
     explicit CScript(unsigned short b) { operator<<(b); }
     explicit CScript(unsigned long b)  { operator<<(b); }
     explicit CScript(uint64 b)         { operator<<(b); }
+=======
+    explicit CScript(signed char b)        { operator<<(b); }
+    explicit CScript(short b)              { operator<<(b); }
+    explicit CScript(int b)                { operator<<(b); }
+    explicit CScript(long b)               { operator<<(b); }
+    explicit CScript(long long b)          { operator<<(b); }
+    explicit CScript(unsigned char b)      { operator<<(b); }
+    explicit CScript(unsigned int b)       { operator<<(b); }
+    explicit CScript(unsigned short b)     { operator<<(b); }
+    explicit CScript(unsigned long b)      { operator<<(b); }
+    explicit CScript(unsigned long long b) { operator<<(b); }
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     explicit CScript(opcodetype b)     { operator<<(b); }
     explicit CScript(const uint256& b) { operator<<(b); }
@@ -314,6 +375,7 @@ public:
 
 
     //CScript& operator<<(char b) is not portable.  Use 'signed char' or 'unsigned char'.
+<<<<<<< HEAD
     CScript& operator<<(signed char b)    { return push_int64(b); }
     CScript& operator<<(short b)          { return push_int64(b); }
     CScript& operator<<(int b)            { return push_int64(b); }
@@ -324,6 +386,18 @@ public:
     CScript& operator<<(unsigned short b) { return push_uint64(b); }
     CScript& operator<<(unsigned long b)  { return push_uint64(b); }
     CScript& operator<<(uint64 b)         { return push_uint64(b); }
+=======
+    CScript& operator<<(signed char b)        { return push_int64(b); }
+    CScript& operator<<(short b)              { return push_int64(b); }
+    CScript& operator<<(int b)                { return push_int64(b); }
+    CScript& operator<<(long b)               { return push_int64(b); }
+    CScript& operator<<(long long b)          { return push_int64(b); }
+    CScript& operator<<(unsigned char b)      { return push_uint64(b); }
+    CScript& operator<<(unsigned int b)       { return push_uint64(b); }
+    CScript& operator<<(unsigned short b)     { return push_uint64(b); }
+    CScript& operator<<(unsigned long b)      { return push_uint64(b); }
+    CScript& operator<<(unsigned long long b) { return push_uint64(b); }
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     CScript& operator<<(opcodetype opcode)
     {
@@ -426,6 +500,7 @@ public:
 
     bool GetOp2(const_iterator& pc, opcodetype& opcodeRet, std::vector<unsigned char>* pvchRet) const
     {
+<<<<<<< HEAD
 		const_iterator	scriptEnd = end();
 		
         opcodeRet = OP_INVALIDOPCODE;
@@ -434,6 +509,16 @@ public:
 
         // Read instruction
         if (scriptEnd - pc < 1)
+=======
+        opcodeRet = OP_INVALIDOPCODE;
+        if (pvchRet)
+            pvchRet->clear();
+        if (pc >= end())
+            return false;
+
+        // Read instruction
+        if (end() - pc < 1)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             return false;
         unsigned int opcode = *pc++;
 
@@ -447,13 +532,21 @@ public:
             }
             else if (opcode == OP_PUSHDATA1)
             {
+<<<<<<< HEAD
                 if (scriptEnd - pc < 1)
+=======
+                if (end() - pc < 1)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                     return false;
                 nSize = *pc++;
             }
             else if (opcode == OP_PUSHDATA2)
             {
+<<<<<<< HEAD
                 if (scriptEnd - pc < 2)
+=======
+                if (end() - pc < 2)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                     return false;
                 nSize = 0;
                 memcpy(&nSize, &pc[0], 2);
@@ -461,12 +554,20 @@ public:
             }
             else if (opcode == OP_PUSHDATA4)
             {
+<<<<<<< HEAD
                 if (scriptEnd - pc < 4)
+=======
+                if (end() - pc < 4)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                     return false;
                 memcpy(&nSize, &pc[0], 4);
                 pc += 4;
             }
+<<<<<<< HEAD
             if (scriptEnd - pc < 0 || (unsigned int)(scriptEnd - pc) < nSize)
+=======
+            if (end() - pc < 0 || (unsigned int)(end() - pc) < nSize)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 return false;
             if (pvchRet)
                 pvchRet->assign(pc, pc + nSize);
@@ -534,6 +635,7 @@ public:
 
     bool IsPayToScriptHash() const;
 
+<<<<<<< HEAD
     // Called by CTransaction::IsStandard
     bool IsPushOnly() const
     {
@@ -550,13 +652,33 @@ public:
     }
 
 
+=======
+    // Called by IsStandardTx and P2SH VerifyScript (which makes it consensus-critical).
+    bool IsPushOnly() const;
+
+    // Called by IsStandardTx.
+    bool HasCanonicalPushes() const;
+
+    // Returns whether the script is guaranteed to fail at execution,
+    // regardless of the initial stack. This allows outputs to be pruned
+    // instantly when entering the UTXO set.
+    bool IsUnspendable() const
+    {
+        return (size() > 0 && *begin() == OP_RETURN);
+    }
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     void SetDestination(const CTxDestination& address);
     void SetMultisig(int nRequired, const std::vector<CPubKey>& keys);
 
 
     void PrintHex() const
     {
+<<<<<<< HEAD
         printf("CScript(%s)\n", HexStr(begin(), end(), true).c_str());
+=======
+        LogPrintf("CScript(%s)\n", HexStr(begin(), end(), true).c_str());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     std::string ToString() const
@@ -584,7 +706,11 @@ public:
 
     void print() const
     {
+<<<<<<< HEAD
         printf("%s\n", ToString().c_str());
+=======
+        LogPrintf("%s\n", ToString().c_str());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     CScriptID GetID() const
@@ -666,17 +792,30 @@ public:
     }
 };
 
+<<<<<<< HEAD
 bool IsCanonicalPubKey(const std::vector<unsigned char> &vchPubKey);
 bool IsCanonicalSignature(const std::vector<unsigned char> &vchSig);
+=======
+bool IsCanonicalPubKey(const std::vector<unsigned char> &vchPubKey, unsigned int flags);
+bool IsCanonicalSignature(const std::vector<unsigned char> &vchSig, unsigned int flags);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 bool EvalScript(std::vector<std::vector<unsigned char> >& stack, const CScript& script, const CTransaction& txTo, unsigned int nIn, unsigned int flags, int nHashType);
 bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<std::vector<unsigned char> >& vSolutionsRet);
 int ScriptSigArgsExpected(txnouttype t, const std::vector<std::vector<unsigned char> >& vSolutions);
+<<<<<<< HEAD
 bool IsStandard(const CScript& scriptPubKey);
 bool IsMine(const CKeyStore& keystore, const CScript& scriptPubKey);
 bool IsMine(const CKeyStore& keystore, const CTxDestination &dest);
 bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet);
 bool ExtractDestinationAndMine(const CKeyStore &keystore, const CScript& scriptPubKey, CTxDestination& addressRet, bool *outMine);
+=======
+bool IsStandard(const CScript& scriptPubKey, txnouttype& whichType);
+bool IsMine(const CKeyStore& keystore, const CScript& scriptPubKey);
+bool IsMine(const CKeyStore& keystore, const CTxDestination &dest);
+void ExtractAffectedKeys(const CKeyStore &keystore, const CScript& scriptPubKey, std::vector<CKeyID> &vKeys);
+bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 bool ExtractDestinations(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<CTxDestination>& addressRet, int& nRequiredRet);
 bool SignSignature(const CKeyStore& keystore, const CScript& fromPubKey, CTransaction& txTo, unsigned int nIn, int nHashType=SIGHASH_ALL);
 bool SignSignature(const CKeyStore& keystore, const CTransaction& txFrom, CTransaction& txTo, unsigned int nIn, int nHashType=SIGHASH_ALL);

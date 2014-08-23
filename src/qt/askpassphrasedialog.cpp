@@ -1,12 +1,27 @@
+<<<<<<< HEAD
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include "askpassphrasedialog.h"
 #include "ui_askpassphrasedialog.h"
 
 #include "guiconstants.h"
 #include "walletmodel.h"
 
+<<<<<<< HEAD
 #include <QMessageBox>
 #include <QPushButton>
 #include <QKeyEvent>
+=======
+#include "allocators.h"
+
+#include <QKeyEvent>
+#include <QMessageBox>
+#include <QPushButton>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget *parent) :
     QDialog(parent),
@@ -16,6 +31,10 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget *parent) :
     fCapsLock(false)
 {
     ui->setupUi(this);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     ui->passEdit1->setMaxLength(MAX_PASSPHRASE_SIZE);
     ui->passEdit2->setMaxLength(MAX_PASSPHRASE_SIZE);
     ui->passEdit3->setMaxLength(MAX_PASSPHRASE_SIZE);
@@ -109,7 +128,11 @@ void AskPassphraseDialog::accept()
                 {
                     QMessageBox::warning(this, tr("Wallet encrypted"),
                                          "<qt>" +
+<<<<<<< HEAD
                                          tr("Dogecoin will close now to finish the encryption process. "
+=======
+                                         tr("Dogecoin Core will close now to finish the encryption process. "
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                                          "Remember that encrypting your wallet cannot fully protect "
                                          "your dogecoins from being stolen by malware infecting your computer.") +
                                          "<br><br><b>" +

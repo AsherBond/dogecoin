@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <boost/test/unit_test.hpp>
 
 #include <boost/foreach.hpp>
@@ -10,6 +11,24 @@ BOOST_AUTO_TEST_SUITE(accounting_tests)
 
 static void
 GetResults(CWalletDB& walletdb, std::map<int64, CAccountingEntry>& results)
+=======
+
+
+#include "wallet.h"
+#include "walletdb.h"
+
+#include <stdint.h>
+
+#include <boost/foreach.hpp>
+#include <boost/test/unit_test.hpp>
+
+extern CWallet* pwalletMain;
+
+BOOST_AUTO_TEST_SUITE(accounting_tests)
+
+static void
+GetResults(CWalletDB& walletdb, std::map<int64_t, CAccountingEntry>& results)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     std::list<CAccountingEntry> aes;
 
@@ -28,7 +47,13 @@ BOOST_AUTO_TEST_CASE(acc_orderupgrade)
     std::vector<CWalletTx*> vpwtx;
     CWalletTx wtx;
     CAccountingEntry ae;
+<<<<<<< HEAD
     std::map<int64, CAccountingEntry> results;
+=======
+    std::map<int64_t, CAccountingEntry> results;
+
+    LOCK(pwalletMain->cs_wallet);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     ae.strAccount = "";
     ae.nCreditDebit = 1;

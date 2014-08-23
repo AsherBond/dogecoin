@@ -90,6 +90,11 @@
            </layout>
           </item>
           <item>
+<<<<<<< HEAD
+=======
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            <layout class="QFormLayout" name="formLayout_2">
             <property name="fieldGrowthPolicy">
              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
@@ -103,7 +108,11 @@
             <item row="0" column="0">
              <widget class="QLabel" name="label">
               <property name="text">
+<<<<<<< HEAD
                <string>Balance:</string>
+=======
+               <string>Available:</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
               </property>
              </widget>
             </item>
@@ -119,10 +128,20 @@
                <cursorShape>IBeamCursor</cursorShape>
               </property>
               <property name="toolTip">
+<<<<<<< HEAD
                <string>Your current balance</string>
               </property>
               <property name="text">
                <string notr="true">0 DOGE</string>
+=======
+               <string>Your current spendable balance</string>
+              </property>
+              <property name="text">
+               <string notr="true">0 BTC</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
               </property>
               <property name="textInteractionFlags">
                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -132,7 +151,11 @@
             <item row="1" column="0">
              <widget class="QLabel" name="label_3">
               <property name="text">
+<<<<<<< HEAD
                <string>Unconfirmed:</string>
+=======
+               <string>Pending:</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
               </property>
              </widget>
             </item>
@@ -148,10 +171,20 @@
                <cursorShape>IBeamCursor</cursorShape>
               </property>
               <property name="toolTip">
+<<<<<<< HEAD
                <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
               </property>
               <property name="text">
                <string notr="true">0 DOGE</string>
+=======
+               <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
+              </property>
+              <property name="text">
+               <string notr="true">0 BTC</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
               </property>
               <property name="textInteractionFlags">
                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -177,13 +210,77 @@
                <string>Mined balance that has not yet matured</string>
               </property>
               <property name="text">
+<<<<<<< HEAD
                <string notr="true">0 DOGE</string>
+=======
+               <string notr="true">0 BTC</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
               </property>
               <property name="textInteractionFlags">
                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
               </property>
              </widget>
             </item>
+<<<<<<< HEAD
+=======
+            <item row="4" column="0">
+             <widget class="QLabel" name="labelTotalText">
+              <property name="text">
+               <string>Total:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="labelTotal">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>IBeamCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Your current total balance</string>
+              </property>
+              <property name="text">
+               <string notr="true">0 BTC</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="textInteractionFlags">
+               <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="2">
+             <widget class="Line" name="line">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            </layout>
           </item>
          </layout>
@@ -202,6 +299,7 @@
          </property>
         </spacer>
        </item>
+<<<<<<< HEAD
         <item>
          <widget class="QLabel" name="label_wallet_bgcoin">
           <property name="text">
@@ -228,6 +326,27 @@
           </property>
          </widget>
         </item>
+=======
+       <item>
+        <widget class="QLabel" name="label_wallet_bgcoin">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../dogecoin.qrc">:/images/wallet_bgcoin</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="margin">
+          <number>-2</number>
+         </property>
+        </widget>
+       </item>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
       </layout>
      </item>
      <item>

@@ -1,5 +1,6 @@
 //
 // Unit tests for canonical signatures
+<<<<<<< HEAD
 
 #include "json/json_spirit_writer_template.h"
 #include <boost/test/unit_test.hpp>
@@ -8,13 +9,32 @@
 #include "key.h"
 #include "script.h"
 #include "util.h"
+=======
+//
+
+
+
+#include "script.h"
+#include "util.h"
+#include "data/sig_noncanonical.json.h"
+#include "data/sig_canonical.json.h"
+
+#include <boost/foreach.hpp>
+#include <boost/test/unit_test.hpp>
+#include "json/json_spirit_writer_template.h"
+#include <openssl/ecdsa.h>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 using namespace std;
 using namespace json_spirit;
 
 
 // In script_tests.cpp
+<<<<<<< HEAD
 extern Array read_json(const std::string& filename);
+=======
+extern Array read_json(const std::string& jsondata);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 BOOST_AUTO_TEST_SUITE(canonical_tests)
 
@@ -58,13 +78,21 @@ bool static IsCanonicalSignature_OpenSSL(const std::vector<unsigned char> &vchSi
 
 BOOST_AUTO_TEST_CASE(script_canon)
 {
+<<<<<<< HEAD
     Array tests = read_json("sig_canonical.json");
+=======
+    Array tests = read_json(std::string(json_tests::sig_canonical, json_tests::sig_canonical + sizeof(json_tests::sig_canonical)));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     BOOST_FOREACH(Value &tv, tests) {
         string test = tv.get_str();
         if (IsHex(test)) {
             std::vector<unsigned char> sig = ParseHex(test);
+<<<<<<< HEAD
             BOOST_CHECK_MESSAGE(IsCanonicalSignature(sig), test);
+=======
+            BOOST_CHECK_MESSAGE(IsCanonicalSignature(sig, SCRIPT_VERIFY_STRICTENC), test);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             BOOST_CHECK_MESSAGE(IsCanonicalSignature_OpenSSL(sig), test);
         }
     }
@@ -72,13 +100,21 @@ BOOST_AUTO_TEST_CASE(script_canon)
 
 BOOST_AUTO_TEST_CASE(script_noncanon)
 {
+<<<<<<< HEAD
     Array tests = read_json("sig_noncanonical.json");
+=======
+    Array tests = read_json(std::string(json_tests::sig_noncanonical, json_tests::sig_noncanonical + sizeof(json_tests::sig_noncanonical)));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     BOOST_FOREACH(Value &tv, tests) {
         string test = tv.get_str();
         if (IsHex(test)) {
             std::vector<unsigned char> sig = ParseHex(test);
+<<<<<<< HEAD
             BOOST_CHECK_MESSAGE(!IsCanonicalSignature(sig), test);
+=======
+            BOOST_CHECK_MESSAGE(!IsCanonicalSignature(sig, SCRIPT_VERIFY_STRICTENC), test);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             BOOST_CHECK_MESSAGE(!IsCanonicalSignature_OpenSSL(sig), test);
         }
     }

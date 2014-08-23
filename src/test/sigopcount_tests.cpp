@@ -1,9 +1,22 @@
+<<<<<<< HEAD
 #include <vector>
 #include <boost/test/unit_test.hpp>
 #include <boost/foreach.hpp>
 
 #include "script.h"
 #include "key.h"
+=======
+
+
+#include "key.h"
+#include "script.h"
+#include "uint256.h"
+
+#include <vector>
+
+#include <boost/foreach.hpp>
+#include <boost/test/unit_test.hpp>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 using namespace std;
 

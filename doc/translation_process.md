@@ -7,12 +7,20 @@ handle those translations.
 Files and Folders
 -----------------
 
+<<<<<<< HEAD
 ### dogecoin-qt.pro
+=======
+### bitcoin-qt.pro
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 This file takes care of generating `.qm` files from `.ts` files. It is mostly
 automated.
 
+<<<<<<< HEAD
 ### src/qt/bitcoin.qrc
+=======
+### src/qt/dogecoin.qrc
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 This file must be updated whenever a new translation is added. Please note that
 files must end with `.qm`, not `.ts`.
@@ -32,6 +40,7 @@ This directory contains all translations. Filenames must adhere to this format:
 
 `src/qt/locale/bitcoin_en.ts` is treated in a special way. It is used as the
 source for all other translations. Whenever a string in the code is changed
+<<<<<<< HEAD
 this file must be updated to reflect those changes. This can be accomplished
 by running `lupdate` (included in the Qt SDK). Also, a custom script is used
 to extract strings from the non-Qt parts. This script makes use of `gettext`,
@@ -40,6 +49,15 @@ Ubuntu/Debian):
 
     python share/qt/extract_strings_qt.py
     lupdate bitcoin-qt.pro -no-obsolete -locations relative -ts src/qt/locale/bitcoin_en.ts
+=======
+this file must be updated to reflect those changes. A  custom script is used
+to extract strings from the non-Qt parts. This script makes use of `gettext`,
+so make sure that utility is installed (ie, `apt-get install gettext` on 
+Ubuntu/Debian). Once this has been updated, lupdate (included in the Qt SDK)
+is used to update bitcoin_en.ts. This process has been automated, from src/qt,
+simply run:
+    make translate
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     
 ##### Handling of plurals in the source file
 
@@ -101,5 +119,12 @@ It is also possible to directly download new translations one by one from the Tr
 
 1. `tx pull -a`
 2. update `src/qt/bitcoin.qrc` manually or via
+<<<<<<< HEAD
    `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(bitcoin_\(.*\)\).ts/<file alias="\2">locale/\1.qm<\/file>/'`
 3. `git add` new translations from `src/qt/locale/`
+=======
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(bitcoin_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
+3. update `src/qt/Makefile.am` manually or via
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(bitcoin_\(.*\)\).ts/  locale\/\1.ts \\/'`
+4. `git add` new translations from `src/qt/locale/`
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

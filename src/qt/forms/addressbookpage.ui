@@ -10,9 +10,12 @@
     <height>380</height>
    </rect>
   </property>
+<<<<<<< HEAD
   <property name="windowTitle">
    <string>Address Book</string>
   </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="labelExplanation">
@@ -60,7 +63,11 @@
         <string>Create a new address</string>
        </property>
        <property name="text">
+<<<<<<< HEAD
         <string>&amp;New Address</string>
+=======
+        <string>&amp;New</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
        </property>
        <property name="icon">
         <iconset resource="../bitcoin.qrc">
@@ -74,7 +81,11 @@
         <string>Copy the currently selected address to the system clipboard</string>
        </property>
        <property name="text">
+<<<<<<< HEAD
         <string>&amp;Copy Address</string>
+=======
+        <string>&amp;Copy</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
        </property>
        <property name="icon">
         <iconset resource="../bitcoin.qrc">
@@ -83,6 +94,7 @@
       </widget>
      </item>
      <item>
+<<<<<<< HEAD
       <widget class="QPushButton" name="showQRCode">
        <property name="text">
         <string>Show &amp;QR Code</string>
@@ -122,6 +134,8 @@
       </widget>
      </item>
      <item>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
       <widget class="QPushButton" name="deleteAddress">
        <property name="toolTip">
         <string>Delete the currently selected address from the list</string>
@@ -163,15 +177,26 @@
       </widget>
      </item>
      <item>
+<<<<<<< HEAD
       <widget class="QDialogButtonBox" name="buttonBox">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+=======
+      <widget class="QPushButton" name="closeButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+<<<<<<< HEAD
        <property name="standardButtons">
         <set>QDialogButtonBox::Ok</set>
+=======
+       <property name="text">
+        <string>C&amp;lose</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
        </property>
       </widget>
      </item>

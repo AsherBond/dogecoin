@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 #include <boost/test/unit_test.hpp>
 
 #include "uint256.h"
 #include "main.h"
+=======
+
+
+#include "main.h"
+#include "serialize.h"
+#include "uint256.h"
+
+#include <vector>
+
+#include <boost/test/unit_test.hpp>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 using namespace std;
 

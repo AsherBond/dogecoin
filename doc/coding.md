@@ -63,6 +63,7 @@ and its cs_KeyStore lock for example).
 -------
 Threads
 
+<<<<<<< HEAD
 - StartNode : Starts other threads.
 
 - ThreadGetMyExternalIP : Determines outside-the-firewall IP address, sends addr message to connected peers when it determines it. 
@@ -92,3 +93,34 @@ Threads
 - Shutdown : Does an orderly shutdown of everything
  
 - ExitTimeout : Windows-only, sleeps 5 seconds then exits application
+=======
+- ThreadScriptCheck : Verifies block scripts.
+
+- ThreadImport : Loads blocks from blk*.dat files or bootstrap.dat.
+
+- StartNode : Starts other threads.
+
+- ThreadGetMyExternalIP : Determines outside-the-firewall IP address, sends addr message to connected peers when it determines it.
+
+- ThreadDNSAddressSeed : Loads addresses of peers from the DNS.
+
+- ThreadMapPort : Universal plug-and-play startup/shutdown
+
+- ThreadSocketHandler : Sends/Receives data from peers on port 22556.
+
+- ThreadOpenAddedConnections : Opens network connections to added nodes.
+
+- ThreadOpenConnections : Initiates new connections to peers.
+
+- ThreadMessageHandler : Higher-level message handling (sending and receiving).
+
+- DumpAddresses : Dumps IP addresses of nodes to peers.dat.
+
+- ThreadFlushWalletDB : Close the wallet.dat file if it hasn't been used in 500ms.
+
+- ThreadRPCServer : Remote procedure call handler, listens on port 22555 for connections and services them.
+
+- BitcoinMiner : Generates bitcoins (if wallet is enabled).
+
+- Shutdown : Does an orderly shutdown of everything.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

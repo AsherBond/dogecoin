@@ -1,4 +1,5 @@
 --- 
+<<<<<<< HEAD
 name: bitcoin
 urls:
 - http://bitcoin.org/bitcoin-latest-linux-gitian.zip
@@ -55,4 +56,26 @@ signers:
     weight: 40
     name: "Adrian Gallagher"
     key: thrasher
+=======
+name: dogecoin
+urls:
+- http://example.org/dogecoin-latest-linux-gitian.zip
+rss:
+- url: http://sourceforge.net/api/file/index/project-id/244765/mtime/desc/limit/100/rss
+  xpath: //item/link/text()
+  pattern: dogecoin-\d+.\d+.\d+-linux-gitian.zip
+signers:
+  90DC2AC256201AD9377E15049142E5F7E533CE3B:
+    weight: 40
+    name: rnicoll
+    key: rnicoll
+  1DDC450B45DB5ADCCF5DDA7F8E4217C6D47D946D:
+    weight: 40
+    name: langerhans
+    key: langerhans
+  86601A39AEE177B1D1F0F7971AEF9F73ECA11726
+    weight: 40
+    name: leofidus-ger
+    key: leofidus-key
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 minimum_weight: 120

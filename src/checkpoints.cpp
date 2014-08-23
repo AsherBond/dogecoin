@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -6,11 +7,27 @@
 #include <boost/assign/list_of.hpp> // for 'map_list_of()'
 #include <boost/foreach.hpp>
 
+=======
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2013-2014 The Dogecoin developers
+// Copyright (c)      2014 The Inutoshi developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include "checkpoints.h"
 
 #include "main.h"
 #include "uint256.h"
 
+<<<<<<< HEAD
+=======
+#include <stdint.h>
+
+#include <boost/assign/list_of.hpp> // for 'map_list_of()'
+#include <boost/foreach.hpp>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 namespace Checkpoints
 {
     typedef std::map<int, uint256> MapCheckpoints;
@@ -24,11 +41,21 @@ namespace Checkpoints
 
     struct CCheckpointData {
         const MapCheckpoints *mapCheckpoints;
+<<<<<<< HEAD
         int64 nTimeLastCheckpoint;
         int64 nTransactionsLastCheckpoint;
         double fTransactionsPerDay;
     };
 
+=======
+        int64_t nTimeLastCheckpoint;
+        int64_t nTransactionsLastCheckpoint;
+        double fTransactionsPerDay;
+    };
+
+    bool fEnabled = true;
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     // What makes a good checkpoint block?
     // + Is surrounded by blocks with reasonable timestamps
     //   (no blocks before with a timestamp after, none after with
@@ -40,6 +67,7 @@ namespace Checkpoints
         ( 42279, uint256("0x8444c3ef39a46222e87584ef956ad2c9ef401578bd8b51e8e4b9a86ec3134d3a"))
         ( 42400, uint256("0x557bb7c17ed9e6d4a6f9361cfddf7c1fc0bdc394af7019167442b41f507252b4"))
         ( 104679, uint256("0x35eb87ae90d44b98898fec8c39577b76cb1eb08e1261cfc10706c8ce9a1d01cf"))
+<<<<<<< HEAD
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
@@ -50,6 +78,23 @@ namespace Checkpoints
     };
 
     static MapCheckpoints mapCheckpointsTestnet = 
+=======
+        ( 128370, uint256("0x3f9265c94cab7dc3bd6a2ad2fb26c8845cb41cff437e0a75ae006997b4974be6"))
+        ( 145000, uint256("0xcc47cae70d7c5c92828d3214a266331dde59087d4a39071fa76ddfff9b7bde72"))
+        ( 165393, uint256("0x7154efb4009e18c1c6a6a79fc6015f48502bcd0a1edd9c20e44cd7cbbe2eeef1"))
+        ( 186774, uint256("0x3c712c49b34a5f34d4b963750d6ba02b73e8a938d2ee415dcda141d89f5cb23a"))
+        ( 199992, uint256("0x3408ff829b7104eebaf61fd2ba2203ef2a43af38b95b353e992ef48f00ebb190"))
+        ;
+    static const CCheckpointData data = {
+        &mapCheckpoints,
+        1398694748, // * UNIX timestamp of last checkpoint block
+        9493347,    // * total number of transactions between genesis and last checkpoint
+                    //   (the tx=... number in the SetBestChain debug.log lines)
+        8000.0      // * estimated number of transactions per day after checkpoint
+    };
+
+    static MapCheckpoints mapCheckpointsTestnet =
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         boost::assign::map_list_of
         (     0, uint256("0x"))
         ;
@@ -60,17 +105,42 @@ namespace Checkpoints
         300
     };
 
+<<<<<<< HEAD
     const CCheckpointData &Checkpoints() {
         if (fTestNet)
             return dataTestnet;
         else
             return data;
+=======
+    static MapCheckpoints mapCheckpointsRegtest =
+        boost::assign::map_list_of
+        ( 0, uint256("3d2160a3b5dc4a9d62e7e66a295f70313ac808440ef7400d6c0772171ce973a5"))
+        ;
+    static const CCheckpointData dataRegtest = {
+        &mapCheckpointsRegtest,
+        0,
+        0,
+        0
+    };
+
+    const CCheckpointData &Checkpoints() {
+        if (Params().NetworkID() == CChainParams::TESTNET)
+            return dataTestnet;
+        else if (Params().NetworkID() == CChainParams::MAIN)
+            return data;
+        else
+            return dataRegtest;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
+<<<<<<< HEAD
         if (fTestNet) return true; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
+=======
+        if (!fEnabled)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             return true;
 
         const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;
@@ -85,11 +155,19 @@ namespace Checkpoints
         if (pindex==NULL)
             return 0.0;
 
+<<<<<<< HEAD
         int64 nNow = time(NULL);
 
         double fWorkBefore = 0.0; // Amount of work done before pindex
         double fWorkAfter = 0.0;  // Amount of work left after pindex (estimated)
         // Work is defined as: 1.0 per transaction before the last checkoint, and
+=======
+        int64_t nNow = time(NULL);
+
+        double fWorkBefore = 0.0; // Amount of work done before pindex
+        double fWorkAfter = 0.0;  // Amount of work left after pindex (estimated)
+        // Work is defined as: 1.0 per transaction before the last checkpoint, and
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         // fSigcheckVerificationFactor per transaction after.
 
         const CCheckpointData &data = Checkpoints();
@@ -113,8 +191,12 @@ namespace Checkpoints
 
     int GetTotalBlocksEstimate()
     {
+<<<<<<< HEAD
         if (fTestNet) return 0; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
+=======
+        if (!fEnabled)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             return 0;
 
         const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;
@@ -124,8 +206,12 @@ namespace Checkpoints
 
     CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
     {
+<<<<<<< HEAD
         if (fTestNet) return NULL; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
+=======
+        if (!fEnabled)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             return NULL;
 
         const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;

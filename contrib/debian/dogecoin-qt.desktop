@@ -4,9 +4,18 @@ Name=Dogecoin
 Comment=Dogecoin P2P Cryptocurrency
 Comment[fr]=Dogecoin, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Dogecoin, eşten eşe kriptografik sanal para birimi
+<<<<<<< HEAD
 Exec=/usr/bin/dogecoin-qt %u
 Terminal=false
 Type=Application
 Icon=/usr/share/pixmaps/dogecoin128.png
 MimeType=x-scheme-handler/dogecoin;
 Categories=Office;
+=======
+Exec=dogecoin-qt %u
+Terminal=false
+Type=Application
+Icon=dogecoin128
+MimeType=x-scheme-handler/dogecoin;
+Categories=Office;Finance;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

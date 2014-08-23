@@ -10,9 +10,15 @@ rpcpass = ""
 
 
 if rpcpass == "":
+<<<<<<< HEAD
 	access = ServiceProxy("http://127.0.0.1:9332")
 else:
 	access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:9332")
+=======
+	access = ServiceProxy("http://127.0.0.1:8332")
+else:
+	access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:8332")
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 cmd = sys.argv[1].lower()
 
 if cmd == "backupwallet":
@@ -321,4 +327,8 @@ elif cmd == "walletpassphrasechange":
 		print
 
 else:
+<<<<<<< HEAD
 	print "Command not found or not supported"
+=======
+	print "Command not found or not supported"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

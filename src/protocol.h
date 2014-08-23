@@ -1,6 +1,13 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
+=======
+// Copyright (c) 2009-2013 The Bitcoin developers
+// Copyright (c) 2011-2013 The Litecoin developers
+// Copyright (c) 2013-2014 The Dogecoin developers
+// Copyright (c)      2014 The Inutoshi developers
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +18,7 @@
 #ifndef __INCLUDED_PROTOCOL_H__
 #define __INCLUDED_PROTOCOL_H__
 
+<<<<<<< HEAD
 #include "serialize.h"
 #include "netbase.h"
 #include <string>
@@ -24,6 +32,15 @@ static inline unsigned short GetDefaultPort(const bool testnet = fTestNet)
 
 
 extern unsigned char pchMessageStart[4];
+=======
+#include "chainparams.h"
+#include "netbase.h"
+#include "serialize.h"
+#include "uint256.h"
+
+#include <stdint.h>
+#include <string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /** Message header.
  * (4) message start.
@@ -51,7 +68,10 @@ class CMessageHeader
     // TODO: make private (improves encapsulation)
     public:
         enum {
+<<<<<<< HEAD
             MESSAGE_START_SIZE=sizeof(::pchMessageStart),
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             COMMAND_SIZE=12,
             MESSAGE_SIZE_SIZE=sizeof(int),
             CHECKSUM_SIZE=sizeof(int),
@@ -78,7 +98,11 @@ class CAddress : public CService
 {
     public:
         CAddress();
+<<<<<<< HEAD
         explicit CAddress(CService ipIn, uint64 nServicesIn=NODE_NETWORK);
+=======
+        explicit CAddress(CService ipIn, uint64_t nServicesIn=NODE_NETWORK);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         void Init();
 
@@ -101,13 +125,21 @@ class CAddress : public CService
 
     // TODO: make private (improves encapsulation)
     public:
+<<<<<<< HEAD
         uint64 nServices;
+=======
+        uint64_t nServices;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         // disk and network only
         unsigned int nTime;
 
         // memory only
+<<<<<<< HEAD
         int64 nLastTry;
+=======
+        int64_t nLastTry;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 /** inv message data */

@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 #include <boost/test/unit_test.hpp>
 
 #include "util.h"
 
+=======
+
+
+#include "util.h"
+
+#include <boost/test/unit_test.hpp>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 BOOST_AUTO_TEST_SUITE(base32_tests)
 
 BOOST_AUTO_TEST_CASE(base32_testvectors)

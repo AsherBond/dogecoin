@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "clientmodel.h"
 
 #include "guiconstants.h"
@@ -14,6 +15,30 @@
 #include <QTimer>
 
 static const int64 nClientStartupTime = GetTime();
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "clientmodel.h"
+
+#include "guiconstants.h"
+
+#include "alert.h"
+#include "chainparams.h"
+#include "checkpoints.h"
+#include "main.h"
+#include "net.h"
+#include "ui_interface.h"
+
+#include <stdint.h>
+
+#include <QDateTime>
+#include <QDebug>
+#include <QTimer>
+
+static const int64_t nClientStartupTime = GetTime();
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 ClientModel::ClientModel(OptionsModel *optionsModel, QObject *parent) :
     QObject(parent), optionsModel(optionsModel),
@@ -22,9 +47,14 @@ ClientModel::ClientModel(OptionsModel *optionsModel, QObject *parent) :
     numBlocksAtStartup(-1), pollTimer(0)
 {
     pollTimer = new QTimer(this);
+<<<<<<< HEAD
     pollTimer->setInterval(MODEL_UPDATE_DELAY);
     pollTimer->start();
     connect(pollTimer, SIGNAL(timeout()), this, SLOT(updateTimer()));
+=======
+    connect(pollTimer, SIGNAL(timeout()), this, SLOT(updateTimer()));
+    pollTimer->start(MODEL_UPDATE_DELAY);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     subscribeToCoreSignals();
 }
@@ -41,7 +71,11 @@ int ClientModel::getNumConnections() const
 
 int ClientModel::getNumBlocks() const
 {
+<<<<<<< HEAD
     return nBestHeight;
+=======
+    return chainActive.Height();
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 int ClientModel::getNumBlocksAtStartup()
@@ -50,6 +84,7 @@ int ClientModel::getNumBlocksAtStartup()
     return numBlocksAtStartup;
 }
 
+<<<<<<< HEAD
 QDateTime ClientModel::getLastBlockDate() const
 {
     if (pindexBest)
@@ -58,11 +93,33 @@ QDateTime ClientModel::getLastBlockDate() const
         return QDateTime::fromTime_t(1231006505); // Genesis block's time
     else
         return QDateTime::fromTime_t(1296688602); // Genesis block's time (testnet)
+=======
+quint64 ClientModel::getTotalBytesRecv() const
+{
+    return CNode::GetTotalBytesRecv();
+}
+
+quint64 ClientModel::getTotalBytesSent() const
+{
+    return CNode::GetTotalBytesSent();
+}
+
+QDateTime ClientModel::getLastBlockDate() const
+{
+    if (chainActive.Tip())
+        return QDateTime::fromTime_t(chainActive.Tip()->GetBlockTime());
+    else
+        return QDateTime::fromTime_t(Params().GenesisBlock().nTime); // Genesis block's time of current network
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 double ClientModel::getVerificationProgress() const
 {
+<<<<<<< HEAD
     return Checkpoints::GuessVerificationProgress(pindexBest);
+=======
+    return Checkpoints::GuessVerificationProgress(chainActive.Tip());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 void ClientModel::updateTimer()
@@ -84,6 +141,11 @@ void ClientModel::updateTimer()
         // ensure we return the maximum of newNumBlocksOfPeers and newNumBlocks to not create weird displays in the GUI
         emit numBlocksChanged(newNumBlocks, std::max(newNumBlocksOfPeers, newNumBlocks));
     }
+<<<<<<< HEAD
+=======
+
+    emit bytesChanged(getTotalBytesRecv(), getTotalBytesSent());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 void ClientModel::updateNumConnections(int numConnections)
@@ -108,9 +170,18 @@ void ClientModel::updateAlert(const QString &hash, int status)
     emit alertsChanged(getStatusBarWarnings());
 }
 
+<<<<<<< HEAD
 bool ClientModel::isTestNet() const
 {
     return fTestNet;
+=======
+QString ClientModel::getNetworkName() const
+{
+    QString netname(QString::fromStdString(Params().DataDir()));
+    if(netname.isEmpty())
+        netname = "main";
+    return netname;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 bool ClientModel::inInitialBlockDownload() const
@@ -179,14 +250,22 @@ static void NotifyBlocksChanged(ClientModel *clientmodel)
 
 static void NotifyNumConnectionsChanged(ClientModel *clientmodel, int newNumConnections)
 {
+<<<<<<< HEAD
     // Too noisy: OutputDebugStringF("NotifyNumConnectionsChanged %i\n", newNumConnections);
+=======
+    // Too noisy: qDebug() << "NotifyNumConnectionsChanged : " + QString::number(newNumConnections);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     QMetaObject::invokeMethod(clientmodel, "updateNumConnections", Qt::QueuedConnection,
                               Q_ARG(int, newNumConnections));
 }
 
 static void NotifyAlertChanged(ClientModel *clientmodel, const uint256 &hash, ChangeType status)
 {
+<<<<<<< HEAD
     OutputDebugStringF("NotifyAlertChanged %s status=%i\n", hash.GetHex().c_str(), status);
+=======
+    qDebug() << "NotifyAlertChanged : " + QString::fromStdString(hash.GetHex()) + " status=" + QString::number(status);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     QMetaObject::invokeMethod(clientmodel, "updateAlert", Qt::QueuedConnection,
                               Q_ARG(QString, QString::fromStdString(hash.GetHex())),
                               Q_ARG(int, status));

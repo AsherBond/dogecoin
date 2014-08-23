@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -8,6 +9,18 @@
 
 #include "crypter.h"
 #include "sync.h"
+=======
+// Copyright (c) 2009-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_KEYSTORE_H
+#define BITCOIN_KEYSTORE_H
+
+#include "key.h"
+#include "sync.h"
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include <boost/signals2/signal.hpp>
 
 class CScript;
@@ -89,6 +102,7 @@ public:
     virtual bool GetCScript(const CScriptID &hash, CScript& redeemScriptOut) const;
 };
 
+<<<<<<< HEAD
 typedef std::map<CKeyID, std::pair<CPubKey, std::vector<unsigned char> > > CryptedKeyMap;
 
 /** Keystore which keeps the private keys encrypted.
@@ -173,4 +187,9 @@ public:
     boost::signals2::signal<void (CCryptoKeyStore* wallet)> NotifyStatusChanged;
 };
 
+=======
+typedef std::vector<unsigned char, secure_allocator<unsigned char> > CKeyingMaterial;
+typedef std::map<CKeyID, std::pair<CPubKey, std::vector<unsigned char> > > CryptedKeyMap;
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif

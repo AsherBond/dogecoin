@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <boost/test/unit_test.hpp>
 
 using namespace std;
@@ -8,6 +9,21 @@ using namespace std;
 #define NUM_TESTS 16
 #define MAX_SIZE 100
 
+=======
+#include "mruset.h"
+
+#include "util.h"
+
+#include <set>
+
+#include <boost/test/unit_test.hpp>
+
+#define NUM_TESTS 16
+#define MAX_SIZE 100
+
+using namespace std;
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 class mrutester
 {
 private:

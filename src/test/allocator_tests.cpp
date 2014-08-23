@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 #include <boost/test/unit_test.hpp>
 
 #include "init.h"
 #include "main.h"
 #include "util.h"
 
+=======
+
+
+#include "util.h"
+
+#include <boost/test/unit_test.hpp>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 BOOST_AUTO_TEST_SUITE(allocator_tests)
 
 // Dummy memory page locker for platform independent tests

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
 
@@ -10,6 +11,24 @@
 #include "guiutil.h"
 #include "util.h"
 #include "guiconstants.h"
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "overviewpage.h"
+#include "ui_overviewpage.h"
+
+#include "bitcoinunits.h"
+#include "clientmodel.h"
+#include "guiconstants.h"
+#include "guiutil.h"
+#include "util.h"
+#include "optionsmodel.h"
+#include "transactionfilterproxy.h"
+#include "transactiontablemodel.h"
+#include "walletmodel.h"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 #include <QAbstractItemDelegate>
 #include <QPainter>
@@ -21,7 +40,11 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
+<<<<<<< HEAD
     TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::BTC)
+=======
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::DOGE)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     {
 
     }
@@ -150,6 +173,10 @@ void OverviewPage::setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 
     ui->labelBalance->setText(BitcoinUnits::formatWithUnit(unit, balance));
     ui->labelUnconfirmed->setText(BitcoinUnits::formatWithUnit(unit, unconfirmedBalance));
     ui->labelImmature->setText(BitcoinUnits::formatWithUnit(unit, immatureBalance));
+<<<<<<< HEAD
+=======
+    ui->labelTotal->setText(BitcoinUnits::formatWithUnit(unit, balance + unconfirmedBalance + immatureBalance));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users
@@ -180,6 +207,10 @@ void OverviewPage::setWalletModel(WalletModel *model)
         filter->setLimit(NUM_ITEMS);
         filter->setDynamicSortFilter(true);
         filter->setSortRole(Qt::EditRole);
+<<<<<<< HEAD
+=======
+        filter->setShowInactive(false);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         filter->sort(TransactionTableModel::Status, Qt::DescendingOrder);
 
         ui->listTransactions->setModel(filter);
@@ -192,7 +223,11 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
 
+<<<<<<< HEAD
     // update the display unit, to not use the default ("BTC")
+=======
+    // update the display unit, to not use the default ("DOGE")
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     updateDisplayUnit();
 }
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef MACDOCKICONHANDLER_H
 #define MACDOCKICONHANDLER_H
 
@@ -7,6 +8,21 @@
 QT_BEGIN_NAMESPACE
 class QMenu;
 class QIcon;
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef MACDOCKICONHANDLER_H
+#define MACDOCKICONHANDLER_H
+
+#include <QMainWindow>
+#include <QObject>
+
+QT_BEGIN_NAMESPACE
+class QIcon;
+class QMenu;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 class QWidget;
 QT_END_NAMESPACE
 

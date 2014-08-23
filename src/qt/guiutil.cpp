@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 #include <QApplication>
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 #include "guiutil.h"
 
 #include "bitcoinaddressvalidator.h"
+<<<<<<< HEAD
 #include "walletmodel.h"
 #include "bitcoinunits.h"
 
@@ -27,6 +34,15 @@
 
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
+=======
+#include "bitcoinunits.h"
+#include "qvalidatedlineedit.h"
+#include "walletmodel.h"
+
+#include "core.h"
+#include "init.h"
+#include "util.h"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 #ifdef WIN32
 #ifdef _WIN32_WINNT
@@ -41,16 +57,49 @@
 #ifndef NOMINMAX
 #define NOMINMAX
 #endif
+<<<<<<< HEAD
 #include "shlwapi.h"
 #include "shlobj.h"
 #include "shellapi.h"
+=======
+#include "shellapi.h"
+#include "shlobj.h"
+#include "shlwapi.h"
+#endif
+
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
+
+#include <QAbstractItemView>
+#include <QApplication>
+#include <QClipboard>
+#include <QDateTime>
+#include <QDesktopServices>
+#include <QDesktopWidget>
+#include <QDoubleValidator>
+#include <QFileDialog>
+#include <QFont>
+#include <QLineEdit>
+#include <QSettings>
+#include <QTextDocument> // for Qt::mightBeRichText
+#include <QThread>
+
+#if QT_VERSION < 0x050000
+#include <QUrl>
+#else
+#include <QUrlQuery>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif
 
 namespace GUIUtil {
 
 QString dateTimeStr(const QDateTime &date)
 {
+<<<<<<< HEAD
     return date.date().toString(Qt::SystemLocaleShortDate) + QString(" ") + date.toString("hh:mm");
+=======
+    return date.date().toString(Qt::DefaultLocaleShortDate) + QString(" ") + date.toString("hh:mm");
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 QString dateTimeStr(qint64 nTime)
@@ -65,11 +114,24 @@ QFont bitcoinAddressFont()
     return font;
 }
 
+<<<<<<< HEAD
 void setupAddressWidget(QLineEdit *widget, QWidget *parent)
 {
     widget->setMaxLength(BitcoinAddressValidator::MaxAddressLength);
     widget->setValidator(new BitcoinAddressValidator(parent));
     widget->setFont(bitcoinAddressFont());
+=======
+void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
+{
+    parent->setFocusProxy(widget);
+
+    widget->setFont(bitcoinAddressFont());
+#if QT_VERSION >= 0x040700
+    widget->setPlaceholderText(QObject::tr("Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)"));
+#endif
+    widget->setValidator(new BitcoinAddressEntryValidator(parent));
+    widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 void setupAmountWidget(QLineEdit *widget, QWidget *parent)
@@ -81,6 +143,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
     widget->setAlignment(Qt::AlignRight|Qt::AlignVCenter);
 }
 
+<<<<<<< HEAD
 QList<QPair<QString, QString> > queryItems(const QString& queryData) {
     QList<QPair<QString, QString> > items;
 
@@ -105,25 +168,39 @@ QList<QPair<QString, QString> > queryItems(const QString& queryData) {
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin URI
+=======
+bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
+{
+    // return if URI is not valid or is no dogecoin: URI
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     if(!uri.isValid() || uri.scheme() != QString("dogecoin"))
         return false;
 
     SendCoinsRecipient rv;
+<<<<<<< HEAD
 
     // WTF Qt?
     const int addrlen = 34;
     QString address = uri.path().left(addrlen);
     rv.address = address;
+=======
+    rv.address = uri.path();
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     rv.amount = 0;
 
 #if QT_VERSION < 0x050000
     QList<QPair<QString, QString> > items = uri.queryItems();
 #else
+<<<<<<< HEAD
     // Apparently Qt 5 is broken a *lot*
 //    QUrlQuery uriQuery(uri);
 //    QList<QPair<QString, QString> > items = uriQuery.queryItems();
     QString uriString = uri.path();
     QList<QPair<QString, QString> > items = queryItems(uriString.right(uriString.size() - addrlen - 1));
+=======
+    QUrlQuery uriQuery(uri);
+    QList<QPair<QString, QString> > items = uriQuery.queryItems();
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif
     for (QList<QPair<QString, QString> >::iterator i = items.begin(); i != items.end(); i++)
     {
@@ -139,11 +216,26 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
             rv.label = i->second;
             fShouldReturnFalse = false;
         }
+<<<<<<< HEAD
+=======
+        if (i->first == "message")
+        {
+            rv.message = i->second;
+            fShouldReturnFalse = false;
+        }
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         else if (i->first == "amount")
         {
             if(!i->second.isEmpty())
             {
+<<<<<<< HEAD
                 if(!BitcoinUnits::parse(BitcoinUnits::BTC, i->second, &rv.amount))
+=======
+                // Parse amount in C locale with no number separators
+                QLocale locale(QLocale::c());
+                locale.setNumberOptions(QLocale::OmitGroupSeparator | QLocale::RejectGroupSeparator);
+                if(!BitcoinUnits::parse(BitcoinUnits::DOGE, i->second, &rv.amount, locale))
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 {
                     return false;
                 }
@@ -163,11 +255,19 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
+<<<<<<< HEAD
     // Convert bitcoin:// to bitcoin:
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
     if(uri.startsWith("dogecoin://"))
+=======
+    // Convert dogecoin:// to dogecoin:
+    //
+    //    Cannot handle this later, because dogecoin:// will cause Qt to see the part after // as host,
+    //    which will lower-case it (and thus invalidate the address).
+    if(uri.startsWith("dogecoin://", Qt::CaseInsensitive))
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     {
         uri.replace(0, 11, "dogecoin:");
     }
@@ -175,6 +275,47 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     return parseBitcoinURI(uriInstance, out);
 }
 
+<<<<<<< HEAD
+=======
+QString formatBitcoinURI(const SendCoinsRecipient &info)
+{
+    QString ret = QString("dogecoin:%1").arg(info.address);
+    int paramCount = 0;
+
+    if (info.amount)
+    {
+        QLocale localeC(QLocale::c());
+        localeC.setNumberOptions(QLocale::OmitGroupSeparator | QLocale::RejectGroupSeparator);
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::DOGE, info.amount, false, true, localeC));
+        paramCount++;
+    }
+
+    if (!info.label.isEmpty())
+    {
+        QString lbl(QUrl::toPercentEncoding(info.label));
+        ret += QString("%1label=%2").arg(paramCount == 0 ? "?" : "&").arg(lbl);
+        paramCount++;
+    }
+
+    if (!info.message.isEmpty())
+    {
+        QString msg(QUrl::toPercentEncoding(info.message));;
+        ret += QString("%1message=%2").arg(paramCount == 0 ? "?" : "&").arg(msg);
+        paramCount++;
+    }
+
+    return ret;
+}
+
+bool isDust(const QString& address, qint64 amount)
+{
+    CTxDestination dest = CBitcoinAddress(address.toStdString()).Get();
+    CScript script; script.SetDestination(dest);
+    CTxOut txOut(amount, script);
+    return txOut.IsDust(CTransaction::nMinRelayTxFee);
+}
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 QString HtmlEscape(const QString& str, bool fMultiLine)
 {
 #if QT_VERSION < 0x050000
@@ -202,6 +343,7 @@ void copyEntryData(QAbstractItemView *view, int column, int role)
 
     if(!selection.isEmpty())
     {
+<<<<<<< HEAD
         // Copy first item (global clipboard)
         QApplication::clipboard()->setText(selection.at(0).data(role).toString(), QClipboard::Clipboard);
         // Copy first item (global mouse selection for e.g. X11 - NOP on Windows)
@@ -219,6 +361,16 @@ QString getSaveFileName(QWidget *parent, const QString &caption,
                                  const QString &dir,
                                  const QString &filter,
                                  QString *selectedSuffixOut)
+=======
+        // Copy first item
+        setClipboard(selection.at(0).data(role).toString());
+    }
+}
+
+QString getSaveFileName(QWidget *parent, const QString &caption, const QString &dir,
+    const QString &filter,
+    QString *selectedSuffixOut)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     QString selectedFilter;
     QString myDir;
@@ -234,7 +386,12 @@ QString getSaveFileName(QWidget *parent, const QString &caption,
     {
         myDir = dir;
     }
+<<<<<<< HEAD
     QString result = QFileDialog::getSaveFileName(parent, caption, myDir, filter, &selectedFilter);
+=======
+    /* Directly convert path to native OS path separators */
+    QString result = QDir::toNativeSeparators(QFileDialog::getSaveFileName(parent, caption, myDir, filter, &selectedFilter));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     /* Extract first suffix from filter pattern "Description (*.foo)" or "Description (*.foo *.bar ...) */
     QRegExp filter_re(".* \\(\\*\\.(.*)[ \\)]");
@@ -265,6 +422,44 @@ QString getSaveFileName(QWidget *parent, const QString &caption,
     return result;
 }
 
+<<<<<<< HEAD
+=======
+QString getOpenFileName(QWidget *parent, const QString &caption, const QString &dir,
+    const QString &filter,
+    QString *selectedSuffixOut)
+{
+    QString selectedFilter;
+    QString myDir;
+    if(dir.isEmpty()) // Default to user documents location
+    {
+#if QT_VERSION < 0x050000
+        myDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+#else
+        myDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+#endif
+    }
+    else
+    {
+        myDir = dir;
+    }
+    /* Directly convert path to native OS path separators */
+    QString result = QDir::toNativeSeparators(QFileDialog::getOpenFileName(parent, caption, myDir, filter, &selectedFilter));
+
+    if(selectedSuffixOut)
+    {
+        /* Extract first suffix from filter pattern "Description (*.foo)" or "Description (*.foo *.bar ...) */
+        QRegExp filter_re(".* \\(\\*\\.(.*)[ \\)]");
+        QString selectedSuffix;
+        if(filter_re.exactMatch(selectedFilter))
+        {
+            selectedSuffix = filter_re.cap(1);
+        }
+        *selectedSuffixOut = selectedSuffix;
+    }
+    return result;
+}
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 Qt::ConnectionType blockingGUIThreadConnection()
 {
     if(QThread::currentThread() != qApp->thread())
@@ -295,6 +490,7 @@ bool isObscured(QWidget *w)
 
 void openDebugLogfile()
 {
+<<<<<<< HEAD
     // If we are opening it, might as well fire up debugging for this session.
     if ( ! fWriteDebugLog )
     {
@@ -302,6 +498,8 @@ void openDebugLogfile()
         OutputDebugStringF("Starting debug session");
     }
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     boost::filesystem::path pathDebug = GetDataDir() / "debug.log";
 
     /* Open debug.log with the associated application */
@@ -321,11 +519,19 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
     {
         QWidget *widget = static_cast<QWidget*>(obj);
         QString tooltip = widget->toolTip();
+<<<<<<< HEAD
         if(tooltip.size() > size_threshold && !tooltip.startsWith("<qt/>") && !Qt::mightBeRichText(tooltip))
         {
             // Prefix <qt/> to make sure Qt detects this as rich text
             // Escape the current message as HTML and replace \n by <br>
             tooltip = "<qt/>" + HtmlEscape(tooltip, true);
+=======
+        if(tooltip.size() > size_threshold && !tooltip.startsWith("<qt") && !Qt::mightBeRichText(tooltip))
+        {
+            // Envelop with <qt></qt> to make sure Qt detects this as rich text
+            // Escape the current message as HTML and replace \n by <br>
+            tooltip = "<qt>" + HtmlEscape(tooltip, true) + "</qt>";
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             widget->setToolTip(tooltip);
             return true;
         }
@@ -341,7 +547,11 @@ boost::filesystem::path static StartupShortcutPath()
 
 bool GetStartOnSystemStartup()
 {
+<<<<<<< HEAD
     // check for Bitcoin.lnk
+=======
+    // check for Dogecoin.lnk
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -468,6 +678,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
     return true;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #elif defined(Q_OS_MAC)
 // based on: https://github.com/Mozketo/LaunchAtLoginController/blob/master/LaunchAtLoginController.m
 
@@ -527,6 +741,7 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 
 #endif
 
+<<<<<<< HEAD
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
@@ -565,6 +780,35 @@ void HelpMessageBox::showOrPrint()
         // On other operating systems, print help text to console
         printToConsole();
 #endif
+=======
+void saveWindowGeometry(const QString& strSetting, QWidget *parent)
+{
+    QSettings settings;
+    settings.setValue(strSetting + "Pos", parent->pos());
+    settings.setValue(strSetting + "Size", parent->size());
+}
+
+void restoreWindowGeometry(const QString& strSetting, const QSize& defaultSize, QWidget *parent)
+{
+    QSettings settings;
+    QPoint pos = settings.value(strSetting + "Pos").toPoint();
+    QSize size = settings.value(strSetting + "Size", defaultSize).toSize();
+
+    if (!pos.x() && !pos.y()) {
+        QRect screen = QApplication::desktop()->screenGeometry();
+        pos.setX((screen.width() - size.width()) / 2);
+        pos.setY((screen.height() - size.height()) / 2);
+    }
+
+    parent->resize(size);
+    parent->move(pos);
+}
+
+void setClipboard(const QString& str)
+{
+    QApplication::clipboard()->setText(str, QClipboard::Clipboard);
+    QApplication::clipboard()->setText(str, QClipboard::Selection);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 } // namespace GUIUtil

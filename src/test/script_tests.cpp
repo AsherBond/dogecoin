@@ -1,10 +1,28 @@
+<<<<<<< HEAD
 #include <iostream>
 #include <fstream>
 #include <vector>
+=======
+#include "script.h"
+
+#include "data/script_invalid.json.h"
+#include "data/script_valid.json.h"
+
+#include "key.h"
+#include "keystore.h"
+#include "main.h"
+
+#include <fstream>
+#include <stdint.h>
+#include <string>
+#include <vector>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/predicate.hpp>
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/algorithm/string/split.hpp>
+<<<<<<< HEAD
 #include <boost/foreach.hpp>
 #include <boost/preprocessor/stringize.hpp>
 #include <boost/test/unit_test.hpp>
@@ -14,12 +32,25 @@
 
 #include "main.h"
 #include "wallet.h"
+=======
+#include <boost/filesystem/operations.hpp>
+#include <boost/filesystem/path.hpp>
+#include <boost/foreach.hpp>
+#include <boost/test/unit_test.hpp>
+#include "json/json_spirit_reader_template.h"
+#include "json/json_spirit_utils.h"
+#include "json/json_spirit_writer_template.h"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 using namespace std;
 using namespace json_spirit;
 using namespace boost::algorithm;
 
+<<<<<<< HEAD
 extern uint256 SignatureHash(CScript scriptCode, const CTransaction& txTo, unsigned int nIn, int nHashType);
+=======
+extern uint256 SignatureHash(const CScript &scriptCode, const CTransaction& txTo, unsigned int nIn, int nHashType);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 static const unsigned int flags = SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_STRICTENC;
 
@@ -32,8 +63,17 @@ ParseScript(string s)
 
     if (mapOpNames.size() == 0)
     {
+<<<<<<< HEAD
         for (int op = OP_NOP; op <= OP_NOP10; op++)
         {
+=======
+        for (int op = 0; op <= OP_NOP10; op++)
+        {
+            // Allow OP_RESERVED to get into mapOpNames
+            if (op < OP_NOP && op != OP_RESERVED)
+                continue;
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             const char* name = GetOpName((opcodetype)op);
             if (strcmp(name, "OP_UNKNOWN") == 0)
                 continue;
@@ -54,7 +94,11 @@ ParseScript(string s)
             (starts_with(w, "-") && all(string(w.begin()+1, w.end()), is_digit())))
         {
             // Number
+<<<<<<< HEAD
             int64 n = atoi64(w);
+=======
+            int64_t n = atoi64(w);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             result << n;
         }
         else if (starts_with(w, "0x") && IsHex(string(w.begin()+2, w.end())))
@@ -72,7 +116,11 @@ ParseScript(string s)
         }
         else if (mapOpNames.count(w))
         {
+<<<<<<< HEAD
             // opcode, e.g. OP_ADD or OP_1:
+=======
+            // opcode, e.g. OP_ADD or ADD:
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             result << mapOpNames[w];
         }
         else
@@ -86,6 +134,7 @@ ParseScript(string s)
 }
 
 Array
+<<<<<<< HEAD
 read_json(const std::string& filename)
 {
     namespace fs = boost::filesystem;
@@ -114,6 +163,17 @@ read_json(const std::string& filename)
         return Array();
     }
 
+=======
+read_json(const std::string& jsondata)
+{
+    Value v;
+
+    if (!read_string(jsondata, v) || v.type() != array_type)
+    {
+        BOOST_ERROR("Parse error.");
+        return Array();
+    }
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     return v.get_array();
 }
 
@@ -126,7 +186,11 @@ BOOST_AUTO_TEST_CASE(script_valid)
     // Inner arrays are [ "scriptSig", "scriptPubKey" ]
     // ... where scriptSig and scriptPubKey are stringified
     // scripts.
+<<<<<<< HEAD
     Array tests = read_json("script_valid.json");
+=======
+    Array tests = read_json(std::string(json_tests::script_valid, json_tests::script_valid + sizeof(json_tests::script_valid)));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     BOOST_FOREACH(Value& tv, tests)
     {
@@ -150,7 +214,11 @@ BOOST_AUTO_TEST_CASE(script_valid)
 BOOST_AUTO_TEST_CASE(script_invalid)
 {
     // Scripts that should evaluate as invalid
+<<<<<<< HEAD
     Array tests = read_json("script_invalid.json");
+=======
+    Array tests = read_json(std::string(json_tests::script_invalid, json_tests::script_invalid + sizeof(json_tests::script_invalid)));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     BOOST_FOREACH(Value& tv, tests)
     {
@@ -444,4 +512,25 @@ BOOST_AUTO_TEST_CASE(script_combineSigs)
     BOOST_CHECK(combined == partial3c);
 }
 
+<<<<<<< HEAD
+=======
+BOOST_AUTO_TEST_CASE(script_standard_push)
+{
+    for (int i=0; i<1000; i++) {
+        CScript script;
+        script << i;
+        BOOST_CHECK_MESSAGE(script.IsPushOnly(), "Number " << i << " is not pure push.");
+        BOOST_CHECK_MESSAGE(script.HasCanonicalPushes(), "Number " << i << " push is not canonical.");
+    }
+
+    for (int i=0; i<1000; i++) {
+        std::vector<unsigned char> data(i, '\111');
+        CScript script;
+        script << data;
+        BOOST_CHECK_MESSAGE(script.IsPushOnly(), "Length " << i << " is not pure push.");
+        BOOST_CHECK_MESSAGE(script.HasCanonicalPushes(), "Length " << i << " push is not canonical.");
+    }
+}
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 BOOST_AUTO_TEST_SUITE_END()

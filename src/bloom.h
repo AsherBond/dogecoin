@@ -1,4 +1,5 @@
 // Copyright (c) 2012 The Bitcoin developers
+<<<<<<< HEAD
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -12,6 +13,21 @@
 
 class COutPoint;
 class CTransaction;
+=======
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_BLOOM_H
+#define BITCOIN_BLOOM_H
+
+#include "serialize.h"
+
+#include <vector>
+
+class COutPoint;
+class CTransaction;
+class uint256;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 // 20,000 items with fp rate < 0.1% or 10,000 items and <0.0001%
 static const unsigned int MAX_BLOOM_FILTER_SIZE = 36000; // bytes

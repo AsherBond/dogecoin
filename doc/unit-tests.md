@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Compiling/running dogecoind unit tests
 ------------------------------------
 
@@ -33,3 +34,23 @@ To compile and run the tests:
 
 To add more tests, add them to the `src/qt/test/` directory,
 the `src/qt/test/test_main.cpp` file, and bitcoin-qt.pro.
+=======
+Compiling/running unit tests
+------------------------------------
+
+Unit tests will be automatically compiled if dependencies were met in configure
+and tests weren't explicitly disabled.
+
+After configuring, they can be run with 'make check'.
+
+To run the dogecoind tests manually, launch src/test/test_bitcoin .
+
+To add more dogecoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+.cpp files in the test/ directory or add new .cpp files that
+implement new BOOST_AUTO_TEST_SUITE sections.
+
+To run the dogecoin-qt tests manually, launch src/qt/test/bitcoin-qt_test
+
+To add more dogecoin-qt tests, add them to the `src/qt/test/` directory and
+the `src/qt/test/test_main.cpp` file.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

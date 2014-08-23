@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "transactionfilterproxy.h"
 
 #include "transactiontablemodel.h"
@@ -6,6 +7,21 @@
 
 #include <cstdlib>
 
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "transactionfilterproxy.h"
+
+#include "transactiontablemodel.h"
+#include "transactionrecord.h"
+
+#include <cstdlib>
+
+#include <QDateTime>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 // Earliest date that can be represented (far in the past)
 const QDateTime TransactionFilterProxy::MIN_DATE = QDateTime::fromTime_t(0);
 // Last date that can be represented (far in the future)
@@ -18,7 +34,12 @@ TransactionFilterProxy::TransactionFilterProxy(QObject *parent) :
     addrPrefix(),
     typeFilter(ALL_TYPES),
     minAmount(0),
+<<<<<<< HEAD
     limitRows(-1)
+=======
+    limitRows(-1),
+    showInactive(true)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
 }
 
@@ -31,7 +52,14 @@ bool TransactionFilterProxy::filterAcceptsRow(int sourceRow, const QModelIndex &
     QString address = index.data(TransactionTableModel::AddressRole).toString();
     QString label = index.data(TransactionTableModel::LabelRole).toString();
     qint64 amount = llabs(index.data(TransactionTableModel::AmountRole).toLongLong());
+<<<<<<< HEAD
 
+=======
+    int status = index.data(TransactionTableModel::StatusRole).toInt();
+
+    if(!showInactive && status == TransactionStatus::Conflicted)
+        return false;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     if(!(TYPE(type) & typeFilter))
         return false;
     if(datetime < dateFrom || datetime > dateTo)
@@ -74,6 +102,15 @@ void TransactionFilterProxy::setLimit(int limit)
     this->limitRows = limit;
 }
 
+<<<<<<< HEAD
+=======
+void TransactionFilterProxy::setShowInactive(bool showInactive)
+{
+    this->showInactive = showInactive;
+    invalidateFilter();
+}
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 int TransactionFilterProxy::rowCount(const QModelIndex &parent) const
 {
     if(limitRows != -1)

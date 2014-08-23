@@ -1,8 +1,21 @@
+<<<<<<< HEAD
 #ifndef BITCOINUNITS_H
 #define BITCOINUNITS_H
 
 #include <QString>
 #include <QAbstractListModel>
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOINUNITS_H
+#define BITCOINUNITS_H
+
+#include <QAbstractListModel>
+#include <QString>
+#include <QLocale>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /** Bitcoin unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
@@ -17,11 +30,22 @@ public:
     /** Bitcoin units.
       @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
      */
+<<<<<<< HEAD
     enum Unit
     {
         BTC,
         mBTC,
         uBTC
+=======
+    enum Unit   //Note: preserve positions in order to preserve existing settings
+    {
+        DOGE,
+        //formerly mDOGE
+        //formerly uDOGE
+        MDOGE = 3,
+        kDOGE = 4,
+        Koinu = 5
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     };
 
     //! @name Static API
@@ -38,16 +62,29 @@ public:
     static QString description(int unit);
     //! Number of Satoshis (1e-8) per unit
     static qint64 factor(int unit);
+<<<<<<< HEAD
+=======
+    //! Max amount per unit
+    static qint64 maxAmount(int unit);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     //! Number of amount digits (to represent max number of coins)
     static int amountDigits(int unit);
     //! Number of decimals left
     static int decimals(int unit);
     //! Format as string
+<<<<<<< HEAD
     static QString format(int unit, qint64 amount, bool plussign=false);
     //! Format as string (with unit)
     static QString formatWithUnit(int unit, qint64 amount, bool plussign=false);
     //! Parse string to coin amount
     static bool parse(int unit, const QString &value, qint64 *val_out);
+=======
+    static QString format(int unit, qint64 amount, bool plussign=false, bool trim=true, const QLocale &locale=QLocale());
+    //! Format as string (with unit)
+    static QString formatWithUnit(int unit, qint64 amount, bool plussign=false, bool trim=true, const QLocale &locale=QLocale());
+    //! Parse string to coin amount
+    static bool parse(int unit, const QString &value, qint64 *val_out, const QLocale &locale=QLocale());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     ///@}
 
     //! @name AbstractListModel implementation

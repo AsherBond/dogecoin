@@ -7,11 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>593</width>
+<<<<<<< HEAD
     <height>360</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>About Dogecoin</string>
+=======
+    <height>319</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About Dogecoin Core</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -50,7 +58,11 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string>&lt;b&gt;Dogecoin&lt;/b&gt; version</string>
+=======
+          <string>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -63,7 +75,11 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string notr="true">1.5-alpha</string>
+=======
+          <string notr="true">0.3.666-beta</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -91,9 +107,14 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
+<<<<<<< HEAD
         <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin developers
 Copyright &amp;copy; 2011-YYYY The Litecoin developers
 Copyright &amp;copy; 2013 Dogecoin Developers</string>
+=======
+        <string notr="true">Copyright &amp;copy; 2009-YYYY The Bitcoin Core developers
+          Copyright &amp;copy; 2013-YYYY Dogecoin Core Developers</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -110,7 +131,11 @@ Copyright &amp;copy; 2013 Dogecoin Developers</string>
        </property>
        <property name="text">
         <string>
+<<<<<<< HEAD
 This is experimental software. Learn more at dogecoin.com
+=======
+This is experimental software.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -162,12 +187,21 @@ This product includes software developed by the OpenSSL Project for use in the O
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
+<<<<<<< HEAD
      <x>360</x>
      <y>308</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
      <y>274</y>
+=======
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </hint>
    </hints>
   </connection>
@@ -178,12 +212,21 @@ This product includes software developed by the OpenSSL Project for use in the O
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
+<<<<<<< HEAD
      <x>428</x>
      <y>308</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>
      <y>274</y>
+=======
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </hint>
    </hints>
   </connection>

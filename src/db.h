@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -7,11 +8,24 @@
 #define BITCOIN_DB_H
 
 #include "main.h"
+=======
+// Copyright (c) 2009-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_DB_H
+#define BITCOIN_DB_H
+
+#include "serialize.h"
+#include "sync.h"
+#include "version.h"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 #include <map>
 #include <string>
 #include <vector>
 
+<<<<<<< HEAD
 #include <db_cxx.h>
 
 class CAddress;
@@ -22,11 +36,23 @@ class CMasterKey;
 class COutPoint;
 class CWallet;
 class CWalletTx;
+=======
+#include <boost/filesystem/path.hpp>
+#include <db_cxx.h>
+
+class CAddrMan;
+struct CBlockLocator;
+class CDiskBlockIndex;
+class COutPoint;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 extern unsigned int nWalletDBUpdated;
 
 void ThreadFlushWalletDB(const std::string& strWalletFile);
+<<<<<<< HEAD
 bool BackupWallet(const CWallet& wallet, const std::string& strDest);
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 
 class CDBEnv
@@ -307,6 +333,7 @@ public:
     bool static Rewrite(const std::string& strFile, const char* pszSkip = NULL);
 };
 
+<<<<<<< HEAD
 
 
 
@@ -325,4 +352,6 @@ public:
     bool Read(CAddrMan& addr);
 };
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif // BITCOIN_DB_H

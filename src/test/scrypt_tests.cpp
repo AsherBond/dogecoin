@@ -2,6 +2,10 @@
 
 #include "util.h"
 #include "scrypt.h"
+<<<<<<< HEAD
+=======
+#include "uint256.h"
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 BOOST_AUTO_TEST_SUITE(scrypt_tests)
 
@@ -30,4 +34,8 @@ BOOST_AUTO_TEST_CASE(scrypt_hashtest)
     }
 }
 
+<<<<<<< HEAD
 BOOST_AUTO_TEST_SUITE_END()
+=======
+BOOST_AUTO_TEST_SUITE_END()
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

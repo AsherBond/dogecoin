@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
+<<<<<<< HEAD
    <string>Coin Control</string>
+=======
+   <string>Coin Control Address Selection</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -38,8 +42,16 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlQuantityText">
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>Quantity:</string>
@@ -48,12 +60,15 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlQuantity">
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -70,8 +85,16 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlBytesText">
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>Bytes:</string>
@@ -80,12 +103,15 @@
        </item>
        <item row="1" column="1">
         <widget class="QLabel" name="labelCoinControlBytes">
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -118,8 +144,16 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAmountText">
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>Amount:</string>
@@ -128,12 +162,15 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlAmount">
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -150,8 +187,16 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="labelCoinControlPriorityText">
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>Priority:</string>
@@ -160,12 +205,15 @@
        </item>
        <item row="1" column="1">
         <widget class="QLabel" name="labelCoinControlPriority">
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -173,7 +221,11 @@
           <enum>Qt::ActionsContextMenu</enum>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string/>
+=======
+          <string notr="true">medium</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -198,8 +250,16 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlFeeText">
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>Fee:</string>
@@ -208,12 +268,15 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlFee">
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -233,8 +296,16 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>Low Output:</string>
@@ -246,12 +317,15 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -259,7 +333,11 @@
           <enum>Qt::ActionsContextMenu</enum>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string>no</string>
+=======
+          <string notr="true">no</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -284,8 +362,16 @@
        </property>
        <item row="0" column="0">
         <widget class="QLabel" name="labelCoinControlAfterFeeText">
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>After Fee:</string>
@@ -294,12 +380,15 @@
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="labelCoinControlAfterFee">
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -319,8 +408,16 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="styleSheet">
           <string notr="true">font-weight:bold;</string>
+=======
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
          <property name="text">
           <string>Change:</string>
@@ -332,12 +429,15 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+<<<<<<< HEAD
          <property name="font">
           <font>
            <family>Monospace</family>
            <pointsize>10</pointsize>
           </font>
          </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -370,6 +470,7 @@
      <property name="frameShadow">
       <enum>QFrame::Sunken</enum>
      </property>
+<<<<<<< HEAD
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
@@ -447,6 +548,79 @@
        </item>
       </layout>
      </widget>
+=======
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutPanel" stretch="0,0,0,0,0">
+        <property name="spacing">
+         <number>14</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButtonSelectAll">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>(un)select all</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioTreeMode">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Tree mode</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioListMode">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>List mode</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelLocked">
+          <property name="text">
+           <string notr="true">(1 locked)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </widget>
    </item>
    <item>
@@ -458,7 +632,11 @@
       <bool>false</bool>
      </property>
      <property name="columnCount">
+<<<<<<< HEAD
       <number>11</number>
+=======
+      <number>12</number>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
      </property>
      <attribute name="headerShowSortIndicator" stdset="0">
       <bool>true</bool>
@@ -524,6 +702,14 @@
        <string/>
       </property>
      </column>
+<<<<<<< HEAD
+=======
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </widget>
    </item>
    <item>

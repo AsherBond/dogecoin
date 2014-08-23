@@ -1,6 +1,7 @@
 //
 // Unit tests for block.CheckBlock()
 //
+<<<<<<< HEAD
 #include <algorithm>
 
 #include <boost/assign/list_of.hpp> // for 'map_list_of()'
@@ -12,6 +13,19 @@
 #include "wallet.h"
 #include "net.h"
 #include "util.h"
+=======
+
+
+
+#include "main.h"
+
+#include <cstdio>
+
+#include <boost/filesystem/operations.hpp>
+#include <boost/filesystem/path.hpp>
+#include <boost/test/unit_test.hpp>
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 BOOST_AUTO_TEST_SUITE(CheckBlock_tests)
 
@@ -19,7 +33,11 @@ bool
 read_block(const std::string& filename, CBlock& block)
 {
     namespace fs = boost::filesystem;
+<<<<<<< HEAD
     fs::path testFile = fs::current_path() / "test" / "data" / filename;
+=======
+    fs::path testFile = fs::current_path() / "data" / filename;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #ifdef TEST_DATA_DIR
     if (!fs::exists(testFile))
     {
@@ -52,12 +70,19 @@ BOOST_AUTO_TEST_CASE(May15)
     if (read_block("Mar12Fork.dat", forkingBlock))
     {
         CValidationState state;
+<<<<<<< HEAD
         forkingBlock.nTime = tMay15-1; // Invalidates PoW
         BOOST_CHECK(!forkingBlock.CheckBlock(state, false, false));
 
         // After May 15'th, big blocks are OK:
         forkingBlock.nTime = tMay15; // Invalidates PoW
         BOOST_CHECK(forkingBlock.CheckBlock(state, false, false));
+=======
+
+        // After May 15'th, big blocks are OK:
+        forkingBlock.nTime = tMay15; // Invalidates PoW
+        BOOST_CHECK(CheckBlock(forkingBlock, state, false, false));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     SetMockTime(0);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef GUIUTIL_H
 #define GUIUTIL_H
 
@@ -14,6 +15,29 @@ class QWidget;
 class QDateTime;
 class QUrl;
 class QAbstractItemView;
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef GUIUTIL_H
+#define GUIUTIL_H
+
+#include <QMessageBox>
+#include <QObject>
+#include <QString>
+
+class QValidatedLineEdit;
+class SendCoinsRecipient;
+
+QT_BEGIN_NAMESPACE
+class QAbstractItemView;
+class QDateTime;
+class QFont;
+class QLineEdit;
+class QUrl;
+class QWidget;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 QT_END_NAMESPACE
 
 /** Utility functions used by the Bitcoin Qt UI.
@@ -28,6 +52,7 @@ namespace GUIUtil
     QFont bitcoinAddressFont();
 
     // Set up widgets for address and amounts
+<<<<<<< HEAD
     void setupAddressWidget(QLineEdit *widget, QWidget *parent);
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
@@ -35,6 +60,18 @@ namespace GUIUtil
     // See Bitcoin URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
     bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
+=======
+    void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent);
+    void setupAmountWidget(QLineEdit *widget, QWidget *parent);
+
+    // Parse "dogecoin:" URI into recipient object, return true on successful parsing
+    bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
+    bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
+    QString formatBitcoinURI(const SendCoinsRecipient &info);
+
+    // Returns true if given address+amount meets "dust" definition
+    bool isDust(const QString& address, qint64 amount);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     // HTML escaping for rich text controls
     QString HtmlEscape(const QString& str, bool fMultiLine=false);
@@ -47,9 +84,15 @@ namespace GUIUtil
        @see  TransactionView::copyLabel, TransactionView::copyAmount, TransactionView::copyAddress
      */
     void copyEntryData(QAbstractItemView *view, int column, int role=Qt::EditRole);
+<<<<<<< HEAD
     
     void setClipboard(const QString& str);
     
+=======
+
+    void setClipboard(const QString& str);
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     /** Get save filename, mimics QFileDialog::getSaveFileName, except that it appends a default suffix
         when no suffix is provided by the user.
 
@@ -60,9 +103,28 @@ namespace GUIUtil
       @param[out] selectedSuffixOut  Pointer to return the suffix (file type) that was selected (or 0).
                   Can be useful when choosing the save file format based on suffix.
      */
+<<<<<<< HEAD
     QString getSaveFileName(QWidget *parent=0, const QString &caption=QString(),
                                    const QString &dir=QString(), const QString &filter=QString(),
                                    QString *selectedSuffixOut=0);
+=======
+    QString getSaveFileName(QWidget *parent, const QString &caption, const QString &dir,
+        const QString &filter,
+        QString *selectedSuffixOut);
+
+    /** Get open filename, convenience wrapper for QFileDialog::getOpenFileName.
+
+      @param[in] parent  Parent window (or 0)
+      @param[in] caption Window caption (or empty, for default)
+      @param[in] dir     Starting directory (or empty, to default to documents directory)
+      @param[in] filter  Filter specification such as "Comma Separated Files (*.csv)"
+      @param[out] selectedSuffixOut  Pointer to return the suffix (file type) that was selected (or 0).
+                  Can be useful when choosing the save file format based on suffix.
+     */
+    QString getOpenFileName(QWidget *parent, const QString &caption, const QString &dir,
+        const QString &filter,
+        QString *selectedSuffixOut);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     /** Get connection type to call object slot in GUI thread with invokeMethod. The call will be blocking.
 
@@ -98,6 +160,7 @@ namespace GUIUtil
     bool GetStartOnSystemStartup();
     bool SetStartOnSystemStartup(bool fAutoStart);
 
+<<<<<<< HEAD
     /** Help message for Bitcoin-Qt, shown with --help. */
     class HelpMessageBox : public QMessageBox
     {
@@ -117,6 +180,12 @@ namespace GUIUtil
         QString coreOptions;
         QString uiOptions;
     };
+=======
+    /** Save window size and position */
+    void saveWindowGeometry(const QString& strSetting, QWidget *parent);
+    /** Restore window size and position */
+    void restoreWindowGeometry(const QString& strSetting, const QSize &defaultSizeIn, QWidget *parent);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 } // namespace GUIUtil
 

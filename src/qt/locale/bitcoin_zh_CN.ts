@@ -1,9 +1,13 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.0">
+<<<<<<< HEAD
 <defaultcodec>UTF-8</defaultcodec>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
+<<<<<<< HEAD
         <source>About Dogecoin</source>
         <translation>关于狗狗币</translation>
     </message>
@@ -11,6 +15,15 @@
         <location line="+39"/>
         <source>&lt;b&gt;Dogecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;狗狗币&lt;/b&gt;版本</translation>
+=======
+        <source>About Dogecoin Core</source>
+        <translation>关于狗狗币核心</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;狗狗币核心&lt;/b&gt;版本</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+57"/>
@@ -28,12 +41,17 @@ Distributed under the MIT/X11 software license, see the accompanying file COPYIN
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../aboutdialog.cpp" line="+14"/>
+=======
+        <location filename="../utilitydialog.cpp" line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copyright</source>
         <translation>版权</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>The Bitcoin developers</source>
         <translation type="unfinished"/>
     </message>
@@ -46,11 +64,16 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+0"/>
         <source>2013-%1 The Dogecoin developers</source>
         <translation>2013-%1 Dogecoin-qt 客户端开发团队</translation>
+=======
+        <source>The Dogecoin Core developers</source>
+        <translation>Dogecoin Core 开发团队</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>Address Book</source>
         <translation>通讯录</translation>
@@ -59,6 +82,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+19"/>
         <source>Double-click to edit address or label</source>
         <translation>双击以编辑地址或标签</translation>
+=======
+        <location filename="../forms/addressbookpage.ui" line="+30"/>
+        <source>Double-click to edit address or label</source>
+        <translation>双击编辑地址或标签</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+27"/>
@@ -66,11 +94,21 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>创建新地址</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+3"/>
+        <source>&amp;New</source>
+        <translation>新建(&amp;N)</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>复制当前选中地址到系统剪贴板</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-11"/>
         <source>&amp;New Address</source>
         <translation>&amp;新建地址</translation>
@@ -102,6 +140,24 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+25"/>
+=======
+        <location line="+3"/>
+        <source>&amp;Copy</source>
+        <translation>复制(&amp;C)</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>C&amp;lose</source>
+        <translation>关闭(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="+74"/>
+        <source>&amp;Copy Address</source>
+        <translation>复制地址(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="../forms/addressbookpage.ui" line="-41"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Delete the currently selected address from the list</source>
         <translation>从列表中删除选中的地址</translation>
     </message>
@@ -113,6 +169,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>&amp;Export</source>
+<<<<<<< HEAD
         <translation>&amp;导出</translation>
     </message>
     <message>
@@ -132,10 +189,47 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
+=======
+        <translation>导出(&amp;E)</translation>
+    </message>
+    <message>
+        <location line="-27"/>
+        <source>&amp;Delete</source>
+        <translation>删除(&amp;D)</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="-30"/>
+        <source>Choose the address to send coins to</source>
+        <translation>选择发款地址</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose the address to receive coins with</source>
+        <translation>选择收款地址</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>C&amp;hoose</source>
+        <translation>选择(&amp;H)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Very sending addresses</source>
+        <translation>正在发送地址</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Much receiving addresses</source>
+        <translation>正在接收地址</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>这是您用来付款的狗狗币地址。在付款前，请总是核实付款金额和收款地址。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
         <source>Copy &amp;Label</source>
         <translation>复制 &amp;标签</translation>
@@ -154,6 +248,26 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+260"/>
         <source>Export Address Book Data</source>
         <translation>导出通讯录数据</translation>
+=======
+        <location line="+4"/>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>这些都是您的狗狗币地址，可用于收款。建议对每笔交易都使用一个新的地址。</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy &amp;Label</source>
+        <translation>复制标签(&amp;L)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Edit</source>
+        <translation>编辑(&amp;E)</translation>
+    </message>
+    <message>
+        <location line="+194"/>
+        <source>Export Address List</source>
+        <translation>导出地址列表</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -162,6 +276,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
         <source>Error exporting</source>
         <translation>导出错误</translation>
     </message>
@@ -169,12 +284,25 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+0"/>
         <source>Could not write to file %1.</source>
         <translation>无法写入文件 %1。</translation>
+=======
+        <source>Exporting Failed</source>
+        <translation>导出失败</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>There was an error trying to save the address list to %1.</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+144"/>
+=======
+        <location filename="../addresstablemodel.cpp" line="+168"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Label</source>
         <translation>标签</translation>
     </message>
@@ -212,7 +340,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>重复新密码</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../askpassphrasedialog.cpp" line="+33"/>
+=======
+        <location filename="../askpassphrasedialog.cpp" line="+40"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>输入钱包的新密码。&lt;br/&gt;使用的密码请至少包含&lt;b&gt;10个以上随机字符&lt;/&gt;，或者是&lt;b&gt;8个以上的单词&lt;/b&gt;。</translation>
     </message>
@@ -224,7 +356,11 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+<<<<<<< HEAD
         <translation>该操作需要您首先使用密码解锁钱包。</translation>
+=======
+        <translation>此操作需要您首先使用密码解锁该钱包。</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+5"/>
@@ -244,12 +380,20 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
+<<<<<<< HEAD
         <translation>修改密码</translation>
+=======
+        <translation>更改密码</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
+<<<<<<< HEAD
         <translation>请输入钱包的旧密码与新密码。</translation>
+=======
+        <translation>请输入该钱包的旧密码与新密码。</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+46"/>
@@ -285,7 +429,11 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
+<<<<<<< HEAD
         <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
+=======
+        <source>Dogecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>将关闭软件以完成加密过程。 请您谨记：钱包加密并不是万能的，电脑中毒，您的狗狗币还是有可能丢失。</translation>
     </message>
     <message>
@@ -299,7 +447,11 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-54"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+<<<<<<< HEAD
         <translation>由于一个本地错误，加密钱包操作已经失败。您的钱包没有被加密。</translation>
+=======
+        <translation>由于一个本地错误，加密钱包的操作已经失败。您的钱包没能被加密。</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+7"/>
@@ -333,29 +485,56 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
         <translation>对&amp;消息签名...</translation>
     </message>
     <message>
         <location line="+280"/>
+=======
+        <location filename="../bitcoingui.cpp" line="+295"/>
+        <source>Sign &amp;message...</source>
+        <translation>消息签名(&amp;M)...</translation>
+    </message>
+    <message>
+        <location line="+335"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Synchronizing with network...</source>
         <translation>正在与网络同步...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-349"/>
         <source>&amp;Overview</source>
         <translation>&amp;概况</translation>
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="-407"/>
+        <source>&amp;Overview</source>
+        <translation>概况(&amp;O)</translation>
+    </message>
+    <message>
+        <location line="-137"/>
+        <source>Node</source>
+        <translation>节点</translation>
+    </message>
+    <message>
+        <location line="+138"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Show general overview of wallet</source>
         <translation>显示钱包概况</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
+<<<<<<< HEAD
         <translation>&amp;交易记录</translation>
+=======
+        <translation>交易记录(&amp;T)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -363,6 +542,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>查看交易历史</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Edit the list of stored addresses and labels for sending</source>
         <translation>修改存储的地址和标签列表</translation>
@@ -376,6 +556,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+31"/>
         <source>E&amp;xit</source>
         <translation>退出</translation>
+=======
+        <location line="+17"/>
+        <source>E&amp;xit</source>
+        <translation>退出(&amp;X)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -383,42 +568,92 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>退出程序</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Show information about Dogecoin</source>
         <translation>显示狗狗币的相关信息</translation>
     </message>
     <message>
+=======
+        <location line="+7"/>
+        <source>Show information about Dogecoin Core</source>
+        <translation>显示狗狗币的相关信息</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>About &amp;Qt</source>
         <translation>关于 &amp;Qt</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Show information about Qt</source>
         <translation>显示Qt相关信息</translation>
+=======
+        <location line="+2"/>
+        <source>Show information about Qt</source>
+        <translation>显示 Qt 相关信息</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
+<<<<<<< HEAD
         <translation>&amp;选项...</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;加密钱包...</translation>
+=======
+        <translation>选项(&amp;O)...</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>加密钱包(&amp;E)...</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Backup Wallet...</source>
+<<<<<<< HEAD
         <translation>&amp;备份钱包...</translation>
+=======
+        <translation>备份钱包(&amp;B)...</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Change Passphrase...</source>
+<<<<<<< HEAD
         <translation>&amp;修改密码...</translation>
     </message>
     <message>
         <location line="+285"/>
+=======
+        <translation>更改密码(&amp;C)...</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Very &amp;sending addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Much &amp;receiving addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open &amp;URI...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+325"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Importing blocks from disk...</source>
         <translation>正在从磁盘导入数据块...</translation>
     </message>
@@ -428,12 +663,17 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>正在为数据块建立索引...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-347"/>
+=======
+        <location line="-405"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send coins to a Dogecoin address</source>
         <translation>向一个狗狗币地址发送狗狗币</translation>
     </message>
     <message>
         <location line="+49"/>
+<<<<<<< HEAD
         <source>Modify configuration options for Dogecoin</source>
         <translation>设置选项</translation>
     </message>
@@ -441,46 +681,85 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+9"/>
         <source>Backup wallet to another location</source>
         <translation>备份钱包到其它文件夹</translation>
+=======
+        <source>Modify configuration options for Dogecoin Core</source>
+        <translation>设置选项</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Backup wallet to another location</source>
+        <translation>备份钱包到其他文件夹</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
         <source>Change the passphrase used for wallet encryption</source>
+<<<<<<< HEAD
         <translation>修改钱包加密口令</translation>
+=======
+        <translation>更改钱包加密口令</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Debug window</source>
+<<<<<<< HEAD
         <translation>&amp;调试窗口</translation>
+=======
+        <translation>调试窗口(&amp;D)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
         <source>Open debugging and diagnostic console</source>
+<<<<<<< HEAD
         <translation>在诊断控制台调试</translation>
+=======
+        <translation>打开调试和诊断控制台</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-4"/>
         <source>&amp;Verify message...</source>
+<<<<<<< HEAD
         <translation>&amp;验证消息...</translation>
     </message>
     <message>
         <location line="-165"/>
         <location line="+530"/>
+=======
+        <translation>验证消息(&amp;V)...</translation>
+    </message>
+    <message>
+        <location line="+430"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin</source>
         <translation>狗狗币</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-530"/>
+=======
+        <location line="-643"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet</source>
         <translation>钱包</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+101"/>
         <source>&amp;Send</source>
         <translation>&amp;发送</translation>
+=======
+        <location line="+146"/>
+        <source>&amp;Send</source>
+        <translation>发送(&amp;S)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
+<<<<<<< HEAD
         <translation>&amp;接收</translation>
     </message>
     <message>
@@ -497,6 +776,15 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+9"/>
         <source>&amp;Show / Hide</source>
         <translation>&amp;显示 / 隐藏</translation>
+=======
+        <translation>接收(&amp;R)</translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <location line="+2"/>
+        <source>&amp;Show / Hide</source>
+        <translation>显示 / 隐藏(&amp;S)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -519,6 +807,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>校验消息，确保该消息是由指定的狗狗币地址所有者签名的</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
         <source>&amp;File</source>
         <translation>&amp;文件</translation>
@@ -535,10 +824,29 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+9"/>
+=======
+        <location line="+48"/>
+        <source>&amp;File</source>
+        <translation>文件(&amp;F)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>&amp;Settings</source>
+        <translation>设置(&amp;S)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&amp;Help</source>
+        <translation>帮助(&amp;H)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Tabs toolbar</source>
         <translation>分页工具栏</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
         <location line="+10"/>
         <source>[testnet]</source>
@@ -546,11 +854,66 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
+=======
+        <location line="-284"/>
+        <location line="+376"/>
+        <source>[testnet]</source>
+        <translation>[测试网络]</translation>
+    </message>
+    <message>
+        <location line="-401"/>
+        <source>Dogecoin Core</source>
+        <translation>狗狗币核心</translation>
+    </message>
+    <message>
+        <location line="+163"/>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <translation>请求支付（生成二维码和 dogecoin: URI）</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+2"/>
+        <source>&amp;About Dogecoin Core</source>
+        <translation>关于狗狗币核心(&amp;A)</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>显示用过的发送地址和标签的列表</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>显示用过的接收地址和标签的列表</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open a dogecoin: URI or payment request</source>
+        <translation>打开一个狗狗币：URI 或支付请求</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the Dogecoin Core help message to get a list with possible Dogecoin Core command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+159"/>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin client</source>
         <translation>狗狗币客户端</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+141"/>
+=======
+        <location line="+142"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%n active connection(s) to Dogecoin network</source>
         <translation><numerusform>到狗狗币网络的连接共有%n条</numerusform></translation>
     </message>
@@ -570,7 +933,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>已处理 %1 个交易历史数据块。</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+20"/>
+=======
+        <location line="+23"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%n hour(s)</source>
         <translation><numerusform>%n 小时前</numerusform></translation>
     </message>
@@ -590,7 +957,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>落后 %1 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+21"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Last received block was generated %1 ago.</source>
         <translation>最新收到的区块产生于 %1。</translation>
     </message>
@@ -600,7 +971,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>在此之后的交易尚未可见</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
+=======
+        <location line="+27"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error</source>
         <translation>错误</translation>
     </message>
@@ -615,6 +990,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>信息</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation>该交易的字节数超标。您可以选择支付%1的交易费给处理您的交易的网络节点，有助于狗狗币网络的运行。您愿意支付这笔交易费用吗？</translation>
@@ -626,10 +1002,19 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+31"/>
+=======
+        <location line="-85"/>
+        <source>Up to date</source>
+        <translation>已是最新</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Catching up...</source>
         <translation>更新中...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+113"/>
         <source>Confirm transaction fee</source>
         <translation>确认交易费</translation>
@@ -638,6 +1023,11 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+8"/>
         <source>Sent transaction</source>
         <translation>已发送交易</translation>
+=======
+        <location line="+130"/>
+        <source>Sent transaction</source>
+        <translation>发出交易</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+0"/>
@@ -658,6 +1048,7 @@ Address: %4
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+33"/>
         <location line="+23"/>
         <source>URI handling</source>
@@ -671,6 +1062,9 @@ Address: %4
     </message>
     <message>
         <location line="+17"/>
+=======
+        <location line="+69"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>钱包已被&lt;b&gt;加密&lt;/b&gt;，当前为&lt;b&gt;解锁&lt;/b&gt;状态</translation>
     </message>
@@ -680,20 +1074,30 @@ Address: %4
         <translation>钱包已被&lt;b&gt;加密&lt;/b&gt;，当前为&lt;b&gt;锁定&lt;/b&gt;状态</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+111"/>
         <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+=======
+        <location filename="../bitcoin.cpp" line="+438"/>
+        <source>A fatal error occurred. Dogecoin Core can no longer continue safely and will quit.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>发生严重错误。</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+104"/>
+=======
+        <location filename="../clientmodel.cpp" line="+119"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Network Alert</source>
         <translation>网络警报</translation>
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>EditAddressDialog</name>
     <message>
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
@@ -1305,23 +1709,1488 @@ Address: %4
     </message>
     <message>
         <location line="+50"/>
+=======
+    <name>CoinControlDialog</name>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="+14"/>
+        <source>Coin Control Address Selection</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Quantity:</source>
+        <translation>总量：</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Bytes:</source>
+        <translation>字节：</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Amount:</source>
+        <translation>金额：</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Priority:</source>
+        <translation>优先级：</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Fee:</source>
+        <translation>费用：</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Change:</source>
+        <translation>变更 : </translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>(un)select all</source>
+        <translation>(不)全选</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Tree mode</source>
+        <translation>树状模式</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>List mode</source>
+        <translation>列表模式</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Amount</source>
+        <translation>金额</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Date</source>
+        <translation>日期</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Confirmations</source>
+        <translation>确认</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Confirmed</source>
+        <translation>已确认</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Priority</source>
+        <translation>优先级</translation>
+    </message>
+    <message>
+        <location filename="../coincontroldialog.cpp" line="+42"/>
+        <source>Copy address</source>
+        <translation>复制地址</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy label</source>
+        <translation>复制标签</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+26"/>
+        <source>Copy amount</source>
+        <translation>复制金额</translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Copy transaction ID</source>
+        <translation>复制交易编号</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock unspent</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unlock unspent</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation>复制字节</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation>复制优先级</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+323"/>
+        <source>highest</source>
+        <translation>最高</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>higher</source>
+        <translation>更高</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>high</source>
+        <translation>高</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium-high</source>
+        <translation>中高</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium</source>
+        <translation>中等</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>low-medium</source>
+        <translation>中低</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lower</source>
+        <translation>更低</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lowest</source>
+        <translation>最低</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>(%1 locked)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>none</source>
+        <translation>无</translation>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Dust</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>yes</source>
+        <translation>是</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>no</source>
+        <translation>否</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+5"/>
+        <source>This means a fee of at least %1 per kB is required.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-4"/>
+        <source>Can vary +/- 1 byte per input.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions with higher priority are more likely to get included into a block.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+4"/>
+        <source>This means a fee of at least %1 is required.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-3"/>
+        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This label turns red, if the change is smaller than %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <location line="+66"/>
+        <source>(no label)</source>
+        <translation>(没有标签)</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>change from %1 (%2)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>(change)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>EditAddressDialog</name>
+    <message>
+        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <source>Edit Address</source>
+        <translation>编辑地址</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Label</source>
+        <translation>标签(&amp;L)</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The label associated with this address list entry</source>
+        <translation>与此地址相关的标签项</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation>该地址已与地址列表中的条目关联，只能被发送地址修改。</translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>&amp;Address</source>
+        <translation>地址(&amp;A)</translation>
+    </message>
+    <message>
+        <location filename="../editaddressdialog.cpp" line="+28"/>
+        <source>New receiving address</source>
+        <translation>新建接收地址</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>New sending address</source>
+        <translation>新建发送地址</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Edit receiving address</source>
+        <translation>编辑接收地址</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Edit sending address</source>
+        <translation>编辑发送地址</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>输入的地址“%1”已经存在于地址簿中。</translation>
+    </message>
+    <message>
+        <location line="-5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <translation>您输入的“%1”不是有效的狗狗币地址。</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Could not unlock wallet.</source>
+        <translation>无法解锁钱包</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>New key generation failed.</source>
+        <translation>新的密钥生成失败。</translation>
+    </message>
+</context>
+<context>
+    <name>FreespaceChecker</name>
+    <message>
+        <location filename="../intro.cpp" line="+65"/>
+        <source>A new data directory will be created.</source>
+        <translation>一个新的数据目录将被创建。</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
+        <translation>目录已存在。如果您打算在这里创建一个新目录，添加 %1。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Path already exists, and is not a directory.</source>
+        <translation>路径已存在，并且不是一个目录。</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Cannot create data directory here.</source>
+        <translation>无法在此创建数据目录。</translation>
+    </message>
+</context>
+<context>
+    <name>HelpMessageDialog</name>
+    <message>
+        <location filename="../forms/helpmessagedialog.ui" line="+19"/>
+        <source>Dogecoin Core - Command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+38"/>
+        <source>Dogecoin Core</source>
+        <translation>狗狗币核心</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>version</source>
+        <translation>版本</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Usage:</source>
+        <translation>使用：</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>command-line options</source>
+        <translation>命令行选项</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>UI options</source>
+        <translation>UI选项</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
+        <translation>设置语言, 例如“zh-TW”（默认为系统语言）</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Start minimized</source>
+        <translation>启动时最小化
+</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>启动时显示版权页 (缺省: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>在启动时选择数据目录（默认：0）</translation>
+    </message>
+</context>
+<context>
+    <name>Intro</name>
+    <message>
+        <location filename="../forms/intro.ui" line="+14"/>
+        <source>Welcome</source>
+        <translation>欢迎</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Welcome to Dogecoin Core.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Use the default data directory</source>
+        <translation>使用默认的数据目录</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use a custom data directory:</source>
+        <translation>使用自定义的数据目录：</translation>
+    </message>
+    <message>
+        <location filename="../intro.cpp" line="+85"/>
+        <source>Dogecoin</source>
+        <translation>狗狗币</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
+        <translation>错误：指定的数据目录“%1”无法创建。</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Error</source>
+        <translation>错误</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>GB of free space available</source>
+        <translation>可用空间（GB）</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>(of %1GB needed)</source>
+        <translation>（需要 %1GB）</translation>
+    </message>
+</context>
+<context>
+    <name>OpenURIDialog</name>
+    <message>
+        <location filename="../forms/openuridialog.ui" line="+14"/>
+        <source>Open URI</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Open payment request from URI or file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>URI:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select payment request file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../openuridialog.cpp" line="+47"/>
+        <source>Select payment request file to open</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>选项</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Main</source>
+        <translation>主要(&amp;M)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
+        <translation>可选的每 kB 交易费，这有助于您的交易被更快的处理。大多数交易都是 1 kB。</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>支付交易费用(&amp;F)</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Dogecoin after logging in to the system.</source>
+        <translation>登录系统后自动开启狗狗币客户端</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Dogecoin on system login</source>
+        <translation>系统启动时运行(&amp;S)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Size of &amp;database cache</source>
+        <translation>数据库缓存大小(&amp;D)</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation>设置数据库缓冲区大小 (缺省: 25MB)</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Number of script &amp;verification threads</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation>设置脚本验证线程数量（最多16，0 = 自动，&lt;0 = 留下许多空闲核心，默认为 0）</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
+        <translation>通过 SOCKS 代理连接到狗狗币网络。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
+        <translation>通过 SO&amp;CKS 代理连接 (默认代理):</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
+        <translation>代理的 IP 地址 (例如 IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+    </message>
+    <message>
+        <location line="+224"/>
+        <source>Active command-line options that override above options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Reset all client options to default.</source>
+        <translation>恢复客户端的缺省设置</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>恢复缺省设置(&amp;R)</translation>
+    </message>
+    <message>
+        <location line="-323"/>
+        <source>&amp;Network</source>
+        <translation>网络(&amp;N)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动在路由器中打开狗狗币端口。只有当您的路由器开启 UPnP 选项时此功能才有效。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>使用 &amp;UPnP 映射端口</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>代理服务器 &amp;IP：</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>&amp;Port:</source>
+        <translation>端口(&amp;P)：</translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>代理端口（例如 9050）</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>Socks 版本(&amp;V)：</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>Socks 代理版本（例如 5）</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>窗口(&amp;W)</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>最小化窗口后仅显示托盘图标</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>最小化到托盘(&amp;M)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>当窗口关闭时程序最小化而不是退出。当使用该选项时，程序只能通过在菜单中选择退出来关闭</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>单击关闭按钮最小化(&amp;I)</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>显示(&amp;D)</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>用户界面语言(&amp;L)：</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin.</source>
+        <translation>在这里设置用户界面的语言。设置将在客户端重启后生效。</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>狗狗币金额单位(&amp;U)：</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>选择狗狗币单位。</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
+        <translation>是否需要在交易清单中显示狗狗币地址。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>在交易清单中显示狗狗币地址(&amp;D)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Whether to show coin control features or not.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display coin &amp;control features (experts only)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+136"/>
+        <source>&amp;OK</source>
+        <translation>确定(&amp;O)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Cancel</source>
+        <translation>取消(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.cpp" line="+67"/>
+        <source>default</source>
+        <translation>默认</translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>none</source>
+        <translation>无</translation>
+    </message>
+    <message>
+        <location line="+75"/>
+        <source>Confirm options reset</source>
+        <translation>确认恢复缺省设置</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+29"/>
+        <source>Client restart required to activate changes.</source>
+        <translation>更改生效需要重启客户端。</translation>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>客户端即将关闭，确定继续吗？</translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>This change would require a client restart.</source>
+        <translation>此更改需要重启客户端。</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>The supplied proxy address is invalid.</source>
+        <translation>提供的代理服务器地址无效。</translation>
+    </message>
+</context>
+<context>
+    <name>OverviewPage</name>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="+14"/>
+        <source>Form</source>
+        <translation>表单</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location line="+231"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>现在显示的消息可能是过期的. 在连接上狗狗币网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成.</translation>
+    </message>
+    <message>
+        <location line="-155"/>
+        <source>Unconfirmed:</source>
+        <translation>未确认：</translation>
+    </message>
+    <message>
+        <location line="-83"/>
+        <source>Wallet</source>
+        <translation>钱包</translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Available:</source>
+        <translation>余额：</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Pending:</source>
+        <translation>未确认：</translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Confirmed:</source>
+        <translation>已确认：</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current spendable balance</source>
+        <translation>您当前可使用的余额</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation>尚未确认的交易总额，未计入当前余额</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Immature:</source>
+        <translation>未成熟的：</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Mined balance that has not yet matured</source>
+        <translation>尚未成熟的挖矿收入余额</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Total:</source>
+        <translation>总额：</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current total balance</source>
+        <translation>您当前的总余额</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
+        <translation>&lt;b&gt;最近交易记录&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+120"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+        <translation>数据同步中</translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+403"/>
+        <location line="+13"/>
+        <source>URI handling</source>
+        <translation>URI 处理</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <translation>URI无法解析！原因可能是狗狗币地址不正确，或者URI参数错误。</translation>
+    </message>
+    <message>
+        <location line="+96"/>
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation>请求支付的金额 %1 太小（就像尘埃）。</translation>
+    </message>
+    <message>
+        <location line="-221"/>
+        <location line="+212"/>
+        <location line="+13"/>
+        <location line="+95"/>
+        <location line="+18"/>
+        <location line="+16"/>
+        <source>Payment request error</source>
+        <translation>支付请求出错</translation>
+    </message>
+    <message>
+        <location line="-353"/>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
+        <translation>暂时无法启动狗狗币：点击支付功能</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Net manager warning</source>
+        <translation>网络管理器警告</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
+        <translation>您的活动代理不支持 SOCKS5，而通过代理进行支付请求时这是必须的。</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Payment request fetch URL is invalid: %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Payment request file handling</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Refund from %1</source>
+        <translation>退款来自 %1</translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Error communicating with %1: %2</source>
+        <translation>%1: %2 通讯出错</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Payment request can not be parsed or processed!</source>
+        <translation>支付请求不能被解析或处理！</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Bad response from server %1</source>
+        <translation>来自 %1 服务器的错误响应</translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Payment acknowledged</source>
+        <translation>支付已到账</translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Network request error</source>
+        <translation>网络请求出错</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../bitcoin.cpp" line="+71"/>
+        <location line="+11"/>
+        <source>Dogecoin</source>
+        <translation>狗狗币</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
+        <translation>错误：指定的数据目录“%1”不存在。</translation>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>错误：无效的 -regtest 与 -testnet 结合体。</translation>
+    </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+36"/>
+        <source>&amp;Save Image...</source>
+        <translation>保存图片(&amp;S)...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Copy Image</source>
+        <translation>复制图片(&amp;C)</translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Save QR Code</source>
+        <translation>保存二维码</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>PNG Image (*.png)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>RPCConsole</name>
+    <message>
+        <location filename="../forms/rpcconsole.ui" line="+46"/>
+        <source>Client name</source>
+        <translation>客户端名称</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+23"/>
+        <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+359"/>
+        <source>N/A</source>
+        <translation>不可用</translation>
+    </message>
+    <message>
+        <location line="-223"/>
+        <source>Client version</source>
+        <translation>客户端版本</translation>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>&amp;Information</source>
+        <translation>信息(&amp;I)</translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>Debug window</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>General</source>
+        <translation>常规</translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Using OpenSSL version</source>
+        <translation>使用 OpenSSL 版本</translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Startup time</source>
+        <translation>启动时间</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Network</source>
+        <translation>网络</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Name</source>
+        <translation>姓名</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Number of connections</source>
+        <translation>连接数</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Block chain</source>
+        <translation>数据链</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Current number of blocks</source>
+        <translation>当前数据块数量</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Estimated total blocks</source>
+        <translation>预计数据块数量</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Last block time</source>
+        <translation>上一数据块时间</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Open</source>
+        <translation>打开(&amp;O)</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>&amp;Console</source>
+        <translation>控制台(&amp;C)</translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>&amp;Network Traffic</source>
+        <translation>网络流量(&amp;N)</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Clear</source>
+        <translation>清除(&amp;C)</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Totals</source>
+        <translation>总数</translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>In:</source>
+        <translation>输入：</translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Out:</source>
+        <translation>输出：</translation>
+    </message>
+    <message>
+        <location line="-521"/>
+        <source>Build date</source>
+        <translation>创建时间</translation>
+    </message>
+    <message>
+        <location line="+206"/>
+        <source>Debug log file</source>
+        <translation>调试日志文件</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open the Dogecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>打开当前目录中的调试日志文件。日志文件大的话可能要等上几秒钟。</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Clear console</source>
+        <translation>清空控制台</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Dogecoin RPC console.</source>
+        <translation>欢迎来到 RPC 控制台。</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>使用上下方向键浏览历史,  &lt;b&gt;Ctrl-L&lt;/b&gt;清除屏幕。</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>使用 &lt;b&gt;help&lt;/b&gt; 命令显示帮助信息。</translation>
+    </message>
+    <message>
+        <location line="+122"/>
+        <source>%1 B</source>
+        <translation>%1 字节</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1 m</source>
+        <translation>%1 分钟</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>%1 h</source>
+        <translation>%1 小时</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 h %2 m</source>
+        <translation>%1 小时 %2 分钟</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    <message>
+        <location filename="../forms/receivecoinsdialog.ui" line="+83"/>
+        <source>&amp;Amount:</source>
+        <translation>总额(&amp;A)：</translation>
+    </message>
+    <message>
+        <location line="-13"/>
+        <source>&amp;Label:</source>
+        <translation>标签(&amp;L)：</translation>
+    </message>
+    <message>
+        <location line="-34"/>
+        <source>&amp;Message:</source>
+        <translation>消息(&amp;M)：</translation>
+    </message>
+    <message>
+        <location line="-17"/>
+        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
+        <translation>重复使用以前用过的接收地址。重用地址有安全和隐私方面的隐患。除非是为重复生成同一项支付请求，否则请不要这样做。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>R&amp;euse an existing receiving address (not recommended)</source>
+        <translation>重用现有的接收地址（不推荐）</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>An optional label to associate with the new receiving address</source>
+        <translation>与新接收地址相关的标签，可选</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
+        <translation>使用此表单要求付款。所有字段都是&lt;b&gt;可选&lt;/b&gt;。</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
+        <translation>可选的请求金额。留空或填零为不要求具体金额。</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Clear all fields of the form.</source>
+        <translation>清空此表单的所有字段。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Clear</source>
+        <translation>清除</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Request payment</source>
+        <translation>请求付款(&amp;R)</translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Requested payments</source>
+        <translation>已请求支付</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Show the selected request (does the same as double clicking an entry)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Show</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Remove the selected entries from the list</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <location filename="../forms/receiverequestdialog.ui" line="+29"/>
+        <source>QR Code</source>
+        <translation>二维码</translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Copy &amp;URI</source>
+        <translation>复制 URI(&amp;U)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy &amp;Address</source>
+        <translation>复制地址(&amp;A)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Save Image...</source>
+        <translation>保存图片(&amp;S)...</translation>
+    </message>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+56"/>
+        <source>Request payment to %1</source>
+        <translation>请求付款到 %1</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Payment information</source>
+        <translation>付款信息</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI</source>
+        <translation>URI</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Amount</source>
+        <translation>金额</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Label</source>
+        <translation>标签</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Message</source>
+        <translation>消息</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>URI 太长，请试着精简标签或消息文本。</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>将 URI 转为二维码失败。</translation>
+    </message>
+</context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <location filename="../recentrequeststablemodel.cpp" line="+24"/>
+        <source>Date</source>
+        <translation>日期</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Label</source>
+        <translation>标签</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Message</source>
+        <translation>消息</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Amount</source>
+        <translation>金额</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>(no label)</source>
+        <translation>(没有标签)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>(no message)</source>
+        <translation>(无消息)</translation>
+    </message>
+</context>
+<context>
+    <name>SendCoinsDialog</name>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+381"/>
+        <location line="+80"/>
+        <source>Send Coins</source>
+        <translation>发送货币</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Coin Control Features</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Inputs...</source>
+        <translation>输入...</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>automatically selected</source>
+        <translation>自动选择</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Insufficient funds!</source>
+        <translation>存款不足！</translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Quantity:</source>
+        <translation>总量：</translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Bytes:</source>
+        <translation>字节：</translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Amount:</source>
+        <translation>金额：</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Priority:</source>
+        <translation>优先级：</translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Fee:</source>
+        <translation>费用：</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Change:</source>
+        <translation>变更 : </translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom change address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+115"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send to multiple recipients at once</source>
         <translation>一次发送给多个接收者</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
+<<<<<<< HEAD
         <translation>添加收款人</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>Remove all transaction fields</source>
         <translation>移除所有交易项</translation>
+=======
+        <translation>添加收款人(&amp;R)</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Clear all fields of the form.</source>
+        <translation>清除此表单的所有字段。</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
         <source>Clear &amp;All</source>
+<<<<<<< HEAD
         <translation>清除 &amp;所有</translation>
+=======
+        <translation>清除所有(&amp;A)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+22"/>
@@ -1329,18 +3198,23 @@ Address: %4
         <translation>余额：</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>123.456 DOGE</source>
         <translation>123.456 DOGE</translation>
     </message>
     <message>
         <location line="+31"/>
+=======
+        <location line="+41"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirm the send action</source>
         <translation>确认并发送货币</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>S&amp;end</source>
+<<<<<<< HEAD
         <translation>发送</translation>
     </message>
     <message>
@@ -1365,25 +3239,113 @@ Address: %4
     </message>
     <message>
         <location line="+23"/>
+=======
+        <translation>发送(&amp;E)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="-228"/>
+        <source>Confirm send coins</source>
+        <translation>确认发送货币</translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+4"/>
+        <source>%1 to %2</source>
+        <translation>%1 到 %2</translation>
+    </message>
+    <message>
+        <location line="-136"/>
+        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>请输入狗狗币地址（例如: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM）</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation>复制金额</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation>复制字节</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation>复制优先级</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+170"/>
+        <source>Total Amount %1 (= %2)</source>
+        <translation>总额 %1 (= %2)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>or</source>
+        <translation>或</translation>
+    </message>
+    <message>
+        <location line="+202"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The recipient address is not valid, please recheck.</source>
         <translation>收款人地址不合法，请检查。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>The amount to pay must be larger than 0.</source>
         <translation>支付金额必须大于0.</translation>
     </message>
     <message>
         <location line="+5"/>
+=======
+        <location line="+3"/>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>支付金额必须大于0。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The amount exceeds your balance.</source>
         <translation>金额超出您的账上余额。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>计入 %1 交易费后的金额超出您的账上余额。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
         <translation>发现重复的地址, 每次只能对同一地址发送一次.</translation>
@@ -1397,11 +3359,62 @@ Address: %4
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>错误: 交易被拒绝. 如果您使用的是备份钱包，可能存在两个钱包不同步的情况，另一个钱包中的狗狗币已经被使用，但本地的这个钱包尚没有记录。</translation>
+=======
+        <location line="+3"/>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>发现重复的地址, 每次只能对同一地址发送一次。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Transaction creation failed!</source>
+        <translation>交易创建失败！</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+112"/>
+        <source>Warning: Invalid Dogecoin address</source>
+        <translation>警告：无效的狗狗币地址</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>(no label)</source>
+        <translation>(没有标签)</translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Warning: Unknown change address</source>
+        <translation>警告：未知的更改地址</translation>
+    </message>
+    <message>
+        <location line="-366"/>
+        <source>Are you sure you want to send?</source>
+        <translation>您确定要发出吗？</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>added as transaction fee</source>
+        <translation>已添加交易费</translation>
+    </message>
+    <message>
+        <location line="+170"/>
+        <source>Payment request expired</source>
+        <translation>支付请求已过期</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Invalid payment address %1</source>
+        <translation>无效的付款地址 %1</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/sendcoinsentry.ui" line="+14"/>
         <source>Form</source>
         <translation>表单</translation>
@@ -1418,16 +3431,36 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+131"/>
+        <location line="+521"/>
+        <location line="+536"/>
+        <source>A&amp;mount:</source>
+        <translation>金额(&amp;M)</translation>
+    </message>
+    <message>
+        <location line="-1152"/>
+        <source>Pay &amp;To:</source>
+        <translation>付给(&amp;T)：</translation>
+    </message>
+    <message>
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The address to send the payment to (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>付款给这个地址  (例如 DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+60"/>
         <location filename="../sendcoinsentry.cpp" line="+26"/>
+=======
+        <location filename="../sendcoinsentry.cpp" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter a label for this address to add it to your address book</source>
         <translation>为这个地址输入一个标签，以便将它添加到您的地址簿</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-78"/>
         <source>&amp;Label:</source>
         <translation>&amp;标签：</translation>
@@ -1439,6 +3472,24 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+57"/>
+        <source>&amp;Label:</source>
+        <translation>标签(&amp;L)：</translation>
+    </message>
+    <message>
+        <location line="-50"/>
+        <source>Choose previously used address</source>
+        <translation>选择以前用过的地址</translation>
+    </message>
+    <message>
+        <location line="-40"/>
+        <source>This is a normal payment.</source>
+        <translation>这是笔正常的支付。</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1454,8 +3505,52 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Remove this recipient</source>
         <translation>移除此接收者</translation>
+=======
+        <location line="+524"/>
+        <location line="+536"/>
+        <source>Remove this entry</source>
+        <translation>移除此项</translation>
+    </message>
+    <message>
+        <location line="-1008"/>
+        <source>Message:</source>
+        <translation>消息：</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>A message that was attached to the Dogecoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+958"/>
+        <source>This is a verified payment request.</source>
+        <translation>这是个有效的支付请求。</translation>
+    </message>
+    <message>
+        <location line="-991"/>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>请为此地址输入一个标签以将它加入用过的地址列表</translation>
+    </message>
+    <message>
+        <location line="+459"/>
+        <source>This is an unverified payment request.</source>
+        <translation>这是个非有效的支付请求。</translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <location line="+532"/>
+        <source>Pay To:</source>
+        <translation>支付给:</translation>
+    </message>
+    <message>
+        <location line="-498"/>
+        <location line="+536"/>
+        <source>Memo:</source>
+        <translation>便条：</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
@@ -1464,6 +3559,22 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
+=======
+    <name>ShutdownWindow</name>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+48"/>
+        <source>Dogecoin Core is shutting down...</source>
+        <translation>狗狗币核心正在关机...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>在此窗口消失前不要关闭计算机。</translation>
+    </message>
+</context>
+<context>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     <name>SignVerifyMessageDialog</name>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
@@ -1471,9 +3582,15 @@ Address: %4
         <translation>签名 - 为消息签名/验证签名消息</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
         <source>&amp;Sign Message</source>
         <translation>&amp;签名消息</translation>
+=======
+        <location line="+10"/>
+        <source>&amp;Sign Message</source>
+        <translation>签名消息(&amp;S)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+6"/>
@@ -1483,13 +3600,22 @@ Address: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+<<<<<<< HEAD
         <translation>用于签名消息的地址(例如: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+=======
+        <translation>用于签名消息的地址（例如: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM）</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+10"/>
         <location line="+213"/>
+<<<<<<< HEAD
         <source>Choose an address from the address book</source>
         <translation>从地址簿选择地址</translation>
+=======
+        <source>Choose previously used address</source>
+        <translation>选择以前用过的地址</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-203"/>
@@ -1530,7 +3656,11 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
+<<<<<<< HEAD
         <translation>消息签名</translation>
+=======
+        <translation>消息签名(&amp;M)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+14"/>
@@ -1541,12 +3671,20 @@ Address: %4
         <location line="+3"/>
         <location line="+146"/>
         <source>Clear &amp;All</source>
+<<<<<<< HEAD
         <translation>清除 &amp;所有</translation>
+=======
+        <translation>清除所有(&amp;A)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-87"/>
         <source>&amp;Verify Message</source>
+<<<<<<< HEAD
         <translation>&amp;验证消息</translation>
+=======
+        <translation>验证消息(&amp;V)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+6"/>
@@ -1566,7 +3704,11 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Verify &amp;Message</source>
+<<<<<<< HEAD
         <translation>验证消息签名</translation>
+=======
+        <translation>验证消息签名(&amp;M)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+14"/>
@@ -1574,7 +3716,11 @@ Address: %4
         <translation>清空所有验证消息栏</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+3"/>
         <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>请输入狗狗币地址 (例如: DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
@@ -1590,7 +3736,11 @@ Address: %4
         <translation>输入狗狗币签名</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+81"/>
         <source>The entered address is invalid.</source>
         <translation>输入的地址非法。</translation>
@@ -1659,9 +3809,20 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <location filename="../splashscreen.cpp" line="+22"/>
         <source>The Dogecoin developers</source>
         <translation>Dogecoin-qt 客户端开发团队</translation>
+=======
+        <location filename="../splashscreen.cpp" line="+28"/>
+        <source>Dogecoin Core</source>
+        <translation>狗狗币核心</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The Dogecoin Core developers</source>
+        <translation>Dogecoin Core 开发团队</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -1670,9 +3831,23 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>TransactionDesc</name>
     <message>
         <location filename="../transactiondesc.cpp" line="+20"/>
+=======
+    <name>TrafficGraphWidget</name>
+    <message>
+        <location filename="../trafficgraphwidget.cpp" line="+79"/>
+        <source>KB/s</source>
+        <translation>KB/s</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+28"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Open until %1</source>
         <translation>至 %1 个数据块时开启</translation>
     </message>
@@ -1689,7 +3864,11 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>%1 confirmations</source>
+<<<<<<< HEAD
         <translation>%1 确认项</translation>
+=======
+        <translation>%1 已确认</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+18"/>
@@ -1745,12 +3924,20 @@ Address: %4
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Credit</source>
         <translation>收入</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="-102"/>
+=======
+        <location line="-125"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>matures in %n more block(s)</source>
         <translation><numerusform>将在 %n 个数据块后成熟</numerusform></translation>
     </message>
@@ -1763,12 +3950,20 @@ Address: %4
         <location line="+44"/>
         <location line="+8"/>
         <location line="+15"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debit</source>
         <translation>支出</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-39"/>
+=======
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Transaction fee</source>
         <translation>交易费</translation>
     </message>
@@ -1779,11 +3974,19 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
+<<<<<<< HEAD
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Message</source>
         <translation>消息</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="-7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Comment</source>
         <translation>备注</translation>
     </message>
@@ -1793,12 +3996,26 @@ Address: %4
         <translation>交易ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Generated coins must mature 50 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation>新挖出的狗狗币必须等确50个确认才能使用。您生产出的数据块，将被广播到全网并添加到数据块链。如果入链失败，状态将变为“未被接受”，意味着您的数据块竞争失败，挖出的狗狗币将不能使用。当某个节点先于你几秒生产出新的数据块，这种情况会偶尔发生。</translation>
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+18"/>
+        <source>Merchant</source>
+        <translation>商店</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>新挖出的狗狗币必须等确120个确认才能使用。您生产出的数据块，将被广播到全网并添加到数据块链。如果入链失败，状态将变为“未被接受”，意味着您的数据块竞争失败，挖出的狗狗币将不能使用。当某个节点先于你几秒生产出新的数据块，这种情况会偶尔发生。</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debug information</source>
         <translation>调试信息</translation>
     </message>
@@ -1828,9 +4045,15 @@ Address: %4
         <translation>错误</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, 未被成功广播</translation>
+=======
+        <location line="-232"/>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>，未被成功广播</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message numerus="yes">
         <location line="-35"/>
@@ -1848,7 +4071,11 @@ Address: %4
     <message>
         <location filename="../forms/transactiondescdialog.ui" line="+14"/>
         <source>Transaction details</source>
+<<<<<<< HEAD
         <translation>交易明细</translation>
+=======
+        <translation>交易细节</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+6"/>
@@ -1859,7 +4086,11 @@ Address: %4
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+225"/>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+234"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Date</source>
         <translation>日期</translation>
     </message>
@@ -1878,8 +4109,18 @@ Address: %4
         <source>Amount</source>
         <translation>数量</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <location line="+57"/>
+=======
+    <message>
+        <location line="+59"/>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>未成熟 (%1 个确认，将在 %2 个后可用)</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+16"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Open for %n more block(s)</source>
         <translation><numerusform>Open for %n more block</numerusform></translation>
     </message>
@@ -1899,6 +4140,7 @@ Address: %4
         <translation>未确认 (%1 / %2 条确认信息)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Confirmed (%1 confirmations)</source>
         <translation>已确认 (%1 条确认信息)</translation>
@@ -1912,6 +4154,17 @@ Address: %4
         <location line="+5"/>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>此数据块未被其他节点接收，并可能不被接受！</translation>
+=======
+        <location line="-22"/>
+        <location line="+25"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>已确认 (%1 条确认信息)</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <source>This block was not received by any other nodes and will probably not be accepted!</source>
+        <translation>此数据块未被任何其他节点接收，可能不被接受！</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -1919,7 +4172,11 @@ Address: %4
         <translation>已生成但未被接受</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+43"/>
+=======
+        <location line="+62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Received with</source>
         <translation>接收于</translation>
     </message>
@@ -1931,7 +4188,11 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Sent to</source>
+<<<<<<< HEAD
         <translation>发送到</translation>
+=======
+        <translation>发送给</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
@@ -1946,12 +4207,20 @@ Address: %4
     <message>
         <location line="+38"/>
         <source>(n/a)</source>
+<<<<<<< HEAD
         <translation>(n/a)</translation>
+=======
+        <translation>（不可用）</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+199"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
+<<<<<<< HEAD
         <translation>交易状态。 鼠标移到此区域上可显示确认消息项的数目。</translation>
+=======
+        <translation>交易状态。 鼠标移到此区域可显示确认项数量。</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
@@ -1977,7 +4246,11 @@ Address: %4
 <context>
     <name>TransactionView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactionview.cpp" line="+52"/>
+=======
+        <location filename="../transactionview.cpp" line="+57"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+16"/>
         <source>All</source>
         <translation>全部</translation>
@@ -2020,7 +4293,11 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>Sent to</source>
+<<<<<<< HEAD
         <translation>发送到</translation>
+=======
+        <translation>发送给</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
@@ -2038,12 +4315,20 @@ Address: %4
         <translation>其他</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter address or label to search</source>
         <translation>输入地址或标签进行搜索</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Min amount</source>
         <translation>最小金额</translation>
     </message>
@@ -2078,6 +4363,7 @@ Address: %4
         <translation>显示交易详情</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+139"/>
         <source>Export Transaction Data</source>
         <translation>导出交易数据</translation>
@@ -2089,6 +4375,39 @@ Address: %4
     </message>
     <message>
         <location line="+8"/>
+=======
+        <location line="+142"/>
+        <source>Export Transaction History</source>
+        <translation>导出交易历史</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Exporting Failed</source>
+        <translation>导出失败</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation>导出交易历史到 %1 时发生错误。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Exporting Successful</source>
+        <translation>导出成功</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation>交易历史已成功保存到 %1。</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <source>Comma separated file (*.csv)</source>
+        <translation>逗号分隔文件 (*.csv)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirmed</source>
         <translation>已确认</translation>
     </message>
@@ -2123,6 +4442,7 @@ Address: %4
         <translation>ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error exporting</source>
         <translation>导出错误</translation>
@@ -2134,6 +4454,9 @@ Address: %4
     </message>
     <message>
         <location line="+100"/>
+=======
+        <location line="+107"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Range:</source>
         <translation>范围：</translation>
     </message>
@@ -2144,9 +4467,23 @@ Address: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>WalletModel</name>
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
+=======
+    <name>WalletFrame</name>
+    <message>
+        <location filename="../walletframe.cpp" line="+26"/>
+        <source>No wallet has been loaded.</source>
+        <translation>没有载入钱包。</translation>
+    </message>
+</context>
+<context>
+    <name>WalletModel</name>
+    <message>
+        <location filename="../walletmodel.cpp" line="+245"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send Coins</source>
         <translation>发送狗狗币</translation>
     </message>
@@ -2154,9 +4491,15 @@ Address: %4
 <context>
     <name>WalletView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletview.cpp" line="+42"/>
         <source>&amp;Export</source>
         <translation type="unfinished"/>
+=======
+        <location filename="../walletview.cpp" line="+43"/>
+        <source>&amp;Export</source>
+        <translation>导出(&amp;E)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -2164,22 +4507,35 @@ Address: %4
         <translation>导出当前数据到文件</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+193"/>
+=======
+        <location line="+181"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Wallet</source>
         <translation>备份钱包</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+0"/>
+=======
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet Data (*.dat)</source>
         <translation>钱包文件(*.dat)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Failed</source>
         <translation>备份失败</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>There was an error trying to save the wallet data to the new location.</source>
         <translation>备份钱包到其它文件夹失败.</translation>
     </message>
@@ -2203,10 +4559,31 @@ Address: %4
     </message>
     <message>
         <location line="+102"/>
+=======
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Backup Successful</source>
+        <translation>备份成功</translation>
+    </message>
+</context>
+<context>
+    <name>dogecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+221"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Usage:</source>
         <translation>使用：</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
         <source>Send command to -server or dogecoind</source>
         <translation>发送命令到服务器或者 dogecoind
@@ -2214,24 +4591,39 @@ Address: %4
     </message>
     <message>
         <location line="-23"/>
+=======
+        <location line="-54"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>List commands</source>
         <translation>列出命令
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
+=======
+        <location line="-14"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Get help for a command</source>
         <translation>获得某条命令的帮助
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+24"/>
+=======
+        <location line="+26"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Options:</source>
         <translation>选项：
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+24"/>
+=======
+        <location line="+22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify configuration file (default: dogecoin.conf)</source>
         <translation>指定配置文件 (默认为 dogecoin.conf)
 </translation>
@@ -2254,13 +4646,20 @@ Address: %4
         <translation>设置数据库缓冲区大小 (缺省: 25MB)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-28"/>
         <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
         <translation>监听端口连接 &lt;port&gt; (缺省: 22556 or testnet: 44556)</translation>
+=======
+        <location line="-26"/>
+        <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
+        <translation>监听端口连接 &lt;port&gt;（缺省: 22556 或测试网络: 44556）</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+5"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
+<<<<<<< HEAD
         <translation>最大连接数 &lt;n&gt;  (缺省: 125)</translation>
     </message>
     <message>
@@ -2270,55 +4669,103 @@ Address: %4
     </message>
     <message>
         <location line="+82"/>
+=======
+        <translation>最大连接数 &lt;n&gt; （缺省: 125）</translation>
+    </message>
+    <message>
+        <location line="-51"/>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>连接一个节点并获取对端地址，然后断开连接</translation>
+    </message>
+    <message>
+        <location line="+84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify your own public address</source>
         <translation>指定您的公共地址</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Threshold for disconnecting misbehaving peers (缺省: 100)</translation>
     </message>
     <message>
         <location line="-134"/>
+=======
+        <location line="+5"/>
+        <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
+        <translation>断开行为不端对端阀值（缺省: 100）</translation>
+    </message>
+    <message>
+        <location line="-148"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Number of seconds to keep misbehaving peers from reconnecting (缺省: 86400)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
+=======
+        <location line="-36"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>设置RPC监听端口%u时发生错误, IPv4:%s</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
         <translation>JSON-RPC连接监听端口&lt;port&gt; (缺省：22555　testnet：44555)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
+=======
+        <location line="+45"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept command line and JSON-RPC commands</source>
         <translation>接受命令行和 JSON-RPC 命令
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
+=======
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Run in the background as a daemon and accept commands</source>
         <translation>在后台运行并接受命令
 
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
+=======
+        <location line="+39"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use the test network</source>
         <translation>使用测试网络
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-112"/>
+=======
+        <location line="-118"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>接受来自外部的连接 (缺省: 如果不带 -proxy or -connect 参数设置为1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-80"/>
+=======
+        <location line="-95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
@@ -2343,7 +4790,16 @@ rpcpassword=%s
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
+=======
+        <location line="+12"/>
+        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
+        <translation>可接受的密码（默认：TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH）</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>在IPv6模式下设置RPC监听端口 %u 失败，返回到IPv4模式: %s</translation>
     </message>
@@ -2354,11 +4810,28 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Dogecoin is probably already running.</source>
+=======
+        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>无法给数据目录 %s上锁。本软件可能已经在运行。</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
+=======
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
+        <translation>进入回归测试模式，它采用一种特殊的可立即解决的区块链模拟情况。这是为了回归测试工具和应用的开发所设。</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>进入回归测试模式，它采用一种特殊的可立即解决的区块链模拟情况。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>错误：该交易被拒绝！发生这种错误的原因可能是：钱包中的狗狗币已经被用掉，有可能您复制了wallet.dat钱包文件，然后用复制的钱包文件支付了狗狗币，但是这个钱包文件中没有记录。</translation>
     </message>
@@ -2368,32 +4841,49 @@ rpcpassword=%s
         <translation>错误：因为该交易的数量、复杂度或者动用了刚收到不久的资金，您需要支付不少于%s的交易费用。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Execute command when a relevant alert is received (%s in cmd is replaced by message)</source>
         <translation>当收到相关通知时执行命令（命令行中的 %s 的替换为消息）</translation>
     </message>
     <message>
         <location line="+3"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>当最佳区块变化时执行命令 (命令行中的 %s 会被替换成区块哈希值)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</translation>
     </message>
     <message>
         <location line="+6"/>
+=======
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>这是测试用的预发布版本 - 请谨慎使用 - 不要用来挖矿，或者在正式商用环境下使用</translation>
     </message>
     <message>
         <location line="+5"/>
+<<<<<<< HEAD
+=======
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>警告：-paytxfee 交易费设置得太高了！每笔交易都将支付交易费。</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>警告：显示的交易可能不正确！您需要升级客户端软件，或者网络上的其他节点需要升级。</translation>
     </message>
@@ -2401,6 +4891,20 @@ rpcpassword=%s
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
         <translation>警告：请检查电脑的日期时间设置是否正确！时间错误可能会导致狗狗币客户端运行异常。</translation>
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin Core will not work properly.</source>
+        <translation>警告：请检查电脑的日期时间设置是否正确！时间错误可能会导致狗狗币客户端运行异常。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>警告：网络似乎并不完全同意！有些矿工似乎遇到了问题。</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>警告：我们的同行似乎不完全同意！您可能需要升级，或者其他节点可能需要升级。</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -2413,12 +4917,35 @@ rpcpassword=%s
         <translation>警告：钱包文件wallet.dat损坏! 原始的钱包文件已经备份到%s目录下并重命名为{timestamp}.bak 。如果您的账户余额或者交易记录不正确，请使用您的钱包备份文件恢复。</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+9"/>
+        <source>&lt;category&gt; can be:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>尝试从损坏的钱包文件wallet.dat中恢复私钥</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="+1"/>
+        <source>Dogecoin Core Daemon</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Dogecoin Core RPC client version</source>
+        <translation>Dogecoin RPC 客户端版本</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Block creation options:</source>
         <translation>数据块创建选项：</translation>
     </message>
@@ -2428,7 +4955,21 @@ rpcpassword=%s
         <translation>仅连接到指定节点</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+1"/>
+        <source>Connect through SOCKS proxy</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <translation>连接到 JSON-RPC 于 &lt;port&gt;（默认: 22555，或测试网络: 44555）</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Corrupted block database detected</source>
         <translation>检测发现数据块数据库损坏。请使用 -reindex参数重启客户端。</translation>
     </message>
@@ -2439,6 +4980,14 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
+=======
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation>不要加载钱包和禁用钱包的 RPC 调用</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Do you want to rebuild the block database now?</source>
         <translation>你想现在就重建块数据库吗？</translation>
     </message>
@@ -2533,14 +5082,27 @@ rpcpassword=%s
         <translation>无法写入回滚信息</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="+1"/>
+        <source>Fee per kB to add to transactions you send</source>
+        <translation>为付款交易支付狗狗币(每kb)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>通过DNS查找节点(缺省：1 除非使用 -connect 选项)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Generate coins (default: 0)</source>
+<<<<<<< HEAD
         <translation type="unfinished"/>
+=======
+        <translation>生成狗狗币（默认为 0）</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
@@ -2553,22 +5115,99 @@ rpcpassword=%s
         <translation>How thorough the block verification is (0-4, default: 3)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
         <source>Not enough file descriptors available.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+8"/>
+=======
+        <location line="+1"/>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>不正确或没有找到起源区块。网络错误？</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Invalid -onion address: &apos;%s&apos;</source>
+        <translation>无效的 -onion 地址：“%s”</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Not enough file descriptors available.</source>
+        <translation>没有足够的文件描述符可用。</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Prepend debug output with timestamp (default: 1)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>RPC client options:</source>
+        <translation>RPC 客户端选项：</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>重新为当前的blk000??.dat文件建立索引</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
+=======
+        <location line="+5"/>
+        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
+        <translation>用 -proxy 选择 SOCKS 版本（4 或 5，默认为 5）</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to Dogecoin Core server</source>
+        <translation>发送命令到狗狗币服务器</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>设置最大区块大小 (默认: %d，单位字节)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation>设置使用调用服务 RPC 的线程数量（默认：4）</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+26"/>
+=======
+        <location line="+7"/>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>指定钱包文件（数据目录内）</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Dogecoin Core server</source>
+        <translation>启动狗狗币服务器</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation>这是用于回归测试和应用开发目的。</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Usage (deprecated, use dogecoin-cli):</source>
+        <translation>用法（不推荐，请使用 dogecoin-cli）：</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Verifying blocks...</source>
         <translation>正在验证数据库的完整性...</translation>
     </message>
@@ -2578,11 +5217,41 @@ rpcpassword=%s
         <translation>正在检测钱包的完整性...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-69"/>
+=======
+        <location line="+1"/>
+        <source>Wait for RPC server to start</source>
+        <translation>等待 RPC 服务器</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>钱包 %s 在外部的数据目录 %s</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Wallet options:</source>
+        <translation>钱包选项:</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
+        <translation>警告：已废弃的 -debugnet 参数已忽略，请用 -debug=net</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>您需要将 -reindex 改为 -txindex 以重建数据库</translation>
+    </message>
+    <message>
+        <location line="-79"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>从blk000??.dat文件导入数据块</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-76"/>
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation type="unfinished"/>
@@ -2601,11 +5270,45 @@ rpcpassword=%s
         <location line="+1"/>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
+=======
+        <location line="-105"/>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>当收到相关提醒或者我们看到一个长分叉时执行命令（%s 将替换为消息）</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
+        <translation>输出调试信息（默认为0，提供  &lt;category&gt; 是可选的）</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation>设置脚本验证线程数量（最多16，0 = 自动，&lt;0 = 留下许多空闲核心，默认为 0）</translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Information</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation>-minrelaytxfee=&lt;amount&gt;: &apos;%s&apos; 无效的金额</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
+<<<<<<< HEAD
         <translation type="unfinished"/>
+=======
+        <translation>-mintxfee=&lt;amount&gt;: &apos;%s&apos; 无效的金额</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+8"/>
@@ -2633,6 +5336,7 @@ rpcpassword=%s
         <translation>仅连接至指定网络的节点&lt;net&gt;(IPv4, IPv6 或者 Tor)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>输出额外的调试信息。打开所有 -debug* 开关</translation>
@@ -2674,6 +5378,19 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+9"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL选项：(参见Bitcoin Wiki关于SSL设置栏目)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation>跟踪/调试信息输出到控制台，不输出到 debug.log 文件</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>设置最小数据块大小(缺省:0)</translation>
     </message>
@@ -2685,7 +5402,11 @@ rpcpassword=%s
     <message>
         <location line="+1"/>
         <source>Signing transaction failed</source>
+<<<<<<< HEAD
         <translation type="unfinished"/>
+=======
+        <translation>签署交易失败</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+2"/>
@@ -2693,29 +5414,52 @@ rpcpassword=%s
         <translation>设置连接超时时间(缺省：5000毫秒)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>System error: </source>
         <translation>系统错误：</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Transaction amount too small</source>
         <translation type="unfinished"/>
+=======
+        <location line="+5"/>
+        <source>Transaction amount too small</source>
+        <translation>交易量太小</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction amounts must be positive</source>
+<<<<<<< HEAD
         <translation type="unfinished"/>
+=======
+        <translation>交易金额必须是积极的</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
         <source>Transaction too large</source>
+<<<<<<< HEAD
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+7"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>使用UPnp映射监听端口(缺省: 0)</translation>
+=======
+        <translation>交易太大</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Use UPnP to map the listening port (default: 0)</source>
+        <translation>使用UPnP映射监听端口 (缺省: 0)</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -2723,6 +5467,7 @@ rpcpassword=%s
         <translation>使用UPnp映射监听端口(缺省: 监听状态设为1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>使用代理服务器访问隐藏服务(缺省：同 -proxy)</translation>
@@ -2735,18 +5480,36 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+4"/>
+=======
+        <location line="+2"/>
+        <source>Username for JSON-RPC connections</source>
+        <translation>JSON-RPC 连接用户名</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>警告：该软件版本已过时，请升级！</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>You need to rebuild the database using -reindex to change -txindex</translation>
+=======
+        <location line="+2"/>
+        <source>version</source>
+        <translation>版本</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -2754,6 +5517,7 @@ rpcpassword=%s
         <translation>钱包文件wallet.dat损坏，抢救备份失败</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-50"/>
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC连接密码
@@ -2773,21 +5537,49 @@ rpcpassword=%s
     </message>
     <message>
         <location line="-120"/>
+=======
+        <location line="-58"/>
+        <source>Password for JSON-RPC connections</source>
+        <translation>JSON-RPC 连接密码
+</translation>
+    </message>
+    <message>
+        <location line="-70"/>
+        <source>Allow JSON-RPC connections from specified IP address</source>
+        <translation>允许从指定IP接受到的 JSON-RPC 连接</translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
+        <translation>向IP地址为 &lt;ip&gt; 的节点发送指令 (缺省: 127.0.0.1)</translation>
+    </message>
+    <message>
+        <location line="-132"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>当最佳数据块变化时执行命令 (命令行中的 %s 会被替换成数据块哈希值)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+147"/>
+=======
+        <location line="+161"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Upgrade wallet to latest format</source>
         <translation>将钱包升级到最新的格式</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-21"/>
+=======
+        <location line="-24"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>设置密钥池大小为 &lt;n&gt; (缺省: 100)
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>重新扫描数据链以查找遗漏的交易
@@ -2800,6 +5592,19 @@ rpcpassword=%s
     </message>
     <message>
         <location line="-26"/>
+=======
+        <location line="-11"/>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>重新扫描区块链以查找遗漏的钱包交易</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation>为 JSON-RPC 连接使用 OpenSSL (https) 连接</translation>
+    </message>
+    <message>
+        <location line="-30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Server certificate file (default: server.cert)</source>
         <translation>服务器证书 (默认为 server.cert)
 </translation>
@@ -2811,6 +5616,7 @@ rpcpassword=%s
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-151"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation>可接受的加密器 (默认为 TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)
@@ -2824,10 +5630,20 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+6"/>
+=======
+        <location line="+16"/>
+        <source>This help message</source>
+        <translation>本帮助信息
+</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>无法绑定本机端口 %s  (返回错误消息 %d, %s)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-91"/>
         <source>Connect through socks proxy</source>
         <translation>通过 socks 代理连接</translation>
@@ -2866,11 +5682,50 @@ rpcpassword=%s
         <location line="+28"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>非法的代理地址: &apos;%s&apos;</translation>
+=======
+        <location line="-107"/>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>使用 -addnode, -seednode 和 -connect 选项时允许查询DNS</translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>Loading addresses...</source>
+        <translation>正在加载地址簿...</translation>
+    </message>
+    <message>
+        <location line="-37"/>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation>wallet.dat 钱包文件加载出错：钱包损坏</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin Core</source>
+        <translation>wallet.dat 钱包文件加载错误：请升级到最新版Dogecoin客户端</translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Wallet needed to be rewritten: restart Dogecoin to complete</source>
+        <translation>钱包文件需要被重写：请退出并重新启动Dogecoin客户端</translation>
+    </message>
+    <message>
+        <location line="-100"/>
+        <source>Error loading wallet.dat</source>
+        <translation>wallet.dat 钱包文件加载出错</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Invalid -proxy address: &apos;%s&apos;</source>
+        <translation>无效的代理地址：%s</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+56"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
+<<<<<<< HEAD
         <translation>被指定的是未知网络 -onlynet: &apos;%s&apos;</translation>
+=======
+        <translation>-onlynet 指定的是未知网络：%s</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-1"/>
@@ -2878,7 +5733,11 @@ rpcpassword=%s
         <translation>被指定的是未知socks代理版本: %i</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-96"/>
+=======
+        <location line="-101"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>无法解析 -bind 端口地址: &apos;%s&apos;</translation>
     </message>
@@ -2888,14 +5747,22 @@ rpcpassword=%s
         <translation>无法解析 -externalip 地址: &apos;%s&apos;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+44"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>非法金额 -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount</source>
+<<<<<<< HEAD
         <translation>金额不对</translation>
+=======
+        <translation>无效金额</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-6"/>
@@ -2905,14 +5772,22 @@ rpcpassword=%s
     <message>
         <location line="+10"/>
         <source>Loading block index...</source>
+<<<<<<< HEAD
         <translation>加载数据块索引...</translation>
     </message>
     <message>
         <location line="-57"/>
+=======
+        <translation>正在加载数据块索引...</translation>
+    </message>
+    <message>
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>添加节点并与其保持连接</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. Dogecoin is probably already running.</source>
         <translation>无法在本机绑定 %s 端口 . 狗狗币客户端软件可能已经在运行.</translation>
@@ -2924,41 +5799,78 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+19"/>
+=======
+        <location line="-32"/>
+        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
+        <translation>无法在本机绑定 %s 端口 . 狗狗币客户端软件可能已经在运行.</translation>
+    </message>
+    <message>
+        <location line="+95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading wallet...</source>
         <translation>正在加载钱包...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-52"/>
         <source>Cannot downgrade wallet</source>
         <translation>无法降级钱包格式</translation>
+=======
+        <location line="-56"/>
+        <source>Cannot downgrade wallet</source>
+        <translation>无法降级钱包</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot write default address</source>
+<<<<<<< HEAD
         <translation>无法写入缺省地址</translation>
     </message>
     <message>
         <location line="+64"/>
+=======
+        <translation>无法写入默认地址</translation>
+    </message>
+    <message>
+        <location line="+67"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rescanning...</source>
         <translation>正在重新扫描...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-57"/>
+=======
+        <location line="-58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Done loading</source>
         <translation>加载完成</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+85"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>To use the %s option</source>
         <translation>使用 %s 选项</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-74"/>
+=======
+        <location line="-77"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error</source>
         <translation>错误</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-31"/>
+=======
+        <location line="-35"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
@@ -2967,4 +5879,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
 如果配置文件不存在，请新建，并将文件权限设置为仅允许文件所有者读取.</translation>
     </message>
 </context>
+<<<<<<< HEAD
 </TS>
+=======
+</TS>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917

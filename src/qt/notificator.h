@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef NOTIFICATOR_H
 #define NOTIFICATOR_H
 
@@ -6,6 +7,25 @@
 
 QT_BEGIN_NAMESPACE
 class QSystemTrayIcon;
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef NOTIFICATOR_H
+#define NOTIFICATOR_H
+
+#if defined(HAVE_CONFIG_H)
+#include "bitcoin-config.h"
+#endif
+
+#include <QIcon>
+#include <QObject>
+
+QT_BEGIN_NAMESPACE
+class QSystemTrayIcon;
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #ifdef USE_DBUS
 class QDBusInterface;
 #endif
@@ -20,7 +40,11 @@ public:
     /** Create a new notificator.
        @note Ownership of trayIcon is not transferred to this object.
     */
+<<<<<<< HEAD
     Notificator(const QString &programName=QString(), QSystemTrayIcon *trayIcon=0, QWidget *parent=0);
+=======
+    Notificator(const QString &programName, QSystemTrayIcon *trayIcon, QWidget *parent);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     ~Notificator();
 
     // Message class

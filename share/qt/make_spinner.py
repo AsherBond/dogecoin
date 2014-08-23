@@ -1,16 +1,26 @@
 #!/usr/bin/env python
 # W.J. van der Laan, 2011
+<<<<<<< HEAD
 # Make spinning .mng animation from a .png
+=======
+# Make spinning animation from a .png
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 # Requires imagemagick 6.7+
 from __future__ import division
 from os import path
 from PIL import Image
 from subprocess import Popen
 
+<<<<<<< HEAD
 SRC='img/reload_scaled.png'
 DST='../../src/qt/res/movies/update_spinner.mng'
 TMPDIR='/tmp'
 TMPNAME='tmp-%03i.png'
+=======
+SRC='img/reload.png'
+TMPDIR='../../src/qt/res/movies/'
+TMPNAME='spinner-%03i.png'
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 NUMFRAMES=35
 FRAMERATE=10.0
 CONVERT='convert'
@@ -36,8 +46,11 @@ for frame in xrange(NUMFRAMES):
     im_new.save(outfile, 'png')
     frame_files.append(outfile)
 
+<<<<<<< HEAD
 p = Popen([CONVERT, "-delay", str(FRAMERATE), "-dispose", "2"] + frame_files + [DST])
 p.communicate()
 
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 

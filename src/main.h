@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -32,6 +33,51 @@ static const unsigned int MAX_BLOCK_SIZE = 1000000;                      // 1000
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;         // 500KB  block soft limit
 /** Default for -blockmaxsize, maximum size for mined blocks **/
 static const unsigned int DEFAULT_BLOCK_MAX_SIZE = 500000;
+=======
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2011-2013 The Litecoin developers
+// Copyright (c) 2013-2014 The Dogecoin developers
+// Copyright (c)      2014 The Inutoshi developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_MAIN_H
+#define BITCOIN_MAIN_H
+
+#if defined(HAVE_CONFIG_H)
+#include "bitcoin-config.h"
+#endif
+
+#include "bignum.h"
+#include "chainparams.h"
+#include "coins.h"
+#include "core.h"
+#include "net.h"
+#include "script.h"
+#include "scrypt.h"
+#include "sync.h"
+#include "txmempool.h"
+#include "uint256.h"
+
+#include <algorithm>
+#include <exception>
+#include <map>
+#include <set>
+#include <stdint.h>
+#include <string>
+#include <utility>
+#include <vector>
+
+class CBlockIndex;
+class CBloomFilter;
+class CInv;
+
+/** The maximum allowed size for a serialized block, in bytes (network rule) */
+static const unsigned int MAX_BLOCK_SIZE = 1000000;
+/** Default for -blockmaxsize and -blockminsize, which control the range of sizes the mining code will create **/
+static const unsigned int DEFAULT_BLOCK_MAX_SIZE = 500000;
+static const unsigned int DEFAULT_BLOCK_MIN_SIZE = 0;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** Default for -blockprioritysize, maximum space for zero/low-fee transactions **/
 static const unsigned int DEFAULT_BLOCK_PRIORITY_SIZE = 17000;
 /** The maximum size for transactions we're willing to relay/mine */
@@ -40,14 +86,20 @@ static const unsigned int MAX_STANDARD_TX_SIZE = 100000;
 static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
 /** The maximum number of orphan transactions kept in memory */
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
+<<<<<<< HEAD
 /** The maximum number of entries in an 'inv' protocol message */
 static const unsigned int MAX_INV_SZ = 50000;
+=======
+/** The maximum number of orphan blocks kept in memory */
+static const unsigned int MAX_ORPHAN_BLOCKS = 750;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** The maximum size of a blk?????.dat file (since 0.8) */
 static const unsigned int MAX_BLOCKFILE_SIZE = 0x8000000; // 128 MiB
 /** The pre-allocation chunk size for blk?????.dat files (since 0.8) */
 static const unsigned int BLOCKFILE_CHUNK_SIZE = 0x1000000; // 16 MiB
 /** The pre-allocation chunk size for rev?????.dat files (since 0.8) */
 static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
+<<<<<<< HEAD
 /** Fake height value used in CCoins to signify they are only in the memory pool (since 0.8) */
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** Dust Soft Limit, allowed with additional fee per output */
@@ -57,6 +109,12 @@ static const int64 DUST_HARD_LIMIT = 1000000;
 /** No amount larger than this (in satoshi) is valid */
 static const int64 MAX_MONEY = 10000000000 * COIN; // DogeCoin: maximum of 100B coins (given some randomness), max transaction 10,000,000,000 for now
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
+=======
+/** Dust Soft Limit, allowed with additional fee per output */
+static const int64_t DUST_SOFT_LIMIT = COIN;
+/** Dust Hard Limit, ignored as wallet inputs (mininput default) */
+static const int64_t DUST_HARD_LIMIT = 1000000;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 30;
 /** Coinbase maturity after block 145000 **/
@@ -73,6 +131,7 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
+<<<<<<< HEAD
 
 extern CScript COINBASE_FLAGS;
 
@@ -101,6 +160,27 @@ extern int64 nTimeBestReceived;
 extern CCriticalSection cs_setpwalletRegistered;
 extern std::set<CWallet*> setpwalletRegistered;
 extern unsigned char pchMessageStart[4];
+=======
+/** "reject" message codes **/
+static const unsigned char REJECT_MALFORMED = 0x01;
+static const unsigned char REJECT_INVALID = 0x10;
+static const unsigned char REJECT_OBSOLETE = 0x11;
+static const unsigned char REJECT_DUPLICATE = 0x12;
+static const unsigned char REJECT_NONSTANDARD = 0x40;
+static const unsigned char REJECT_DUST = 0x41;
+static const unsigned char REJECT_INSUFFICIENTFEE = 0x42;
+static const unsigned char REJECT_CHECKPOINT = 0x43;
+
+
+extern CScript COINBASE_FLAGS;
+extern CCriticalSection cs_main;
+extern CTxMemPool mempool;
+extern std::map<uint256, CBlockIndex*> mapBlockIndex;
+extern uint64_t nLastBlockTx;
+extern uint64_t nLastBlockSize;
+extern const std::string strMessageMagic;
+extern int64_t nTimeBestReceived;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 extern bool fImporting;
 extern bool fReindex;
 extern bool fBenchmark;
@@ -108,6 +188,7 @@ extern int nScriptCheckThreads;
 extern bool fTxIndex;
 extern unsigned int nCoinCacheSize;
 
+<<<<<<< HEAD
 // Settings
 extern int64 nTransactionFee;
 
@@ -125,10 +206,25 @@ class CCoinsView;
 class CCoinsViewCache;
 class CScriptCheck;
 class CValidationState;
+=======
+// Minimum disk space required - used in CheckDiskSpace()
+static const uint64_t nMinDiskSpace = 52428800;
+
+
+class CCoinsDB;
+class CBlockTreeDB;
+struct CDiskBlockPos;
+class CTxUndo;
+class CScriptCheck;
+class CValidationState;
+class CWalletInterface;
+struct CNodeStateStats;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 struct CBlockTemplate;
 
 /** Register a wallet to receive updates from core */
+<<<<<<< HEAD
 void RegisterWallet(CWallet* pwalletIn);
 /** Unregister a wallet from core */
 void UnregisterWallet(CWallet* pwalletIn);
@@ -138,6 +234,27 @@ void SyncWithWallets(const uint256 &hash, const CTransaction& tx, const CBlock* 
 bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBlockPos *dbp = NULL);
 /** Check whether enough disk space is available for an incoming block */
 bool CheckDiskSpace(uint64 nAdditionalBytes = 0);
+=======
+void RegisterWallet(CWalletInterface* pwalletIn);
+/** Unregister a wallet from core */
+void UnregisterWallet(CWalletInterface* pwalletIn);
+/** Unregister all wallets from core */
+void UnregisterAllWallets();
+/** Push an updated transaction to all registered wallets */
+void SyncWithWallets(const uint256 &hash, const CTransaction& tx, const CBlock* pblock = NULL);
+
+/** Register with a network node to receive its signals */
+void RegisterNodeSignals(CNodeSignals& nodeSignals);
+/** Unregister a network node */
+void UnregisterNodeSignals(CNodeSignals& nodeSignals);
+
+void PushGetBlocks(CNode* pnode, CBlockIndex* pindexBegin, uint256 hashEnd);
+
+/** Process an incoming block */
+bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBlockPos *dbp = NULL);
+/** Check whether enough disk space is available for an incoming block */
+bool CheckDiskSpace(uint64_t nAdditionalBytes = 0);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** Open a block file (blk?????.dat) */
 FILE* OpenBlockFile(const CDiskBlockPos &pos, bool fReadOnly = false);
 /** Open an undo file (rev?????.dat) */
@@ -154,14 +271,18 @@ void UnloadBlockIndex();
 bool VerifyDB(int nCheckLevel, int nCheckDepth);
 /** Print the loaded block tree */
 void PrintBlockTree();
+<<<<<<< HEAD
 /** Find a block by height in the currently-connected chain */
 CBlockIndex* FindBlockByHeight(int nHeight);
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** Process protocol messages received from a given node */
 bool ProcessMessages(CNode* pfrom);
 /** Send queued protocol messages to be sent to a give node */
 bool SendMessages(CNode* pto, bool fSendTrickle);
 /** Run an instance of the script checking thread */
 void ThreadScriptCheck();
+<<<<<<< HEAD
 /** Run the miner threads */
 void GenerateBitcoins(bool fGenerate, CWallet* pwallet);
 /** Generate a new block, without valid proof-of-work */
@@ -177,6 +298,12 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey);
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
 unsigned int ComputeMinWork(unsigned int nBase, int64 nTime);
+=======
+/** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
+bool CheckProofOfWork(uint256 hash, unsigned int nBits);
+/** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
+unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** Get the number of active peers */
 int GetNumBlocksOfPeers();
 /** Check whether we are doing an initial block download (synchronizing from disk or network) */
@@ -185,16 +312,36 @@ bool IsInitialBlockDownload();
 std::string GetWarnings(std::string strFor);
 /** Retrieve a transaction (from memory pool, or from disk, if possible) */
 bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock, bool fAllowSlow = false);
+<<<<<<< HEAD
 /** Connect/disconnect blocks until pindexNew is the new tip of the active block chain */
 bool SetBestChain(CValidationState &state, CBlockIndex* pindexNew);
 /** Find the best known block, and make it the tip of the block chain */
 bool ConnectBestBlock(CValidationState &state);
+=======
+/** Find the best known block, and make it the tip of the block chain */
+bool ActivateBestChain(CValidationState &state);
+int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash);
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock);
+
+void UpdateTime(CBlockHeader& block, const CBlockIndex* pindexPrev);
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** Create a new block index entry for a given block hash */
 CBlockIndex * InsertBlockIndex(uint256 hash);
 /** Verify a signature */
 bool VerifySignature(const CCoins& txFrom, const CTransaction& txTo, unsigned int nIn, unsigned int flags, int nHashType);
 /** Abort with a message */
 bool AbortNode(const std::string &msg);
+<<<<<<< HEAD
+
+=======
+/** Get statistics from node state */
+bool GetNodeStateStats(NodeId nodeid, CNodeStateStats &stats);
+
+/** (try to) add transaction to memory pool **/
+bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState &state, const CTransaction &tx, bool fLimitFree,
+                        bool* pfMissingInputs, bool fRejectInsaneFee=false);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 
 
@@ -203,10 +350,15 @@ bool AbortNode(const std::string &msg);
 
 
 
-
+<<<<<<< HEAD
 
 
 bool GetWalletFile(CWallet* pwallet, std::string &strWalletFileOut);
+=======
+struct CNodeStateStats {
+    int nMisbehavior;
+};
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 struct CDiskBlockPos
 {
@@ -262,6 +414,7 @@ struct CDiskTxPos : public CDiskBlockPos
 };
 
 
+<<<<<<< HEAD
 /** An inpoint - a combination of a transaction and an index n into its vin */
 class CInPoint
 {
@@ -470,10 +623,16 @@ public:
 enum GetMinFee_mode
 {
     GMF_BLOCK,
+=======
+
+enum GetMinFee_mode
+{
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     GMF_RELAY,
     GMF_SEND,
 };
 
+<<<<<<< HEAD
 /** The basic transaction that is broadcasted on the network and contained in
  * blocks. A transaction can contain multiple inputs and outputs.
  */
@@ -629,10 +788,68 @@ public:
         // need a fee.
         return dPriority > 100 * COIN * 1440 / 250; // DogeCoin: 1440 blocks found a day. Priority cutoff is 100 dogecoin day / 250 bytes.
     }
+=======
+int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, enum GetMinFee_mode mode);
+
+//
+// Check transaction inputs, and make sure any
+// pay-to-script-hash transactions are evaluating IsStandard scripts
+//
+// Why bother? To avoid denial-of-service attacks; an attacker
+// can submit a standard HASH... OP_EQUAL transaction,
+// which will get accepted into blocks. The redemption
+// script can be anything; an attacker could use a very
+// expensive-to-check-upon-redemption script like:
+//   DUP CHECKSIG DROP ... repeated 100 times... OP_1
+//
+
+    /** Check for standard transaction types
+        @param[in] mapInputs    Map of previous transactions that have outputs we're spending
+        @return True if all inputs (scriptSigs) use only standard transaction forms
+    */
+bool AreInputsStandard(const CTransaction& tx, CCoinsViewCache& mapInputs);
+
+/** Count ECDSA signature operations the old-fashioned (pre-0.6) way
+    @return number of sigops this transaction's outputs will produce when spent
+    @see CTransaction::FetchInputs
+*/
+unsigned int GetLegacySigOpCount(const CTransaction& tx);
+
+/** Count ECDSA signature operations in pay-to-script-hash inputs.
+
+    @param[in] mapInputs	Map of previous transactions that have outputs we're spending
+    @return maximum number of sigops required to validate this transaction's inputs
+    @see CTransaction::FetchInputs
+ */
+unsigned int GetP2SHSigOpCount(const CTransaction& tx, CCoinsViewCache& mapInputs);
+
+
+inline bool AllowFree(double dPriority)
+{
+    // Large (in bytes) low-priority (new, small-coin) transactions
+    // need a fee.
+        return dPriority > 100 * COIN * 1440 / 250; // Dogecoin: 1440 blocks found a day. Priority cutoff is 100 dogecoin day / 250 bytes.
+    }
+
+/** Get the maturity depth for coinbase transactions at a given height.
+    @param[in] nHeight  The height at which to check maturity for
+    @return the depth at which the coinbase transaction matures
+ */
+// Dogecoin specific implementation, standardizes checks for the hard maturity change at block 145k
+int GetRequiredMaturityDepth(int nHeight);
+
+// Check whether all inputs of this transaction are valid (no double spends, scripts & sigs, amounts)
+// This does not modify the UTXO set. If pvChecks is not NULL, script checks are pushed onto it
+// instead of being performed inline.
+bool CheckInputs(const CTransaction& tx, CValidationState &state, CCoinsViewCache &view, bool fScriptChecks = true,
+                 unsigned int flags = SCRIPT_VERIFY_P2SH | SCRIPT_VERIFY_STRICTENC,
+                 std::vector<CScriptCheck> *pvChecks = NULL);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 // Apply the effects of this transaction on the UTXO set represented by view
 void UpdateCoins(const CTransaction& tx, CValidationState &state, CCoinsViewCache &inputs, CTxUndo &txundo, int nHeight, const uint256 &txhash);
 
+<<<<<<< HEAD
     int64 GetMinFee(unsigned int nBlockSize=1, bool fAllowFree=true, enum GetMinFee_mode mode=GMF_BLOCK) const;
 
     friend bool operator==(const CTransaction& a, const CTransaction& b)
@@ -774,6 +991,17 @@ public:
         READWRITE(vprevout);
     )
 };
+=======
+// Context-independent validity checks
+bool CheckTransaction(const CTransaction& tx, CValidationState& state);
+
+/** Check for standard transaction types
+    @return True if all outputs (scriptPubKeys) use only standard transaction forms
+*/
+bool IsStandardTx(const CTransaction& tx, std::string& reason);
+
+bool IsFinalTx(const CTransaction &tx, int nBlockHeight = 0, int64_t nBlockTime = 0);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /** Undo information for a CBlock */
 class CBlockUndo
@@ -790,16 +1018,28 @@ public:
         // Open history file to append
         CAutoFile fileout = CAutoFile(OpenUndoFile(pos), SER_DISK, CLIENT_VERSION);
         if (!fileout)
+<<<<<<< HEAD
             return error("CBlockUndo::WriteToDisk() : OpenUndoFile failed");
 
         // Write index header
         unsigned int nSize = fileout.GetSerializeSize(*this);
         fileout << FLATDATA(pchMessageStart) << nSize;
+=======
+            return error("CBlockUndo::WriteToDisk : OpenUndoFile failed");
+
+        // Write index header
+        unsigned int nSize = fileout.GetSerializeSize(*this);
+        fileout << FLATDATA(Params().MessageStart()) << nSize;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         // Write undo data
         long fileOutPos = ftell(fileout);
         if (fileOutPos < 0)
+<<<<<<< HEAD
             return error("CBlockUndo::WriteToDisk() : ftell failed");
+=======
+            return error("CBlockUndo::WriteToDisk : ftell failed");
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         pos.nPos = (unsigned int)fileOutPos;
         fileout << *this;
 
@@ -822,7 +1062,11 @@ public:
         // Open history file to read
         CAutoFile filein = CAutoFile(OpenUndoFile(pos, true), SER_DISK, CLIENT_VERSION);
         if (!filein)
+<<<<<<< HEAD
             return error("CBlockUndo::ReadFromDisk() : OpenBlockFile failed");
+=======
+            return error("CBlockUndo::ReadFromDisk : OpenBlockFile failed");
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         // Read block
         uint256 hashChecksum;
@@ -831,13 +1075,18 @@ public:
             filein >> hashChecksum;
         }
         catch (std::exception &e) {
+<<<<<<< HEAD
             return error("%s() : deserialize or I/O error", __PRETTY_FUNCTION__);
+=======
+            return error("%s : Deserialize or I/O error - %s", __PRETTY_FUNCTION__, e.what());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         }
 
         // Verify checksum
         CHashWriter hasher(SER_GETHASH, PROTOCOL_VERSION);
         hasher << hashBlock;
         hasher << *this;
+<<<<<<< HEAD
         if (hashChecksum != hasher.GetHash())
             return error("CBlockUndo::ReadFromDisk() : checksum mismatch");
 
@@ -1090,10 +1339,19 @@ public:
         BOOST_FOREACH(const CTxOut &out, vout)
             if (!out.IsNull())
                 return false;
+=======
+        if (hashChecksum != hasher.GetHash())
+            return error("CBlockUndo::ReadFromDisk : Checksum mismatch");
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         return true;
     }
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 /** Closure representing one script verification
  *  Note that this stores references to the spending transaction */
 class CScriptCheck
@@ -1125,6 +1383,11 @@ public:
 /** A transaction with a merkle branch linking it to the block chain. */
 class CMerkleTx : public CTransaction
 {
+<<<<<<< HEAD
+=======
+private:
+    int GetDepthInMainChainINTERNAL(CBlockIndex* &pindexRet) const;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 public:
     uint256 hashBlock;
     std::vector<uint256> vMerkleBranch;
@@ -1163,13 +1426,27 @@ public:
 
 
     int SetMerkleBranch(const CBlock* pblock=NULL);
+<<<<<<< HEAD
+=======
+
+    // Return depth of transaction in blockchain:
+    // -1  : not in blockchain, and not in memory pool (conflicted transaction)
+    //  0  : in memory pool, waiting to be included in a block
+    // >=1 : this many blocks deep in the main chain
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     int GetDepthInMainChain(CBlockIndex* &pindexRet) const;
     int GetDepthInMainChain() const { CBlockIndex *pindexRet; return GetDepthInMainChain(pindexRet); }
     int GetHeightInMainChain(CBlockIndex* &pindexRet) const;
     int GetHeightInMainChain() const { CBlockIndex *pindexRet; return GetHeightInMainChain(pindexRet); }
+<<<<<<< HEAD
     bool IsInMainChain() const { return GetDepthInMainChain() > 0; }
     int GetBlocksToMaturity() const;
     bool AcceptToMemoryPool(bool fCheckInputs=true, bool fLimitFree=true);
+=======
+    bool IsInMainChain() const { CBlockIndex *pindexRet; return GetDepthInMainChainINTERNAL(pindexRet) > 0; }
+    int GetBlocksToMaturity() const;
+    bool AcceptToMemoryPool(bool fLimitFree=true);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 
@@ -1273,6 +1550,7 @@ public:
 };
 
 
+<<<<<<< HEAD
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
  * requirements.  When they solve the proof-of-work, they broadcast the block
@@ -1543,6 +1821,35 @@ public:
 };
 
 
+=======
+
+/** Functions for disk access for blocks */
+bool WriteBlockToDisk(CBlock& block, CDiskBlockPos& pos);
+bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos);
+bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex);
+
+
+/** Functions for validating blocks and updating the block tree */
+
+/** Undo the effects of this block (with given index) on the UTXO set represented by coins.
+ *  In case pfClean is provided, operation will try to be tolerant about errors, and *pfClean
+ *  will be true if no problems were found. Otherwise, the return value will be false in case
+ *  of problems. Note that in any case, coins may be modified. */
+bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, CCoinsViewCache& coins, bool* pfClean = NULL);
+
+// Apply the effects of this block (with given index) on the UTXO set represented by coins
+bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, CCoinsViewCache& coins, bool fJustCheck = false);
+
+// Add this block to the block index, and if necessary, switch the active block chain to this
+bool AddToBlockIndex(CBlock& block, CValidationState& state, const CDiskBlockPos& pos);
+
+// Context-independent validity checks
+bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW = true, bool fCheckMerkleRoot = true);
+
+// Store block on disk
+// if dbp is provided, the file is known to already reside on disk
+bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp = NULL);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 
 
@@ -1554,8 +1861,13 @@ public:
     unsigned int nUndoSize;    // number of used bytes in the undo file
     unsigned int nHeightFirst; // lowest height of block in file
     unsigned int nHeightLast;  // highest height of block in file
+<<<<<<< HEAD
     uint64 nTimeFirst;         // earliest time of block in file
     uint64 nTimeLast;          // latest time of block in file
+=======
+    uint64_t nTimeFirst;         // earliest time of block in file
+    uint64_t nTimeLast;          // latest time of block in file
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     IMPLEMENT_SERIALIZE(
         READWRITE(VARINT(nBlocks));
@@ -1586,23 +1898,34 @@ public:
      }
 
      // update statistics (does not update nSize)
+<<<<<<< HEAD
      void AddBlock(unsigned int nHeightIn, uint64 nTimeIn) {
+=======
+     void AddBlock(unsigned int nHeightIn, uint64_t nTimeIn) {
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          if (nBlocks==0 || nHeightFirst > nHeightIn)
              nHeightFirst = nHeightIn;
          if (nBlocks==0 || nTimeFirst > nTimeIn)
              nTimeFirst = nTimeIn;
          nBlocks++;
+<<<<<<< HEAD
          if (nHeightIn > nHeightFirst)
+=======
+         if (nHeightIn > nHeightLast)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
              nHeightLast = nHeightIn;
          if (nTimeIn > nTimeLast)
              nTimeLast = nTimeIn;
      }
 };
 
+<<<<<<< HEAD
 extern CCriticalSection cs_LastBlockFile;
 extern CBlockFileInfo infoLastBlockFile;
 extern int nLastBlockFile;
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 enum BlockStatus {
     BLOCK_VALID_UNKNOWN      =    0,
     BLOCK_VALID_HEADER       =    1, // parsed, version ok, hash satisfies claimed PoW, 1 <= vtx count <= max, timestamp not in future
@@ -1623,10 +1946,15 @@ enum BlockStatus {
 
 /** The block chain is a tree shaped structure starting with the
  * genesis block at the root, with each block potentially having multiple
+<<<<<<< HEAD
  * candidates to be the next block.  pprev and pnext link a path through the
  * main/longest chain.  A blockindex may have multiple pprev pointing back
  * to it, but pnext will only point forward to the longest branch, or will
  * be null if the block is not part of the longest chain.
+=======
+ * candidates to be the next block. A blockindex may have multiple pprev pointing
+ * to it, but at most one of them can be part of the currently active branch.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
  */
 class CBlockIndex
 {
@@ -1637,9 +1965,12 @@ public:
     // pointer to the index of the predecessor of this block
     CBlockIndex* pprev;
 
+<<<<<<< HEAD
     // (memory only) pointer to the index of the *active* successor of this block
     CBlockIndex* pnext;
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     // height of the entry in the chain. The genesis block has height 0
     int nHeight;
 
@@ -1672,12 +2003,20 @@ public:
     unsigned int nBits;
     unsigned int nNonce;
 
+<<<<<<< HEAD
+=======
+    // (memory only) Sequencial id assigned to distinguish order in which blocks are received.
+    uint32_t nSequenceId;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     CBlockIndex()
     {
         phashBlock = NULL;
         pprev = NULL;
+<<<<<<< HEAD
         pnext = NULL;
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         nHeight = 0;
         nFile = 0;
         nDataPos = 0;
@@ -1686,6 +2025,10 @@ public:
         nTx = 0;
         nChainTx = 0;
         nStatus = 0;
+<<<<<<< HEAD
+=======
+        nSequenceId = 0;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         nVersion       = 0;
         hashMerkleRoot = 0;
@@ -1698,7 +2041,10 @@ public:
     {
         phashBlock = NULL;
         pprev = NULL;
+<<<<<<< HEAD
         pnext = NULL;
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         nHeight = 0;
         nFile = 0;
         nDataPos = 0;
@@ -1707,6 +2053,10 @@ public:
         nTx = 0;
         nChainTx = 0;
         nStatus = 0;
+<<<<<<< HEAD
+=======
+        nSequenceId = 0;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         nVersion       = block.nVersion;
         hashMerkleRoot = block.hashMerkleRoot;
@@ -1751,9 +2101,15 @@ public:
         return *phashBlock;
     }
 
+<<<<<<< HEAD
     int64 GetBlockTime() const
     {
         return (int64)nTime;
+=======
+    int64_t GetBlockTime() const
+    {
+        return (int64_t)nTime;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     CBigNum GetBlockWork() const
@@ -1765,11 +2121,14 @@ public:
         return (CBigNum(1)<<256) / (bnTarget+1);
     }
 
+<<<<<<< HEAD
     bool IsInMainChain() const
     {
         return (pnext || this == pindexBest);
     }
 
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     bool CheckIndex() const
     {
         /** Scrypt is used for block proof-of-work, but for purposes of performance the index internally uses sha256.
@@ -1779,11 +2138,19 @@ public:
 
     enum { nMedianTimeSpan=11 };
 
+<<<<<<< HEAD
     int64 GetMedianTimePast() const
     {
         int64 pmedian[nMedianTimeSpan];
         int64* pbegin = &pmedian[nMedianTimeSpan];
         int64* pend = &pmedian[nMedianTimeSpan];
+=======
+    int64_t GetMedianTimePast() const
+    {
+        int64_t pmedian[nMedianTimeSpan];
+        int64_t* pbegin = &pmedian[nMedianTimeSpan];
+        int64_t* pend = &pmedian[nMedianTimeSpan];
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         const CBlockIndex* pindex = this;
         for (int i = 0; i < nMedianTimeSpan && pindex; i++, pindex = pindex->pprev)
@@ -1793,6 +2160,7 @@ public:
         return pbegin[(pend - pbegin)/2];
     }
 
+<<<<<<< HEAD
     int64 GetMedianTime() const
     {
         const CBlockIndex* pindex = this;
@@ -1804,6 +2172,9 @@ public:
         }
         return pindex->GetMedianTimePast();
     }
+=======
+    int64_t GetMedianTime() const;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     /**
      * Returns true if there are nRequired or more blocks of minVersion or above
@@ -1814,14 +2185,20 @@ public:
 
     std::string ToString() const
     {
+<<<<<<< HEAD
         return strprintf("CBlockIndex(pprev=%p, pnext=%p, nHeight=%d, merkle=%s, hashBlock=%s)",
             pprev, pnext, nHeight,
+=======
+        return strprintf("CBlockIndex(pprev=%p, nHeight=%d, merkle=%s, hashBlock=%s)",
+            pprev, nHeight,
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             hashMerkleRoot.ToString().c_str(),
             GetBlockHash().ToString().c_str());
     }
 
     void print() const
     {
+<<<<<<< HEAD
         printf("%s\n", ToString().c_str());
     }
 };
@@ -1836,6 +2213,9 @@ struct CBlockIndexWorkComparator
         if (pa->GetBlockHash() > pb->GetBlockHash()) return true;
 
         return false; // identical blocks
+=======
+        LogPrintf("%s\n", ToString().c_str());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 };
 
@@ -1904,7 +2284,11 @@ public:
 
     void print() const
     {
+<<<<<<< HEAD
         printf("%s\n", ToString().c_str());
+=======
+        LogPrintf("%s\n", ToString().c_str());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 };
 
@@ -1917,14 +2301,29 @@ private:
         MODE_ERROR,   // run-time error
     } mode;
     int nDoS;
+<<<<<<< HEAD
     bool corruptionPossible;
 public:
     CValidationState() : mode(MODE_VALID), nDoS(0), corruptionPossible(false) {}
     bool DoS(int level, bool ret = false, bool corruptionIn = false) {
+=======
+    std::string strRejectReason;
+    unsigned char chRejectCode;
+    bool corruptionPossible;
+public:
+    CValidationState() : mode(MODE_VALID), nDoS(0), corruptionPossible(false) {}
+    bool DoS(int level, bool ret = false,
+             unsigned char chRejectCodeIn=0, std::string strRejectReasonIn="",
+             bool corruptionIn=false) {
+        chRejectCode = chRejectCodeIn;
+        strRejectReason = strRejectReasonIn;
+        corruptionPossible = corruptionIn;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         if (mode == MODE_ERROR)
             return ret;
         nDoS += level;
         mode = MODE_INVALID;
+<<<<<<< HEAD
         corruptionPossible = corruptionIn;
         return ret;
     }
@@ -1932,11 +2331,23 @@ public:
         return DoS(0, ret);
     }
     bool Error() {
+=======
+        return ret;
+    }
+    bool Invalid(bool ret = false,
+                 unsigned char _chRejectCode=0, std::string _strRejectReason="") {
+        return DoS(0, ret, _chRejectCode, _strRejectReason);
+    }
+    bool Error(std::string strRejectReasonIn="") {
+        if (mode == MODE_VALID)
+            strRejectReason = strRejectReasonIn;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         mode = MODE_ERROR;
         return false;
     }
     bool Abort(const std::string &msg) {
         AbortNode(msg);
+<<<<<<< HEAD
         return Error();
     }
     bool IsValid() {
@@ -1949,12 +2360,27 @@ public:
         return mode == MODE_ERROR;
     }
     bool IsInvalid(int &nDoSOut) {
+=======
+        return Error(msg);
+    }
+    bool IsValid() const {
+        return mode == MODE_VALID;
+    }
+    bool IsInvalid() const {
+        return mode == MODE_INVALID;
+    }
+    bool IsError() const {
+        return mode == MODE_ERROR;
+    }
+    bool IsInvalid(int &nDoSOut) const {
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         if (IsInvalid()) {
             nDoSOut = nDoS;
             return true;
         }
         return false;
     }
+<<<<<<< HEAD
     bool CorruptionPossible() {
         return corruptionPossible;
     }
@@ -2241,6 +2667,77 @@ public:
     bool GetCoins(const uint256 &txid, CCoins &coins);
     bool HaveCoins(const uint256 &txid);
 };
+=======
+    bool CorruptionPossible() const {
+        return corruptionPossible;
+    }
+    unsigned char GetRejectCode() const { return chRejectCode; }
+    std::string GetRejectReason() const { return strRejectReason; }
+};
+
+/** An in-memory indexed chain of blocks. */
+class CChain {
+private:
+    std::vector<CBlockIndex*> vChain;
+
+public:
+    /** Returns the index entry for the genesis block of this chain, or NULL if none. */
+    CBlockIndex *Genesis() const {
+        return vChain.size() > 0 ? vChain[0] : NULL;
+    }
+
+    /** Returns the index entry for the tip of this chain, or NULL if none. */
+    CBlockIndex *Tip() const {
+        return vChain.size() > 0 ? vChain[vChain.size() - 1] : NULL;
+    }
+
+    /** Returns the index entry at a particular height in this chain, or NULL if no such height exists. */
+    CBlockIndex *operator[](int nHeight) const {
+        if (nHeight < 0 || nHeight >= (int)vChain.size())
+            return NULL;
+        return vChain[nHeight];
+    }
+
+    /** Compare two chains efficiently. */
+    friend bool operator==(const CChain &a, const CChain &b) {
+        return a.vChain.size() == b.vChain.size() &&
+               a.vChain[a.vChain.size() - 1] == b.vChain[b.vChain.size() - 1];
+    }
+
+    /** Efficiently check whether a block is present in this chain. */
+    bool Contains(const CBlockIndex *pindex) const {
+        return (*this)[pindex->nHeight] == pindex;
+    }
+
+    /** Find the successor of a block in this chain, or NULL if the given index is not found or is the tip. */
+    CBlockIndex *Next(const CBlockIndex *pindex) const {
+        if (Contains(pindex))
+            return (*this)[pindex->nHeight + 1];
+        else
+            return NULL;
+    }
+
+    /** Return the maximal height in the chain. Is equal to chain.Tip() ? chain.Tip()->nHeight : -1. */
+    int Height() const {
+        return vChain.size() - 1;
+    }
+
+    /** Set/initialize a chain with a given tip. Returns the forking point. */
+    CBlockIndex *SetTip(CBlockIndex *pindex);
+
+    /** Return a CBlockLocator that refers to a block in this chain (by default the tip). */
+    CBlockLocator GetLocator(const CBlockIndex *pindex = NULL) const;
+
+    /** Find the last common block between this chain and a locator. */
+    CBlockIndex *FindFork(const CBlockLocator &locator) const;
+};
+
+/** The currently-connected chain of blocks. */
+extern CChain chainActive;
+
+/** The currently best known chain of headers (some of which may be invalid). */
+extern CChain chainMostWork;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /** Global variable that points to the active CCoinsView (protected by cs_main) */
 extern CCoinsViewCache *pcoinsTip;
@@ -2255,9 +2752,12 @@ struct CBlockTemplate
     std::vector<int64_t> vTxSigOps;
 };
 
+<<<<<<< HEAD
 #if defined(_M_IX86) || defined(__i386__) || defined(__i386) || defined(_M_X64) || defined(__x86_64__) || defined(_M_AMD64)
 extern unsigned int cpuid_edx;
 #endif
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 
 
@@ -2290,4 +2790,21 @@ public:
     )
 };
 
+<<<<<<< HEAD
+=======
+
+class CWalletInterface {
+protected:
+    virtual void SyncTransaction(const uint256 &hash, const CTransaction &tx, const CBlock *pblock) =0;
+    virtual void EraseFromWallet(const uint256 &hash) =0;
+    virtual void SetBestChain(const CBlockLocator &locator) =0;
+    virtual void UpdatedTransaction(const uint256 &hash) =0;
+    virtual void Inventory(const uint256 &hash) =0;
+    virtual void ResendWalletTransactions() =0;
+    friend void ::RegisterWallet(CWalletInterface*);
+    friend void ::UnregisterWallet(CWalletInterface*);
+    friend void ::UnregisterAllWallets();
+};
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif

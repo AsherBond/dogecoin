@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -10,11 +11,34 @@
 #include <boost/array.hpp>
 #include <boost/foreach.hpp>
 #include <openssl/rand.h>
+=======
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_NET_H
+#define BITCOIN_NET_H
+
+#include "bloom.h"
+#include "compat.h"
+#include "hash.h"
+#include "limitedmap.h"
+#include "mruset.h"
+#include "netbase.h"
+#include "protocol.h"
+#include "sync.h"
+#include "uint256.h"
+#include "util.h"
+
+#include <deque>
+#include <stdint.h>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 #ifndef WIN32
 #include <arpa/inet.h>
 #endif
 
+<<<<<<< HEAD
 #include "mruset.h"
 #include "limitedmap.h"
 #include "netbase.h"
@@ -28,6 +52,22 @@ class CBlockIndex;
 extern int nBestHeight;
 
 
+=======
+#include <boost/foreach.hpp>
+#include <boost/signals2/signal.hpp>
+#include <openssl/rand.h>
+
+class CAddrMan;
+class CBlockIndex;
+class CNode;
+
+namespace boost {
+    class thread_group;
+}
+
+/** The maximum number of entries in an 'inv' protocol message */
+static const unsigned int MAX_INV_SZ = 50000;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 inline unsigned int ReceiveFloodSize() { return 1000*GetArg("-maxreceivebuffer", 5*1000); }
 inline unsigned int SendBufferSize() { return 1000*GetArg("-maxsendbuffer", 1*1000); }
@@ -46,6 +86,25 @@ void StartNode(boost::thread_group& threadGroup);
 bool StopNode();
 void SocketSendData(CNode *pnode);
 
+<<<<<<< HEAD
+=======
+typedef int NodeId;
+
+// Signals for message handling
+struct CNodeSignals
+{
+    boost::signals2::signal<int ()> GetHeight;
+    boost::signals2::signal<bool (CNode*)> ProcessMessages;
+    boost::signals2::signal<bool (CNode*, bool)> SendMessages;
+    boost::signals2::signal<void (NodeId, const CNode*)> InitializeNode;
+    boost::signals2::signal<void (NodeId)> FinalizeNode;
+};
+
+
+CNodeSignals& GetNodeSignals();
+
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 enum
 {
     LOCAL_NONE,   // unknown
@@ -72,41 +131,74 @@ CAddress GetLocalAddress(const CNetAddr *paddrPeer = NULL);
 
 
 extern bool fDiscover;
+<<<<<<< HEAD
 extern uint64 nLocalServices;
 extern uint64 nLocalHostNonce;
+=======
+extern uint64_t nLocalServices;
+extern uint64_t nLocalHostNonce;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 extern CAddrMan addrman;
 extern int nMaxConnections;
 
 extern std::vector<CNode*> vNodes;
 extern CCriticalSection cs_vNodes;
 extern std::map<CInv, CDataStream> mapRelay;
+<<<<<<< HEAD
 extern std::deque<std::pair<int64, CInv> > vRelayExpiration;
 extern CCriticalSection cs_mapRelay;
 extern limitedmap<CInv, int64> mapAlreadyAskedFor;
+=======
+extern std::deque<std::pair<int64_t, CInv> > vRelayExpiration;
+extern CCriticalSection cs_mapRelay;
+extern limitedmap<CInv, int64_t> mapAlreadyAskedFor;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 extern std::vector<std::string> vAddedNodes;
 extern CCriticalSection cs_vAddedNodes;
 
+<<<<<<< HEAD
 
+=======
+extern NodeId nLastNodeId;
+extern CCriticalSection cs_nLastNodeId;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 
 class CNodeStats
 {
 public:
+<<<<<<< HEAD
     uint64 nServices;
     int64 nLastSend;
     int64 nLastRecv;
     int64 nTimeConnected;
+=======
+    NodeId nodeid;
+    uint64_t nServices;
+    int64_t nLastSend;
+    int64_t nLastRecv;
+    int64_t nTimeConnected;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     std::string addrName;
     int nVersion;
     std::string cleanSubVer;
     bool fInbound;
     int nStartingHeight;
+<<<<<<< HEAD
     int nMisbehavior;
     uint64 nSendBytes;
     uint64 nRecvBytes;
     uint64 nBlocksRequested;
     bool fSyncNode;
+=======
+    uint64_t nSendBytes;
+    uint64_t nRecvBytes;
+    bool fSyncNode;
+    double dPingTime;
+    double dPingWait;
+    std::string addrLocal;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 
@@ -156,18 +248,27 @@ class CNode
 {
 public:
     // socket
+<<<<<<< HEAD
     uint64 nServices;
+=======
+    uint64_t nServices;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     SOCKET hSocket;
     CDataStream ssSend;
     size_t nSendSize; // total size of all vSendMsg entries
     size_t nSendOffset; // offset inside the first vSendMsg already sent
+<<<<<<< HEAD
     uint64 nSendBytes;
+=======
+    uint64_t nSendBytes;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     std::deque<CSerializeData> vSendMsg;
     CCriticalSection cs_vSend;
 
     std::deque<CInv> vRecvGetData;
     std::deque<CNetMessage> vRecvMsg;
     CCriticalSection cs_vRecvMsg;
+<<<<<<< HEAD
     uint64 nRecvBytes;
     int nRecvVersion;
 
@@ -176,11 +277,24 @@ public:
     int64 nLastSendEmpty;
     int64 nTimeConnected;
     uint64 nBlocksRequested;
+=======
+    uint64_t nRecvBytes;
+    int nRecvVersion;
+
+    int64_t nLastSend;
+    int64_t nLastRecv;
+    int64_t nLastSendEmpty;
+    int64_t nTimeConnected;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     CAddress addr;
     std::string addrName;
     CService addrLocal;
     int nVersion;
+<<<<<<< HEAD
     // strSubVer is whatever byte array we read from the wire. However, this field is intended 
+=======
+    // strSubVer is whatever byte array we read from the wire. However, this field is intended
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     // to be printed out, displayed to humans in various forms and so on. So we sanitize it and
     // store the sanitized version in cleanSubVer. The original should be used when dealing with
     // the network or wire types and the cleaned string used when displayed or logged.
@@ -200,13 +314,25 @@ public:
     CCriticalSection cs_filter;
     CBloomFilter* pfilter;
     int nRefCount;
+<<<<<<< HEAD
+=======
+    NodeId id;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 protected:
 
     // Denial-of-service detection/prevention
     // Key is IP address, value is banned-until-time
+<<<<<<< HEAD
     static std::map<CNetAddr, int64> setBanned;
     static CCriticalSection cs_setBanned;
     int nMisbehavior;
+=======
+    static std::map<CNetAddr, int64_t> setBanned;
+    static CCriticalSection cs_setBanned;
+
+    // Basic fuzz-testing
+    void Fuzz(int nChance); // modifies ssSend
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 public:
     uint256 hashContinue;
@@ -225,7 +351,17 @@ public:
     mruset<CInv> setInventoryKnown;
     std::vector<CInv> vInventoryToSend;
     CCriticalSection cs_inventory;
+<<<<<<< HEAD
     std::multimap<int64, CInv> mapAskFor;
+=======
+    std::multimap<int64_t, CInv> mapAskFor;
+
+    // Ping time measurement
+    uint64_t nPingNonceSent;
+    int64_t nPingUsecStart;
+    int64_t nPingUsecTime;
+    bool fPingQueued;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     CNode(SOCKET hSocketIn, CAddress addrIn, std::string addrNameIn = "", bool fInboundIn=false) : ssSend(SER_NETWORK, INIT_PROTO_VERSION)
     {
@@ -238,7 +374,10 @@ public:
         nRecvBytes = 0;
         nLastSendEmpty = GetTime();
         nTimeConnected = GetTime();
+<<<<<<< HEAD
         nBlocksRequested = 0;
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         addr = addrIn;
         addrName = addrNameIn == "" ? addr.ToStringIPPort() : addrNameIn;
         nVersion = 0;
@@ -258,14 +397,34 @@ public:
         nStartingHeight = -1;
         fStartSync = false;
         fGetAddr = false;
+<<<<<<< HEAD
         nMisbehavior = 0;
         fRelayTxes = false;
         setInventoryKnown.max_size(SendBufferSize() / 1000);
         pfilter = new CBloomFilter();
+=======
+        fRelayTxes = false;
+        setInventoryKnown.max_size(SendBufferSize() / 1000);
+        pfilter = new CBloomFilter();
+        nPingNonceSent = 0;
+        nPingUsecStart = 0;
+        nPingUsecTime = 0;
+        fPingQueued = false;
+
+        {
+            LOCK(cs_nLastNodeId);
+            id = nLastNodeId++;
+        }
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         // Be shy and don't send version until we hear
         if (hSocket != INVALID_SOCKET && !fInbound)
             PushVersion();
+<<<<<<< HEAD
+=======
+
+        GetNodeSignals().InitializeNode(GetId(), this);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     ~CNode()
@@ -277,6 +436,7 @@ public:
         }
         if (pfilter)
             delete pfilter;
+<<<<<<< HEAD
     }
 
 private:
@@ -284,6 +444,26 @@ private:
     void operator=(const CNode&);
 public:
 
+=======
+        GetNodeSignals().FinalizeNode(GetId());
+    }
+
+private:
+    // Network usage totals
+    static CCriticalSection cs_totalBytesRecv;
+    static CCriticalSection cs_totalBytesSent;
+    static uint64_t nTotalBytesRecv;
+    static uint64_t nTotalBytesSent;
+
+    CNode(const CNode&);
+    void operator=(const CNode&);
+
+public:
+
+    NodeId GetId() const {
+      return id;
+    }
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     int GetRefCount()
     {
@@ -295,7 +475,11 @@ public:
     unsigned int GetTotalRecvSize()
     {
         unsigned int total = 0;
+<<<<<<< HEAD
         BOOST_FOREACH(const CNetMessage &msg, vRecvMsg) 
+=======
+        BOOST_FOREACH(const CNetMessage &msg, vRecvMsg)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             total += msg.vRecv.size() + 24;
         return total;
     }
@@ -360,18 +544,31 @@ public:
     {
         // We're using mapAskFor as a priority queue,
         // the key is the earliest time the request can be sent
+<<<<<<< HEAD
         int64 nRequestTime;
         limitedmap<CInv, int64>::const_iterator it = mapAlreadyAskedFor.find(inv);
+=======
+        int64_t nRequestTime;
+        limitedmap<CInv, int64_t>::const_iterator it = mapAlreadyAskedFor.find(inv);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         if (it != mapAlreadyAskedFor.end())
             nRequestTime = it->second;
         else
             nRequestTime = 0;
+<<<<<<< HEAD
         if (fDebugNet)
             printf("askfor %s   %"PRI64d" (%s)\n", inv.ToString().c_str(), nRequestTime, DateTimeStrFormat("%H:%M:%S", nRequestTime/1000000).c_str());
 
         // Make sure not to reuse time indexes to keep things in the same order
         int64 nNow = (GetTime() - 1) * 1000000;
         static int64 nLastTime;
+=======
+        LogPrint("net", "askfor %s   %d (%s)\n", inv.ToString().c_str(), nRequestTime, DateTimeStrFormat("%H:%M:%S", nRequestTime/1000000).c_str());
+
+        // Make sure not to reuse time indexes to keep things in the same order
+        int64_t nNow = (GetTime() - 1) * 1000000;
+        static int64_t nLastTime;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         ++nLastTime;
         nNow = std::max(nNow, nLastTime);
         nLastTime = nNow;
@@ -393,8 +590,12 @@ public:
         ENTER_CRITICAL_SECTION(cs_vSend);
         assert(ssSend.size() == 0);
         ssSend << CMessageHeader(pszCommand, 0);
+<<<<<<< HEAD
         if (fDebug)
             printf("sending: %s ", pszCommand);
+=======
+        LogPrint("net", "sending: %s ", pszCommand);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     // TODO: Document the precondition of this function.  Is cs_vSend locked?
@@ -404,19 +605,37 @@ public:
 
         LEAVE_CRITICAL_SECTION(cs_vSend);
 
+<<<<<<< HEAD
         if (fDebug)
             printf("(aborted)\n");
+=======
+        LogPrint("net", "(aborted)\n");
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 
     // TODO: Document the precondition of this function.  Is cs_vSend locked?
     void EndMessage() UNLOCK_FUNCTION(cs_vSend)
     {
+<<<<<<< HEAD
         if (mapArgs.count("-dropmessagestest") && GetRand(atoi(mapArgs["-dropmessagestest"])) == 0)
         {
             printf("dropmessages DROPPING SEND MESSAGE\n");
             AbortMessage();
             return;
         }
+=======
+        // The -*messagestest options are intentionally not documented in the help message,
+        // since they are only used during development to debug the networking code and are
+        // not intended for end-users.
+        if (mapArgs.count("-dropmessagestest") && GetRand(GetArg("-dropmessagestest", 2)) == 0)
+        {
+            LogPrint("net", "dropmessages DROPPING SEND MESSAGE\n");
+            AbortMessage();
+            return;
+        }
+        if (mapArgs.count("-fuzzmessagestest"))
+            Fuzz(GetArg("-fuzzmessagestest", 10));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         if (ssSend.size() == 0)
             return;
@@ -432,9 +651,13 @@ public:
         assert(ssSend.size () >= CMessageHeader::CHECKSUM_OFFSET + sizeof(nChecksum));
         memcpy((char*)&ssSend[CMessageHeader::CHECKSUM_OFFSET], &nChecksum, sizeof(nChecksum));
 
+<<<<<<< HEAD
         if (fDebug) {
             printf("(%d bytes)\n", nSize);
         }
+=======
+        LogPrint("net", "(%d bytes)\n", nSize);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
         std::deque<CSerializeData>::iterator it = vSendMsg.insert(vSendMsg.end(), CSerializeData());
         ssSend.GetAndClear(*it);
@@ -608,7 +831,10 @@ public:
         }
     }
 
+<<<<<<< HEAD
     void PushGetBlocks(CBlockIndex* pindexBegin, uint256 hashEnd);
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     bool IsSubscribed(unsigned int nChannel);
     void Subscribe(unsigned int nChannel, unsigned int nHops=0);
     void CancelSubscribe(unsigned int nChannel);
@@ -632,8 +858,20 @@ public:
     // new code.
     static void ClearBanned(); // needed for unit testing
     static bool IsBanned(CNetAddr ip);
+<<<<<<< HEAD
     bool Misbehaving(int howmuch); // 1 == a little, 100 == a lot
     void copyStats(CNodeStats &stats);
+=======
+    static bool Ban(const CNetAddr &ip);
+    void copyStats(CNodeStats &stats);
+
+    // Network stats
+    static void RecordBytesRecv(uint64_t bytes);
+    static void RecordBytesSent(uint64_t bytes);
+
+    static uint64_t GetTotalBytesRecv();
+    static uint64_t GetTotalBytesSent();
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 };
 
 
@@ -642,4 +880,18 @@ class CTransaction;
 void RelayTransaction(const CTransaction& tx, const uint256& hash);
 void RelayTransaction(const CTransaction& tx, const uint256& hash, const CDataStream& ss);
 
+<<<<<<< HEAD
+=======
+/** Access to the (IP) address database (peers.dat) */
+class CAddrDB
+{
+private:
+    boost::filesystem::path pathAddr;
+public:
+    CAddrDB();
+    bool Write(const CAddrMan& addr);
+    bool Read(CAddrMan& addr);
+};
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif

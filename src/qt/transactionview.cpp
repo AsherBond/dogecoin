@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "transactionview.h"
 
 #include "transactionfilterproxy.h"
@@ -25,15 +26,54 @@
 #include <QMenu>
 #include <QLabel>
 #include <QDateTimeEdit>
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#include "transactionview.h"
+
+#include "addresstablemodel.h"
+#include "bitcoinunits.h"
+#include "csvmodelwriter.h"
+#include "editaddressdialog.h"
+#include "guiutil.h"
+#include "optionsmodel.h"
+#include "transactiondescdialog.h"
+#include "transactionfilterproxy.h"
+#include "transactionrecord.h"
+#include "transactiontablemodel.h"
+#include "walletmodel.h"
+
+#include "ui_interface.h"
+
+#include <QComboBox>
+#include <QDateTimeEdit>
+#include <QDoubleValidator>
+#include <QHBoxLayout>
+#include <QHeaderView>
+#include <QLabel>
+#include <QLineEdit>
+#include <QMenu>
+#include <QPoint>
+#include <QScrollBar>
+#include <QTableView>
+#include <QVBoxLayout>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #include <QDesktopServices>
 #include <QUrl>
 
 TransactionView::TransactionView(QWidget *parent) :
+<<<<<<< HEAD
     QWidget(parent)
   , model(0)
   , transactionProxyModel(0)
   , transactionView(0)
   , contextMenu(0)
+=======
+    QWidget(parent), model(0), transactionProxyModel(0),
+    transactionView(0)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     // Build filter row
     setContentsMargins(0,0,0,0);
@@ -83,14 +123,20 @@ TransactionView::TransactionView(QWidget *parent) :
 
     addressWidget = new QLineEdit(this);
 #if QT_VERSION >= 0x040700
+<<<<<<< HEAD
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     addressWidget->setPlaceholderText(tr("Enter address or label to search"));
 #endif
     hlayout->addWidget(addressWidget);
 
     amountWidget = new QLineEdit(this);
 #if QT_VERSION >= 0x040700
+<<<<<<< HEAD
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     amountWidget->setPlaceholderText(tr("Min amount"));
 #endif
 #ifdef Q_OS_MAC
@@ -124,6 +170,29 @@ TransactionView::TransactionView(QWidget *parent) :
 
     transactionView = view;
 
+<<<<<<< HEAD
+=======
+    // Actions
+    QAction *copyAddressAction = new QAction(tr("Copy address"), this);
+    QAction *copyLabelAction = new QAction(tr("Copy label"), this);
+    QAction *copyAmountAction = new QAction(tr("Copy amount"), this);
+    QAction *copyTxIDAction = new QAction(tr("Copy transaction ID"), this);
+    QAction *editLabelAction = new QAction(tr("Edit label"), this);
+    QAction *showDetailsAction = new QAction(tr("Show transaction details"), this);
+    QAction *viewOnDogechain = new QAction(tr("Show transaction on Dogechain"), this);
+
+    contextMenu = new QMenu();
+    contextMenu->addAction(copyAddressAction);
+    contextMenu->addAction(copyLabelAction);
+    contextMenu->addAction(copyAmountAction);
+    contextMenu->addAction(copyTxIDAction);
+    contextMenu->addSeparator();
+    contextMenu->addAction(editLabelAction);
+    contextMenu->addAction(showDetailsAction);
+    contextMenu->addSeparator();
+    contextMenu->addAction(viewOnDogechain);
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     // Connect actions
     connect(dateWidget, SIGNAL(activated(int)), this, SLOT(chooseDate(int)));
     connect(typeWidget, SIGNAL(activated(int)), this, SLOT(chooseType(int)));
@@ -132,6 +201,17 @@ TransactionView::TransactionView(QWidget *parent) :
 
     connect(view, SIGNAL(doubleClicked(QModelIndex)), this, SIGNAL(doubleClicked(QModelIndex)));
     connect(view, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextualMenu(QPoint)));
+<<<<<<< HEAD
+=======
+
+    connect(copyAddressAction, SIGNAL(triggered()), this, SLOT(copyAddress()));
+    connect(copyLabelAction, SIGNAL(triggered()), this, SLOT(copyLabel()));
+    connect(copyAmountAction, SIGNAL(triggered()), this, SLOT(copyAmount()));
+    connect(copyTxIDAction, SIGNAL(triggered()), this, SLOT(copyTxID()));
+    connect(editLabelAction, SIGNAL(triggered()), this, SLOT(editLabel()));
+    connect(showDetailsAction, SIGNAL(triggered()), this, SLOT(showDetails()));
+    connect(viewOnDogechain, SIGNAL(triggered()), this, SLOT(viewOnDogechain()));
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 void TransactionView::setModel(WalletModel *model)
@@ -161,8 +241,12 @@ void TransactionView::setModel(WalletModel *model)
 #if QT_VERSION < 0x050000
         transactionView->horizontalHeader()->setResizeMode(TransactionTableModel::ToAddress, QHeaderView::Stretch);
 #else
+<<<<<<< HEAD
         transactionView->horizontalHeader()->setSectionResizeMode(TransactionTableModel::ToAddress, QHeaderView::Interactive);
         transactionView->horizontalHeader()->setSectionResizeMode(TransactionTableModel::Amount, QHeaderView::Stretch);
+=======
+        transactionView->horizontalHeader()->setSectionResizeMode(TransactionTableModel::ToAddress, QHeaderView::Stretch);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #endif
         transactionView->horizontalHeader()->resizeSection(TransactionTableModel::Amount, 100);
     }
@@ -249,12 +333,21 @@ void TransactionView::changedAmount(const QString &amount)
 void TransactionView::exportClicked()
 {
     // CSV is currently the only supported format
+<<<<<<< HEAD
     QString filename = GUIUtil::getSaveFileName(
             this,
             tr("Export Transaction Data"), QString(),
             tr("Comma separated file (*.csv)"));
 
     if (filename.isNull()) return;
+=======
+    QString filename = GUIUtil::getSaveFileName(this,
+        tr("Export Transaction History"), QString(),
+        tr("Comma separated file (*.csv)"), NULL);
+
+    if (filename.isNull())
+        return;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     CSVModelWriter writer(filename);
 
@@ -268,16 +361,27 @@ void TransactionView::exportClicked()
     writer.addColumn(tr("Amount"), 0, TransactionTableModel::FormattedAmountRole);
     writer.addColumn(tr("ID"), 0, TransactionTableModel::TxIDRole);
 
+<<<<<<< HEAD
     if(!writer.write())
     {
         QMessageBox::critical(this, tr("Error exporting"), tr("Could not write to file %1.").arg(filename),
                               QMessageBox::Abort, QMessageBox::Abort);
+=======
+    if(!writer.write()) {
+        emit message(tr("Exporting Failed"), tr("There was an error trying to save the transaction history to %1.").arg(filename),
+            CClientUIInterface::MSG_ERROR);
+    }
+    else {
+        emit message(tr("Exporting Successful"), tr("The transaction history was successfully saved to %1.").arg(filename),
+            CClientUIInterface::MSG_INFORMATION);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 }
 
 void TransactionView::contextualMenu(const QPoint &point)
 {
     QModelIndex index = transactionView->indexAt(point);
+<<<<<<< HEAD
     if ( index.isValid() )
     {
         contextMenu = new QMenu();
@@ -293,6 +397,11 @@ void TransactionView::contextualMenu(const QPoint &point)
 
         contextMenu->exec(QCursor::pos());
         delete contextMenu;
+=======
+    if(index.isValid())
+    {
+        contextMenu->exec(QCursor::pos());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     }
 }
 
@@ -342,10 +451,17 @@ void TransactionView::editLabel()
             // Determine type of address, launch appropriate editor dialog type
             QString type = modelIdx.data(AddressTableModel::TypeRole).toString();
 
+<<<<<<< HEAD
             EditAddressDialog dlg(type==AddressTableModel::Receive
                                          ? EditAddressDialog::EditReceivingAddress
                                          : EditAddressDialog::EditSendingAddress,
                                   this);
+=======
+            EditAddressDialog dlg(
+                type == AddressTableModel::Receive
+                ? EditAddressDialog::EditReceivingAddress
+                : EditAddressDialog::EditSendingAddress, this);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             dlg.setModel(addressBook);
             dlg.loadRow(idx);
             dlg.exec();
@@ -354,7 +470,11 @@ void TransactionView::editLabel()
         {
             // Add sending address
             EditAddressDialog dlg(EditAddressDialog::NewSendingAddress,
+<<<<<<< HEAD
                                   this);
+=======
+                this);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
             dlg.setModel(addressBook);
             dlg.setAddress(address);
             dlg.exec();
@@ -374,14 +494,24 @@ void TransactionView::showDetails()
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 void TransactionView::viewOnDogechain()
 {
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())
     {
         QString format("http://dogechain.info/tx/");
+<<<<<<< HEAD
         format += selection.at(0).data(TransactionTableModel::TxIDRole).toString();
 
+=======
+        QString munged = selection.at(0).data(TransactionTableModel::TxIDRole).toString();
+        format += munged.left(munged.lastIndexOf("-"));
+        
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         QDesktopServices::openUrl(QUrl(format));
     }
 }

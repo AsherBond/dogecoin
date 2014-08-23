@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+// Copyright (c) 2011-2013 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 #ifndef BITCOINAMOUNTFIELD_H
 #define BITCOINAMOUNTFIELD_H
 
@@ -22,6 +29,15 @@ public:
     qint64 value(bool *valid=0) const;
     void setValue(qint64 value);
 
+<<<<<<< HEAD
+=======
+    /** Set single step in satoshis **/
+    void setSingleStep(qint64 step);
+
+    /** Make read-only **/
+    void setReadOnly(bool fReadOnly);
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     /** Mark current value as invalid in UI. */
     void setValid(bool valid);
     /** Perform input validation, mark field as invalid if entered value is not valid. */
@@ -49,6 +65,10 @@ private:
     QDoubleSpinBox *amount;
     QValueComboBox *unit;
     int currentUnit;
+<<<<<<< HEAD
+=======
+    qint64 nSingleStep;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     void setText(const QString &text);
     QString text() const;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <boost/algorithm/string.hpp>
 #include <boost/foreach.hpp>
 #include <boost/test/unit_test.hpp>
@@ -5,13 +6,26 @@
 #include "base58.h"
 #include "util.h"
 #include "bitcoinrpc.h"
+=======
+#include "rpcserver.h"
+#include "rpcclient.h"
+
+#include "base58.h"
+
+#include <boost/algorithm/string.hpp>
+#include <boost/test/unit_test.hpp>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 using namespace std;
 using namespace json_spirit;
 
+<<<<<<< HEAD
 BOOST_AUTO_TEST_SUITE(rpc_tests)
 
 static Array
+=======
+Array
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 createArgs(int nRequired, const char* address1=NULL, const char* address2=NULL)
 {
     Array result;
@@ -23,6 +37,7 @@ createArgs(int nRequired, const char* address1=NULL, const char* address2=NULL)
     return result;
 }
 
+<<<<<<< HEAD
 BOOST_AUTO_TEST_CASE(rpc_addmultisig)
 {
     rpcfn_type addmultisig = tableRPC["addmultisigaddress"]->actor;
@@ -61,6 +76,9 @@ BOOST_AUTO_TEST_CASE(rpc_addmultisig)
 }
 
 static Value CallRPC(string args)
+=======
+Value CallRPC(string args)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 {
     vector<string> vArgs;
     boost::split(vArgs, args, boost::is_any_of(" \t"));
@@ -79,6 +97,7 @@ static Value CallRPC(string args)
     }
 }
 
+<<<<<<< HEAD
 BOOST_AUTO_TEST_CASE(rpc_wallet)
 {
     // Test RPC calls for various wallet statistics
@@ -107,6 +126,10 @@ BOOST_AUTO_TEST_CASE(rpc_wallet)
     BOOST_CHECK_THROW(CallRPC("listreceivedbyaccount 0 true extra"), runtime_error);
 }
 
+=======
+
+BOOST_AUTO_TEST_SUITE(rpc_tests)
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 BOOST_AUTO_TEST_CASE(rpc_rawparams)
 {
@@ -153,6 +176,7 @@ BOOST_AUTO_TEST_CASE(rpc_rawsign)
 {
     Value r;
     // input is a 1-of-2 multisig (so is output):
+<<<<<<< HEAD
     string prevout =
       "[{\"txid\":\"b4cc287e58f87cdae59417329f710f3ecd75a4ee1d2872b7248f50977c8493f3\","
       "\"vout\":1,\"scriptPubKey\":\"a914b10c9df5f7edf436c697f02f1efdba4cf399615187\","
@@ -162,10 +186,56 @@ BOOST_AUTO_TEST_CASE(rpc_rawsign)
     string notsigned = r.get_str();
     string privkey1 = "\"T6hoRM7L8u4f9vHd4eGMAmwV6AMCE11PvYi7YjrdegG223kw64r1\"";
     string privkey2 = "\"T5Xu6pe5iqQYqXGxhcY2QEFr7NNoVQ5R6A4abpswunCTF9w85g8V\"";
+=======
+    
+    string prevout =
+      "[{\"txid\":\"fa0e4bbd829d23695accaacc63e9fbeeaa44c0bd60a15fd730597a35f83bed54\","
+      "\"vout\":1,\"scriptPubKey\":\"a914ae20ad2a36715ceb9a4d108855f43739d57bf5ff87\","
+      "\"redeemScript\":\"522102aa2b9ccf32a31e9dc02dfd609492db92cd6bbf60ac051dddd83bc2ef23835235210204dfd2dd68a82c091ee17e4cbf0b4aade7f4af16ac36bfc86ab059fbbd965d7152ae\"}]";
+    r = CallRPC(string("createrawtransaction ")+prevout+" "+
+      "{\"A8JyPAauw5YtNaBshKgVjPGyAqt7xv17Ad\":18}");
+    string notsigned = r.get_str();
+    string privkey1 = "\"QVLhi74xEKV5Y3JEyMcst7GSGBccgJmuawgjQxGHxjgjXqG6AaR9\"";
+    string privkey2 = "\"QWQbSTCKxQb1e7KHuMv88udFTu88tvh1A71h44CC1SLa9hVVGEBT\"";
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     r = CallRPC(string("signrawtransaction ")+notsigned+" "+prevout+" "+"[]");
     BOOST_CHECK(find_value(r.get_obj(), "complete").get_bool() == false);
     r = CallRPC(string("signrawtransaction ")+notsigned+" "+prevout+" "+"["+privkey1+","+privkey2+"]");
     BOOST_CHECK(find_value(r.get_obj(), "complete").get_bool() == true);
 }
 
+<<<<<<< HEAD
+=======
+BOOST_AUTO_TEST_CASE(rpc_format_monetary_values)
+{
+    BOOST_CHECK(write_string(ValueFromAmount(0LL), false) == "0.00000000");
+    BOOST_CHECK(write_string(ValueFromAmount(1LL), false) == "0.00000001");
+    BOOST_CHECK(write_string(ValueFromAmount(17622195LL), false) == "0.17622195");
+    BOOST_CHECK(write_string(ValueFromAmount(50000000LL), false) == "0.50000000");
+    BOOST_CHECK(write_string(ValueFromAmount(89898989LL), false) == "0.89898989");
+    BOOST_CHECK(write_string(ValueFromAmount(100000000LL), false) == "1.00000000");
+    BOOST_CHECK(write_string(ValueFromAmount(2099999999999990LL), false) == "20999999.99999990");
+    BOOST_CHECK(write_string(ValueFromAmount(2099999999999999LL), false) == "20999999.99999999");
+}
+
+static Value ValueFromString(const std::string &str)
+{
+    Value value;
+    BOOST_CHECK(read_string(str, value));
+    return value;
+}
+
+BOOST_AUTO_TEST_CASE(rpc_parse_monetary_values)
+{
+    BOOST_CHECK(AmountFromValue(ValueFromString("0.00000001")) == 1LL);
+    BOOST_CHECK(AmountFromValue(ValueFromString("0.17622195")) == 17622195LL);
+    BOOST_CHECK(AmountFromValue(ValueFromString("0.5")) == 50000000LL);
+    BOOST_CHECK(AmountFromValue(ValueFromString("0.50000000")) == 50000000LL);
+    BOOST_CHECK(AmountFromValue(ValueFromString("0.89898989")) == 89898989LL);
+    BOOST_CHECK(AmountFromValue(ValueFromString("1.00000000")) == 100000000LL);
+    BOOST_CHECK(AmountFromValue(ValueFromString("20999999.9999999")) == 2099999999999990LL);
+    BOOST_CHECK(AmountFromValue(ValueFromString("20999999.99999999")) == 2099999999999999LL);
+}
+
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 BOOST_AUTO_TEST_SUITE_END()

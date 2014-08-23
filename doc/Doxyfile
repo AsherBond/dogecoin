@@ -28,13 +28,21 @@ DOXYFILE_ENCODING      = UTF-8
 # The PROJECT_NAME tag is a single word (or a sequence of words surrounded 
 # by quotes) that should identify the project.
 
+<<<<<<< HEAD
 PROJECT_NAME           = Litecoin
+=======
+PROJECT_NAME           = Dogecoin
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. 
 # This could be handy for archiving the generated documentation or 
 # if some version control system is used.
 
+<<<<<<< HEAD
 PROJECT_NUMBER         = 0.5.0
+=======
+PROJECT_NUMBER         = 1.7.0
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description 
 # for a project that appears at the top of each page and should give viewer 

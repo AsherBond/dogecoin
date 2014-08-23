@@ -1,12 +1,24 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
+<<<<<<< HEAD
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2013-2014 Dogecoin Developers
+=======
+// Copyright (c) 2009-2014 The Bitcoin developers
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "txdb.h"
+<<<<<<< HEAD
 #include "main.h"
 #include "hash.h"
+=======
+
+#include "core.h"
+#include "uint256.h"
+
+#include <stdint.h>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 using namespace std;
 
@@ -24,8 +36,13 @@ void static BatchWriteHashBestChain(CLevelDBBatch &batch, const uint256 &hash) {
 CCoinsViewDB::CCoinsViewDB(size_t nCacheSize, bool fMemory, bool fWipe) : db(GetDataDir() / "chainstate", nCacheSize, fMemory, fWipe) {
 }
 
+<<<<<<< HEAD
 bool CCoinsViewDB::GetCoins(const uint256 &txid, CCoins &coins) { 
     return db.Read(make_pair('c', txid), coins); 
+=======
+bool CCoinsViewDB::GetCoins(const uint256 &txid, CCoins &coins) {
+    return db.Read(make_pair('c', txid), coins);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 bool CCoinsViewDB::SetCoins(const uint256 &txid, const CCoins &coins) {
@@ -35,6 +52,7 @@ bool CCoinsViewDB::SetCoins(const uint256 &txid, const CCoins &coins) {
 }
 
 bool CCoinsViewDB::HaveCoins(const uint256 &txid) {
+<<<<<<< HEAD
     return db.Exists(make_pair('c', txid)); 
 }
 
@@ -56,17 +74,46 @@ bool CCoinsViewDB::SetBestBlock(CBlockIndex *pindex) {
 
 bool CCoinsViewDB::BatchWrite(const std::map<uint256, CCoins> &mapCoins, CBlockIndex *pindex) {
     printf("Committing %u changed transactions to coin database...\n", (unsigned int)mapCoins.size());
+=======
+    return db.Exists(make_pair('c', txid));
+}
+
+uint256 CCoinsViewDB::GetBestBlock() {
+    uint256 hashBestChain;
+    if (!db.Read('B', hashBestChain))
+        return uint256(0);
+    return hashBestChain;
+}
+
+bool CCoinsViewDB::SetBestBlock(const uint256 &hashBlock) {
+    CLevelDBBatch batch;
+    BatchWriteHashBestChain(batch, hashBlock);
+    return db.WriteBatch(batch);
+}
+
+bool CCoinsViewDB::BatchWrite(const std::map<uint256, CCoins> &mapCoins, const uint256 &hashBlock) {
+    LogPrint("coindb", "Committing %u changed transactions to coin database...\n", (unsigned int)mapCoins.size());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     CLevelDBBatch batch;
     for (std::map<uint256, CCoins>::const_iterator it = mapCoins.begin(); it != mapCoins.end(); it++)
         BatchWriteCoins(batch, it->first, it->second);
+<<<<<<< HEAD
     if (pindex)
         BatchWriteHashBestChain(batch, pindex->GetBlockHash());
+=======
+    if (hashBlock != uint256(0))
+        BatchWriteHashBestChain(batch, hashBlock);
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
     return db.WriteBatch(batch);
 }
 
+<<<<<<< HEAD
 CBlockTreeDB::CBlockTreeDB(size_t nCacheSize, bool fMemory, bool fWipe) : CLevelDB(GetDataDir() / "blocks" / "index", nCacheSize, fMemory, fWipe) {
+=======
+CBlockTreeDB::CBlockTreeDB(size_t nCacheSize, bool fMemory, bool fWipe) : CLevelDBWrapper(GetDataDir() / "blocks" / "index", nCacheSize, fMemory, fWipe) {
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 }
 
 bool CBlockTreeDB::WriteBlockIndex(const CDiskBlockIndex& blockindex)
@@ -74,6 +121,7 @@ bool CBlockTreeDB::WriteBlockIndex(const CDiskBlockIndex& blockindex)
     return Write(make_pair('b', blockindex.GetBlockHash()), blockindex);
 }
 
+<<<<<<< HEAD
 bool CBlockTreeDB::ReadBestInvalidWork(CBigNum& bnBestInvalidWork)
 {
     return Read('I', bnBestInvalidWork);
@@ -81,6 +129,11 @@ bool CBlockTreeDB::ReadBestInvalidWork(CBigNum& bnBestInvalidWork)
 
 bool CBlockTreeDB::WriteBestInvalidWork(const CBigNum& bnBestInvalidWork)
 {
+=======
+bool CBlockTreeDB::WriteBestInvalidWork(const CBigNum& bnBestInvalidWork)
+{
+    // Obsolete; only written for backward compatibility.
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     return Write('I', bnBestInvalidWork);
 }
 
@@ -117,9 +170,15 @@ bool CCoinsViewDB::GetStats(CCoinsStats &stats) {
     pcursor->SeekToFirst();
 
     CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
+<<<<<<< HEAD
     stats.hashBlock = GetBestBlock()->GetBlockHash();
     ss << stats.hashBlock;
     int64 nTotalAmount = 0;
+=======
+    stats.hashBlock = GetBestBlock();
+    ss << stats.hashBlock;
+    int64_t nTotalAmount = 0;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     while (pcursor->Valid()) {
         boost::this_thread::interruption_point();
         try {
@@ -136,7 +195,11 @@ bool CCoinsViewDB::GetStats(CCoinsStats &stats) {
                 ssKey >> txhash;
                 ss << txhash;
                 ss << VARINT(coins.nVersion);
+<<<<<<< HEAD
                 ss << (coins.fCoinBase ? 'c' : 'n'); 
+=======
+                ss << (coins.fCoinBase ? 'c' : 'n');
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
                 ss << VARINT(coins.nHeight);
                 stats.nTransactions++;
                 for (unsigned int i=0; i<coins.vout.size(); i++) {
@@ -153,11 +216,19 @@ bool CCoinsViewDB::GetStats(CCoinsStats &stats) {
             }
             pcursor->Next();
         } catch (std::exception &e) {
+<<<<<<< HEAD
             return error("%s() : deserialize error", __PRETTY_FUNCTION__);
         }
     }
     delete pcursor;
     stats.nHeight = GetBestBlock()->nHeight;
+=======
+            return error("%s : Deserialize or I/O error - %s", __PRETTY_FUNCTION__, e.what());
+        }
+    }
+    delete pcursor;
+    stats.nHeight = mapBlockIndex.find(GetBestBlock())->second->nHeight;
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     stats.hashSerialized = ss.GetHash();
     stats.nTotalAmount = nTotalAmount;
     return true;
@@ -223,19 +294,28 @@ bool CBlockTreeDB::LoadBlockIndexGuts()
                 pindexNew->nStatus        = diskindex.nStatus;
                 pindexNew->nTx            = diskindex.nTx;
 
+<<<<<<< HEAD
                 // Watch for genesis block
                 if (pindexGenesisBlock == NULL && diskindex.GetBlockHash() == hashGenesisBlock)
                     pindexGenesisBlock = pindexNew;
 
                 if (!pindexNew->CheckIndex())
                     return error("LoadBlockIndex() : CheckIndex failed: %s", pindexNew->ToString().c_str());
+=======
+                if (!pindexNew->CheckIndex())
+                    return error("LoadBlockIndex() : CheckIndex failed: %s", pindexNew->ToString());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
                 pcursor->Next();
             } else {
                 break; // if shutdown requested or finished loading block index
             }
         } catch (std::exception &e) {
+<<<<<<< HEAD
             return error("%s() : deserialize error", __PRETTY_FUNCTION__);
+=======
+            return error("%s : Deserialize or I/O error - %s", __PRETTY_FUNCTION__, e.what());
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         }
     }
     delete pcursor;

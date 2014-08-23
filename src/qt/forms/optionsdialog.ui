@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>540</width>
     <height>380</height>
+=======
+    <width>560</width>
+    <height>400</height>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,9 +24,12 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
+<<<<<<< HEAD
      <property name="tabPosition">
       <enum>QTabWidget::North</enum>
      </property>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
      <property name="currentIndex">
       <number>0</number>
      </property>
@@ -30,6 +38,170 @@
        <string>&amp;Main</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Main">
+       <item>
+<<<<<<< HEAD
+        <widget class="QLabel" name="transactionFeeInfoLabel">
+         <property name="text">
+          <string>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+=======
+        <widget class="QCheckBox" name="bitcoinAtStartup">
+         <property name="toolTip">
+          <string>Automatically start Dogecoin after logging in to the system.</string>
+         </property>
+         <property name="text">
+          <string>&amp;Start Dogecoin on system login</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
+         </property>
+        </widget>
+       </item>
+       <item>
+<<<<<<< HEAD
+        <layout class="QHBoxLayout" name="horizontalLayout_1_Main">
+         <item>
+          <widget class="QLabel" name="transactionFeeLabel">
+           <property name="text">
+            <string>Pay transaction &amp;fee</string>
+=======
+        <layout class="QHBoxLayout" name="horizontalLayout_2_Main">
+         <item>
+          <widget class="QLabel" name="databaseCacheLabel">
+           <property name="text">
+            <string>Size of &amp;database cache</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
+           </property>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
+           </property>
+           <property name="buddy">
+<<<<<<< HEAD
+            <cstring>transactionFee</cstring>
+=======
+            <cstring>databaseCache</cstring>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
+           </property>
+          </widget>
+         </item>
+         <item>
+<<<<<<< HEAD
+          <widget class="BitcoinAmountField" name="transactionFee"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_1_Main">
+=======
+          <widget class="QSpinBox" name="databaseCache"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="databaseCacheUnitLabel">
+           <property name="text">
+            <string>MB</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2_Main">
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+<<<<<<< HEAD
+        <widget class="QCheckBox" name="bitcoinAtStartup">
+         <property name="toolTip">
+          <string>Automatically start Dogecoin after logging in to the system.</string>
+         </property>
+         <property name="text">
+          <string>&amp;Start Dogecoin on system login</string>
+         </property>
+        </widget>
+=======
+        <layout class="QHBoxLayout" name="horizontalLayout_3_Main">
+         <item>
+          <widget class="QLabel" name="threadsScriptVerifLabel">
+           <property name="text">
+            <string>Number of script &amp;verification threads</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
+           </property>
+           <property name="buddy">
+            <cstring>threadsScriptVerif</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="threadsScriptVerif">
+           <property name="toolTip">
+            <string>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</string>
+           </property>
+           <property name="minimum">
+            <number>-16</number>
+           </property>
+           <property name="maximum">
+            <number>16</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3_Main">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
+       </item>
+       <item>
+        <spacer name="verticalSpacer_Main">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+<<<<<<< HEAD
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2_Main">
+         <item>
+          <spacer name="horizontalSpacer_2_Main">
+=======
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabWallet">
+      <attribute name="title">
+       <string>W&amp;allet</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_Wallet">
        <item>
         <widget class="QLabel" name="transactionFeeInfoLabel">
          <property name="text">
@@ -44,7 +216,7 @@
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_1_Main">
+        <layout class="QHBoxLayout" name="horizontalLayout_1_Wallet">
          <item>
           <widget class="QLabel" name="transactionFeeLabel">
            <property name="text">
@@ -62,7 +234,8 @@
           <widget class="BitcoinAmountField" name="transactionFee"/>
          </item>
          <item>
-          <spacer name="horizontalSpacer_1_Main">
+          <spacer name="horizontalSpacer_1_Wallet">
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -74,46 +247,7 @@
            </property>
           </spacer>
          </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="bitcoinAtStartup">
-         <property name="toolTip">
-          <string>Automatically start Dogecoin after logging in to the system.</string>
-         </property>
-         <property name="text">
-          <string>&amp;Start Dogecoin on system login</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_Main">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2_Main">
-         <item>
-          <spacer name="horizontalSpacer_2_Main">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
+<<<<<<< HEAD
          <item>
           <widget class="QPushButton" name="resetButton">
            <property name="toolTip">
@@ -129,6 +263,43 @@
          </item>
         </layout>
        </item>
+=======
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="spendZeroConfChangeInfoLabel">
+         <property name="text">
+          <string>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="spendZeroConfChange">
+         <property name="text">
+          <string>&amp;Spend unconfirmed change (experts only)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_Wallet">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
       </layout>
      </widget>
      <widget class="QWidget" name="tabNetwork">
@@ -149,15 +320,26 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
+<<<<<<< HEAD
           <string>Connect to the Dogecoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS proxy:</string>
+=======
+          <string>Connect to the Dogecoin network through a SOCKS proxy.</string>
+         </property>
+         <property name="text">
+          <string>&amp;Connect through SOCKS proxy (default proxy):</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
         </widget>
        </item>
        <item>
+<<<<<<< HEAD
         <layout class="QHBoxLayout" name="horizontalLayout_Network">
+=======
+        <layout class="QHBoxLayout" name="horizontalLayout_1_Network">
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          <item>
           <widget class="QLabel" name="proxyIpLabel">
            <property name="text">
@@ -173,6 +355,15 @@
          </item>
          <item>
           <widget class="QValidatedLineEdit" name="proxyIp">
+<<<<<<< HEAD
+=======
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            <property name="maximumSize">
             <size>
              <width>140</width>
@@ -180,7 +371,11 @@
             </size>
            </property>
            <property name="toolTip">
+<<<<<<< HEAD
             <string>IP address of the proxy (e.g. 127.0.0.1)</string>
+=======
+            <string>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            </property>
           </widget>
          </item>
@@ -199,6 +394,15 @@
          </item>
          <item>
           <widget class="QLineEdit" name="proxyPort">
+<<<<<<< HEAD
+=======
+           <property name="minimumSize">
+            <size>
+             <width>55</width>
+             <height>0</height>
+            </size>
+           </property>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            <property name="maximumSize">
             <size>
              <width>55</width>
@@ -231,7 +435,11 @@
           </widget>
          </item>
          <item>
+<<<<<<< HEAD
           <spacer name="horizontalSpacer_Network">
+=======
+          <spacer name="horizontalSpacer_1_Network">
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
@@ -369,7 +577,11 @@
           <string>Whether to show coin control features or not.</string>
          </property>
          <property name="text">
+<<<<<<< HEAD
           <string>Display coin &amp;control features (experts only!)</string>
+=======
+          <string>Display coin &amp;control features (experts only)</string>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
          </property>
         </widget>
        </item>
@@ -391,8 +603,72 @@
     </widget>
    </item>
    <item>
+<<<<<<< HEAD
     <layout class="QHBoxLayout" name="horizontalLayout_Buttons">
      <item>
+=======
+    <widget class="QFrame" name="frame">
+     <layout class="QVBoxLayout" name="verticalLayout_Bottom">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_Bottom">
+        <item>
+         <widget class="QLabel" name="overriddenByCommandLineInfoLabel">
+          <property name="text">
+           <string>Active command-line options that override above options:</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::PlainText</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_Bottom">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="overriddenByCommandLineLabel">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_Buttons">
+     <item>
+      <widget class="QPushButton" name="resetButton">
+       <property name="toolTip">
+        <string>Reset all client options to default.</string>
+       </property>
+       <property name="text">
+        <string>&amp;Reset Options</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
       <spacer name="horizontalSpacer_1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -407,6 +683,15 @@
      </item>
      <item>
       <widget class="QLabel" name="statusLabel">
+<<<<<<< HEAD
+=======
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
        <property name="font">
         <font>
          <weight>75</weight>
@@ -454,6 +739,7 @@
        </property>
       </widget>
      </item>
+<<<<<<< HEAD
      <item>
       <widget class="QPushButton" name="applyButton">
        <property name="text">
@@ -464,6 +750,8 @@
        </property>
       </widget>
      </item>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </layout>
    </item>
   </layout>
@@ -471,6 +759,7 @@
  <customwidgets>
   <customwidget>
    <class>BitcoinAmountField</class>
+<<<<<<< HEAD
    <extends>QSpinBox</extends>
    <header>bitcoinamountfield.h</header>
   </customwidget>
@@ -478,12 +767,25 @@
    <class>QValueComboBox</class>
    <extends>QComboBox</extends>
    <header>qvaluecombobox.h</header>
+=======
+   <extends>QLineEdit</extends>
+   <header>bitcoinamountfield.h</header>
+   <container>1</container>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
   </customwidget>
   <customwidget>
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qvalidatedlineedit.h</header>
   </customwidget>
+<<<<<<< HEAD
+=======
+  <customwidget>
+   <class>QValueComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qvaluecombobox.h</header>
+  </customwidget>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
  </customwidgets>
  <resources/>
  <connections/>

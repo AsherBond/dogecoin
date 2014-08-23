@@ -1,4 +1,5 @@
 // Copyright (c) 2012 The Bitcoin developers
+<<<<<<< HEAD
 // Copyright (c) 2013-2014 Dogecoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,6 +8,16 @@
 
 #include <map>
 #include <deque>
+=======
+// Distributed under the MIT/X11 software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+#ifndef BITCOIN_LIMITEDMAP_H
+#define BITCOIN_LIMITEDMAP_H
+
+#include <assert.h> // TODO: remove
+#include <map>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 
 /** STL-like map container that only keeps the N elements with the highest value. */
 template <typename K, typename V> class limitedmap

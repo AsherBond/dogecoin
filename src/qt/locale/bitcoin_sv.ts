@@ -1,9 +1,13 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.0">
+<<<<<<< HEAD
 <defaultcodec>UTF-8</defaultcodec>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
+<<<<<<< HEAD
         <source>About Dogecoin</source>
         <translation>Om Dogecoin</translation>
     </message>
@@ -11,6 +15,15 @@
         <location line="+39"/>
         <source>&lt;b&gt;Dogecoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Dogecoin&lt;/b&gt;-version</translation>
+=======
+        <source>About Dogecoin Core</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+57"/>
@@ -29,12 +42,17 @@ Distribuerad under mjukvarulicensen MIT/X11, se den medföljande filen COPYING e
 Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användning i OpenSSL Toolkit (http://www.openssl.org/) och kryptografisk mjukvara utvecklad av Eric Young (eay@cryptsoft.com) samt UPnP-mjukvara skriven av Thomas Bernard.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../aboutdialog.cpp" line="+14"/>
+=======
+        <location filename="../utilitydialog.cpp" line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copyright</source>
         <translation>Copyright</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>The Bitcoin developers</source>
         <translation type="unfinished"/>
     </message>
@@ -48,16 +66,25 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <source>2013-%1 The Dogecoin developers</source>
         <translation>2013-%1 Dogecoin-utvecklarna</translation>
     </message>
+=======
+        <source>The Dogecoin Core developers</source>
+        <translation type="unfinished"/>
+    </message>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
 </context>
 <context>
     <name>AddressBookPage</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>Address Book</source>
         <translation>Adressbok</translation>
     </message>
     <message>
         <location line="+19"/>
+=======
+        <location filename="../forms/addressbookpage.ui" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Double-click to edit address or label</source>
         <translation>Dubbel-klicka för att ändra adressen eller etiketten</translation>
     </message>
@@ -67,11 +94,21 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Skapa ny adress</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+3"/>
+        <source>&amp;New</source>
+        <translation>&amp;Ny</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Kopiera den markerade adressen till systemets Urklipp</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-11"/>
         <source>&amp;New Address</source>
         <translation>&amp;Ny adress</translation>
@@ -83,10 +120,24 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
+=======
+        <location line="+3"/>
+        <source>&amp;Copy</source>
+        <translation>&amp;Kopiera</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>C&amp;lose</source>
+        <translation>S&amp;täng</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="+74"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Copy Address</source>
         <translation>&amp;Kopiera adress</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+11"/>
         <source>Show &amp;QR Code</source>
         <translation>Visa &amp;QR-kod</translation>
@@ -103,6 +154,9 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+25"/>
+=======
+        <location filename="../forms/addressbookpage.ui" line="-41"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Delete the currently selected address from the list</source>
         <translation>Ta bort den valda adressen från listan</translation>
     </message>
@@ -117,6 +171,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Exportera</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Dogecoin address</source>
         <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade Dogecoin-adressen</translation>
@@ -133,11 +188,53 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
+=======
+        <location line="-27"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Radera</translation>
+    </message>
+    <message>
+        <location filename="../addressbookpage.cpp" line="-30"/>
+        <source>Choose the address to send coins to</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose the address to receive coins with</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>C&amp;hoose</source>
+        <translation>V&amp;älj</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Very sending addresses</source>
+        <translation>Avsändaradresser</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Much receiving addresses</source>
+        <translation>Mottagaradresser</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Detta är dina Dogecoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Dogecoins.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="+4"/>
+        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Copy &amp;Label</source>
         <translation>Kopiera &amp;etikett</translation>
     </message>
@@ -147,6 +244,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Editera</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send &amp;Coins</source>
         <translation>Skicka &amp;Dogecoins</translation>
@@ -155,6 +253,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <location line="+260"/>
         <source>Export Address Book Data</source>
         <translation>Exportera Adressbok</translation>
+=======
+        <location line="+194"/>
+        <source>Export Address List</source>
+        <translation>Exportera adresslistan</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -163,6 +266,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+13"/>
+<<<<<<< HEAD
         <source>Error exporting</source>
         <translation>Fel vid export</translation>
     </message>
@@ -170,12 +274,25 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <location line="+0"/>
         <source>Could not write to file %1.</source>
         <translation>Kunde inte skriva till filen %1.</translation>
+=======
+        <source>Exporting Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>There was an error trying to save the address list to %1.</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../addresstablemodel.cpp" line="+144"/>
+=======
+        <location filename="../addresstablemodel.cpp" line="+168"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Label</source>
         <translation>Etikett</translation>
     </message>
@@ -213,7 +330,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Upprepa nytt lösenord</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../askpassphrasedialog.cpp" line="+33"/>
+=======
+        <location filename="../askpassphrasedialog.cpp" line="+40"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Ange plånbokens nya lösenord. &lt;br/&gt; Använd ett lösenord på &lt;b&gt;10 eller fler slumpmässiga tecken,&lt;/b&gt; eller &lt;b&gt;åtta eller fler ord.&lt;/b&gt;</translation>
     </message>
@@ -286,7 +407,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-56"/>
+<<<<<<< HEAD
         <source>Dogecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
+=======
+        <source>Dogecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -334,22 +459,43 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
 <context>
     <name>BitcoinGUI</name>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoingui.cpp" line="+233"/>
+=======
+        <location filename="../bitcoingui.cpp" line="+295"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Sign &amp;message...</source>
         <translation>Signera &amp;meddelande...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+280"/>
+=======
+        <location line="+335"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Synchronizing with network...</source>
         <translation>Synkroniserar med nätverk...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-349"/>
+=======
+        <location line="-407"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Overview</source>
         <translation>&amp;Översikt</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="-137"/>
+        <source>Node</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+138"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Show general overview of wallet</source>
         <translation>Visa översiktsvy av plånbok</translation>
     </message>
@@ -364,6 +510,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Bläddra i transaktionshistorik</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
         <source>Edit the list of stored addresses and labels for sending</source>
         <translation>Redigera listan med lagrade adresser och etiketter</translation>
@@ -375,6 +522,9 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+31"/>
+=======
+        <location line="+17"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>E&amp;xit</source>
         <translation>&amp;Avsluta</translation>
     </message>
@@ -384,17 +534,30 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Avsluta programmet</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Show information about Dogecoin</source>
         <translation>Visa information om Dogecoin</translation>
     </message>
     <message>
+=======
+        <location line="+7"/>
+        <source>Show information about Dogecoin Core</source>
+        <translation>Visa information om Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>About &amp;Qt</source>
         <translation>Om &amp;Qt</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Show information about Qt</source>
         <translation>Visa information om Qt</translation>
     </message>
@@ -404,7 +567,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Alternativ...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Encrypt Wallet...</source>
         <translation>&amp;Kryptera plånbok...</translation>
     </message>
@@ -419,7 +586,26 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Byt Lösenord...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+285"/>
+=======
+        <location line="+10"/>
+        <source>Very &amp;sending addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Much &amp;receiving addresses...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open &amp;URI...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+325"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Importing blocks from disk...</source>
         <translation>Importerar block från disk...</translation>
     </message>
@@ -429,17 +615,29 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Återindexerar block på disken...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-347"/>
+=======
+        <location line="-405"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send coins to a Dogecoin address</source>
         <translation>Skicka mynt till en Dogecoin-adress</translation>
     </message>
     <message>
         <location line="+49"/>
+<<<<<<< HEAD
         <source>Modify configuration options for Dogecoin</source>
         <translation>Ändra konfigurationsalternativ för Dogecoin</translation>
     </message>
     <message>
         <location line="+9"/>
+=======
+        <source>Modify configuration options for Dogecoin Core</source>
+        <translation>Ändra konfigurationsalternativ för Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup wallet to another location</source>
         <translation>Säkerhetskopiera plånboken till en annan plats</translation>
     </message>
@@ -464,18 +662,30 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Verifiera meddelande...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-165"/>
         <location line="+530"/>
+=======
+        <location line="+430"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin</source>
         <translation>Dogecoin</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-530"/>
+=======
+        <location line="-643"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet</source>
         <translation>Plånbok</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+101"/>
+=======
+        <location line="+146"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Send</source>
         <translation>&amp;Skicka</translation>
     </message>
@@ -485,6 +695,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>&amp;Ta emot</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
         <source>&amp;Addresses</source>
         <translation>&amp;Adresser</translation>
@@ -496,6 +707,10 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+9"/>
+=======
+        <location line="+46"/>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Show / Hide</source>
         <translation>&amp;Visa / Göm</translation>
     </message>
@@ -520,38 +735,109 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade Dogecoin-adressen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;File</source>
         <translation>&amp;Arkiv</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+14"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Settings</source>
         <translation>&amp;Inställningar</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Help</source>
         <translation>&amp;Hjälp</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+9"/>
+=======
+        <location line="+15"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Tabs toolbar</source>
         <translation>Verktygsfält för Tabbar</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
         <location line="+10"/>
+=======
+        <location line="-284"/>
+        <location line="+376"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+47"/>
+=======
+        <location line="-401"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Kärna</translation>
+    </message>
+    <message>
+        <location line="+163"/>
+        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+2"/>
+        <source>&amp;About Dogecoin Core</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Visa listan av använda avsändaradresser och etiketter</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open a dogecoin: URI or payment request</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the Dogecoin Core help message to get a list with possible Dogecoin Core command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+159"/>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Dogecoin client</source>
         <translation>Dogecoin-klient</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+141"/>
+=======
+        <location line="+142"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%n active connection(s) to Dogecoin network</source>
         <translation><numerusform>%n aktiv anslutning till Dogecoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till Dogecoin-nätverket</numerusform></translation>
     </message>
@@ -571,7 +857,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Bearbetat %1 block i transaktionshistoriken.</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+20"/>
+=======
+        <location line="+23"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%n hour(s)</source>
         <translation><numerusform>%n timme</numerusform><numerusform>%n timmar</numerusform></translation>
     </message>
@@ -591,7 +881,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>%1 efter</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+21"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Last received block was generated %1 ago.</source>
         <translation>Senast mottagna block genererades %1 sen.</translation>
     </message>
@@ -601,7 +895,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Transaktioner efter denna kommer inte ännu vara synliga.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+22"/>
+=======
+        <location line="+27"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error</source>
         <translation>Fel</translation>
     </message>
@@ -616,27 +914,39 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Information</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
         <translation>Transaktionen överskrider storleksgränsen. Du kan dock fortfarande skicka den mot en kostnad av %1, som går till noderna som behandlar din transaktion och bidrar till nätverket. Vill du betala denna avgift?</translation>
     </message>
     <message>
         <location line="-140"/>
+=======
+        <location line="-85"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Up to date</source>
         <translation>Uppdaterad</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+31"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Catching up...</source>
         <translation>Hämtar senaste...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+113"/>
         <source>Confirm transaction fee</source>
         <translation>Bekräfta överföringsavgift</translation>
     </message>
     <message>
         <location line="+8"/>
+=======
+        <location line="+130"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Sent transaction</source>
         <translation>Transaktion skickad</translation>
     </message>
@@ -659,6 +969,7 @@ Adress: %4
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+33"/>
         <location line="+23"/>
         <source>URI handling</source>
@@ -672,6 +983,9 @@ Adress: %4
     </message>
     <message>
         <location line="+17"/>
+=======
+        <location line="+69"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Denna plånbok är &lt;b&gt;krypterad&lt;/b&gt; och för närvarande &lt;b&gt;olåst&lt;/b&gt;</translation>
     </message>
@@ -681,20 +995,30 @@ Adress: %4
         <translation>Denna plånbok är &lt;b&gt;krypterad&lt;/b&gt; och för närvarande &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../bitcoin.cpp" line="+111"/>
         <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+=======
+        <location filename="../bitcoin.cpp" line="+438"/>
+        <source>A fatal error occurred. Dogecoin Core can no longer continue safely and will quit.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>Ett allvarligt fel har uppstått. Dogecoin kan inte längre köras säkert och kommer att avslutas.</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../clientmodel.cpp" line="+104"/>
+=======
+        <location filename="../clientmodel.cpp" line="+119"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Network Alert</source>
         <translation>Nätverkslarm</translation>
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>EditAddressDialog</name>
     <message>
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
@@ -782,10 +1106,424 @@ Adress: %4
     </message>
     <message>
         <location line="+1"/>
+=======
+    <name>CoinControlDialog</name>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="+14"/>
+        <source>Coin Control Address Selection</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Quantity:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Bytes:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Amount:</source>
+        <translation>Belopp:</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Priority:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Change:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>(un)select all</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Tree mode</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>List mode</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Amount</source>
+        <translation>Mängd</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Address</source>
+        <translation>Adress</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Confirmations</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Confirmed</source>
+        <translation>Bekräftad</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Priority</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../coincontroldialog.cpp" line="+42"/>
+        <source>Copy address</source>
+        <translation>Kopiera adress</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy label</source>
+        <translation>Kopiera etikett</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+26"/>
+        <source>Copy amount</source>
+        <translation>Kopiera belopp</translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Copy transaction ID</source>
+        <translation>Kopiera transaktions ID</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lock unspent</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unlock unspent</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+323"/>
+        <source>highest</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>higher</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>high</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium-high</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>medium</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>low-medium</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>low</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lower</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>lowest</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>(%1 locked)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>none</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Dust</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>yes</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>no</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+5"/>
+        <source>This means a fee of at least %1 per kB is required.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-4"/>
+        <source>Can vary +/- 1 byte per input.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Transactions with higher priority are more likely to get included into a block.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+4"/>
+        <source>This means a fee of at least %1 is required.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-3"/>
+        <source>Amounts below 0.546 times the minimum relay fee are shown as dust.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>This label turns red, if the change is smaller than %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <location line="+66"/>
+        <source>(no label)</source>
+        <translation>(Ingen etikett)</translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>change from %1 (%2)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>(change)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>EditAddressDialog</name>
+    <message>
+        <location filename="../forms/editaddressdialog.ui" line="+14"/>
+        <source>Edit Address</source>
+        <translation>Redigera Adress</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Label</source>
+        <translation>&amp;Etikett</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>The label associated with this address list entry</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>&amp;Address</source>
+        <translation>&amp;Adress</translation>
+    </message>
+    <message>
+        <location filename="../editaddressdialog.cpp" line="+28"/>
+        <source>New receiving address</source>
+        <translation>Ny mottagaradress</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>New sending address</source>
+        <translation>Ny avsändaradress</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Edit receiving address</source>
+        <translation>Redigera mottagaradress</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Edit sending address</source>
+        <translation>Redigera avsändaradress</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>The entered address &quot;%1&quot; is already in the address book.</source>
+        <translation>Den angivna adressen &quot;%1&quot; finns redan i adressboken.</translation>
+    </message>
+    <message>
+        <location line="-5"/>
+        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <translation>Den angivna adressen &quot;%1&quot; är inte en giltig Dogecoin-adress.</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Could not unlock wallet.</source>
+        <translation>Plånboken kunde inte låsas upp.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>New key generation failed.</source>
+        <translation>Misslyckades med generering av ny nyckel.</translation>
+    </message>
+</context>
+<context>
+    <name>FreespaceChecker</name>
+    <message>
+        <location filename="../intro.cpp" line="+65"/>
+        <source>A new data directory will be created.</source>
+        <translation>En ny datakatalog kommer att skapas.</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>name</source>
+        <translation>namn</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
+        <translation>Katalogen finns redan. Läggtill %1 om du vill skapa en ny katalog här.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Path already exists, and is not a directory.</source>
+        <translation>Sökvägen finns redan, och är inte en katalog.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Cannot create data directory here.</source>
+        <translation>Kan inte skapa datakatalog här.</translation>
+    </message>
+</context>
+<context>
+    <name>HelpMessageDialog</name>
+    <message>
+        <location filename="../forms/helpmessagedialog.ui" line="+19"/>
+        <source>Dogecoin Core - Command-line options</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+38"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Kärna</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>version</source>
+        <translation>version</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Usage:</source>
+        <translation>Användning:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>command-line options</source>
         <translation>kommandoradsalternativ</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>UI options</source>
         <translation>UI alternativ</translation>
@@ -1305,6 +2043,1032 @@ Adress: %4
     </message>
     <message>
         <location line="+50"/>
+=======
+        <location line="+4"/>
+        <source>UI options</source>
+        <translation>UI alternativ</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
+        <translation>Ändra språk, till exempel &quot;de_DE&quot; (förvalt: systemets språk)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Start minimized</source>
+        <translation>Starta som minimerad</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show splash screen on startup (default: 1)</source>
+        <translation>Visa startbilden vid uppstart (förvalt: 1)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose data directory on startup (default: 0)</source>
+        <translation>Välj datakatalog vid uppstart (förvalt: 0)</translation>
+    </message>
+</context>
+<context>
+    <name>Intro</name>
+    <message>
+        <location filename="../forms/intro.ui" line="+14"/>
+        <source>Welcome</source>
+        <translation>Välkommen</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Welcome to Dogecoin Core.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Use the default data directory</source>
+        <translation>Använd den förvalda datakatalogen</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use a custom data directory:</source>
+        <translation>Använd en anpassad datakatalog:</translation>
+    </message>
+    <message>
+        <location filename="../intro.cpp" line="+85"/>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
+        <translation>Fel: Den angivna datakatalogen &quot;%1&quot; kan inte skapas.</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Error</source>
+        <translation>Fel</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>GB of free space available</source>
+        <translation>GB ledigt utrymme är tillgängligt</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>(of %1GB needed)</source>
+        <translation>(av %1GB behövs)</translation>
+    </message>
+</context>
+<context>
+    <name>OpenURIDialog</name>
+    <message>
+        <location filename="../forms/openuridialog.ui" line="+14"/>
+        <source>Open URI</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Open payment request from URI or file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>URI:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select payment request file</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../openuridialog.cpp" line="+47"/>
+        <source>Select payment request file to open</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <location filename="../forms/optionsdialog.ui" line="+14"/>
+        <source>Options</source>
+        <translation>Alternativ</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>&amp;Main</source>
+        <translation>&amp;Allmänt</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
+        <translation>Valfri transaktionsavgift per kB som ser till att dina transaktioner behandlas snabbt. De flesta transaktioner är 1 kB.</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Pay transaction &amp;fee</source>
+        <translation>Betala överförings&amp;avgift</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Automatically start Dogecoin Core after logging in to the system.</source>
+        <translation>Starta Dogecoin automatiskt efter inloggning.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Start Dogecoin Core on system login</source>
+        <translation>&amp;Starta Dogecoin vid systemstart</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Size of &amp;database cache</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation>Sätt databas cache storleken i megabyte (förvalt: 25)</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>MB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Number of script &amp;verification threads</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
+        <translation>Ange antalet skriptkontrolltrådar (upp till 16, 0 = auto, &lt;0 = lämna så många kärnor lediga, förval: 0)</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy (default proxy):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+224"/>
+        <source>Active command-line options that override above options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Reset all client options to default.</source>
+        <translation>Återställ alla klient inställningar till förvalen.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Återställ Alternativ</translation>
+    </message>
+    <message>
+        <location line="-323"/>
+        <source>&amp;Network</source>
+        <translation>&amp;Nätverk</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Dogecoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Tilldela port med hjälp av &amp;UPnP</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Proxy &amp;IP:</source>
+        <translation>Proxy-&amp;IP: </translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>&amp;Port:</source>
+        <translation>&amp;Port: </translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxyns port (t.ex. 9050)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>SOCKS &amp;Version:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>SOCKS version av proxyn (t.ex. 5)</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Window</source>
+        <translation>&amp;Fönster</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>Visa endast en systemfältsikon vid minimering.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimera till systemfältet istället för aktivitetsfältet</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>Minimera applikationen istället för att stänga ner den när fönstret stängs. Detta innebär att programmet fotrsätter att köras tills du väljer Avsluta i menyn.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>M&amp;inimize on close</source>
+        <translation>M&amp;inimera vid stängning</translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>&amp;Display</source>
+        <translation>&amp;Visa</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>User Interface &amp;language:</source>
+        <translation>Användargränssnittets &amp;språk: </translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin Core.</source>
+        <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av Dogecoin.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Måttenhet att visa belopp i: </translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Välj en måttenhet att visa när du skickar mynt.</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
+        <translation>Anger om Dogecoin-adresser skall visas i transaktionslistan.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>&amp;Visa adresser i transaktionslistan</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Whether to show coin control features or not.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display coin &amp;control features (experts only)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+136"/>
+        <source>&amp;OK</source>
+        <translation>&amp;OK</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Cancel</source>
+        <translation>&amp;Avbryt</translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.cpp" line="+67"/>
+        <source>default</source>
+        <translation>standard</translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>none</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+75"/>
+        <source>Confirm options reset</source>
+        <translation>Bekräfta att alternativen ska återställs</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+29"/>
+        <source>Client restart required to activate changes.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-29"/>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>This change would require a client restart.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>The supplied proxy address is invalid.</source>
+        <translation>Den medföljande proxy adressen är ogiltig.</translation>
+    </message>
+</context>
+<context>
+    <name>OverviewPage</name>
+    <message>
+        <location filename="../forms/overviewpage.ui" line="+14"/>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location line="+231"/>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Dogecoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+    </message>
+    <message>
+        <location line="-155"/>
+        <source>Unconfirmed:</source>
+        <translation>Obekräftade:</translation>
+    </message>
+    <message>
+        <location line="-83"/>
+        <source>Wallet</source>
+        <translation>Plånbok</translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Confirmed:</source>
+        <translation>Bekräftade:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current spendable balance</source>
+        <translation>Ditt tillgängliga saldo</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation>Totalt antal transaktioner som ännu inte bekräftats, och som ännu inte räknas med i aktuellt saldo</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Immature:</source>
+        <translation>Omogen:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Mined balance that has not yet matured</source>
+        <translation>Den genererade balansen som ännu inte har mognat</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Total:</source>
+        <translation>Totalt:</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Your current total balance</source>
+        <translation>Ditt nuvarande totala saldo</translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>&lt;b&gt;Recent transactions&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Nyligen genomförda transaktioner&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../overviewpage.cpp" line="+120"/>
+        <location line="+1"/>
+        <source>out of sync</source>
+        <translation>osynkroniserad</translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <location filename="../paymentserver.cpp" line="+403"/>
+        <location line="+13"/>
+        <source>URI handling</source>
+        <translation>URI hantering</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig Dogecoin-adress eller felaktiga URI parametrar.</translation>
+    </message>
+    <message>
+        <location line="+96"/>
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-221"/>
+        <location line="+212"/>
+        <location line="+13"/>
+        <location line="+95"/>
+        <location line="+18"/>
+        <location line="+16"/>
+        <source>Payment request error</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-353"/>
+        <source>Cannot start dogecoin: click-to-pay handler</source>
+        <translation>Kan inte starta dogecoin: klicka-och-betala handhavare</translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Net manager warning</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Your active proxy doesn&apos;t support SOCKS5, which is required for payment requests via proxy.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Payment request fetch URL is invalid: %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Payment request file handling</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Payment request file can not be read or processed! This can be caused by an invalid payment request file.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Refund from %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Error communicating with %1: %2</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Payment request can not be parsed or processed!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Bad response from server %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Payment acknowledged</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Network request error</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../bitcoin.cpp" line="+71"/>
+        <location line="+11"/>
+        <source>Dogecoin</source>
+        <translation>Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
+        <translation>Fel: Den angivna datakatalogen &quot;%1&quot; finns inte.</translation>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+36"/>
+        <source>&amp;Save Image...</source>
+        <translation>&amp;Spara Bild...</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Copy Image</source>
+        <translation>&amp;Kopiera Bild</translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Save QR Code</source>
+        <translation>Spara QR-kod</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>PNG Image (*.png)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>RPCConsole</name>
+    <message>
+        <location filename="../forms/rpcconsole.ui" line="+46"/>
+        <source>Client name</source>
+        <translation>Klientnamn</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+23"/>
+        <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location filename="../rpcconsole.cpp" line="+359"/>
+        <source>N/A</source>
+        <translation>ej tillgänglig</translation>
+    </message>
+    <message>
+        <location line="-223"/>
+        <source>Client version</source>
+        <translation>Klient-version</translation>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>&amp;Information</source>
+        <translation>&amp;Information</translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>Debug window</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>General</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Using OpenSSL version</source>
+        <translation>Använder OpenSSL version</translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Startup time</source>
+        <translation>Uppstartstid</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Network</source>
+        <translation>Nätverk</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Name</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Number of connections</source>
+        <translation>Antalet anslutningar</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Block chain</source>
+        <translation>Blockkedja</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Current number of blocks</source>
+        <translation>Aktuellt antal block</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Estimated total blocks</source>
+        <translation>Beräknade totala block</translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Last block time</source>
+        <translation>Sista blocktid</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Open</source>
+        <translation>&amp;Öppna</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>&amp;Console</source>
+        <translation>&amp;Konsol</translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>&amp;Network Traffic</source>
+        <translation>&amp;Nätverkstrafik</translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>&amp;Clear</source>
+        <translation>&amp;Rensa</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Totals</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>In:</source>
+        <translation>In:</translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>Out:</source>
+        <translation>Ut:</translation>
+    </message>
+    <message>
+        <location line="-521"/>
+        <source>Build date</source>
+        <translation>Kompileringsdatum</translation>
+    </message>
+    <message>
+        <location line="+206"/>
+        <source>Debug log file</source>
+        <translation>Debugloggfil</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open the Dogecoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna Dogecoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Clear console</source>
+        <translation>Rensa konsollen</translation>
+    </message>
+    <message>
+        <location filename="../rpcconsole.cpp" line="-30"/>
+        <source>Welcome to the Dogecoin Core RPC console.</source>
+        <translation>Välkommen till Dogecoin RPC-konsollen.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Använd upp- och ner-pilarna för att navigera i historiken, och &lt;b&gt;Ctrl-L&lt;/b&gt; för att rensa skärmen.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Skriv &lt;b&gt;help&lt;/b&gt; för en översikt av alla kommandon.</translation>
+    </message>
+    <message>
+        <location line="+122"/>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 h %2 m</source>
+        <translation>%1 h %2 m</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    <message>
+        <location filename="../forms/receivecoinsdialog.ui" line="+83"/>
+        <source>&amp;Amount:</source>
+        <translation>%Belopp:</translation>
+    </message>
+    <message>
+        <location line="-13"/>
+        <source>&amp;Label:</source>
+        <translation>&amp;Etikett:</translation>
+    </message>
+    <message>
+        <location line="-34"/>
+        <source>&amp;Message:</source>
+        <translation>&amp;Meddelande:</translation>
+    </message>
+    <message>
+        <location line="-17"/>
+        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>R&amp;euse an existing receiving address (not recommended)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>An optional label to associate with the new receiving address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Clear all fields of the form.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Clear</source>
+        <translation>Rensa</translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Request payment</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Requested payments</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Show the selected request (does the same as double clicking an entry)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Show</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Remove the selected entries from the list</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Remove</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <location filename="../forms/receiverequestdialog.ui" line="+29"/>
+        <source>QR Code</source>
+        <translation>QR-kod</translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Copy &amp;URI</source>
+        <translation>Kopiera &amp;URI</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Copy &amp;Address</source>
+        <translation>Kopiera &amp;Adress</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Save Image...</source>
+        <translation>&amp;Spara Bild...</translation>
+    </message>
+    <message>
+        <location filename="../receiverequestdialog.cpp" line="+56"/>
+        <source>Request payment to %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Payment information</source>
+        <translation>Betalningsinformation</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>URI</source>
+        <translation>URI</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Address</source>
+        <translation>Adress</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Amount</source>
+        <translation>Mängd</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Label</source>
+        <translation>Etikett</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Message</source>
+        <translation>Meddelande</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>URI:n är för lång, försöka minska texten för etikett / meddelande.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Fel vid skapande av QR-kod från URI.</translation>
+    </message>
+</context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <location filename="../recentrequeststablemodel.cpp" line="+24"/>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Label</source>
+        <translation>Etikett</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Message</source>
+        <translation>Meddelande</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Amount</source>
+        <translation>Mängd</translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>(no label)</source>
+        <translation>(Ingen etikett)</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>(no message)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>SendCoinsDialog</name>
+    <message>
+        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
+        <location filename="../sendcoinsdialog.cpp" line="+381"/>
+        <location line="+80"/>
+        <source>Send Coins</source>
+        <translation>Skicka pengar</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Coin Control Features</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Inputs...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>automatically selected</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Insufficient funds!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Quantity:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Bytes:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Amount:</source>
+        <translation>Belopp:</translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Priority:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Low Output:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>After Fee:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Change:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Custom change address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+115"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send to multiple recipients at once</source>
         <translation>Skicka till flera mottagare samtidigt</translation>
     </message>
@@ -1315,8 +3079,13 @@ Adress: %4
     </message>
     <message>
         <location line="+20"/>
+<<<<<<< HEAD
         <source>Remove all transaction fields</source>
         <translation>Ta bort alla transaktions-fält</translation>
+=======
+        <source>Clear all fields of the form.</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -1329,12 +3098,16 @@ Adress: %4
         <translation>Balans:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+10"/>
         <source>123.456 DOGE</source>
         <translation>123,456 DOGE</translation>
     </message>
     <message>
         <location line="+31"/>
+=======
+        <location line="+41"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirm the send action</source>
         <translation>Bekräfta sändordern</translation>
     </message>
@@ -1344,6 +3117,7 @@ Adress: %4
         <translation>&amp;Skicka</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../sendcoinsdialog.cpp" line="-59"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; till %2 (%3)</translation>
@@ -1365,30 +3139,118 @@ Adress: %4
     </message>
     <message>
         <location line="+23"/>
+=======
+        <location filename="../sendcoinsdialog.cpp" line="-228"/>
+        <source>Confirm send coins</source>
+        <translation>Bekräfta skickade mynt</translation>
+    </message>
+    <message>
+        <location line="-74"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+4"/>
+        <source>%1 to %2</source>
+        <translation>%1 till %2</translation>
+    </message>
+    <message>
+        <location line="-136"/>
+        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Ange en Dogecoin-adress (t.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Copy quantity</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy amount</source>
+        <translation>Kopiera belopp</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy after fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy bytes</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy priority</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy low output</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy change</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+170"/>
+        <source>Total Amount %1 (= %2)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>or</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+202"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Mottagarens adress är inte giltig, vänligen kontrollera igen.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The amount to pay must be larger than 0.</source>
         <translation>Det betalade beloppet måste vara större än 0.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The amount exceeds your balance.</source>
         <translation>Värdet överstiger ditt saldo.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Totalvärdet överstiger ditt saldo när transaktionsavgiften %1 är pålagd.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Duplicate address found, can only send to each address once per send operation.</source>
         <translation>Dubblett av adress funnen, kan bara skicka till varje adress en gång per sändning.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+5"/>
         <source>Error: Transaction creation failed!</source>
         <translation>Fel: Transaktionen gick inte att skapa!</translation>
@@ -1397,48 +3259,129 @@ Adress: %4
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Fel: Transaktionen avslogs. Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av wallet.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
+=======
+        <location line="+3"/>
+        <source>Transaction creation failed!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+112"/>
+        <source>Warning: Invalid Dogecoin address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>(no label)</source>
+        <translation>(Ingen etikett)</translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Warning: Unknown change address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-366"/>
+        <source>Are you sure you want to send?</source>
+        <translation>Är du säker på att du vill skicka?</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>added as transaction fee</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+170"/>
+        <source>Payment request expired</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Invalid payment address %1</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
+<<<<<<< HEAD
         <location filename="../forms/sendcoinsentry.ui" line="+14"/>
         <source>Form</source>
         <translation>Formulär</translation>
     </message>
     <message>
         <location line="+15"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+131"/>
+        <location line="+521"/>
+        <location line="+536"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>A&amp;mount:</source>
         <translation>&amp;Belopp:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="-1152"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Pay &amp;To:</source>
         <translation>Betala &amp;Till:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+34"/>
+=======
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>The address to send the payment to (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Adressen som betalningen skall skickas till  (t.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+60"/>
         <location filename="../sendcoinsentry.cpp" line="+26"/>
+=======
+        <location filename="../sendcoinsentry.cpp" line="+30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Ange ett namn för den här adressen och lägg till den i din adressbok</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-78"/>
+=======
+        <location filename="../forms/sendcoinsentry.ui" line="+57"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Label:</source>
         <translation>&amp;Etikett:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
         <source>Choose address from address book</source>
         <translation>Välj adress från adresslistan</translation>
     </message>
     <message>
         <location line="+10"/>
+=======
+        <location line="-50"/>
+        <source>Choose previously used address</source>
+        <translation>Välj tidigare använda adresser</translation>
+    </message>
+    <message>
+        <location line="-40"/>
+        <source>This is a normal payment.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+50"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1454,8 +3397,52 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
+<<<<<<< HEAD
         <source>Remove this recipient</source>
         <translation>Ta bort denna mottagare</translation>
+=======
+        <location line="+524"/>
+        <location line="+536"/>
+        <source>Remove this entry</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-1008"/>
+        <source>Message:</source>
+        <translation>Meddelande:</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>A message that was attached to the Dogecoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+958"/>
+        <source>This is a verified payment request.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-991"/>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+459"/>
+        <source>This is an unverified payment request.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+18"/>
+        <location line="+532"/>
+        <source>Pay To:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-498"/>
+        <location line="+536"/>
+        <source>Memo:</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
@@ -1464,6 +3451,22 @@ Adress: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
+=======
+    <name>ShutdownWindow</name>
+    <message>
+        <location filename="../utilitydialog.cpp" line="+48"/>
+        <source>Dogecoin Core is shutting down...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     <name>SignVerifyMessageDialog</name>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
@@ -1471,7 +3474,11 @@ Adress: %4
         <translation>Signaturer - Signera / Verifiera ett Meddelande</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+13"/>
+=======
+        <location line="+10"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Sign Message</source>
         <translation>&amp;Signera Meddelande</translation>
     </message>
@@ -1488,8 +3495,13 @@ Adress: %4
     <message>
         <location line="+10"/>
         <location line="+213"/>
+<<<<<<< HEAD
         <source>Choose an address from the address book</source>
         <translation>Välj en adress från adressboken</translation>
+=======
+        <source>Choose previously used address</source>
+        <translation>Välj tidigare använda adresser</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="-203"/>
@@ -1574,7 +3586,11 @@ Adress: %4
         <translation>Rensa alla fält</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
+=======
+        <location filename="../signverifymessagedialog.cpp" line="+29"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+3"/>
         <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>Ange en Dogecoin-adress (t.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
@@ -1590,7 +3606,11 @@ Adress: %4
         <translation>Ange Dogecoin-signatur</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+81"/>
         <source>The entered address is invalid.</source>
         <translation>Den angivna adressen är ogiltig.</translation>
@@ -1659,9 +3679,20 @@ Adress: %4
 <context>
     <name>SplashScreen</name>
     <message>
+<<<<<<< HEAD
         <location filename="../splashscreen.cpp" line="+22"/>
         <source>The Dogecoin developers</source>
         <translation>Dogecoin-utvecklarna</translation>
+=======
+        <location filename="../splashscreen.cpp" line="+28"/>
+        <source>Dogecoin Core</source>
+        <translation>Dogecoin Kärna</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The Dogecoin Core developers</source>
+        <translation type="unfinished"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -1670,9 +3701,23 @@ Adress: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>TransactionDesc</name>
     <message>
         <location filename="../transactiondesc.cpp" line="+20"/>
+=======
+    <name>TrafficGraphWidget</name>
+    <message>
+        <location filename="../trafficgraphwidget.cpp" line="+79"/>
+        <source>KB/s</source>
+        <translation>KB/s</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionDesc</name>
+    <message>
+        <location filename="../transactiondesc.cpp" line="+28"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Open until %1</source>
         <translation>Öppet till %1</translation>
     </message>
@@ -1745,12 +3790,20 @@ Adress: %4
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Credit</source>
         <translation>Kredit</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="-102"/>
+=======
+        <location line="-125"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>matures in %n more block(s)</source>
         <translation><numerusform>mognar om %n block</numerusform><numerusform>mognar om %n fler block</numerusform></translation>
     </message>
@@ -1763,12 +3816,20 @@ Adress: %4
         <location line="+44"/>
         <location line="+8"/>
         <location line="+15"/>
+<<<<<<< HEAD
         <location line="+30"/>
+=======
+        <location line="+53"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debit</source>
         <translation>Belasta</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-39"/>
+=======
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Transaction fee</source>
         <translation>Transaktionsavgift</translation>
     </message>
@@ -1779,11 +3840,19 @@ Adress: %4
     </message>
     <message>
         <location line="+6"/>
+<<<<<<< HEAD
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Message</source>
         <translation>Meddelande</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="-7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Comment</source>
         <translation>Kommentar</translation>
     </message>
@@ -1793,12 +3862,26 @@ Adress: %4
         <translation>Transaktions-ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Generated coins must mature 50 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
         <translation>Genererade mynt måste vänta 50 block innan de kan användas. När du skapade detta block sändes det till nätverket för att läggas till i blockkedjan. Om blocket inte kommer in i kedjan kommer det att ändras till &quot;accepteras inte&quot; och kommer ej att gå att spendera. Detta kan ibland hända om en annan nod genererar ett block nästan samtidigt som dig.</translation>
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="+18"/>
+        <source>Merchant</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+8"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Debug information</source>
         <translation>Debug information</translation>
     </message>
@@ -1828,7 +3911,11 @@ Adress: %4
         <translation>falsk</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-209"/>
+=======
+        <location line="-232"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>, has not been successfully broadcast yet</source>
         <translation>, har inte lyckats skickas ännu</translation>
     </message>
@@ -1859,7 +3946,11 @@ Adress: %4
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactiontablemodel.cpp" line="+225"/>
+=======
+        <location filename="../transactiontablemodel.cpp" line="+234"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Date</source>
         <translation>Datum</translation>
     </message>
@@ -1878,8 +3969,18 @@ Adress: %4
         <source>Amount</source>
         <translation>Mängd</translation>
     </message>
+<<<<<<< HEAD
     <message numerus="yes">
         <location line="+57"/>
+=======
+    <message>
+        <location line="+59"/>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message numerus="yes">
+        <location line="+16"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Open for %n more block(s)</source>
         <translation><numerusform>Öppet för %n mer block</numerusform><numerusform>Öppet för %n mer block</numerusform></translation>
     </message>
@@ -1899,6 +4000,7 @@ Adress: %4
         <translation>Obekräftad (%1 av %2 bekräftelser)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Confirmed (%1 confirmations)</source>
         <translation>Bekräftad (%1 bekräftelser)</translation>
@@ -1910,6 +4012,15 @@ Adress: %4
     </message>
     <message>
         <location line="+5"/>
+=======
+        <location line="-22"/>
+        <location line="+25"/>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Bekräftad (%1 bekräftelser)</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>Det här blocket togs inte emot av några andra noder och kommer antagligen inte att bli godkänt.</translation>
     </message>
@@ -1919,7 +4030,11 @@ Adress: %4
         <translation>Genererad men inte accepterad</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+43"/>
+=======
+        <location line="+62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Received with</source>
         <translation>Mottagen med</translation>
     </message>
@@ -1977,7 +4092,11 @@ Adress: %4
 <context>
     <name>TransactionView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../transactionview.cpp" line="+52"/>
+=======
+        <location filename="../transactionview.cpp" line="+57"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+16"/>
         <source>All</source>
         <translation>Alla</translation>
@@ -2038,12 +4157,20 @@ Adress: %4
         <translation>Övriga</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Enter address or label to search</source>
         <translation>Sök efter adress eller etikett </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Min amount</source>
         <translation>Minsta mängd</translation>
     </message>
@@ -2078,17 +4205,50 @@ Adress: %4
         <translation>Visa transaktionsdetaljer</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+139"/>
         <source>Export Transaction Data</source>
         <translation>Exportera Transaktionsdata</translation>
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+142"/>
+        <source>Export Transaction History</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Exporting Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Exporting Successful</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Comma separated file (*.csv)</source>
         <translation>Kommaseparerad fil (*. csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
+=======
+        <location line="+9"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Confirmed</source>
         <translation>Bekräftad</translation>
     </message>
@@ -2123,6 +4283,7 @@ Adress: %4
         <translation>ID</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
         <source>Error exporting</source>
         <translation>Fel vid export</translation>
@@ -2134,6 +4295,9 @@ Adress: %4
     </message>
     <message>
         <location line="+100"/>
+=======
+        <location line="+107"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Range:</source>
         <translation>Intervall:</translation>
     </message>
@@ -2144,9 +4308,23 @@ Adress: %4
     </message>
 </context>
 <context>
+<<<<<<< HEAD
     <name>WalletModel</name>
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
+=======
+    <name>WalletFrame</name>
+    <message>
+        <location filename="../walletframe.cpp" line="+26"/>
+        <source>No wallet has been loaded.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>WalletModel</name>
+    <message>
+        <location filename="../walletmodel.cpp" line="+245"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send Coins</source>
         <translation>Skicka pengar</translation>
     </message>
@@ -2154,7 +4332,11 @@ Adress: %4
 <context>
     <name>WalletView</name>
     <message>
+<<<<<<< HEAD
         <location filename="../walletview.cpp" line="+42"/>
+=======
+        <location filename="../walletview.cpp" line="+43"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>&amp;Export</source>
         <translation>&amp;Exportera</translation>
     </message>
@@ -2164,22 +4346,35 @@ Adress: %4
         <translation>Exportera informationen i den nuvarande fliken till en fil</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+193"/>
+=======
+        <location line="+181"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Wallet</source>
         <translation>Säkerhetskopiera Plånbok</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+0"/>
+=======
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Wallet Data (*.dat)</source>
         <translation>Plånboks-data (*.dat)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Backup Failed</source>
         <translation>Säkerhetskopiering misslyckades</translation>
     </message>
     <message>
         <location line="+0"/>
+<<<<<<< HEAD
         <source>There was an error trying to save the wallet data to the new location.</source>
         <translation>Det inträffade ett fel när plånboken skulle sparas till den nya platsen.</translation>
     </message>
@@ -2203,31 +4398,67 @@ Adress: %4
     </message>
     <message>
         <location line="+102"/>
+=======
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Backup Successful</source>
+        <translation>Säkerhetskopiering lyckades</translation>
+    </message>
+</context>
+<context>
+    <name>dogecoin-core</name>
+    <message>
+        <location filename="../bitcoinstrings.cpp" line="+221"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Usage:</source>
         <translation>Användning:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
         <source>Send command to -server or dogecoind</source>
         <translation>Skicka kommando till -server eller dogecoind</translation>
     </message>
     <message>
         <location line="-23"/>
+=======
+        <location line="-54"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>List commands</source>
         <translation>Lista kommandon</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
+=======
+        <location line="-14"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Get help for a command</source>
         <translation>Få hjälp med ett kommando</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+24"/>
+=======
+        <location line="+26"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Options:</source>
         <translation>Inställningar:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+24"/>
+=======
+        <location line="+22"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify configuration file (default: dogecoin.conf)</source>
         <translation>Ange konfigurationsfil (förvalt: dogecoin.conf)</translation>
     </message>
@@ -2247,7 +4478,11 @@ Adress: %4
         <translation>Sätt databas cache storleken i megabyte (förvalt: 25)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-28"/>
+=======
+        <location line="-26"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Listen for connections on &lt;port&gt; (default: 22556 or testnet: 44556)</source>
         <translation>Lyssna efter anslutningar på &lt;port&gt; (förvalt: 22556 eller testnet: 44556)</translation>
     </message>
@@ -2257,57 +4492,101 @@ Adress: %4
         <translation>Ha som mest &lt;n&gt; anslutningar till andra klienter (förvalt: 125)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-48"/>
+=======
+        <location line="-51"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
         <translation>Anslut till en nod för att hämta klientadresser, och koppla från</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+84"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Specify your own public address</source>
         <translation>Ange din egen publika adress</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Tröskelvärde för att koppla ifrån klienter som missköter sig (förvalt: 100)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-134"/>
+=======
+        <location line="-148"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation>Antal sekunder att hindra klienter som missköter sig från att ansluta (förvalt: 86400)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-29"/>
+=======
+        <location line="-36"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Ett fel uppstod vid upprättandet av RPC port %u för att lyssna på IPv4: %s</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+27"/>
+=======
+        <location line="+34"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
         <translation>Lyssna på JSON-RPC-anslutningar på &lt;port&gt; (förvalt: 22555 eller testnet: 44555)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
+=======
+        <location line="+45"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Tillåt kommandon från kommandotolken och JSON-RPC-kommandon</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
+=======
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Kör i bakgrunden som tjänst och acceptera kommandon</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+37"/>
+=======
+        <location line="+39"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use the test network</source>
         <translation>Använd testnätverket</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-112"/>
+=======
+        <location line="-118"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Acceptera anslutningar utifrån (förvalt: 1 om ingen -proxy eller -connect)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-80"/>
+=======
+        <location line="-95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
@@ -2332,7 +4611,16 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+17"/>
+=======
+        <location line="+12"/>
+        <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>Ett fel uppstod vid upprättandet av RPC port %u för att lyssna på IPv6, faller tillbaka till IPV4: %s</translation>
     </message>
@@ -2343,11 +4631,16 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s. Dogecoin is probably already running.</source>
+=======
+        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <translation>Kan inte låsa data-mappen %s. Dogecoin körs förmodligen redan.</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Fel: Transaktionen avslogs! Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av wallet.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
     </message>
@@ -2373,16 +4666,52 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+6"/>
+=======
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development.</source>
+        <translation>Ange regressiontestläge, som använder en speciell kedja i vilka block kan lösas omedelbart. Detta är avsett för regressiontestnings verktyg och applikationsutveckling.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Fel: Transaktionen avslogs! Detta kan hända om några av mynten i plånboken redan spenderats, t.ex om du använt en kopia av wallet.dat och mynt spenderades i kopian men inte markerats som spenderas här.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna dogecoins.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Exekvera kommando när en plånbokstransaktion ändras (%s i cmd är ersatt av TxID)</translation>
+    </message>
+    <message>
+        <location line="+18"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Detta är ett förhands testbygge - använd på egen risk - använd inte för mining eller handels applikationer</translation>
     </message>
     <message>
         <location line="+5"/>
+<<<<<<< HEAD
+=======
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Varning: -paytxfee är satt väldigt hög! Detta är avgiften du kommer betala för varje transaktion.</translation>
     </message>
     <message>
         <location line="+3"/>
+<<<<<<< HEAD
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>Varning: Visade transaktioner kanske inte är korrekt! Du kan behöva uppgradera, eller andra noder kan behöva uppgradera.</translation>
     </message>
@@ -2390,6 +4719,20 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
         <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Dogecoin inte fungera korrekt.</translation>
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin Core will not work properly.</source>
+        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Dogecoin inte fungera korrekt.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Varning: Nätverket verkar inte vara helt överens! Några miners verkar ha problem.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>Varning: Vi verkar inte helt överens med våra peers! Du kan behöva uppgradera, eller andra noder kan behöva uppgradera.</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+3"/>
@@ -2402,12 +4745,35 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Varning: wallet.dat korrupt, datan har räddats! Den ursprungliga wallet.dat har sparas som wallet.{timestamp}.bak i %s; om ditt saldo eller transaktioner är felaktiga ska du återställa från en säkerhetskopia.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+14"/>
+=======
+        <location line="+9"/>
+        <source>&lt;category&gt; can be:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Försök att rädda de privata nycklarna från en korrupt wallet.dat</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="+1"/>
+        <source>Dogecoin Core Daemon</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Dogecoin Core RPC client version</source>
+        <translation>Dogecoin RPC-klient version</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Block creation options:</source>
         <translation>Block skapande inställningar:</translation>
     </message>
@@ -2417,7 +4783,21 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Koppla enbart upp till den/de specificerade noden/noder</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
+=======
+        <location line="+1"/>
+        <source>Connect through SOCKS proxy</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connect to JSON-RPC on &lt;port&gt; (default: 22555 or testnet: 44555)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Corrupted block database detected</source>
         <translation>Korrupt blockdatabas har upptäckts</translation>
     </message>
@@ -2428,6 +4808,14 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
+=======
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Do you want to rebuild the block database now?</source>
         <translation>Vill du bygga om blockdatabasen nu?</translation>
     </message>
@@ -2522,7 +4910,16 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Misslyckades att skriva ångradata</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
+=======
+        <location line="+1"/>
+        <source>Fee per kB to add to transactions you send</source>
+        <translation>Avgift per kB att lägga till på transaktioner du skickar</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
         <translation>Sök efter klienter med DNS sökningen (förvalt: 1 om inte -connect)</translation>
     </message>
@@ -2542,22 +4939,98 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Hur grundlig blockverifikationen är (0-4, förvalt: 3)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+19"/>
+=======
+        <location line="+1"/>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>Felaktig eller inget genesisblock hittades. Fel datadir för nätverket?</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Invalid -onion address: &apos;%s&apos;</source>
+        <translation>Ogiltig -onion adress:&apos;%s&apos;</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Not enough file descriptors available.</source>
         <translation>Inte tillräckligt med filbeskrivningar tillgängliga.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+8"/>
+=======
+        <location line="+5"/>
+        <source>Prepend debug output with timestamp (default: 1)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>RPC client options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Återskapa blockkedjans index från nuvarande blk000??.dat filer</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+16"/>
+=======
+        <location line="+5"/>
+        <source>Select SOCKS version for -proxy (4 or 5, default: 5)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send command to Dogecoin Core server</source>
+        <translation>Skicka commando till Dogecoinserver</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set the number of threads to service RPC calls (default: 4)</source>
         <translation>Ange antalet trådar för att hantera RPC anrop (standard: 4)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+26"/>
+=======
+        <location line="+7"/>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>Ange plånboksfil (inom datakatalogen)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Dogecoin Core server</source>
+        <translation>Starta Dogecoinserver</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Usage (deprecated, use dogecoin-cli):</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Verifying blocks...</source>
         <translation>Verifierar block...</translation>
     </message>
@@ -2567,27 +5040,83 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Verifierar plånboken...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-69"/>
+=======
+        <location line="+1"/>
+        <source>Wait for RPC server to start</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>Plånbok %s ligger utanför datakatalogen %s</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Wallet options:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning: Deprecated argument -debugnet ignored, use -debug=net</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Du måste återskapa databasen med -reindex för att ändra -txindex</translation>
+    </message>
+    <message>
+        <location line="-79"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Imports blocks from external blk000??.dat file</source>
         <translation>Importerar block från extern blk000??.dat fil</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-76"/>
+=======
+        <location line="-105"/>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Exekvera kommando när ett relevant meddelande är mottagen eller när vi ser en väldigt lång förgrening (%s i cmd är utbytt med ett meddelande)</translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Output debugging information (default: 0, supplying &lt;category&gt; is optional)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set the number of script verification threads (up to 16, 0 = auto, &lt;0 = leave that many cores free, default: 0)</source>
         <translation>Ange antalet skriptkontrolltrådar (upp till 16, 0 = auto, &lt;0 = lämna så många kärnor lediga, förval: 0)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+77"/>
+=======
+        <location line="+89"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Information</source>
         <translation>Information</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+3"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Ogiltig -tor adress: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+4"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ogiltigt belopp för -minrelaytxfee=&lt;belopp&gt;: &apos;%s&apos;</translation>
     </message>
@@ -2622,6 +5151,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Anslut enbart till noder i nätverket &lt;net&gt; (IPv4, IPv6 eller Tor)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+2"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Skriv ut extra felsökningsinformation. Gäller alla andra -debug* alternativ</translation>
@@ -2648,10 +5178,19 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
+=======
+        <location line="+9"/>
+        <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>SSL-inställningar: (se Bitcoin-wikin för SSL-setup instruktioner)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Skicka trace-/debuginformation till terminalen istället för till debug.log</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
         <translation>Skicka trace-/debuginformation till debugger</translation>
@@ -2663,6 +5202,9 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set minimum block size in bytes (default: 0)</source>
         <translation>Sätt minsta blockstorlek i byte (förvalt: 0)</translation>
     </message>
@@ -2682,12 +5224,20 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Ange timeout för uppkoppling i millisekunder (förvalt: 5000)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+6"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>System error: </source>
         <translation>Systemfel:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+5"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Transaction amount too small</source>
         <translation>Transaktions belopp för liten</translation>
     </message>
@@ -2702,7 +5252,11 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Transaktionen är för stor</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+7"/>
+=======
+        <location line="+8"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Använd UPnP för att mappa den lyssnande porten (förvalt: 0)</translation>
     </message>
@@ -2712,29 +5266,46 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Använd UPnP för att mappa den lyssnande porten (förvalt: 1 under lyssning)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Använd en proxy för att nå tor (förvalt: samma som -proxy)</translation>
     </message>
     <message>
+=======
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <location line="+2"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Användarnamn för JSON-RPC-anslutningar</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+4"/>
+=======
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning</source>
         <translation>Varning</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
+=======
+        <location line="+2"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Varning: denna version är föråldrad, uppgradering krävs!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+1"/>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Du måste återskapa databaserna med -reindex för att ändra -txindex</translation>
+=======
+        <location line="+2"/>
+        <source>version</source>
+        <translation>version</translation>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
     </message>
     <message>
         <location line="+1"/>
@@ -2742,47 +5313,83 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>wallet.dat korrupt, räddning misslyckades</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-50"/>
+=======
+        <location line="-58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Password for JSON-RPC connections</source>
         <translation>Lösenord för JSON-RPC-anslutningar</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-67"/>
+=======
+        <location line="-70"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Tillåt JSON-RPC-anslutningar från specifika IP-adresser</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+76"/>
+=======
+        <location line="+80"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation>Skicka kommandon till klient på &lt;ip&gt; (förvalt: 127.0.0.1)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-120"/>
+=======
+        <location line="-132"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Exekvera kommando när det bästa blocket ändras (%s i cmd är utbytt av blockhash)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+147"/>
+=======
+        <location line="+161"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Upgrade wallet to latest format</source>
         <translation>Uppgradera plånboken till senaste formatet</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-21"/>
+=======
+        <location line="-24"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation>Sätt storleken på nyckelpoolen till &lt;n&gt; (förvalt: 100)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-12"/>
+=======
+        <location line="-11"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Sök i blockkedjan efter saknade plånboks transaktioner</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+35"/>
+=======
+        <location line="+38"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation>Använd OpenSSL (https) för JSON-RPC-anslutningar</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-26"/>
+=======
+        <location line="-30"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Server certificate file (default: server.cert)</source>
         <translation>Serverns certifikatfil (förvalt: server.cert)</translation>
     </message>
@@ -2792,42 +5399,63 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Serverns privata nyckel (förvalt: server.pem)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-151"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
         <translation>Accepterade krypteringsalgoritmer (förvalt: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+165"/>
+=======
+        <location line="+16"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>This help message</source>
         <translation>Det här hjälp medelandet</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+6"/>
+=======
+        <location line="+7"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Det går inte att binda till %s på den här datorn (bind returnerade felmeddelande %d, %s)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-91"/>
         <source>Connect through socks proxy</source>
         <translation>Anslut genom socks-proxy</translation>
     </message>
     <message>
         <location line="-10"/>
+=======
+        <location line="-107"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Tillåt DNS-sökningar för -addnode, -seednode och -connect</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+55"/>
+=======
+        <location line="+60"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading addresses...</source>
         <translation>Laddar adresser...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-35"/>
+=======
+        <location line="-37"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Fel vid inläsningen av wallet.dat: Plånboken är skadad</translation>
     </message>
     <message>
         <location line="+1"/>
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin</source>
         <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Dogecoin</translation>
     </message>
@@ -2838,11 +5466,27 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-95"/>
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin Core</source>
+        <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av Dogecoin</translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Wallet needed to be rewritten: restart Dogecoin Core to complete</source>
+        <translation>Plånboken behöver skrivas om: Starta om Dogecoin för att färdigställa</translation>
+    </message>
+    <message>
+        <location line="-100"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error loading wallet.dat</source>
         <translation>Fel vid inläsning av plånboksfilen wallet.dat</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+28"/>
+=======
+        <location line="+31"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid -proxy address: &apos;%s&apos;</source>
         <translation>Ogiltig -proxy adress: &apos;%s&apos;</translation>
     </message>
@@ -2857,7 +5501,11 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Okänd -socks proxy version begärd: %i</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-96"/>
+=======
+        <location line="-101"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Kan inte matcha -bind adress: &apos;%s&apos;</translation>
     </message>
@@ -2867,7 +5515,11 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Kan inte matcha -externalip adress: &apos;%s&apos;</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+44"/>
+=======
+        <location line="+48"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ogiltigt belopp för -paytxfee=&lt;belopp&gt;:&apos;%s&apos;</translation>
     </message>
@@ -2887,11 +5539,16 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Laddar blockindex...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-57"/>
+=======
+        <location line="-62"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Lägg till en nod att koppla upp mot och försök att hålla anslutningen öppen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. Dogecoin is probably already running.</source>
         <translation>Det går inte att binda till %s på den här datorn. Dogecoin är förmodligen redan igång.</translation>
@@ -2903,11 +5560,23 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+19"/>
+=======
+        <location line="-32"/>
+        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
+        <translation>Det går inte att binda till %s på den här datorn. Dogecoin är förmodligen redan igång.</translation>
+    </message>
+    <message>
+        <location line="+95"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Loading wallet...</source>
         <translation>Laddar plånbok...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-52"/>
+=======
+        <location line="-56"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Cannot downgrade wallet</source>
         <translation>Kan inte nedgradera plånboken</translation>
     </message>
@@ -2917,27 +5586,47 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@fo
         <translation>Kan inte skriva standardadress</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+64"/>
+=======
+        <location line="+67"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Rescanning...</source>
         <translation>Söker igen...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-57"/>
+=======
+        <location line="-58"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Done loading</source>
         <translation>Klar med laddning</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+82"/>
+=======
+        <location line="+85"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>To use the %s option</source>
         <translation>Att använda %s alternativet</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-74"/>
+=======
+        <location line="-77"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-31"/>
+=======
+        <location line="-35"/>
+>>>>>>> 20c2a7ecbb53d034a01305c8e63c0ee327bd9917
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
